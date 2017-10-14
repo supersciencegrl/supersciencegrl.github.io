@@ -1,2 +1,0 @@
-# supersciencegrl
-SuperScienceGrl homepage
