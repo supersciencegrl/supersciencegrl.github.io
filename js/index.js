@@ -1,0 +1,1 @@
+$(".sidebar").height(Math.max($(".content").height(),$(".sidebar").height()));
