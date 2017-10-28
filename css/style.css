@@ -5,6 +5,7 @@ body {
   width: auto;
   background-color: rgba(0,0,0,0);
   position: relative;
+  overflow-y: scroll;
 }
 
 div {
@@ -58,6 +59,16 @@ text-decoration:none;}
   transition: 0.3s;
 }
 
+.top-link {
+  color: white;
+}
+
+.top-link:hover {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
 .top-icon {
   padding: 10px;
   width: 33%;
@@ -86,7 +97,7 @@ text-decoration: none;}
   position: absolute;
   z: -1;
   transition: width 0.3s ease-in-out;
-  -webkit-transition: width 0.3s ease-in-out
+  -webkit-transition: width 0.3s ease-in-out;
 }
 
 #top-search-box:focus {
@@ -127,6 +138,10 @@ text-decoration: none;}
   background: -webkit-linear-gradient(white, #DDDDDD);
   background: linear-gradient(white, #DDDDDD);
   color: #101030;
+}
+
+.link-bar:hover {
+  text-decoration: none;
 }
 
 .bar-space-initial {
