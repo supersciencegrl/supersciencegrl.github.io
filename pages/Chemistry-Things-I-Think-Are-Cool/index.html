@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <title>Nessa Carson: About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="author" content="Nessa Carson"><meta name="keywords" content="chemistry, organic chemistry, science">
+
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet prefetch">
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
-      <link rel="stylesheet" href="../css/style.css">
-
-  
+    <link rel="stylesheet prefetch" href="../../css/style.css">
+    <link rel="dns-prefetch" href="//platform.twitter.com">
 </head>
 
 <body>
@@ -19,26 +18,31 @@
   <div class="row top-row container-fluid" style="position: relative;"><div style="width: 15%" id="jump">
   </div>
   
-  <div class="top"><a href="../cvs" class="top-link"><div>
+  <div class="top"><a href="/cvs" class="top-link"><div>
   UK Chemical Vendor Search
     </div></a></div>
     
-    <div class="top"><a href="../cvs-usa" class="top-link"><div>Chemical Vendor Search (US)</div></a></div>
+    <div class="top"><a href="/cvs-usa" class="top-link"><div>Chemical Vendor Search (US)</div></a></div>
   
   <div style="width: 5%; position: absolute; right: 25px;"><div class="row" style="padding: 0"><div class="top-icon">
     <a href="https://www.linkedin.com/in/nessacarson/" class="a-top-icon" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div><div class="top-icon"><a href="http://www.twitter.com/supersciencegrl" class="a-top-icon" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
     
-    <div class="top-icon" id="a-top-icon-search"><span id="top-search-icon"><a href="#" class="a-top-icon"><i class="fa fa-search" aria-hidden="true"></i></a></span><input type="search" name="search" id="top-search-box" placeholder="&#xf002;"></input></div></div>
+    <div class="top-icon" id="a-top-icon-search"><span id="top-search-icon"><a href="#" class="a-top-icon"><i class="fa fa-search" aria-hidden="true"></i></a></span>
+	<script language="javascript">function get() {document.searchform.submit()}</script>
+	
+	<form name="searchformtop" method="get" action="/results.html">	
+	<input type="search" name="q" id="top-search-box" name="q" placeholder="&#xf002;" onUnfocus="get()"></input>
+	</form></div></div>
     </div></div><!--Top row-->
   
 <div id="title-bar"><div class="row"><div class="col-1"></div> 
-  <div class="col-11"><h2><a class="title" href="../index.html">Nessa Carson</a></h2>
+  <div class="col-11"><h2><a class="title" href="index.html">Nessa Carson</a></h2>
     <h5 style="color: #D0B070; padding: 0px 0px 5px 0px"><em>@SuperScienceGrl</em></h5></div></div><!--Title bar-->
   
   <div class="row"><div class="bar-space-initial"></div>
-    <a class="link-bar" href="../index.html"><div class="col-1 bar link-container">HOME</div></a>
-    <a class="link-bar" href="../about"><div class="col-1 bar link-container">ABOUT</div></a>
-    <a class="link-bar" href="../links"><div class="col-1 bar link-container">LINKS</div></a>
+    <a class="link-bar" href="../../index.html"><div class="col-1 bar link-container">HOME</div></a>
+    <a class="link-bar" href="../../about/"><div class="col-1 bar link-container">ABOUT</div></a>
+    <a class="link-bar" href="../../links/"><div class="col-1 bar link-container">LINKS</div></a>
     
     </div></div><!-- Header -->
 	
@@ -53,7 +57,7 @@
 <img class="main-image" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Dodecahedrane-3D-balls.png" alt="dodecahedrane by Benjah-bmm27">
 
 <p class="p-main">
-There was a meme going around Twitter recently, based on sharing ‘cool chemistry’ – according to the writer’s own definition. The premise is that for each user who clicks the ‘like’ button on the original post, the writer will share one, sub-140-character snippet about something that is both cool and chemistry-related. It looks something like this:
+There was a meme going around Twitter recently, based on sharing &#39;cool chemistry&#39; – according to the writer’s own definition. The premise is that for each user who clicks the ‘like’ button on the original post, the writer will share one, sub-140-character snippet about something that is both cool and chemistry-related. It looks something like this:
 </p>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;ve never done one of these before. :D Stolen from <a href="https://twitter.com/DrRubidium" target="_blank">@DrRubidium</a>! <a href="https://t.co/gpyfMc6hZB">pic.twitter.com/gpyfMc6hZB</a></p>&mdash; ⌬Nessa Carson (@SuperScienceGrl) <a href="https://twitter.com/SuperScienceGrl/status/875100988130160640" target="_blank">June 14, 2017</a></blockquote>
@@ -294,8 +298,13 @@ There was a meme going around Twitter recently, based on sharing ‘cool chemist
     
   <!--Sidebar rows--> 
   <div class="sidebar-row">
-    <p class="sidebar-title">Search this site</p>    
-    <input type="search" id="sidebar-search" placeholder="&#xf002;">
+    <p class="sidebar-title">Search this site</p>
+	<script language="javascript">function get() {document.searchform.submit()}</script>
+	
+	<form name="searchform" method="get" action="/results.html">
+	<input type="search" id="sidebar-search" name="q" placeholder="&#xf002;" onUnfocus="get()">
+	</form>
+	
     <hr class="sidebar-hr"></div>
       
     <div class="sidebar-row">
@@ -315,8 +324,7 @@ There was a meme going around Twitter recently, based on sharing ‘cool chemist
       <td class="sidebar-td"><a href="https://plus.google.com/u/0/+NessaCarson" alt="Google+" class="sidebar-social" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></td></tr></table>
       <hr class="sidebar-hr">
       <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Nessa Carson</p>
-      </div></div><!-- Sidebar -->
-        
+      </div></div><!-- Sidebar -->        
 
      
 <div id="footer">
@@ -335,8 +343,7 @@ There was a meme going around Twitter recently, based on sharing ‘cool chemist
  <!-- End for CodePen -->
  
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-    <script  src="../js/index.js"></script>
+  <script  src="../../js/index.js"></script>
 
 </body>
 </html>
