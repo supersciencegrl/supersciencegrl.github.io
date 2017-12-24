@@ -273,11 +273,11 @@ text-decoration: none;}
   display: none;
   }
   bar {
-  width: auto;
+  width: 8%;
   }
   .grid-square {
    padding: 5px 5% 35px 5%;
-   max-width: 50vw;
+   min-width: 50px;
   }
 }
 
@@ -292,11 +292,11 @@ text-decoration: none;}
   display: none;
   }
   bar {
-  width: auto;
+  width: 8%;
   }
   .grid-square {
   padding: 5px 5% 35px 5%;
-  max-width: 50vw;
+  min-width: 50px;
   }
 }
 
@@ -311,11 +311,11 @@ text-decoration: none;}
   display: none;
   }
   bar {
-  width: auto;
+  width: 8%;
   }
   .grid-square {
   padding: 5px 5% 35px 5%;
-  max-width: 50vw;
+  min-width: 50px;
   }
 }
 /* End of handheld devices */
