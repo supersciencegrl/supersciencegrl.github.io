@@ -273,7 +273,7 @@ text-decoration: none;}
   display: none;
   }
   .bar {
-  min-width: 0;
+  min-width: 20px;
   }
   .grid-square {
    padding: 5px 5% 35px 5%;
@@ -292,7 +292,7 @@ text-decoration: none;}
   display: none;
   }
   .bar {
-  min-width: 0;
+  min-width: 20px;
   }
   .grid-square {
   padding: 5px 5% 35px 5%;
@@ -311,7 +311,7 @@ text-decoration: none;}
   display: none;
   }
   .bar {
-  min-width: 0;
+  min-width: 20px;
   }
   .grid-square {
   padding: 5px 5% 35px 5%;
