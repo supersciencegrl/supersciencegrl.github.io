@@ -201,12 +201,6 @@ text-decoration: none;}
   display: inline-block;
 }
 
-@media only screen and (max-height: 900px) {
-  .grid-square {
-    padding: 5px 5% 35px 5%; 
-  }
-}
-
 .caption {
 	font-size: x-small;
 }
@@ -278,6 +272,13 @@ text-decoration: none;}
   margin: 0;
   display: none;
   }
+  bar {
+  width: auto;
+  }
+  .grid-square {
+   padding: 5px 5% 35px 5%;
+   max-width: 50vw;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -290,6 +291,13 @@ text-decoration: none;}
   margin: 0;
   display: none;
   }
+  bar {
+  width: auto;
+  }
+  .grid-square {
+  padding: 5px 5% 35px 5%;
+  max-width: 50vw;
+  }
 }
 
 @media only screen and (min-resolution: 300dpi) {
@@ -301,6 +309,13 @@ text-decoration: none;}
   clear : both;
   margin: 0;
   display: none;
+  }
+  bar {
+  width: auto;
+  }
+  .grid-square {
+  padding: 5px 5% 35px 5%;
+  max-width: 50vw;
   }
 }
 /* End of handheld devices */
