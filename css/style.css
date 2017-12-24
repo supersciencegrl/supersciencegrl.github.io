@@ -205,12 +205,6 @@ text-decoration: none;}
   .grid-square {
     padding: 5px 5% 35px 5%; 
   }
-  .m-hidden {
-	  visibility: hidden;
-	  clear : both;
-	  margin: 0;
-	  display: none;
-  }
 }
 
 .caption {
@@ -272,6 +266,44 @@ text-decoration: none;}
     margin: 0 0 -10px 0;
   }
 }
+
+/* Handheld devices */
+@media only screen and (max-device-width: 480px) {
+  body {
+  max-width: 100%;
+  }
+  .m-hidden {
+  visibility: hidden;
+  clear : both;
+  margin: 0;
+  display: none;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+  max-width: 100%;
+  }
+  .m-hidden {
+  visibility: hidden;
+  clear : both;
+  margin: 0;
+  display: none;
+  }
+}
+
+@media only screen and (min-resolution: 300dpi) {
+  body {
+  max-width: 100%;
+  }
+  .m-hidden {
+  visibility: hidden;
+  clear : both;
+  margin: 0;
+  display: none;
+  }
+}
+/* End of handheld devices */
 
 .tooltip {
   visibility: hidden;
