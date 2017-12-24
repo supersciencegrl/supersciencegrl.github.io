@@ -272,7 +272,7 @@ text-decoration: none;}
   margin: 0;
   display: none;
   }
-  bar {
+  .bar {
   min-width: 0;
   }
   .grid-square {
@@ -291,7 +291,7 @@ text-decoration: none;}
   margin: 0;
   display: none;
   }
-  bar {
+  .bar {
   min-width: 0;
   }
   .grid-square {
@@ -310,7 +310,7 @@ text-decoration: none;}
   margin: 0;
   display: none;
   }
-  bar {
+  .bar {
   min-width: 0;
   }
   .grid-square {
