@@ -275,9 +275,15 @@ text-decoration: none;}
   .bar {
   min-width: 20px;
   }
+  .bar-space-initial {
+   min-width: 0;
+  }
   .grid-square {
    padding: 5px 5% 35px 5%;
    min-width: 50px;
+  }
+  #wrapper {
+  margin: 0;
   }
 }
 
@@ -294,9 +300,15 @@ text-decoration: none;}
   .bar {
   min-width: 20px;
   }
+  .bar-space-initial {
+   min-width: 0;
+  }
   .grid-square {
   padding: 5px 5% 35px 5%;
   min-width: 50px;
+  }
+  #wrapper {
+  margin: 0;
   }
 }
 
@@ -313,9 +325,15 @@ text-decoration: none;}
   .bar {
   min-width: 20px;
   }
+  .bar-space-initial {
+   min-width: 0;
+  }
   .grid-square {
   padding: 5px 5% 35px 5%;
   min-width: 50px;
+  }
+  #wrapper {
+  margin: 0;
   }
 }
 /* End of handheld devices */
