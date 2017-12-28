@@ -444,6 +444,11 @@ color: rgba(90,90,90,1);}
   padding: 5px;
 }
 
+.m-contact {
+  padding: 0 10px 0 10px;
+  font-size: x-large;
+}
+
 .sidebar-social:link {color: #606060;
 text-decoration: none;}
 .sidebar-social:visited {color: #606060;}
