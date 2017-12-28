@@ -501,22 +501,6 @@ text-decoration: none;}
   visibility: hidden;
 }
 
-/* Non-mobile devices */
-@media only screen and (min-device-width: 49px) {
-  .m-visible {
-  visibility: visible;
-}
-
-@media only screen and (-webkit-max-device-pixel-ratio: 2) {
-  .m-visible {
-  visibility: visibile;
-}
-
-@media only screen and (max-resolution: 300dpi) {
-  .m-visible {
-  visibility: visible;
-}
-
 /* Mobile devices */
 @media only screen and (max-device-width: 48px) {
   body {
@@ -531,6 +515,9 @@ text-decoration: none;}
   clear : both;
   margin: 0;
   display: none;
+  }
+  .m-visible {
+  visibility: visible;
   }
   .bar {
   min-width: 20px;
@@ -569,6 +556,9 @@ text-decoration: none;}
   margin: 0;
   display: none;
   }
+  .m-visible {
+  visibility: visible;
+  }
   .bar {
   min-width: 20px;
   padding: 5px;
@@ -605,6 +595,9 @@ text-decoration: none;}
   clear : both;
   margin: 0;
   display: none;
+  }
+  .m-visible {
+  visibility: visible;
   }
   .bar {
   min-width: 20px;
