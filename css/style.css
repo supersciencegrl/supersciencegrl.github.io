@@ -497,6 +497,10 @@ text-decoration: none;}
   cursor: pointer;
 }
 
+.m-visible {
+  visibility: hidden;
+}
+
 /* Mobile devices */
 @media only screen and (max-device-width: 48px) {
   body {
