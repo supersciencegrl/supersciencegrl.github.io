@@ -224,6 +224,7 @@ text-decoration: none;}
 .image-left {
   float: left;
   width: 20%;
+  min-width: 80px;
   max-width: 120px;
   max-height: 150px;
   border-radius: 10px;
@@ -496,10 +497,34 @@ text-decoration: none;}
   cursor: pointer;
 }
 
+.m-visible {
+  visibility: hidden;
+}
+
+/* Non-mobile devices */
+@media only screen and (min-device-width: 49px) {
+  .m-visible {
+  visibility: visible;
+}
+
+@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+  .m-visible {
+  visibility: visibile;
+}
+
+@media only screen and (max-resolution: 300dpi) {
+  .m-visible {
+  visibility: visible;
+}
+
 /* Mobile devices */
 @media only screen and (max-device-width: 48px) {
   body {
   max-width: 100%;
+  }
+  #content p {
+  font-size: small;
+  text-align: left;
   }
   .m-hidden {
   visibility: hidden;
@@ -518,11 +543,14 @@ text-decoration: none;}
    padding: 5px 5% 35px 5%;
    min-width: 50px;
   }
+  .image-left {
+  margin: 0;
+  }
   #wrapper {
   margin-right: 0;
   }
   #footer-text-div {
-  min-width: 50%;
+  max-width: 85%;
   padding-right: 30px;
   }
 }
@@ -531,6 +559,10 @@ text-decoration: none;}
   body {
   max-width: 100%;
   }
+  #content p {
+  font-size: small;
+  text-align: left;
+  }
   .m-hidden {
   visibility: hidden;
   clear : both;
@@ -548,11 +580,14 @@ text-decoration: none;}
   padding: 5px 5% 35px 5%;
   min-width: 50px;
   }
+  .image-left {
+  margin: 0;
+  }
   #wrapper {
   margin-right: 0;
   }
   #footer-text-div {
-  min-width: 50%;
+  max-width: 85%;
   padding-right: 30px;
   }
 }
@@ -561,6 +596,10 @@ text-decoration: none;}
   body {
   max-width: 100%;
   }
+  #content p {
+  font-size: small;
+  text-align: left;
+  }
   .m-hidden {
   visibility: hidden;
   clear : both;
@@ -578,12 +617,15 @@ text-decoration: none;}
   padding: 5px 5% 35px 5%;
   min-width: 50px;
   }
+  .image-left {
+  margin: 0;
+  }
   #wrapper {
   margin-right: 0;
   }
   #footer-text-div {
-  min-width: 50%;
+  max-width: 85%;
   padding-right: 30px;
   }
 }
-/* End of handheld devices */
+/* End of mobile devices */
