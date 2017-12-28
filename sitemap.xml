@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://supersciencegrl.co.uk/</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/cvs</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/cvs-usa</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/index.html</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/about</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/links/</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/contact</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/pages/Chemistry-World-Changing-the-Reproducibility-Rulebook</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/pages/Chemistry-World-Lab-of-the-Living-Dead</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/pages/Chemistry-Things-I-Think-Are-Cool</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/pages/Catalyst-Magazine-Focus-on-Palladium</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/poetry</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://supersciencegrl.co.uk/links/index.html</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>
