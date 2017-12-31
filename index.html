@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Nessa Carson homepage</title>
+  <title>Nessa Carson: Links</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="author" content="Nessa Carson"><meta name="keywords" content="chemistry, organic chemistry, science">
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet prefetch">
@@ -10,6 +10,7 @@
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -50,42 +51,100 @@
 
 <!-- MAIN BODY -->
   <div id="wrapper">
-  
       
       <!-- Main page -->
  <div class="column" id="mainpage"><div id="content">
-   <h3 class="page-title">New Articles</h3>
+   <h3 class="page-title">Links</h3>
+  
+   <div class="tab">
+     <button class="tabButton" onclick="openTab(event, 'Research-Tools')" id="defaultTab">Research Tools</button>
+     <button class="tabButton" onclick="openTab(event, 'Reference-Tools')">Reference Tools</button>
+     <button class="tabButton" onclick="openTab(event, 'Writing-Presentation-Tools')">Writing and Presentation Tools</button>
+     <button class="tabButton" onclick="openTab(event, 'Interesting')">Interesting</button>
+   </div><!-- Tabs -->
    
-   <div id="grid">
-     <div class="grid-square">
-       <a href="pages/Chemistry-World-Changing-the-Reproducibility-Rulebook"><img class="display-image" src="/img/Reaction.png" alt="Changing the Reproducibility Rulebook"></a>
-       <a href="pages/Chemistry-World-Changing-the-Reproducibility-Rulebook"><h5 class="square-title">Changing the Reproducibility Rulebook</h5></a>
-	   <p class="caption"><strong>Chemistry World</strong>. <em>13/12/2017</em></p>
-     </div>
+   <div class="tabContent" id="Research-Tools">
+   <h3 class="tab-heading">Research Tools</h3>
+   
+   <div class="div-main">
+   <div class="div-tooltip"><a href="http://chemsearch.kovsky.net/extensions.php" target="_blank"><img class="inline-image image-left" src="img/Chemistry Reference Resolver.png" alt="Chemistry Reference Resolver"></a><span class="tooltip">Chemistry Reference Resolver</span></div><a class="link-title" href="http://chemsearch.kovsky.net/extensions.php" target="_blank"><h4>Chemistry Reference Resolver</h4></a><p class="p-main">Alex Zhurakovskyi's  unmissable tool allows fast access to papers simply by typing in the reference or DOI. Also supports <a href="http://chemsearch.kovsky.net/help.php" target="_blank">MSDS and Sigma-Aldrich reagent search</a>. </p></div>
+   
+   <div class="div-main">
+   <div class="div-tooltip"><a href="https://www.mendeley.com/" target="_blank"><img class="inline-image image-left" src="img/Mendeley.png" alt="Mendeley"></a><span class="tooltip">Image: books by Abdo from the Noun Project</span></div><a class="link-title" href="https://www.mendeley.com/" target="_blank"><h4 class=>Mendeley</h4></a><p class="p-main">Mendeley is (amongst other things) a versatile reference manager. Store, organize, and easily cite as many papers as you need. Ensure you download the <a class="link-text" href="https://www.mendeley.com/downloads" target="_blank">desktop version</a>, MS Word or LibreOffice <a class="link-text" href="https://www.mendeley.com/reference-management/citation-plugin" target="_blank">plugin</a>, and particularly the bookmarkable <a class="link-text" href="https://www.mendeley.com/reference-management/web-importer#id_1" target="_blank">web importer</a>. </p>
+</div>
+   
+   <div class="div-main">
+   <div class="div-tooltip"><a href="https://cse.google.com/cse/publicurl?cx=000650447537456290016:vpq8jozb8kk" target="_blank"><img class="inline-image image-left" src="img/CVS.png" alt="Chemical Vendor Search"></a><span class="tooltip">Chemical Vendor Search</span></div><a class="link-title" href="https://cse.google.com/cse/publicurl?cx=000650447537456290016:vpq8jozb8kk" target="_blank"><h4 class=>Chemical Vendor Search</h4></a><p class="p-main">I made this tool to save me time searching multiple vendor sites for chemicals. Works best by typing in the CAS number. Powered by Google, so check any missing vendors' websites in case the products are non-indexed. There's also a <a class="link-text" href="https://cse.google.com/cse/publicurl?cx=000650447537456290016:9fdlpycohcu" target="_blank">US version</a>. </p>
+</div>
+   
+   <div class="div-main">
+   <div class="div-tooltip"><a href="http://www2.chem.rochester.edu/~nvd/?page=home" target="_blank"><img class="inline-image image-left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Laboratory_protection_goggles-blue.jpg/1199px-Laboratory_protection_goggles-blue.jpg" alt="Not Voodoo X"></a><span class="tooltip">Not Voodoo X</span></div><a class="link-title" href="http://www2.chem.rochester.edu/~nvd/?page=home" target="_blank"><h4 class=>Not Voodoo X</h4></a><p class="p-main">Tips and tricks for new researchers, and some that might be news to an old hand too. The workup section is not to be missed. </p>
+</div>
+   
+   <div class="div-main">
+   <div class="div-tooltip"><a href="http://umich.edu/~mssgroup/docs/Group%20Welcome%20Kit%20V5.pdf" target="_blank"><img class="inline-image image-left" src="https://pbs.twimg.com/profile_images/756585217901662213/rB0QZQIM_400x400.jpg" alt="Melanie Sanford group"></a><span class="tooltip">Melanie Sanford group</span></div><a class="link-title" href="http://umich.edu/~mssgroup/docs/Group%20Welcome%20Kit%20V5.pdf" target="_blank"><h4 class=>Sanford Group Handbook</h4></a><p class="p-main">Melanie Sanford (University of Michigan)'s group handbook is one of the best there is, and it's publicly-available. Contains handy safety tips, and a comprehensive glassware cleaning section. </p>
+</div>
+   
+   <div class="div-main">
+   <div class="div-tooltip"><a href="http://www.trimen.pl/witek/calculators/wrzenie.html" target="_blank"><img class="inline-image image-left" src="img/BPC.png" alt="Boiling Point Calculator"></a><span class="tooltip">Image: Kettle by Jennifer Maestas from the Noun Project</span></div><a class="link-title" href="http://www.trimen.pl/witek/calculators/wrzenie.html" target="_blank"><h4 class=>Boiling Point Calculator</h4></a><p class="p-main">A simple tool to approximate a boiling point at a given pressure, given a reference boiling point (and pressure). Created by Witek Mozga. </p>
+</div>
+   </div><!-- Research tools -->
      
-     <div class="grid-square">
-       <a href="/pages/Chemistry-World-Lab-of-the-Living-Dead"><img class="display-image" src="http://www.clipartlord.com/wp-content/uploads/2015/04/ghost16.png" alt="Lab of the Living Dead"></a>
-       <a href="/pages/Chemistry-World-Lab-of-the-Living-Dead"><h5 class="square-title">Lab of the Living Dead</h5></a>
-	   <p class="caption"><strong>Chemistry World</strong>. <em>10/08/2017</em></p>
-     </div>
+   <div class="tabContent" id="Reference-Tools">
+   <h3 class="tab-heading">Reference Tools</h3>
+   
+   <div class="div-main">
+   <div class="div-tooltip"><a href="http://www.chem.wisc.edu/areas/organic/index-chem.htm" target="_blank"><img class="inline-image image-left" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Tropylium-ion-2D-skeletal.png" alt="Organic Chemistry Info"></a><span class="tooltip">Organic Chemistry Info</span></div><a class="link-title" href="http://www.chem.wisc.edu/areas/organic/index-chem.htm" target="_blank"><h4>Organic Chemistry Info</h4></a><p class="p-main">Created by Prof Hans Reich from the University of Wisconsin-Madison, this reference contains  NMR reference data, <a class="link-text" href="http://www.chem.wisc.edu/areas/reich/handouts/a-values/a-values.htm" target="_blank">A-value tables</a>, <a class="link-text" href="http://www.cup.lmu.de/oc/mayr/ReactScalesPoster.pdf" target="_blank">Mayr reactivity scales</a>, and much more. The most valuable section by far is the <a class="link-text" href="http://www.chem.wisc.edu/areas/reich/pkatable/index.htm" target="_blank">Bordwell pK<sub>a</sub> tables</a>. </p>
+</div>
+   
+   <div class="div-main">
+   <div class="div-tooltip"><a href="http://chemistrybydesign.oia.arizona.edu/" target="_blank"><img class="inline-image image-left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Codein_-_Codeine.svg/447px-Codein_-_Codeine.svg.png" alt="Chemistry by Design"></a><span class="tooltip">Chemistry by Design</span></div><a class="link-title" href="http://chemistrybydesign.oia.arizona.edu/" target="_blank"><h4>Chemistry by Design</h4></a><p class="p-main">View and test your skills on a database of total syntheses. Also available as an Android and iDevice app - unfortunately, an active Internet connection is required. </p>
+</div>
+   
+   <div class="div-main">
+   <div class="div-tooltip"><a href="https://www.synarchive.com/" target="_blank"><img class="inline-image image-left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Strychnine2.svg/660px-Strychnine2.svg.png" alt="SynArchive"></a><span class="tooltip">SynArchive</span></div><a class="link-title" href="https://www.synarchive.com/" target="_blank"><h4>SynArchive</h4></a><p class="p-main">A searchable database of total syntheses. </p>
+</div>
+   </div><!-- Reference Tools -->
+   
+   <div class="tabContent" id="Writing-Presentation-Tools">
+   <h3 class="tab-heading">Writing and Presentation Tools</h3>
+   
+     <div class="div-main">
+   <div class="div-tooltip"><a href="https://sites.google.com/site/margaretscheuermann/chemistry-resources/compound-numbering" target="_blank"><img class="inline-image image-left" src="img/ACN.png" alt="Automatic Compound Numbering"></a><span class="tooltip">Automatic Compound Numbering</span></div><a class="link-title" href="https://sites.google.com/site/margaretscheuermann/chemistry-resources/compound-numbering" target="_blank"><h4>Automatic Compound Numbering</h4></a><p class="p-main">How to use cross-referencing to make numbers for chemical compounds update automatically in MS Word. Devised by Prof Margaret Scheuermann (Western Washington University). </p>
+</div>
      
-     <div class="grid-square">
-       <a href="/pages/Chemistry-Things-I-Think-Are-Cool"><img class="display-image" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Dodecahedrane-3D-balls.png" alt="Chemistry Things I Think Are Cool"></a>
-       <a href="/pages/Chemistry-Things-I-Think-Are-Cool"><h5 class="square-title">Chemistry Things I Think Are Cool</h5></a>
-	   <p class="caption"><strong>Twitter thread</strong>. <em>14/06/2017</em></p>
-     </div>
+	 <div class="div-main">
+   <div class="div-tooltip"><a href="Totally Synthetic.cds" target="_blank" download><img class="inline-image image-left" src="img/TotSyn.png" alt="Totally Synthetic ChemDraw StyleSheet"></a><span class="tooltip">Totally Synthetic ChemDraw stylesheet by Paul Docherty</span></div><a class="link-title" href="Totally Synthetic.cds" target="_blank" download><h4>ChemDraw Stylesheets</h4></a><p class="p-main">The cult favourite ChemDraw stylesheet by Paul Docherty, originally posted on his site <em>Totally Synthetic</em> (no longer updated). Click <a href="Totally Synthetic.cds" target="_blank" download>here</a> to download, and save the file in your ChemDraw Items folder.</p>
+</div>
+	 
+   <div class="div-main">
+   <div class="div-tooltip"><a href="hotkeys.xml" target="_blank" download><img class="inline-image image-left" src="img/Benzene Lightning.png" alt="ChemDraw hotkeys"></a><span class="tooltip">Image: Benzene Lightning by Joey Sabey from the Noun Project</span></div><a class="link-title" href="hotkeys.xml" target="_blank" download><h4>Souped-Up ChemDraw Hotkeys</h4></a><p class="p-main"><a href="http://www.twitter.com/AlexFGoldberg" target="_blank">Dr Alex Goldberg</a> produced this life-changing extended hotkey set for ChemDraw. Click on <a href="hotkeys.xml" target="_blank" download>this link</a>, and download the file as <em>hotkeys.xml</em> into the ChemDraw Items folder. <a href="img/hotkeys.jpg" target="_blank">Click here</a> to see the additions. No longer life-changing from Version 17 as similar are now implemented by default. </p>
+</div>
      
-   <div class="grid-square">
-       <a href="/pages/Catalyst-Magazine-Focus-on-Palladium"><img class="display-image" src="https://upload.wikimedia.org/wikipedia/commons/2/23/Palladium.jpg" alt="Focus on Palladium"></a>
-       <a href="/pages/Catalyst-Magazine-Focus-on-Palladium"><h5 class="square-title">Focus on Palladium</h5></a>
-	   <p class="caption"><strong>Catalyst magazine</strong>. <em>13/12/2013</em></p>
-   </div>
+   <div class="div-main">
+   <div class="div-tooltip"><a href="http://www.chemistry-blog.com/2008/12/17/chemistry-dictionary-for-word-processors-version-20/" target="_blank"><img class="inline-image image-left" src="img/CD.PNG" alt="Chemistry Dictionary"></a><span class="tooltip">Chemistry Dictionary</span></div><a class="link-title" href="http://www.chemistry-blog.com/2008/12/17/chemistry-dictionary-for-word-processors-version-20/" target="_blank"><h4>Chemistry Dictionary</h4></a><p class="p-main">Sick of red wavy lines under everything you write? <a href="">Professor Adam Azman</a>'s 104,000-word Chemistry Dictionary for Microsoft Word will put an end to that. Autocorrect will start doing your bidding instead of recasting <a href="http://goldbook.iupac.org/html/A/A00270.html" style="color: black;" target="_blank"><em>aminal</em></a> as <em>animal</em> for the hundredth time. </p>
+</div>
      
-   </div><!-- Grid -->
+   <div class="div-main">
+   <div class="div-tooltip"><a href="http://www.scs.illinois.edu/suslick/seminars.html" target="_blank"><img class="inline-image image-left" src="img/Suslick.PNG" alt="Seminar on Seminars" style="border: 1px solid;"></a><span class="tooltip">Seminar on Seminars</span></div><a class="link-title" href="http://www.scs.illinois.edu/suslick/seminars.html" target="_blank"><h4>Seminar on Seminars</h4></a><p class="p-main">Ken Suslick (University of Illinois at Urbana-Champaign)'s popular presentation on how to make effective presentation slides. </p>
+</div>
+
+   <div class="div-main">
+   <div class="div-tooltip"><a href="http://www.paperrater.com/free_paper_grader" target="_blank"><img class="inline-image image-left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Magnifying_glass_with_focus_on_paper.png/1200px-Magnifying_glass_with_focus_on_paper.png" alt="Paper Rater"></a><span class="tooltip">Free Paper Grader</span></div><a class="link-title" href="http://www.paperrater.com/free_paper_grader" target="_blank"><h4>Paper Rater</h4></a><p class="p-main">More than a spellchecker: this free tool analyses vocabulary, grammar, and sentence length, without falling into the usual MS Word traps. </p>
+</div>
+   </div> <!-- Writing and Presentation Tools -->
+   
+   <div class="tabContent" id="Interesting">
+   <h3 class="tab-heading">Interesting</h3>
+   
+   <div class="div-main">
+   <a href="https://ouscisoc.wordpress.com/" target="_blank"><div class="div-tooltip"><img class="inline-image image-left" src="img/OUSS.png" alt="Oxford University Scientific Society logo"></a><span class="tooltip">OUSS logo</span></div><h4><a class="link-title" href="https://ouscisoc.wordpress.com/" target="_blank">Oxford University Scientific Society</a></h4><p class="p-main">OUSS is the world's oldest, student-run scientific society. We host (roughly) weekly seminars during Oxford University terms, which are open to the general public. We also have a popular <a class="link-text" href="https://www.facebook.com/OUSciSoc/">Facebook page</a> full of interesting science content. </p></div>
+   </div><!-- Interesting -->
+   
    </div><!-- Content -->
    </div><!-- Main page -->
     
-      <!-- Sidebar -->
+     <!-- Sidebar -->
     <div class="column m-hidden" id="sidebar"><div style="height: 25px"></div>
     
   <!--Sidebar rows--> 
@@ -125,11 +184,10 @@ var v2="FVA3W35BG5YNBPHE4UC5HX";var v7=unescape("+35%5B%3E%5C%5B+%29Ply%027%25%2
 
      
 <div id="footer">
-  <div class="row"><div id="footer-text-div"><p id="footer-text">
+  <div class="row"><div style="width: 90%"><p id="footer-text">
   <i class="fa fa-copyright" aria-hidden="true"></i> 2017 Coded by Nessa Carson
     </p>
     </div>
-	
     <div><a href="#jump"><button class="btn btn-warning" title="Return to top" id="button-to-top">
     <i class="fa fa-arrow-up" aria-hidden="true"></i>
       </button></a></div> 
@@ -138,10 +196,12 @@ var v2="FVA3W35BG5YNBPHE4UC5HX";var v7=unescape("+35%5B%3E%5C%5B+%29Ply%027%25%2
     
     </div><!-- Wrapper -->  
     </div><!-- Main -->
-	<!-- End for CodePen -->
-	
+ <!-- End for CodePen -->
+ 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script  src="/js/index.js"></script>
+
+    <script src="/js/index.js"></script>
+	<script src="js/index.js"></script>
 
 </body>
 </html>
