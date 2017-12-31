@@ -548,7 +548,7 @@ text-decoration: none;}
    padding: 5px 5% 35px 5%;
    min-width: 50px;
   }
-  .tab {
+  .tabButton {
   max-width: 25%;
   padding: 3px;
   font-size: 0.8em;
@@ -605,7 +605,7 @@ text-decoration: none;}
   padding: 5px 5% 35px 5%;
   min-width: 50px;
   }
-  .tab {
+  .tabButton {
   max-width: 25%;
   padding: 3px;
   font-size: 0.8em;
@@ -662,7 +662,7 @@ text-decoration: none;}
   padding: 5px 5% 35px 5%;
   min-width: 50px;
   }
-  .tab {
+  .tabButton {
   max-width: 25%;
   padding: 3px;
   font-size: 0.8em;
