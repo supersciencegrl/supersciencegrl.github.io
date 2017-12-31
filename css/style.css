@@ -545,6 +545,9 @@ text-decoration: none;}
    padding: 5px 5% 35px 5%;
    min-width: 50px;
   }
+  .caption {
+  font-size: 1.7em;
+  }
   .image-left {
   margin: 0;
   }
@@ -591,6 +594,9 @@ text-decoration: none;}
   padding: 5px 5% 35px 5%;
   min-width: 50px;
   }
+  .caption {
+  font-size: 1.7em;
+  }
   .image-left {
   margin: 0;
   }
@@ -636,6 +642,9 @@ text-decoration: none;}
   .grid-square {
   padding: 5px 5% 35px 5%;
   min-width: 50px;
+  }
+  .caption {
+  font-size: 1.7em;
   }
   .image-left {
   margin: 0;
