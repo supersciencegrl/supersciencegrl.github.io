@@ -511,7 +511,7 @@ text-decoration: none;}
 }
 
 /* Mobile devices */
-@media only screen and (max-device-width: 48px) {
+@media only screen and (max-device-width: 480px) {
   body {
   max-width: 100%;
   }
