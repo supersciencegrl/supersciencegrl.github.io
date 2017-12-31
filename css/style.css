@@ -515,8 +515,11 @@ text-decoration: none;}
   body {
   max-width: 100%;
   }
-  h1 {
-  font-size: 0.8em;
+  h2 {
+  font-size: 1.8em;
+  }
+  h5 {
+  font-size: 4.5vw;
   }
   #content p {
   font-size: small;
@@ -558,8 +561,11 @@ text-decoration: none;}
   body {
   max-width: 100%;
   }
-  h1 {
-  font-size: 0.8em;
+  h2 {
+  font-size: 1.8em;
+  }
+  h5 {
+  font-size: 4.5vw;
   }
   #content p {
   font-size: small;
@@ -601,8 +607,11 @@ text-decoration: none;}
   body {
   max-width: 100%;
   }
-  h1 {
-  font-size: 0.8em;
+  h2 {
+  font-size: 1.8em;
+  }
+  h5 {
+  font-size: 4.5vw;
   }
   #content p {
   font-size: small;
