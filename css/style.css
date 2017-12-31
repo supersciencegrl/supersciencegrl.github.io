@@ -515,6 +515,9 @@ text-decoration: none;}
   body {
   max-width: 100%;
   }
+  h1 {
+  font-size: 0.8em;
+  }
   #content p {
   font-size: small;
   text-align: left;
@@ -555,6 +558,9 @@ text-decoration: none;}
   body {
   max-width: 100%;
   }
+  h1 {
+  font-size: 0.8em;
+  }
   #content p {
   font-size: small;
   text-align: left;
@@ -594,6 +600,9 @@ text-decoration: none;}
 @media only screen and (min-resolution: 300dpi) {
   body {
   max-width: 100%;
+  }
+  h1 {
+  font-size: 0.8em;
   }
   #content p {
   font-size: small;
