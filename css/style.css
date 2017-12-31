@@ -542,11 +542,11 @@ text-decoration: none;}
   padding: 5px;
   }
   .bar-space-initial {
-   min-width: 0;
+  min-width: 0;
   }
   .grid-square {
-   padding: 5px 5% 35px 5%;
-   min-width: 50px;
+  padding: 5px 5% 35px 5%;
+  min-width: 50px;
   }
   .tabButton {
   max-width: 25%;
@@ -599,7 +599,7 @@ text-decoration: none;}
   padding: 5px;
   }
   .bar-space-initial {
-   min-width: 0;
+  min-width: 0;
   }
   .grid-square {
   padding: 5px 5% 35px 5%;
