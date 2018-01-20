@@ -14,7 +14,27 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " currentTab";
 }
 
-document.getElementById("defaultTab").click();
+if (window.location.href.indexOf("Reference-Tools") > -1) {
+	setTimeout(function() {
+		document.getElementById("tab-Reference-Tools").click();
+	},300);
+}
+
+else if (window.location.href.indexOf("Writing-and-Presentation-Tools") > -1) {
+	setTimeout(function() {
+		document.getElementById("tab-Writing-and-Presentation-Tools").click();
+	},300);
+}
+
+else if (window.location.href.indexOf("Interesting") > -1) {
+	setTimeout(function() {
+		document.getElementById("tab-Interesting").click();
+	},300);
+}
+
+else {
+	document.getElementById("defaultTab").click();
+	}
 
   // Not gonna lie, this was copy-pasted from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 $(document).ready(function(){

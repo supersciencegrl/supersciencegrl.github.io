@@ -6,67 +6,109 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://supersciencegrl.co.uk/</loc>
+  <loc>http://www.supersciencegrl.co.uk/</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/cvs</loc>
+  <loc>http://www.supersciencegrl.co.uk/articles</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.95</priority>
+</url>
+<url>
+  <loc>http://www.supersciencegrl.co.uk/cvs</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/cvs-usa</loc>
+  <loc>http://www.supersciencegrl.co.uk/cvs-usa</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/index.html</loc>
+  <loc>http://www.supersciencegrl.co.uk/index.html</loc>
+  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <priority>0.80</priority>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/img/Reaction.png</image:loc>
+	</image:image>
+</url>
+<url>
+  <loc>http://www.supersciencegrl.co.uk/about</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/about</loc>
+  <loc>http://www.supersciencegrl.co.uk/links/</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/links/img/ACN.png</image:loc>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/links/img/Benzene Lightning.png</image:loc>
+	</image:image>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/links/img/CD.PNG</image:loc>
+	</image:image>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/links/img/Chemical Vendor Search US.png</image:loc>
+	<image:title>Chemical Vendor Search US</image:title>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/links/img/Chemical Vendor Search.png</image:loc>
+	<image:title>Chemical Vendor Search</image:title>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/links/img/CVS.png</image:loc>
+	<image:title>Chemical Vendor Search</image:title>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/links/img/OUSS.png</image:loc>
+	<image:title>Oxford University Scientific Society</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/links/img/TotSyn.png</image:loc>
+	<image:title>Paracetamol</image:title>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/links/</loc>
-  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://supersciencegrl.co.uk/contact</loc>
+  <loc>http://www.supersciencegrl.co.uk/contact</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.60</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/pages/Chemistry-World-Changing-the-Reproducibility-Rulebook</loc>
+  <loc>http://www.supersciencegrl.co.uk/pages/Chemistry-World-Changing-the-Reproducibility-Rulebook</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/pages/Chemistry-World-Lab-of-the-Living-Dead</loc>
+  <loc>http://www.supersciencegrl.co.uk/pages/Chemistry-World-Lab-of-the-Living-Dead</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/pages/Chemistry-Things-I-Think-Are-Cool</loc>
+  <loc>http://www.supersciencegrl.co.uk/pages/Chemistry-Things-I-Think-Are-Cool</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/pages/Catalyst-Magazine-Focus-on-Palladium</loc>
+  <loc>http://www.supersciencegrl.co.uk/pages/Catalyst-Magazine-Focus-on-Palladium</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.65</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/poetry</loc>
+  <loc>http://www.supersciencegrl.co.uk/poetry</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.50</priority>
 </url>
 <url>
-  <loc>http://supersciencegrl.co.uk/links/index.html</loc>
+  <loc>http://www.supersciencegrl.co.uk/links/index.html</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
