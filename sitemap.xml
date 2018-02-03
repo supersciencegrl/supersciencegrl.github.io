@@ -15,6 +15,10 @@
 	<image:loc>http://www.supersciencegrl.co.uk/favicon.jpg</image:loc>
 	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
 	</image:image>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/SuperScienceGrl.png</image:loc>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/articles</loc>
