@@ -11,16 +11,16 @@
   <loc>http://www.supersciencegrl.co.uk/</loc>
   <lastmod>2018-02-03T15:23:58+00:00</lastmod>
   <priority>1.00</priority>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/favicon.jpg</image:loc>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/articles</loc>
   <lastmod>2018-02-03T15:23:58+00:00</lastmod>
   <priority>0.95</priority>
 </url>
-<image:image>
-	<image:loc>http://www.supersciencegrl.co.uk/favicon.jpg</image:loc>
-	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
-	</image:image>
 <url>
   <loc>http://www.supersciencegrl.co.uk/cvs</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
