@@ -116,6 +116,9 @@
   <loc>http://www.supersciencegrl.co.uk/pages/Think-Pink-With-ChemDraw</loc>
   <lastmod>2018-02-03T15:23:58+00:00</lastmod>
   <priority>0.65</priority>
+	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/img/ChemDrawPink.png</image:loc>
+	</image:image>
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/poetry</loc>
