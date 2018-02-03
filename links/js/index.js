@@ -14,25 +14,31 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " currentTab";
 }
 
+// Currently non-functional. Retrieves the URL parameter ?tab= */
+function getTab("tab")
+{
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i=0;i<vars.length;i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == variable){return pair[1];}
+	}
+	return(false);
+}
+
 if (window.location.href.indexOf("Reference-Tools") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Reference-Tools").click();
 	},300);
-}
-
-else if (window.location.href.indexOf("Writing-and-Presentation-Tools") > -1) {
+} else if (window.location.href.indexOf("Writing-and-Presentation-Tools") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Writing-and-Presentation-Tools").click();
 	},300);
-}
-
-else if (window.location.href.indexOf("Interesting") > -1) {
+} else if (window.location.href.indexOf("Interesting") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Interesting").click();
 	},300);
-}
-
-else {
+} else {
 	document.getElementById("defaultTab").click();
 	}
 

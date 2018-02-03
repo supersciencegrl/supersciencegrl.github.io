@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
   <loc>http://www.supersciencegrl.co.uk/</loc>
-  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <lastmod>2018-02-03T15:23:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/articles</loc>
-  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <lastmod>2018-02-03T15:23:58+00:00</lastmod>
   <priority>0.95</priority>
 </url>
+<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/favicon.jpg</image:loc>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
 <url>
   <loc>http://www.supersciencegrl.co.uk/cvs</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
@@ -27,7 +33,7 @@
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/index.html</loc>
-  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <lastmod>2018-02-03T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 	<image:image>
 	<image:loc>http://www.supersciencegrl.co.uk/img/Reaction.png</image:loc>
@@ -35,7 +41,7 @@
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/about</loc>
-  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <lastmod>2018-02-03T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -103,6 +109,11 @@
   <priority>0.65</priority>
 </url>
 <url>
+  <loc>http://www.supersciencegrl.co.uk/pages/Think-Pink-With-ChemDraw</loc>
+  <lastmod>2018-02-03T15:23:58+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+<url>
   <loc>http://www.supersciencegrl.co.uk/poetry</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.50</priority>
@@ -112,4 +123,8 @@
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>http://www.supersciencegrl.co.uk/site-updates.html</loc>
+  <lastmod>2018-02-03</lastmod>
+  <priority>0.2</priority>
 </urlset>
