@@ -248,7 +248,6 @@ text-decoration: none;}
 }
 
 #avatar {
-  width: 20%;
   padding: 0 5% 0 5%;
   float: right;
 }
@@ -300,10 +299,6 @@ text-decoration: none;}
 .div-tooltip:hover .tooltip {
   visibility: visible;
   opacity: 1;
-}
-
-.div-inline-wrapper {
-  width: 100%;
 }
 
 .div-inline {
