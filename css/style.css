@@ -248,6 +248,7 @@ text-decoration: none;}
 }
 
 #avatar {
+  width: 20%;
   padding: 0 5% 0 5%;
   float: right;
 }
