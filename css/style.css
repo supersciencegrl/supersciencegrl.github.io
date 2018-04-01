@@ -243,11 +243,12 @@ text-decoration: none;}
 }
 
 #inline-image-right {
-  width: 70%;
+  width: 60%;
   padding: 0 0 2% 0;
 }
 
 #avatar {
+  width: 40%;
   padding: 0 5% 0 5%;
   float: right;
 }
