@@ -467,6 +467,10 @@ text-decoration: none;}
 .sidebar-social:hover {color: #2299D4;}
 .sidebar-social:active {color: #0279B4;}
 
+#copyright {
+	margin-bottom: 0;
+}
+
 #changelog-link {
 	padding-left: 8%;
 	font-size: x-small;
