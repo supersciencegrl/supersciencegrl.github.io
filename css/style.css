@@ -249,7 +249,7 @@ text-decoration: none;}
 
 #avatar {
   padding: 0 5% 0 5%;
-  align: right;
+  float: right;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -302,7 +302,6 @@ text-decoration: none;}
 }
 
 .div-inline-wrapper {
-  align: center;
   width: 100%;
 }
 
