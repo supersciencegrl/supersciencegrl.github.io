@@ -525,6 +525,10 @@ text-decoration: none;}
   width: 75%;
 }
 
+.listwrapper {
+	padding-bottom: 8em;
+}
+
 .listblock {
   margin: 0 2% 0 2%;
   background-color: rgba(22, 99, 212, 0.15);
@@ -623,7 +627,8 @@ text-decoration: none;}
   font-size: medium !important;
   color: #000022;
   text-align: left;
-  padding-top: 8px;
+  vertical-align: top;
+  padding-top: 2px;
 }
 
 .listblock .description {
