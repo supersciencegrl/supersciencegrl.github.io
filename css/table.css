@@ -29,18 +29,18 @@
 }
 
 /* Table */
-table {
+.limiter table {
   width: 100%;
 }
 
-th, td {
+.limiter th, td {
   font-weight: unset;
   padding-right: 1em;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
 }
 
-th {
+.limiter th {
   padding-top: 19px;
   padding-bottom: 18px;
   padding-left: inherit;
@@ -51,7 +51,7 @@ th {
   background-color: #0279B4;
 }
 
-td {
+.limiter td {
   padding-top: 1em;
   padding-bottom: 1em;
   font-size: 0.95em;
