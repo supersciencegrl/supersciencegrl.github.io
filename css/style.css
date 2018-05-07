@@ -525,7 +525,7 @@ text-decoration: none;}
   width: 75%;
 }
 
-.listwrapper {
+.listwrapper-m {
 	padding-bottom: 8em;
 }
 
@@ -627,8 +627,12 @@ text-decoration: none;}
   font-size: medium !important;
   color: #000022;
   text-align: left;
-  vertical-align: top;
   padding-top: 2px;
+  vertical-align: top;
+}
+
+.listblock-m .smalltitle {
+	font-size: 0.95em !important;
 }
 
 .listblock .description {
