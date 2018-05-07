@@ -45,7 +45,7 @@ td.column2, td.column3, td.column5, td.column6 {
   margin: 0;
   display: none;
   }
-  .column2, column3, column5, column6 {
+  .column2, .column3, .column5, .column6 {
   display: none !important;
   }
   .m-visible {
@@ -63,7 +63,7 @@ td.column2, td.column3, td.column5, td.column6 {
   margin: 0;
   display: none;
   }
-  .column2, column3, column5, column6 {
+  .column2, .column3, .column5, .column6 {
   display: none !important;
   }
   .m-visible {
@@ -81,7 +81,7 @@ td.column2, td.column3, td.column5, td.column6 {
   margin: 0;
   display: none;
   }
-  .column2, column3, column5, column6 {
+  .column2, .column3, .column5, .column6 {
   display: none !important;
   }
   .m-visible {
