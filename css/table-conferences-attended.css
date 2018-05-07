@@ -1,0 +1,23 @@
+/* Table */
+th.column2 {
+  padding-left: 0.4em;
+}
+
+th.column3 {
+  padding-left: 0.1em;
+}
+
+.column1 {
+  width: 43%;
+  padding-left: 2em;
+}
+
+.column2 {
+  width: 14%;
+  padding-left: 1em;
+}
+
+.column3 {
+  width: 22%;
+  padding-left: 1em;
+}
