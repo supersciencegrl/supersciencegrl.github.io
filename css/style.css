@@ -536,7 +536,7 @@ text-decoration: none;}
 }
 
 .listblock-m {
-  width: 85%;
+  width: 100%;
   margin-top: 2%;
   background-color: rgba(22, 99, 212, 0.15);
   max-height: 8vw;
@@ -620,7 +620,7 @@ text-decoration: none;}
 }
 
 .listblock-m .title {
-  font-size: x-large !important;
+  font-size: medium !important;
   color: #000022;
   text-align: left;
   padding-top: 8px;
