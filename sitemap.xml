@@ -14,7 +14,7 @@
   </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/</loc>
-  <lastmod>2018-02-03T15:23:58+00:00</lastmod>
+  <lastmod>2018-05-10T15:23:58+00:00</lastmod>
   <priority>1.00</priority>
 	<image:image>
 	<image:loc>http://www.supersciencegrl.co.uk/favicon.jpg</image:loc>
@@ -27,13 +27,18 @@
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/articles</loc>
-  <lastmod>2018-02-03T15:23:58+00:00</lastmod>
+  <lastmod>2018-05-10T15:23:58+00:00</lastmod>
   <priority>0.95</priority>
 </url>
 <url>
 	<loc>http://www.supersciencegrl.co.uk/conferences</loc>
 	<lastmod>2018-05-10T19:57:00+00:00</lastmod>
-	<priority></priority>
+	<priority>0.95</priority>
+</url>
+<url>
+	<loc>http://www.supersciencegrl.co.uk/conferences-attended</loc>
+	<lastmod>2018-05-10T19:57:00+00:00</lastmod>
+	<priority>0.65</priority>
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/cvs</loc>
@@ -47,7 +52,7 @@
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/index.html</loc>
-  <lastmod>2018-02-03T15:23:58+00:00</lastmod>
+  <lastmod>2018-05-10T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 	<image:image>
 	<image:loc>http://www.supersciencegrl.co.uk/img/Reaction.png</image:loc>
@@ -55,12 +60,12 @@
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/about</loc>
-  <lastmod>2018-02-03T15:23:58+00:00</lastmod>
+  <lastmod>2018-05-03T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.supersciencegrl.co.uk/links/</loc>
-  <lastmod>2017-12-28T15:23:58+00:00</lastmod>
+  <lastmod>2018-05-03T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
 	<image:image>
 	<image:loc>http://www.supersciencegrl.co.uk/links/img/ACN.png</image:loc>
@@ -80,6 +85,10 @@
 	<image:image>
 	<image:loc>http://www.supersciencegrl.co.uk/links/img/Chemical Vendor Search.png</image:loc>
 	<image:title>Chemical Vendor Search</image:title>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/img/MedChem.JPG</image:loc>
+	<image:title>Medicinal Chemistry</image:title>
 	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
 	</image:image>
 	<image:image>
@@ -128,11 +137,22 @@
   <priority>0.65</priority>
 </url>
 <url>
+  <loc>http://www.supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis</loc>
+  <lastmod>2018-05-10T15:23:58+00:00</lastmod>
+  <priority>0.65</priority>
+  	<image:image>
+	<image:loc>http://www.supersciencegrl.co.uk/img/sideproduct.jpg</image:loc>
+	<image:title>Side-Product</image:title>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
+	</image:image>
+</url>
+<url>
   <loc>http://www.supersciencegrl.co.uk/pages/Think-Pink-With-ChemDraw</loc>
   <lastmod>2018-02-03T15:23:58+00:00</lastmod>
   <priority>0.65</priority>
 	<image:image>
 	<image:loc>http://www.supersciencegrl.co.uk/img/ChemDrawPink.png</image:loc>
+	<image:license>https://creativecommons.org/licenses/by-nc/4.0/</image:license>
 	</image:image>
 </url>
 <url>
@@ -144,10 +164,5 @@
   <loc>http://www.supersciencegrl.co.uk/links/index.html</loc>
   <lastmod>2017-12-28T15:23:58+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.supersciencegrl.co.uk/site-updates.html</loc>
-  <lastmod>2018-02-03</lastmod>
-  <priority>0.2</priority>
 </url>
 </urlset>
