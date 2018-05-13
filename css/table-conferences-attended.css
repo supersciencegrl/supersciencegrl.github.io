@@ -1,4 +1,8 @@
 /* Table */
+th.column1 {
+  padding-left: 0.4em;
+}
+
 th.column2 {
   padding-left: 0.4em;
 }
