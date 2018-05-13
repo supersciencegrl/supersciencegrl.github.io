@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>SuperScienceGrl.co.uk</title>
-<link>https://www.supersciencegrl.co.uk/</link>
+<link>http://www.supersciencegrl.co.uk/</link>
+<atom:link href="http://www.supersciencegrl.co.uk/ rel="self" type="application/rss+xml" />
 <language>en-gb</language>
 <category>Science</category>
 <description>Nessa Carson is a professional synthetic organic chemist working in drug discovery, and a freelance science writer and editor.</description>
@@ -12,39 +13,31 @@
 
 <item>
 <title>13/05/2018</title>
-<link>https://www.supersciencegrl.co.uk/changelog?rss=3#log7</link>
-<guid>https://www.supersciencegrl.co.uk/changelog?rss=3#log7</guid>
-<pubDate>Sun, 13 May 2018 17:02:00 GMT</pubDate>
-<description>Description</description>
+<link>http://www.supersciencegrl.co.uk/changelog?rss=3#log7</link>
+<guid>http://www.supersciencegrl.co.uk/changelog?rss=3#log7</guid>
+<pubDate>Sun, 13 May 2018 16:02:00 GMT</pubDate>
+<description><![CDATA[<ul><li>Created this RSS feed</li><li>Added extra links to fill <a href="http://www.supersciencegrl.co.uk?rss=3">Home page whitespace on large screens</li>
+		<li>Fixed broken encrypted email link on <a href="http://www.supersciencegrl.co.uk/conferences?rss=3">Conference Database</a></span></li></ul>]]></description>
 </item>
 
 <item>
 <title>10/05/2018</title>
-<link>https://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2</link>
-<guid>https://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2</guid>
+<link>http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2</link>
+<guid>http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2</guid>
 <pubDate>Thu, 10 May 2018 15:00:00 GMT</pubDate>
-<description>You can't always get what you want, but you might get what you need.
-&#xD;
-My second article in the Organic Matter column, in Chemistry World.</description>
+<description><![CDATA[<img src="https://supersciencegrl.co.uk/img/sideproduct.jpg" style="width: 60%; align: center;" /><p>You can't always get what you want, but you might get what you need.</p>
+		<p>My second article in the Organic Matter column, in Chemistry World.</p>]]></description>
 </item>
 
 <item>
 <title>10/05/2018</title>
-<link>https://www.supersciencegrl.co.uk/changelog?rss=1#log6</link>
-<guid>https://www.supersciencegrl.co.uk/changelog?rss=1#log6</guid>
+<link>http://www.supersciencegrl.co.uk/changelog?rss=1#log6</link>
+<guid>http://www.supersciencegrl.co.uk/changelog?rss=1#log6</guid>
 <pubDate>Thu, 10 May 2018 14:00:00 GMT</pubDate>
-<description>Description2</description>
-	<image>
-	<url>https://pbs.twimg.com/media/Dc27enbX4AA31Ml.jpg</url>
-		<title>
-		<list type="bullet">
-		<item>Added 'A Sideways Look At Synthesis' to the Articles page</item>
-		<item>Registered for two conferences! Added to Conferences Attended page</item>
-		<item>Updated Conference Database</item>
-		</list>
-		</title>
-	<link>https://www.supersciencegrl.co.uk/changelog?rss=1#log6</link>
-	</image>
+<description><![CDATA[<ul><li>Secure HTTPS support complete. An external issue made it take a few days!</li>
+		<li>Added <em><a href="/pages/Sideways-Look-At-Synthesis">A Sideways Look At Synthesis</a></em> to the <span class="emphasize">Articles</span> page</li>
+		<li>Registered for two conferences! Added to <span class="emphasize">Conferences Attended</span> page</li>
+		<li>Updated <span class="emphasize">Conference Database</span></li></ul>]]></description>
 </item>
 
 </channel>
