@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>SuperScienceGrl.co.uk</title>
+<link>https://www.supersciencegrl.co.uk/</link>
+<language>en-gb</language>
+<category>Science</category>
+<description>Nessa Carson is a professional synthetic organic chemist working in drug discovery, and a freelance science writer and editor.</description>
+<copyright>2018 Nessa Carson</copyright>
+
+<!-- Number of items: 3 -->
+
+<item>
+<title>13/05/2018</title>
+<link>https://www.supersciencegrl.co.uk/changelog?rss=3#log7</link>
+<guid>https://www.supersciencegrl.co.uk/changelog?rss=3#log7</guid>
+<pubDate>Sun, 13 May 2018 17:02:00 GMT</pubDate>
+<description>Description</description>
+</item>
+
+<item>
+<title>10/05/2018</title>
+<link>https://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2</link>
+<guid>https://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2</guid>
+<pubDate>Thu, 10 May 2018 15:00:00 GMT</pubDate>
+<description>You can't always get what you want, but you might get what you need.
+&#xD;
+My second article in the Organic Matter column, in Chemistry World.</description>
+</item>
+
+<item>
+<title>10/05/2018</title>
+<link>https://www.supersciencegrl.co.uk/changelog?rss=1#log6</link>
+<guid>https://www.supersciencegrl.co.uk/changelog?rss=1#log6</guid>
+<pubDate>Thu, 10 May 2018 14:00:00 GMT</pubDate>
+<description>Description2</description>
+	<image>
+	<url>https://pbs.twimg.com/media/Dc27enbX4AA31Ml.jpg</url>
+		<title>
+		<list type="bullet">
+		<item>Added 'A Sideways Look At Synthesis' to the Articles page</item>
+		<item>Registered for two conferences! Added to Conferences Attended page</item>
+		<item>Updated Conference Database</item>
+		</list>
+		</title>
+	<link>https://www.supersciencegrl.co.uk/changelog?rss=1#log6</link>
+	</image>
+</item>
+
+</channel>
+</rss>
