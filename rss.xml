@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title>SuperScienceGrl.co.uk</title>
+<title>SuperScienceGrl</title>
 <link>http://www.supersciencegrl.co.uk/</link>
 <atom:link href="http://www.supersciencegrl.co.uk/" rel="self" type="application/rss+xml" />
 <language>en-gb</language>
@@ -12,32 +12,32 @@
 <!-- Number of items: 3 -->
 
 <item>
-<title>13/05/2018</title>
+<title>Site Update 13/05/2018</title>
 <link>http://www.supersciencegrl.co.uk/changelog?rss=3#log7</link>
 <guid>http://www.supersciencegrl.co.uk/changelog?rss=3#log7</guid>
 <pubDate>Sun, 13 May 2018 16:02:00 GMT</pubDate>
-<description><![CDATA[<ul><li>Created this RSS feed</li><li>Added extra links to fill <a href="http://www.supersciencegrl.co.uk?rss=3">Home page whitespace on large screens</li>
+<description><![CDATA[<ul><li>Created this RSS feed</li><li>Added extra links to fill <a href="http://www.supersciencegrl.co.uk?rss=3">Home page</a> whitespace on large screens</li>
 		<li>Fixed broken encrypted email link on <a href="http://www.supersciencegrl.co.uk/conferences?rss=3">Conference Database</a></span></li></ul>]]></description>
 </item>
 
 <item>
-<title>10/05/2018</title>
+<title>A Sideways Look at Synthesis</title>
 <link>http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2</link>
 <guid>http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2</guid>
 <pubDate>Thu, 10 May 2018 15:00:00 GMT</pubDate>
-<description><![CDATA[<img src="https://supersciencegrl.co.uk/img/sideproduct.jpg" style="width: 60%; align: center;" /><p>You can't always get what you want, but you might get what you need.</p>
+<description><![CDATA[<a href="http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2"><img src="https://supersciencegrl.co.uk/img/sideproduct.jpg" style="width: 60%;" /></a><p>You can't always get what you want, but you might get what you need.</p>
 		<p>My second article in the Organic Matter column, in Chemistry World.</p>]]></description>
 </item>
 
 <item>
-<title>10/05/2018</title>
+<title>Site Update 10/05/2018</title>
 <link>http://www.supersciencegrl.co.uk/changelog?rss=1#log6</link>
 <guid>http://www.supersciencegrl.co.uk/changelog?rss=1#log6</guid>
 <pubDate>Thu, 10 May 2018 14:00:00 GMT</pubDate>
 <description><![CDATA[<ul><li>Secure HTTPS support complete. An external issue made it take a few days!</li>
-		<li>Added <em><a href="/pages/Sideways-Look-At-Synthesis">A Sideways Look At Synthesis</a></em> to the <span class="emphasize">Articles</span> page</li>
-		<li>Registered for two conferences! Added to <span class="emphasize">Conferences Attended</span> page</li>
-		<li>Updated <span class="emphasize">Conference Database</span></li></ul>]]></description>
+		<li>Added <em><a href="http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=1">A Sideways Look At Synthesis</a></em> to the <span class="emphasize">Articles</span> page</li>
+		<li>Registered for two conferences! Added to <a href="http://www.supersciencegrl.co.uk/conferences-attended?rss=1">Conferences Attended</a> page</li>
+		<li>Updated <a href="http://www.supersciencegrl.co.uk/conferences?rss=1">Conference Database</a></li></ul>]]></description>
 </item>
 
 </channel>
