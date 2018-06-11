@@ -9,14 +9,22 @@
 <description>Nessa Carson is a professional synthetic organic chemist working in drug discovery, and a freelance science writer and editor.</description>
 <copyright>2018 Nessa Carson</copyright>
 
-<!-- Number of items: 5 -->
+<!-- Number of items: 6 -->
+
+<item>
+<title>Minor conference database update</title>
+<link>https://supersciencegrl.co.uk/conferences?rss=10</link>
+<guid>https://supersciencegrl.co.uk/conferences?rss=10</guid>
+<pubDate>Sat, 11 Jun 2018 18:28:00 GMT</pubDate>
+<description><![CDATA[<ul><li>Added EaStCHEM Early Career Researcher Conference to the <a href="http://www.supersciencegrl.co.uk/conferences">Conference Database</a>.</li></ul>]]></description>
+</item>
 
 <item>
 <title>Chemical Vendor Search (US) update</title>
 <link>https://supersciencegrl.co.uk/cvs-usa?rss=9</link>
 <guid>https://supersciencegrl.co.uk/cvs-usa?rss=9</guid>
 <pubDate>Sat, 02 Jun 2018 09:18:00 GMT</pubDate>
-<description><![CDATA[<ul><li>Removed Ark Pharm from the <a href="https://supersciencegrl.co.uk/cvs-usa">Chemical Vendor Search</a> page, for... <a href="https://twitter.com/katmatcher/status/1002604193843175424">strange reasons</a>.]]></description>
+<description><![CDATA[<ul><li>Removed Ark Pharm from the <a href="https://supersciencegrl.co.uk/cvs-usa?rss=9">Chemical Vendor Search</a> page, for... <a href="https://twitter.com/katmatcher/status/1002604193843175424">strange reasons</a>.]]></description>
 <!-- http://www.arkpharminc.com/web/products-detail_pid_ -->
 </item>
 
