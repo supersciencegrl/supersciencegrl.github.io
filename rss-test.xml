@@ -9,13 +9,21 @@
 <description>Nessa Carson is a professional synthetic organic chemist working in drug discovery, and a freelance science writer and editor.</description>
 <copyright>2018 Nessa Carson</copyright>
 
-<!-- Number of items: 6 -->
+<!-- Number of items: 7 -->
+
+<item>
+<title>Conference database update</title>
+<link>https://supersciencegrl.co.uk/conferences?rss=11</link>
+<guid>https://supersciencegrl.co.uk/conferences?rss=11</guid>
+<pubDate>Sat, 16 Jun 2018 10:59:00 GMT</pubDate>
+<description><![CDATA[<ul><li>Added the Swiss Chemical Society's AI in Chemical Research conference (free) to the <a href="http://www.supersciencegrl.co.uk/conferences">Conference Database</a>.</li></ul>]]></description>
+</item>
 
 <item>
 <title>Minor conference database update</title>
 <link>https://supersciencegrl.co.uk/conferences?rss=10</link>
 <guid>https://supersciencegrl.co.uk/conferences?rss=10</guid>
-<pubDate>Sat, 11 Jun 2018 18:28:00 GMT</pubDate>
+<pubDate>Mon, 11 Jun 2018 18:28:00 GMT</pubDate>
 <description><![CDATA[<ul><li>Added EaStCHEM Early Career Researcher Conference to the <a href="http://www.supersciencegrl.co.uk/conferences">Conference Database</a>.</li></ul>]]></description>
 </item>
 
