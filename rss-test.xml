@@ -13,10 +13,12 @@
 
 <item>
 <title>Conference database update</title>
-<link>https://supersciencegrl.co.uk/conferences?rss=11</link>
-<guid>https://supersciencegrl.co.uk/conferences?rss=11</guid>
-<pubDate>Sat, 16 Jun 2018 10:59:00 GMT</pubDate>
-<description><![CDATA[<ul><li>Added the Swiss Chemical Society's AI in Chemical Research conference (free) to the <a href="http://www.supersciencegrl.co.uk/conferences">Conference Database</a>.</li></ul>]]></description>
+<link>https://supersciencegrl.co.uk/conferences?rss=12</link>
+<guid>https://supersciencegrl.co.uk/conferences?rss=12</guid>
+<pubDate>Sat, 16 Jun 2018 11:31:00 GMT</pubDate>
+<description><![CDATA[<ul><li>Added <a href="http://www.supersciencegrl.co.uk/about" target="_blank">One Million Women to Tech</a> volunteer work to the About page</li>
+		<li>Added the Swiss Chemical Society's AI in Chemical Research conference (free) to the <a href="http://www.supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li>
+		<li>Minor aesthetic change to Conference Database</li></ul>]]></description>
 </item>
 
 <item>
