@@ -188,7 +188,7 @@ text-decoration: none;}
   padding: 0px 0px 20px 0px;
 }
 
-#grid {
+#grid#grid2 {
   width: 100%;
   background-color: rgba(0,0,0,0);
 }
@@ -206,9 +206,32 @@ text-decoration: none;}
   vertical-align: middle;
 }
 
+.grid-character {
+	width: 6%;
+	min-width: 100px;
+	max-width: 200px;
+	background-color: rgba(0,0,0,0);
+	margin: auto;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+  margin: 5px;
+}
+
 .caption {
   font-size: x-small;
   text-align: left;
+}
+
+.char {
+  font-size: medium;
+  text-align: center;
+}
+
+.char-caption {
+  font-size: small;
+  text-align: center;
+  font-weight: bold;
 }
 
 .main-image {
