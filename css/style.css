@@ -493,14 +493,31 @@ color: rgba(90,90,90,1);}
   font-size: x-large;
 }
 
+#m-rss:link {color: #EF8500;}
+#m-rss:hover {color: #BF5500;}
+
 .sidebar-social:link {color: #606060;
 text-decoration: none;}
 .sidebar-social:visited {color: #606060;}
 .sidebar-social:hover {color: #2299D4;}
 .sidebar-social:active {color: #0279B4;}
 
+.sidebar-rss:link {color: #606060;
+text-decoration: none;}
+.sidebar-rss:visited {color: #606060;}
+.sidebar-rss:hover {color: #EF8500;}
+.sidebar-rss:active {color: #0279B4;}
+
 #copyright {
 	margin-bottom: 0;
+}
+
+.font-x-small {
+  font-size: x-small;
+}
+
+.font-medium {
+  font-size: medium;
 }
 
 #changelog-link {
