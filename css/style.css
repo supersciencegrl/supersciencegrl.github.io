@@ -520,6 +520,10 @@ text-decoration: none;}
   font-size: medium;
 }
 
+.aleft {
+	text-align: left;
+}
+
 #changelog-link {
 	padding-left: 8%;
 	font-size: x-small;
