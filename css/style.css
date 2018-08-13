@@ -350,6 +350,10 @@ text-decoration: none;}
   padding: 20px 20px 0 20px;
 }
 
+.p-mixed {
+	padding: 0;
+}
+
 .update {
 	padding-bottom: 1em;
 	text-align: justify;
