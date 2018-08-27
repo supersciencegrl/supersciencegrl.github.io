@@ -354,6 +354,11 @@ text-decoration: none;}
 	font-size: medium;
 }
 
+.tagline {
+	text-align: right;
+	font-style: italic;
+}
+
 .update {
 	padding-bottom: 1em;
 	text-align: justify;
