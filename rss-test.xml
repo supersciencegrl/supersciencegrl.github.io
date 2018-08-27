@@ -12,6 +12,17 @@
 <!-- Number of items: 10 -->
 
 <item>
+<title>August update</title>
+<link>https://supersciencegrl.co.uk/changelog?rss=18#log16</link>
+<guid>https://supersciencegrl.co.uk/changelog?rss=18#log16</guid>
+<pubDate>Mon, 27 Aug 2018 12:16:00 GMT</pubDate>
+<description><![CDATA[<ul><li>Updated <a href="http://supersciencegrl.co.uk/about" target="_blank">About</a> page to describe my current professional activities, and include my position on the SCI Younger Chemists' Panel</li>
+		<li>Added <em>Enamine</em> and <em>Johnson Matthey</em> (UK only) to <a href="http://supersciencegrl.co.uk/cvs" target="_blank">Chemical Vendor Search</a> (<a href="http://supersciencegrl.co.uk/cvs-usa" target="_blank">US link</a>)</li>
+		<li>Added asterism and the new science emoji from Emoji 11.0 to <a href="http://supersciencegrl.co.uk/character-map" target="_blank">character map</a></li>
+		<li>Added <em>SUPR&#64;Lyon</em> to <a href="http://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li></ul>]]></description>
+</item>
+
+<item>
 <title>Website changes 13/08/2018</title>
 <link>https://supersciencegrl.co.uk/changelog?rss=17#log15</link>
 <guid>https://supersciencegrl.co.uk/changelog?rss=17#log15</guid>
@@ -94,15 +105,6 @@
 		<li>Added extra links to fill <a href="http://www.supersciencegrl.co.uk?rss=3">Home page</a> whitespace on large screens</li>
 		<li>Several new events added to the <a href="http://www.supersciencegrl.co.uk/conferences?rss=3">Conference Database</a></li>
 		<li>Fixed broken encrypted email link on <a href="http://www.supersciencegrl.co.uk/conferences?rss=3">Conference Database</a></li></ul>]]></description>
-</item>
-
-<item>
-<title>A Sideways Look at Synthesis</title>
-<link>http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=5</link>
-<guid>http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=5</guid>
-<pubDate>Thu, 10 May 2018 15:00:00 GMT</pubDate>
-<description><![CDATA[<a href="http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2"><img src="https://supersciencegrl.co.uk/img/sideproduct.jpg" style="width: 60%;" /></a><p>You can't always get what you want, but you might get what you need.</p>
-		<p>My second article in the Organic Matter column, in Chemistry World.</p>]]></description>
 </item>
 
 </channel>
