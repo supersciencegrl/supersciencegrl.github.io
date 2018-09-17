@@ -12,6 +12,17 @@
 <!-- Number of items: 10 -->
 
 <item>
+<title>Get ready for the SCI Annual Review Meeting!</title>
+<link>https://supersciencegrl.co.uk/changelog?rss=19#log17</link>
+<guid>https://supersciencegrl.co.uk/changelog?rss=19#log17</guid>
+<pubDate>Mon, 17 Sep 2018 20:31:00 GMT</pubDate>
+<description><![CDATA[<ul><li>The famous SCI Annual Review Meeting is now on the <a href="https://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li>
+		<li>Added AstaTech, Apollo Scientific, Cambridge Isotope Labs, Digital Specialty Chemicals, Matrix Scientific, SynQuest, Tocris, and Umicore to <a href="https://supersciencegrl.co.uk/cvs" target="_blank">Chemical Vendor Search</a></li>
+		<li>Check out the AI-powered reaction prediction tool IBM RXN. Type in your reactants (and reagents if you fancy it), and see what IBM's artificial intelligence thinks your product will be. Linked on the <em>Interesting</em> tab of <a href="https://supersciencegrl.co.uk/links">Links</a></li>
+		<li>Also a minor update to the <a href="https://supersciencegrl.co.uk/character-map" target="_blank">character map</a></li></ul>]]></description>
+</item>
+
+<item>
 <title>August update</title>
 <link>https://supersciencegrl.co.uk/changelog?rss=18#log16</link>
 <guid>https://supersciencegrl.co.uk/changelog?rss=18#log16</guid>
@@ -97,15 +108,6 @@
 		<li>Added extra links to fill <a href="http://www.supersciencegrl.co.uk?rss=3">Home page</a> whitespace on large screens</li>
 		<li>Several new events added to the <a href="http://www.supersciencegrl.co.uk/conferences?rss=3">Conference Database</a></li>
 		<li>Fixed broken encrypted email link on <a href="http://www.supersciencegrl.co.uk/conferences?rss=3">Conference Database</a></li></ul>]]></description>
-</item>
-
-<item>
-<title>A Sideways Look at Synthesis</title>
-<link>http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=5</link>
-<guid>http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=5</guid>
-<pubDate>Thu, 10 May 2018 15:00:00 GMT</pubDate>
-<description><![CDATA[<a href="http://supersciencegrl.co.uk/pages/Sideways-Look-At-Synthesis?rss=2"><img src="https://supersciencegrl.co.uk/img/sideproduct.jpg" style="width: 60%;" /></a><p>You can't always get what you want, but you might get what you need.</p>
-		<p>My second article in the Organic Matter column, in Chemistry World.</p>]]></description>
 </item>
 
 </channel>
