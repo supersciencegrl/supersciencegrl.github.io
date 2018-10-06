@@ -430,6 +430,11 @@ text-decoration: none;}
   margin-bottom: 0;
 }
 
+.media-title {
+	font-weight: bold;
+	font-size: large;
+}
+
 #sidebar {
   background-color: rgba(0,0,0,0);
   float: right;
