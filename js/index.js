@@ -1,13 +1,6 @@
 $(".sidebar").height(Math.max($(".content").height(),$(".sidebar").height()));
 
-var mobile = window.matchMedia("(max-width: 300px)")
-mediaQuery(mobile)
-mobile.addListener(mediaQuery)
-
   // Not gonna lie, this was copy-pasted from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
-function mediaQuery(mobile) {
-  if (mobile.matches) {
-
 $(document).ready(function(){
   // Add smooth scrolling to elements with class linkjump
   $(".linkjump").on('click', function(event) {
@@ -26,8 +19,3 @@ $(document).ready(function(){
     } // End if
   });
 });
-  } 
-  else {
-
-  }
-}
