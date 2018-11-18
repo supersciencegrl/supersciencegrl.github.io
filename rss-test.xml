@@ -12,6 +12,14 @@
 <!-- Number of items: 10 -->
 
 <item>
+<title>New conferences</title>
+<link>https://supersciencegrl.co.uk/pages/changelog?rss=23#log24</link>
+<guid>https://supersciencegrl.co.uk/pages/changelog?rss=23#log24</guid>
+<pubDate>Sun, 18 Nov 2018 12:04:00 GMT</pubDate>
+<description><![CDATA[<a href="https://www.chemistryworld.com/opinion/brute-force-and-ignorance/3009402.article" target="_blank"><img src="http://supersciencegrl.co.uk/img/hourglass.jpg" alt="Brute Force and Ignorance"></a><p>It's all about efficiency - it's time for labs <a href="https://www.chemistryworld.com/opinion/brute-force-and-ignorance/3009402.article" target="_blank">to get with the project plan and fail fast</a>. Read the rest of my articles in <em>Chemistry World</em> <a href="https://www.chemistryworld.com/nessa-carson/5451.bio" target="_blank">here</a>. </p><p><em>I was in a brilliant seminar by an American academic recently, and wondered how his group screened just so many conditions for its latest clever transformation. Questioning him later, I received the answer I half expected: a veritable army of postdocs...</em></p>]]></description>
+</item>
+
+<item>
 <title>Brute Force and Ignorance</title>
 <link>https://supersciencegrl.co.uk/pages/Brute-Force-and-Ignorance?rss=22</link>
 <guid>https://supersciencegrl.co.uk/pages/Brute-Force-and-Ignorance?rss=22</guid>
@@ -21,7 +29,7 @@
 	<title>Brute Force and Ignorance</title>
 	<link>https://supersciencegrl.co.uk/pages/Brute-Force-and-Ignorance?rss=21</link>
 </image>
-<description><![CDATA[<a href="https://www.chemistryworld.com/opinion/brute-force-and-ignorance/3009402.article" target="_blank"><img src="http://supersciencegrl.co.uk/img/hourglass.jpg" alt="Brute Force and Ignorance"></a><p>It's all about efficiency - it's time for labs <a href="https://www.chemistryworld.com/opinion/brute-force-and-ignorance/3009402.article" target="_blank">to get with the project plan and fail fast</a>. Read the rest of my articles in <em>Chemistry World</em> <a href="https://www.chemistryworld.com/nessa-carson/5451.bio" target="_blank">here</a>. </p><p><em>I was in a brilliant seminar by an American academic recently, and wondered how his group screened just so many conditions for its latest clever transformation. Questioning him later, I received the answer I half expected: a veritable army of postdocs...</em></p>]]></description>
+<description><![CDATA[Added <em>Sheffield Stereochemistry meeting</i>, <em>Faculty & Staff Sexual Harassment conference</em>, and <em>Dial-a-Molecule: Enabling Technologies and Low-Cost Automation</em> (so excited!) to the <a href="http://www.supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a>.]]></description>
 </item>
 
 <item>
@@ -101,14 +109,6 @@
 <description><![CDATA[<ul><li>Fixed JavaScript bug causing out-of-page anchor links to fail</li><li>Added <a href="http://www.supersciencegrl.co.uk/about#onemwtt" target="_blank">One Million Women to Tech</a> volunteer work to the About page</li>
 		<li>Added the Swiss Chemical Society's AI in Chemical Research conference (free) to the <a href="http://www.supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li>
 		<li>Minor aesthetic change to Conference Database</li></ul>]]></description>
-</item>
-
-<item>
-<title>Minor conference database update</title>
-<link>https://supersciencegrl.co.uk/conferences?rss=10</link>
-<guid>https://supersciencegrl.co.uk/conferences?rss=10</guid>
-<pubDate>Mon, 11 Jun 2018 18:28:00 GMT</pubDate>
-<description><![CDATA[<ul><li>Added EaStCHEM Early Career Researcher Conference to the <a href="http://www.supersciencegrl.co.uk/conferences">Conference Database</a>.</li></ul>]]></description>
 </item>
 
 </channel>
