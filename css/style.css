@@ -397,8 +397,7 @@ text-decoration: none;}
   vertical-align: top;
 }
 
-.link-text:link {color: #0279B4;
-  text-decoration: none;}
+.link-text:link, 
 .link-text:visited {color: #0279B4;
   text-decoration: none;}
 .link-text:hover {color: #2299D4;
@@ -409,7 +408,7 @@ text-decoration: none;}
 .non-link-title {
   color: #0279B4;}
 
-.link-title:link {color: #0279B4;}
+.link-title:link, 
 .link-title:visited {color: #0279B4;}
 .link-title:hover {color: #2299D4;
   text-decoration: underline;}
@@ -703,7 +702,22 @@ text-decoration: none;}
   text-align: left
 }
 
-.noformat {
+#listimg-projects {
+  position: relative;
+  padding-bottom: 4px;
+  padding-left: 3px;
+}
+
+#listimg-activity {
+  position: relative;
+  padding-bottom: 3px;
+  padding-left: 4px;
+}
+
+.noformat, 
+.noformat:visited, 
+.noformat:hover, 
+.noformat:active {
   color: inherit;
   position: inherit;
   display: inherit;
@@ -713,33 +727,6 @@ text-decoration: none;}
   max-width: inherit; 
   padding: inherit;
   margin: inherit;
-}
-
-.noformat:visited {
-  color: inherit;
-  position: inherit;
-  display: inherit;
-  text-decoration: inherit;
-  width: inherit;
-  font-family: inherit;
-}
-
-.noformat:hover {
-  color: inherit;
-  position: inherit;
-  display: inherit;
-  text-decoration: inherit;
-  width: inherit;
-  font-family: inherit;
-}
-
-.noformat:active {
-  color: inherit;
-  position: inherit;
-  display: inherit;
-  text-decoration: inherit;
-  width: inherit;
-  font-family: inherit;
 }
 
 #footer {
@@ -778,15 +765,12 @@ text-decoration: none;}
   visibility: hidden;
 }
 
-.m-visible-none {
+.m-visible-none, 
+.hidden {
   display: none;
 }
 
-.hidden {
-	display: none;
-}
-
-/* Small screens */
+/* Small computer screens */
 @media only screen and (max-width: 1200px) {
   #sidebar {
     max-width: 25%;
@@ -835,7 +819,9 @@ text-decoration: none;}
 /* End of large screens */
 
 /* Mobile devices */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px), 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 300dpi) {
   body {
   max-width: 100%;
   }
@@ -851,9 +837,16 @@ text-decoration: none;}
   h5 {
   font-size: 4.5vw;
   }
-  #content p {
+  #content p, 
+  #content ul {
   font-size: small;
   text-align: left;
+  }
+  #content ul {
+  margin-left: 0;
+  }
+  .p-main {
+  padding: 0;
   }
   .m-hidden {
   visibility: hidden;
@@ -876,138 +869,6 @@ text-decoration: none;}
   }
   .bar-space-initial {
   min-width: 0;
-  }
-  .grid-square {
-  padding: 5px 5% 35px 5%;
-  min-width: 50px;
-  }
-  .tabButton {
-  max-width: 25%;
-  padding: 3px;
-  font-size: 0.8em;
-  }
-  .caption {
-  font-size: 1.7em;
-  }
-  .image-left {
-  margin: 0;
-  }
-  #wrapper {
-  margin-right: 0;
-  }
-  #footer-text-div {
-  max-width: 75%;
-  padding-right: 30px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-  max-width: 100%;
-  }
-  h2 {
-  font-size: 1.8em;
-  }
-  h3 {
-  font-size: 1.5em;
-  }
-  h4 {
-  font-size: 1.3em;
-  }
-  h5 {
-  font-size: 4.5vw;
-  }
-  #content p {
-  font-size: small;
-  text-align: left;
-  }
-  .m-hidden {
-  visibility: hidden;
-  clear : both;
-  margin: 0;
-  display: none;
-  }
-  .m-hidden-none {
-  display: none !important;
-  }
-  .m-visible {
-  visibility: visible;
-  }
-  .m-visible-none {
-  display: initial; 
-  }
-  .bar {
-  min-width: 20px;
-  padding: 5px;
-  }
-  .bar-space-initial {
-  min-width: 0;
-  }
-  .grid-square {
-  padding: 5px 5% 35px 5%;
-  min-width: 50px;
-  }
-  .tabButton {
-  max-width: 25%;
-  padding: 3px;
-  font-size: 0.8em;
-  }
-  .caption {
-  font-size: 1.7em;
-  }
-  .image-left {
-  margin: 0;
-  }
-  #wrapper {
-  margin-right: 0;
-  }
-  #footer-text-div {
-  max-width: 75%;
-  padding-right: 30px;
-  }
-}
-
-@media only screen and (min-resolution: 300dpi) {
-  body {
-  max-width: 100%;
-  }
-  h2 {
-  font-size: 1.8em;
-  }
-  h3 {
-  font-size: 1.5em;
-  }
-  h4 {
-  font-size: 1.3em;
-  }
-  h5 {
-  font-size: 4.5vw;
-  }
-  #content p {
-  font-size: small;
-  text-align: left;
-  }
-  .m-hidden {
-  visibility: hidden;
-  clear: both;
-  margin: 0;
-  display: none;
-  }
-  .m-hidden-none {
-  display: none;
-  }
-  .m-visible {
-  visibility: visible;
-  }
-  .m-visible-none {
-  display: initial; 
-  }
-  .bar {
-  min-width: 20px;
-  padding: 5px;
-  }
-  .bar-space-initial {
-   min-width: 0;
   }
   .grid-square {
   padding: 5px 5% 35px 5%;
