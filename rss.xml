@@ -12,6 +12,20 @@
 <!-- Number of items: 10 -->
 
 <item>
+<title>New Year's SuperScienceGrl update</title>
+<link>https://supersciencegrl.co.uk/pages/changelog?rss=25#log28</link>
+<guid>https://supersciencegrl.co.uk/pages/changelog?rss=25#log28</guid>
+<pubDate>Sun, 30 Dec 2018 17:20:00 GMT</pubDate>
+<description><![CDATA[Happy New Year! I've spent today on a few changes to the website, mostly to make it appear better on both desktop and mobile. Here's the list: 
+		<ul><li>Added <em>Pride in STEM research showcase</em> to the <a href="/conferences" target="_blank">Conferences</a> page</li>
+		<li>Minor changes to the <a href="/cvs" target="_blank">Chemical Vendor Search</a> pages</li>
+		<li>Updated <a href="/about" target="_blank">About</a> page to reflect my current projects</li>
+		<li>Cleaned up some of the CSS in the background</li>
+		<li>Some pages now look better on mobile devices!</li></ul>
+		Have a great 2019! ]]></description>
+</item>
+
+<item>
 <title>New conferences for 2019</title>
 <link>https://supersciencegrl.co.uk/pages/changelog?rss=24#log25</link>
 <guid>https://supersciencegrl.co.uk/pages/changelog?rss=24#log25</guid>
@@ -104,14 +118,6 @@
 		<li>Added <a href="http://www.supersciencegrl.co.uk/about#onemwtt" target="_blank">One Million Women to Tech</a> volunteer work to the About page</li>
 		<li>Added the Swiss Chemical Society's AI in Chemical Research conference (free) to the <a href="http://www.supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li>
 		<li>Minor aesthetic change to Conference Database</li></ul>]]></description>
-</item>
-
-<item>
-<title>Minor conference database update</title>
-<link>https://supersciencegrl.co.uk/conferences?rss=10</link>
-<guid>https://supersciencegrl.co.uk/conferences?rss=10</guid>
-<pubDate>Sat, 11 Jun 2018 19:34:00 GMT</pubDate>
-<description><![CDATA[<ul><li>Added EaStCHEM Early Career Researcher Conference to the <a href="http://www.supersciencegrl.co.uk/conferences">Conference Database</a>.</li></ul>]]></description>
 </item>
 
 </channel>
