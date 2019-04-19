@@ -1,5 +1,6 @@
 /* Table containers */
-.limiter {
+.limiter, 
+.limitera {
   width: 100%;
   margin: 0;
   margin-left: 0;
@@ -29,18 +30,21 @@
 }
 
 /* Table */
-.limiter table {
+.limiter table, 
+.limitera table {
   width: 100%;
 }
 
-.limiter th, td {
+.limiter th, td 
+.limitera th, td{
   font-weight: unset;
   padding-right: 1em;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
 }
 
-.limiter th {
+.limiter th, 
+.limitera th {
   padding-top: 19px;
   padding-bottom: 18px;
   padding-left: inherit;
@@ -56,6 +60,11 @@
   padding-bottom: 1em;
   font-size: 0.95em;
   color: #404060;
+}
+
+.limitera td {
+	font-size: 0.95em;
+	color: #404060;
 }
 
 /* Fixed header */

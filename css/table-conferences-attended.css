@@ -4,14 +4,17 @@ th.columna2 {
   padding-left: 0.4em;
 }
 
-th.column2, 
-th.columna1 {
+th.column2 {
   padding-left: 0.4em;
 }
 
 th.column3, 
 th.columna3 {
   padding-left: 0.1em;
+}
+
+th.columna1 {
+	padding-left: 2em;
 }
 
 .column1 {
@@ -30,30 +33,34 @@ th.columna3 {
   padding-left: 1em;
 }
 
+.columna1, 
+.columna2, 
+.columna3, 
+.columnamerge {
+	padding-top: 1em;
+	vertical-align: top;
+}
+
 .columna1 {
 	width: 14%;
 	padding-left: 2em;
-	vertical-align: top;
 }
 
 .columna2 {
 	width: 43%;
 	padding-left: 1em;
-	vertical-align: top;
-}
-
-.columna3 {
-	vertical-align: top;
+	font-weight: bold;
 }
 
 .columnamerge {
 	width: 65%;
 	padding-left: 1em;
-	vertical-align: top;
+	font-weight: bold;
 }
 
 .columnafull {
 	width: 79%;
-	padding-left: 4em;
-	column-span: all;
+	padding-top: 0.5em;
+	padding-bottom: 0.7em;
+	padding-left: 2.3em;
 }
