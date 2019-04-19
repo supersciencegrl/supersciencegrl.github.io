@@ -95,6 +95,12 @@
   overflow: auto;
 }
 
+.table100-body-a {
+  width: 100%;
+  max-height: 50vh;
+  overflow: auto;
+}
+
 .table100-body-tall {
   width: 100%;
   max-height: 80vh;
