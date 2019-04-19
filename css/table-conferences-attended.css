@@ -1,13 +1,16 @@
 /* Table */
-th.column1 {
+th.column1, 
+th.columna2 {
   padding-left: 0.4em;
 }
 
-th.column2 {
+th.column2, 
+th.columna1 {
   padding-left: 0.4em;
 }
 
-th.column3 {
+th.column3, 
+th.columna3 {
   padding-left: 0.1em;
 }
 
@@ -21,7 +24,36 @@ th.column3 {
   padding-left: 1em;
 }
 
-.column3 {
+.column3, 
+.columna3 {
   width: 22%;
   padding-left: 1em;
+}
+
+.columna1 {
+	width: 14%;
+	padding-left: 2em;
+	vertical-align: top;
+}
+
+.columna2 {
+	width: 43%;
+	padding-left: 1em;
+	vertical-align: top;
+}
+
+.columna3 {
+	vertical-align: top;
+}
+
+.columnamerge {
+	width: 65%;
+	padding-left: 1em;
+	vertical-align: top;
+}
+
+.columnafull {
+	width: 79%;
+	padding-left: 4em;
+	column-span: all;
 }
