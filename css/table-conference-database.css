@@ -61,7 +61,7 @@ td.column2, td.column3, td.column5, td.column6 {
 }
 
 .container-checkbox p {
-  padding-right: 15px;
+  padding-right: 27px;
 }
 
 .container-checkbox input {
@@ -122,7 +122,9 @@ td.column2, td.column3, td.column5, td.column6 {
 /* End of small screens */
 
 /* Mobile devices */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px), 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 300dpi) {
   .column1 {
   max-width: 25vw;
   }
@@ -135,35 +137,11 @@ td.column2, td.column3, td.column5, td.column6 {
   .column3, .column5, .column6 {
   display: none !important;
   }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .column1 {
-  max-width: 25vw;
+  #conf-database-introduction {
+  width: 100%;
   }
-  .column4 {
-  max-width: 15vw;
-  }
-  td.column2 {
-  font-size: 1em !important;
-  }
-  .column3, .column5, .column6 {
-  display: none !important;
-  }
-}
-
-@media only screen and (min-resolution: 300dpi) {
-  .column1 {
-  max-width: 25vw;
-  }
-  .column4 {
-  max-width: 15vw;
-  }
-  td.column2 {
-  font-size: 1em !important;
-  }
-  .column3, .column5, .column6 {
-  display: none !important;
+  #checkboxes {
+  display: none;
   }
 }
 /* End of mobile devices */
