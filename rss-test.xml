@@ -9,9 +9,24 @@
 <description>Nessa Carson is a professional synthetic organic chemist working in drug discovery, and a freelance science writer and editor.</description>
 <copyright>2019 Nessa Carson</copyright>
 
-<!-- Number of items: 14 -->
+<!-- Number of items: 15 -->
 
 <!-- Next time, link to the Making a Meme of It article -->
+
+<item>
+<title>Making a Meme of It</title>
+<link>https://supersciencegrl.co.uk/pages/Making-A-Meme-Of-It?rss=32</link>
+<guid>https://supersciencegrl.co.uk/pages/Making-A-Meme-Of-It?rss=32</guid>
+<pubDate>Thu, 25 Apr 2019 17:22:00 GMT</pubDate>
+<image>
+	<url>http://supersciencegrl.co.uk/img/memes.jpg</url>
+	<title>Are You Reading Me?</title>
+	<link>https://supersciencegrl.co.uk/pages/Making-A-Meme-Of-It?rss=32</link>
+</image>
+<description><![CDATA[<a href="https://supersciencegrl.co.uk/pages/Making-A-Meme-Of-It?rss=32" target="_blank"><img src="http://supersciencegrl.co.uk/img/memes.jpg" alt="Making A Meme Of It"></a>
+	<p>Every chemist has skills you don't find in textbooks, like how to pull a spotter from a Pasteur pipette or the best way to pack a column - we learn from each other.</p>
+	<p>Here's my new <em>Chemistry World</em> article <a href="https://supersciencegrl.co.uk/pages/Making-A-Meme-Of-It?rss=32" target="_blank">Making A Meme Of It</a>.</p>]]></description>
+</item>
 
 <item>
 <title>Bank holiday update</title>
@@ -36,12 +51,6 @@
 	<li>I also added <em>Organic Chemistry &amp; the Synthesis of Complex Molecules</em>, <em>ISySyCat2019</em>, and many SCI events to the <a href="https://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li></ul>
 	</p>]]></description>
 </item>
-
-<div class="update col-2" id="log34">19/04/2019</div><div class="update col-9">
-		<ul><li>Added a list of all the events I've ever organized to my <a href="/activity" target="_blank">Activity</a> (CV) page</li>
-		<li>Linked to my UK chemistry jobs social <a href="http://www.twitter.com/ukchemjobs" target="_blank">Twitterbot</a> on the <a href="/about" target="_blank">About</a> page</li>
-		<li>Added <em>Organic Chemistry &amp; the Synthesis of Complex Molecules</em>, <em>ISySyCat2019</em>, and many SCI events to the <a href="/conferences" target="_blank">Conference Database</a></li></ul>
-	</div>
 
 <item>
 <title>New conferences added</title>
