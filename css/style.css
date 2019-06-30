@@ -26,7 +26,7 @@ p {
 }
 
 pre {
-	border: 2px solid black;
+	border: 2px solid #101030;
 	border-radius: 5px;
 	box-sizing: border-box;
 	padding: 0.3em 0.5em 0.3em 0.5em;
