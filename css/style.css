@@ -12,12 +12,24 @@ div {
   font-family: "Open Sans", sans-serif;
 }
 
+figure {
+	display: inline-block;
+	margin: 0 0 0 3em;
+}
+
 input {
   border-radius: 3px;
 }
 
 p {
   text-align: justify;
+}
+
+pre {
+	border: 2px solid black;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 0.3em 0.5em 0.3em 0.5em;
 }
 
 h3 {

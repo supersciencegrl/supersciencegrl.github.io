@@ -6,11 +6,25 @@
 <atom:link href="http://www.supersciencegrl.co.uk/rss-test/" rel="self" type="application/rss+xml" />
 <language>en-gb</language>
 <category>Science</category>
-<description>Nessa Carson is a professional synthetic organic chemist working in drug discovery, and a freelance science writer and editor.</description>
+<description>Nessa Carson is a professional synthetic organic chemist working in HTE automation for pharma, and a freelance science writer and editor.</description>
 <copyright>2019 Nessa Carson</copyright>
 
-<!-- Number of items: 16 -->
+<!-- Number of items: 17 -->
 	
+<item>
+<title>Major June website update! </title>
+<link>https://supersciencegrl.co.uk/changelog?rss=34#log38</link>
+<guid>https://supersciencegrl.co.uk/changelog?rss=34#log38</guid>
+<pubDate>Sun, 30 Jun 2019 10:28:00 GMT</pubDate>
+<description><![CDATA[<p>I've been busy with starting my new job, so no update for a while means that this is a major one. I've been doing the following: </p>
+		<ul><li>Updated the <a href="https://supersciencegrl.co.uk/about" target="_blank">About</a> page to reflect said <a href="https://linkedin.com/in/nessacarson/" target="_blank">new job</a></li>
+		<li>Added a link to my new, interactive, highlightable <a href="https://supersciencegrl.co.uk/periodictable" target="_blank">periodic table</a>. I use it to keep a checklist of all the elements I've used during my time as a chemist, and now you can too! </li>
+		<li>Added the ability to automatically search from the Google Chrome Omnibox using the Chemical Vendor Search tools to the <a href="https://supersciencegrl.co.uk/cvs" target="_blank">CVS</a> and <a href="https://supersciencegrl.co.uk/cvs-usa" target="_blank">CVS USA</a> pages</li>
+		<li>Added &eta; and &kappa; to the <a href="https://supersciencegrl.co.uk/character-map" target="_blank">Character Map</a>, after I myself needed them for compound names this week and found them absent. Now it's more inclusive of inorganickers&hellip;</li>
+		<li>Back end: updated the contact email encryption so it works better in 2019... sigh</li></ul>
+		<p>Thanks for keeping up to date with my website. It's good fun and it keeps me learning. </p>]]></description>
+</item>
+
 <item>
 <title>New conferences</title>
 <link>https://supersciencegrl.co.uk/conferences?rss=33</link>
