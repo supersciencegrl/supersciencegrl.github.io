@@ -305,7 +305,8 @@ text-decoration: none;}
   }
 }
 
-.tooltip .tooltipconf {
+.tooltip,
+.tooltipconf {
   visibility: hidden;
   width: 120px;
   background-color: #707080;
@@ -347,7 +348,8 @@ text-decoration: none;}
 	position: relative;
 }
 
-.div-tooltip:hover .tooltip .tooltipconf {
+.div-tooltip:hover .tooltip,
+.div-tooltip:hover .tooltipconf {
   visibility: visible;
   opacity: 1;
   overflow: visible;
