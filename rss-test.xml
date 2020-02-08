@@ -12,6 +12,20 @@
 <!-- Number of items: 20 -->
 
 <item>
+<title>Big February update</title>
+<link>https://supersciencegrl.co.uk/rss=39</link>
+<guid>https://supersciencegrl.co.uk/rss=39</guid>
+<pubDate>Sat, 08 Feb 2020 15:20:00 GMP</pubDate>
+<description><![CDATA[
+		<ul><li>Linked to my latest article in <em>Chemistry World</em>: <a href="/pages/A-day-in-the-lab.html" target="_blank"></a>. </li>
+		<li>I'm working on marketing for the Royal Society of Chemistry's massive Twitter-based conference, #RSCposter. Last year, over 3000 researchers took part, with their posters and conversations seen by over 2 million people globally. The conference is held online over 24 h. Register, and find out more <a href="https://supersciencegrl.co.uk/about#rscposter" target="_blank">here</a>! </li>
+		<li>Added a <em>Coding</em> section to the <a href="https://supersciencegrl.co.uk/links" target="_blank">Links</a> page</li>
+		<li>I've added more vendors to the <a href="https://supersciencegrl.co.uk/cvs" target="_blank">Chemical Vendor Search</a></li>
+		<li>Many additions to the <a href="/conferences" target="_blank">Conference Database</a></li></ul>
+	]]></description>
+</item>
+
+<item>
 <title>Loads of new 2020 chemistry conferences</title>
 <link>https://supersciencegrl.co.uk/conferences?rss=38</link>
 <guid>https://supersciencegrl.co.uk/conferences?rss=38</guid>
@@ -224,16 +238,6 @@
 <description><![CDATA[<ul><li>Added new conferences including <em>Frontiers in Chemistry Armenia</em>, Scientific Update <em>Organometallic Chemistry</em>, and <em>UkQSAR</em> to <a href="http://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li>
 		<li>Added SCRE (System for Characterizing and Reporting Easily organic compounds) to the <em>Writing and Presentation Tools</em> section of <a href="http://supersciencegrl.co.uk/links" target="_blank">Links</a></li>
 		<li>Slight aesthetic changes to the sidebar</li></ul>]]></description>
-</item>
-
-<item>
-<title>Website changes 22/07/2018</title>
-<link>https://supersciencegrl.co.uk/changelog?rss=16#log14</link>
-<guid>https://supersciencegrl.co.uk/changelog?rss=16#log14</guid>
-<pubDate>Sun, 22 Jul 2018 19:04:00 GMT</pubDate>
-<description><![CDATA[<ul><li>Updated sidebar with RSS and <a href="https://ko-fi.com/supersciencegrl" target="_blank">Ko-fi</a> links</li>
-		<li>Updated <a href="http://supersciencegrl.co.uk/contact" target="_blank">Contact</a> page (mobile only)</li>
-		<li>Added SCI <strong>Organocatalysis</strong>, SCI <strong>Spotlight on Photoredox Catalysis and Photochemistry</strong>, and RSC <strong>Cambridge ISSOC2019</strong> to <a href="http://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li></ul>]]></description>
 </item>
 
 </channel>

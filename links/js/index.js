@@ -22,6 +22,10 @@ if (window.location.href.indexOf("Reference-Tools") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Writing-and-Presentation-Tools").click();
 	},300);
+} else if (window.location.href.indexOf("Coding") > -1) {
+	setTimeout(function() {
+		document.getElementById("tab-Coding").click();
+	},300);
 } else if (window.location.href.indexOf("Interesting") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Interesting").click();

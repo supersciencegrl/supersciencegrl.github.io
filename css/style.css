@@ -305,7 +305,7 @@ text-decoration: none;}
   }
 }
 
-.tooltip {
+.tooltip .tooltipconf {
   visibility: hidden;
   width: 120px;
   background-color: #707080;
@@ -319,7 +319,17 @@ text-decoration: none;}
   left: 9em;
   margin: 0 0 0 -50px;
   opacity: 0;
+}
+
+.tooltip {
+  bottom: 85%;
+  left: 9em;
   transition: opacity 1s;
+}
+
+.tooltipconf {
+	left: 60%;
+	transition: opacity 0.8s;
 }
 
 .tooltip::after {
@@ -333,9 +343,14 @@ text-decoration: none;}
   border-color: #505050 transparent transparent transparent;
 }
 
-.div-tooltip:hover .tooltip {
+.div-tooltip {
+	position: relative;
+}
+
+.div-tooltip:hover .tooltip .tooltipconf {
   visibility: visible;
   opacity: 1;
+  overflow: visible;
 }
 
 .div-inline {
