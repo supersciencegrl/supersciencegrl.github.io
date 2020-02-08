@@ -329,6 +329,8 @@ text-decoration: none;}
 }
 
 .tooltipconf {
+	font-weight: normal;
+	bottom: 30%;
 	left: 60%;
 	transition: opacity 0.8s;
 }
