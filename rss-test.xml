@@ -12,10 +12,21 @@
 <!-- Number of items: 20 -->
 
 <item>
+<title>Online calendar for events during the Covid19 pandemic</title>
+<link>https://supersciencegrl.co.uk/online?rss=40</link>
+<guid>https://supersciencegrl.co.uk/online?rss=40</guid>
+<pubDate>Sat, 04 Apr 2020 15:40 GMT</pubDate>
+<description><![CDATA[
+		<p>I've added an <a href="https://supersciencegrl.co.uk/online" target="_blank">online calendar</a> for chemistry events during the Covid19 pandemic.</p>
+		<p>Please let me know if you have relevant events to add to this list. I'm mostly curating it from email invitations, and random news I see on Twitter.</p>
+	]]></description>
+</item>
+
+<item>
 <title>Big February update</title>
 <link>https://supersciencegrl.co.uk/rss=39</link>
 <guid>https://supersciencegrl.co.uk/rss=39</guid>
-<pubDate>Sat, 08 Feb 2020 15:20:00 GMP</pubDate>
+<pubDate>Sat, 08 Feb 2020 15:20:00 GMT</pubDate>
 <description><![CDATA[
 		<ul><li>Linked to my latest article in <em>Chemistry World</em>: <a href="/pages/A-day-in-the-lab.html" target="_blank"></a>. </li>
 		<li>I'm working on marketing for the Royal Society of Chemistry's massive Twitter-based conference, #RSCposter. Last year, over 3000 researchers took part, with their posters and conversations seen by over 2 million people globally. The conference is held online over 24 h. Register, and find out more <a href="https://supersciencegrl.co.uk/about#rscposter" target="_blank">here</a>! </li>
@@ -29,7 +40,7 @@
 <title>Loads of new 2020 chemistry conferences</title>
 <link>https://supersciencegrl.co.uk/conferences?rss=38</link>
 <guid>https://supersciencegrl.co.uk/conferences?rss=38</guid>
-<pubDate>Wed, 29 Jan 2020 19:40:00 GMP</pubDate>
+<pubDate>Wed, 29 Jan 2020 19:40:00 GMT</pubDate>
 <description><![CDATA[
 	<p>Many new conferences added to the <a href="https://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a>, from all kinds of sources. </p><p>Go and check it out!</p>
 	]]></description>
@@ -228,16 +239,6 @@
 		<li>Added <em>Enamine</em> and <em>Johnson Matthey</em> (UK only) to <a href="http://supersciencegrl.co.uk/cvs" target="_blank">Chemical Vendor Search</a> (<a href="http://supersciencegrl.co.uk/cvs-usa" target="_blank">US link</a>)</li>
 		<li>Added asterism and the new science emoji from Emoji 11.0 to <a href="http://supersciencegrl.co.uk/character-map" target="_blank">character map</a></li>
 		<li>Added <em>SUPR&#64;Lyon</em> to <a href="http://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li></ul>]]></description>
-</item>
-
-<item>
-<title>Website changes 13/08/2018</title>
-<link>https://supersciencegrl.co.uk/changelog?rss=17#log15</link>
-<guid>https://supersciencegrl.co.uk/changelog?rss=17#log15</guid>
-<pubDate>Mon, 13 Aug 2018 09:04:00 GMT</pubDate>
-<description><![CDATA[<ul><li>Added new conferences including <em>Frontiers in Chemistry Armenia</em>, Scientific Update <em>Organometallic Chemistry</em>, and <em>UkQSAR</em> to <a href="http://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li>
-		<li>Added SCRE (System for Characterizing and Reporting Easily organic compounds) to the <em>Writing and Presentation Tools</em> section of <a href="http://supersciencegrl.co.uk/links" target="_blank">Links</a></li>
-		<li>Slight aesthetic changes to the sidebar</li></ul>]]></description>
 </item>
 
 </channel>
