@@ -1,0 +1,42 @@
+/* Table */
+.covidrow td {
+	padding-bottom: 0.4em;
+}
+
+th.columnb1 {
+	padding-left: 2em;
+}
+
+th.columnb2,
+th.columnb3 {
+	padding-left: 1em;
+}
+
+th.columnb4 {
+	padding-left: 0.7em;
+}
+
+.columnb1 {
+	width: 18%;
+	padding-left: 2em;
+	font-weight: bold;
+}
+
+.columnb2 {
+	width: 14%;
+	padding-left: 1em;
+}
+
+.columnb3 {
+	width: 48%;
+	padding-left: 1em;
+}
+
+.columnb4 {
+	width: 20%;
+	padding-left: 1em;
+}
+
+.table100-body-b tr:nth-child(even) {
+  background-color: #f8f6ff;
+}

@@ -308,7 +308,6 @@ text-decoration: none;}
 .tooltip,
 .tooltipconf {
   visibility: hidden;
-  width: 120px;
   background-color: #707080;
   color: #FFFFFF;
   text-align: center;
@@ -321,12 +320,14 @@ text-decoration: none;}
 }
 
 .tooltip {
+  width: 120px;
   bottom: 85%;
   left: 9em;
   transition: opacity 1s;
 }
 
 .tooltipconf {
+	width: 240px;
 	font-weight: normal;
 	bottom: 30%;
 	left: 60%;
