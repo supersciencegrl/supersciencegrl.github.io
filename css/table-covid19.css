@@ -40,3 +40,28 @@ th.columnb4 {
 .table100-body-b tr:nth-child(even) {
   background-color: #f8f6ff;
 }
+
+/* Mobile devices */
+@media only screen and (max-device-width: 480px), 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 300dpi) {
+	.columnb2 {
+		display: none !important;
+	}
+	
+	th.columnb1 {
+		padding-left: 1em;
+	}
+	
+	th.columnb3 {
+		padding-left: 3em;
+	}
+	
+	.columnb1 {
+		padding-left: 0.7em;
+	}
+	
+	.columnb4 {
+		width: 15%;
+	}
+}
