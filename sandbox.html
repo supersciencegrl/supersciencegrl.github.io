@@ -31,7 +31,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet prefetch">
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
 
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/normalize.css">
@@ -75,9 +75,9 @@
 			<div>Character Map</div></a></div>
   
   <div style="width: 7%; position: absolute; right: 25px;"><div class="row" style="padding: 0;">
-    <div class="top-icon"><a href="https://www.linkedin.com/in/nessacarson/" class="a-top-icon" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
-	<div class="top-icon"><a href="https://github.com/supersciencegrl/" class="a-top-icon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
-	<div class="top-icon"><a href="http://www.twitter.com/supersciencegrl" class="a-top-icon" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+    <div class="top-icon"><a href="https://www.linkedin.com/in/nessacarson/" class="a-top-icon" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></div>
+	<div class="top-icon"><a href="https://github.com/supersciencegrl/" class="a-top-icon" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></div>
+	<div class="top-icon"><a href="http://www.twitter.com/supersciencegrl" class="a-top-icon" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></div>
     
     <div class="top-icon" id="a-top-icon-search"><span id="top-search-icon"><a href="#" class="a-top-icon"><i class="fa fa-search" aria-hidden="true"></i></a></span>
 	<script language="javascript">function get() {document.searchform.submit()}</script>
@@ -100,6 +100,7 @@
     
     </div></div><!-- Header -->
 
+<style>.fa-ics {color: #2C70D1;} .fa-gcal {color: #D21E5B;}</style>
 
 <!-- MAIN BODY -->
   <div id="wrapper">  
@@ -112,6 +113,7 @@
    <p class="p-mixed" style="padding-top:0;">A list of (mostly-free) online chemistry events during the time of Covid19. 
    Most times are listed as <a href="https://www.thetimezoneconverter.com/" target="_blank">BST (British Summer Time; UTC + 1)</a>. 
    Events up to Sep 2020 only.</p>
+   <p class="p-mixed">Click the <span class="fa-ics"><i class="far fa-calendar-alt"></i></span> or <span class="fa-gcal"><i class="far fa-calendar-alt"></i></span> icons to add events directly to your <span class="fa-ics">Outlook calendar</span> or <span class="fa-gcal">Google Calendar</span>, respectively.</p>
    <p class="p-mixed">Check out <a href="https://www.twitter.com/AnywhereChem" target="_blank">@AnywhereChem</a> on Twitter for a rolling feed of online chemistry events.</p>
    </div>
 
@@ -135,10 +137,12 @@
 					<div class="table100-body-b">
 						<table>
 							<tbody>
-							
+
 								<tr class="covidrow">
 									<td class="columnb1">Tue 14/04/2020</td>
-									<td class="columnb2">09:50 BST <a href="webcal://supersciencegrl.co.uk/cal/example-ics.ics"><i class="far fa-calendar-alt"></i></a></td>
+									<td class="columnb2">09:50 BST <a class="fa-ics" href="webcal://supersciencegrl.co.uk/cal/example-ics.ics"><i class="far fa-calendar-alt"></i></a>
+									<a class="fa-gcal" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Dummy&details=ViPerCon: Virtual Perovskite Conference (£, conference)%0A%0APlease visit https://salibalab.wordpress.com/virtual-perovskite-conference/ for more information. Note: you may need to register separately for this event. %0A%0AThis conference is run by Michael Saliba lab. This is an auto-generated placeholder event created by Nessa Carson at https://supersciencegrl.co.uk. Please check with Michael Saliba lab for any registration links, passwords, or possible changes to the event. I do not hold any responsibility for this conference&location=Online&dates=20200414T150000Z%2F20200414T160000Z&ctz=Europe/London&sprop=website:supersciencegrl.co.uk" target="_blank">
+									 <i class="far fa-calendar-alt"></i></a></td>
 									<td class="columnb3"><a href="https://salibalab.wordpress.com/virtual-perovskite-conference/" target="_blank">
 									ViPerCon: Virtual Perovskite Conference</a> (<strong>£</strong>,&nbsp;conference)</td>
 									<td class="columnb4">Michael Saliba lab</td>
@@ -179,7 +183,7 @@
 	<script language="javascript">function get() {document.searchform.submit()}</script>
 	
 	<form name="searchform" method="get" action="/results.html">
-	<input type="search" id="sidebar-search" name="q" placeholder="&#xf002;" onUnfocus="get()">
+	<input type="search" id="sidebar-search" name="q" placeholder="Search:" onUnfocus="get()">
 	</form>
 	
     <hr class="sidebar-hr"></div>
@@ -195,11 +199,11 @@
       <p class="sidebar-title">Social Media</p>
       <table class="sidebar-table"><tr>
      
-      <td class="sidebar-td"><a href="https://www.linkedin.com/in/nessacarson/" alt="LinkedIn" class="sidebar-social" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></td>
+      <td class="sidebar-td"><a href="https://www.linkedin.com/in/nessacarson/" alt="LinkedIn" class="sidebar-social" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></td>
 	  
-      <td class="sidebar-td"><a href="https://github.com/supersciencegrl/" alt="GitHub" class="sidebar-social" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></td>
+      <td class="sidebar-td"><a href="https://github.com/supersciencegrl/" alt="GitHub" class="sidebar-social" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></td>
         
-	  <td class="sidebar-td"><a href="https://www.twitter.com/supersciencegrl/" alt="Twitter" class="sidebar-social" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></td>
+	  <td class="sidebar-td"><a href="https://www.twitter.com/supersciencegrl/" alt="Twitter" class="sidebar-social" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></td>
         
       <td class="sidebar-td"><a href="/rss.xml" alt="RSS" class="sidebar-rss" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></td></tr></table>
       
@@ -209,7 +213,7 @@
       <hr class="sidebar-hr">
       
       <p>RSS:  <a href="/rss.xml" target="_blank" class="sidebar-rss"><i class="fa fa-rss" aria-hidden="true"></i></a></p>
-      <p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2017, 2020 Nessa Carson</p>
+      <p id="copyright"><i class="far fa-copyright" aria-hidden="true"></i> 2017, 2020 Nessa Carson</p>
 	  <a href="/changelog.html"><p id="changelog-link">Website change log</p></a>
       </div></div><!-- Sidebar -->
         
@@ -217,7 +221,7 @@
      
 <div id="footer">
   <div class="row"><div id="footer-text-div"><p id="footer-text">
-  <i class="fa fa-copyright" aria-hidden="true"></i> 2017, 2020 Coded by Nessa Carson
+  <i class="far fa-copyright" aria-hidden="true"></i> 2017, 2020 Coded by Nessa Carson
     </p>
     </div>
     <div><a class="linkjump m-hidden" href="#jump"><button class="btn btn-warning" title="Return to top" id="button-to-top">
