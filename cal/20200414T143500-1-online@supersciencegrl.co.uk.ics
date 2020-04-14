@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200414T143500
+DTSTART;TZID=Europe/London:20200416T030000
+DTEND;TZID=Europe/London:20200416T040000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Grace Tan – Antibody & Protein Engineering Solutions to achieve your perfect molecule
+UID:20200414T143500-1-online@supersciencegrl.co.uk
+TZID:Europe/London
+DESCRIPTION:Grace Tan – Antibody & Protein Engineering Solutions to achiev
+ e your perfect molecule (webinar)\n\nPlease visit https://www.genscript.co
+ m/webinars/antibody-protein-engineering-solutions-to-achieve-your-perfect-
+ molecule.html for more information. Note: you may need to register separat
+ ely for this event. \n\nThis webinar is run by GenScript. \n\nThis is an a
+ uto-generated placeholder event created by Nessa Carson at https://supersc
+ iencegrl.co.uk. Please check with GenScript for any registration links\, p
+ asswords\, or possible changes to the event. I do not hold any responsibil
+ ity for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
