@@ -768,8 +768,8 @@ text-decoration: none;}
 }
 
 .journalcode {
-	display: inline-block;
-	width: 76ch;
+	display: inline;
+	white-space: pre-wrap;
 	outline: none;
 }
 
