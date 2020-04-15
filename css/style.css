@@ -767,6 +767,12 @@ text-decoration: none;}
     margin: inherit;
 }
 
+.journalcode {
+	display: inline-block;
+	width: 76ch;
+	outline: none;
+}
+
 #footer {
     position: absolute;
     bottom: 0;
