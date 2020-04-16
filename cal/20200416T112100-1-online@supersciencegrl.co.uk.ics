@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200416T112100
+DTSTART:20200422T161500Z
+DTEND:20200422T171500Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Electrosynthesis webinar series
+UID:20200416T112100-1-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Electrosynthesis webinar series
+Phil Baran & Kevin Lam (webina
+ r)\n\nPlease visit https://lp.constantcontactpages.com/su/99iOQ0L for more
+  information. Note: you may need to register separately for this event. \n
+ \nThis webinar is run by IKA. \n\nThis is an auto-generated placeholder ev
+ ent created by Nessa Carson at https://supersciencegrl.co.uk. Please check
+  with IKA for any registration links\, passwords\, or possible changes to 
+ the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
