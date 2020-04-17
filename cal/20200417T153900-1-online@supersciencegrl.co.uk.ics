@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200417T153900
+DTSTART:20200423T190000Z
+DTEND:20200423T203000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Kit Chapman – How to name your element
+UID:20200417T153900-1-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Kit Chapman – How to name your element (webinar)\n\nPlease vis
+ it https://www.facebook.com/events/s/kit-chapman-how-to-name-your-e/624173
+ 584833683/?ti=as for more information. Note: you may need to register sepa
+ rately for this event. \n\nThis webinar is run by Skeptics in the Pub. \n\
+ nThis is an auto-generated placeholder event created by Nessa Carson at ht
+ tps://supersciencegrl.co.uk. Please check with Skeptics in the Pub for any
+  registration links\, passwords\, or possible changes to the event. I do n
+ ot hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

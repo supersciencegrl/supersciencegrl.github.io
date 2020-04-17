@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200415T161200
+DTSTART:20200416T193000Z
+DTEND:20200416T200000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Maintaining Motivation: grad school discussion
+UID:20200415T161200-1-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Maintaining Motivation: grad school discussion (discussion for
+  grad students)\n\nPlease visit https://www.eventbrite.com/e/maintaining-m
+ otivation-grad-school-discussion-tickets-102455918410 for more information
+ . Note: you may need to register separately for this event. \n\nThis stude
+ nts is run by Susanna L Harris. \n\nThis is an auto-generated placeholder 
+ event created by Nessa Carson at https://supersciencegrl.co.uk. Please che
+ ck with Susanna L Harris for any registration links\, passwords\, or possi
+ ble changes to the event. I do not hold any responsibility for this studen
+ ts. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
