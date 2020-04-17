@@ -21,21 +21,22 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20200417T214400
+DTSTAMP:20200417T222100
 DTSTART;TZID=Europe/London:20200427T173000
 DTEND;TZID=Europe/London:20200427T180000
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
-SUMMARY:Rebecca Green – Inventing the Labs of Tomorrow
-UID:20200417T214400-1-online@supersciencegrl.co.uk
+SUMMARY:John Conway – It's time to get your R&D BuilDing in order
+UID:20200417T222100-1-online@supersciencegrl.co.uk
 TZID:Europe/London
-DESCRIPTION:Rebecca Green (BMS) – Inventing the Labs of Tomorrow (webinar)
- \n\nPlease visit https://www.labvoice.ai/discoveryit-2020 for more informa
- tion. Note: you may need to register separately for this event. \n\nThis w
- ebinar is run by LabVoice. \n\nThis is an auto-generated placeholder event
-  created by Nessa Carson at https://supersciencegrl.co.uk. Please check wi
- th LabVoice for any registration links\, passwords\, or possible changes t
- o the event. I do not hold any responsibility for this webinar. 
+DESCRIPTION:John Conway (20-15 Visioneers) – It's time to get your R&D Bui
+ lDing in order (webinar)\n\nPlease visit https://www.labvoice.ai/discovery
+ it-2020 for more information. Note: you may need to register separately fo
+ r this event. \n\nThis webinar is run by LabVoice. \n\nThis is an auto-gen
+ erated placeholder event created by Nessa Carson at https://supersciencegr
+ l.co.uk. Please check with LabVoice for any registration links\, passwords
+ \, or possible changes to the event. I do not hold any responsibility for 
+ this webinar. 
 LOCATION:Online
 BEGIN:VALARM
 TRIGGER:-PT10M
