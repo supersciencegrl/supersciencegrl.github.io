@@ -21,30 +21,25 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20200419T082800
+DTSTAMP:20200419T101400
 DTSTART;TZID=Europe/London:20200423T160000
 DTEND;TZID=Europe/London:20200423T170000
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
 SUMMARY:Catch your capsid leaks: Uncle's tools for AAV stability & characterization
-UID:20200419T082828-1-online@supersciencegrl.co.uk
+UID:20200419T101400-1-online@supersciencegrl.co.uk
 TZID:Europe/London
 DESCRIPTION:Catch your capsid leaks: Uncle's tools for AAV stability & cha
  racterization (webinar)\n\nPlease visit https://chiwebevents.webex.com/mw3
  300/mywebex/default.do?nomenu=true&siteurl=chiwebevents&main_url=https%3A%
  2F%2Fchiwebevents.webex.com%2Fec3300%2Feventcenter%2Fevent%2FeventAction.d
- o%3FtheAction%3Dlandingfrommail%26%26%26EMK%3D4832534b000000041b154cc6e58b
- f21de19d713ee8a7c0267b485d7999462fd9883e0fb118f3cd0a%26siteurl%3Dchiwebeve
- nts%26confViewID%3D155345881852289200%26SourceId%3DCHI%26encryptTicket%3DS
- DJTSwAAAAQk8cHyRQdoWco1OUi2ZNSEewlYYRNeL_puqtQqdWx6aA2%26email%3Dejlambchi
- %2540gmail.com&_hsenc=p2ANqtz-8_hYFUVov2799dy-W2b6S5qRQIP2WTDb2mOgl5r_uAjl
- MDQ5f-A5cVjVBFwEThjpSOiS5B1pcXtg43M9vQWFukz8wsXes3kBpcVIo7qiXdOcSepto&_hsm
- i=2 for more information. Note: you may need to register separately for th
- is event. \n\nThis webinar is run by Unchained Labs. \n\nThis is an auto-g
- enerated placeholder event created by Nessa Carson at https://superscience
- grl.co.uk. Please check with Unchained Labs for any registration links\, p
- asswords\, or possible changes to the event. I do not hold any responsibil
- ity for this webinar. 
+ o%3FtheAction%3Dlandingfrommail%26%26%26confViewID%3D155345881852289200 fo
+ r more information. Note: you may need to register separately for this eve
+ nt. \n\nThis webinar is run by Unchained Labs. \n\nThis is an auto-generat
+ ed placeholder event created by Nessa Carson at https://supersciencegrl.co
+ .uk. Please check with Unchained Labs for any registration links\, passwor
+ ds\, or possible changes to the event. I do not hold any responsibility fo
+ r this webinar. 
 LOCATION:Online
 BEGIN:VALARM
 TRIGGER:-PT10M
