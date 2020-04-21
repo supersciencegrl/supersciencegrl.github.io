@@ -7,9 +7,11 @@
 <language>en-gb</language>
 <category>Science</category>
 <description>Nessa Carson is a professional synthetic organic chemist working in HTE automation for pharma, and a freelance science writer and editor.</description>
-<copyright>2019 Nessa Carson</copyright>
+<copyright>2020 Nessa Carson</copyright>
 
 <!-- Number of items: 20 -->
+
+
 
 <item>
 <title>Online calendar for events during the Covid19 pandemic</title>
@@ -233,16 +235,6 @@
 		<li>Added <em>Enamine</em> and <em>Johnson Matthey</em> (UK only) to <a href="http://supersciencegrl.co.uk/cvs" target="_blank">Chemical Vendor Search</a> (<a href="http://supersciencegrl.co.uk/cvs-usa" target="_blank">US link</a>)</li>
 		<li>Added asterism and the new science emoji from Emoji 11.0 to <a href="http://supersciencegrl.co.uk/character-map" target="_blank">character map</a></li>
 		<li>Added <em>SUPR&#64;Lyon</em> to <a href="http://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li></ul>]]></description>
-</item>
-
-<item>
-<title>Website changes 13/08/2018</title>
-<link>https://supersciencegrl.co.uk/changelog?rss=17#log15</link>
-<guid>https://supersciencegrl.co.uk/changelog?rss=17#log15</guid>
-<pubDate>Sat, 18 Aug 2018 09:56:00 GMT</pubDate>
-<description><![CDATA[<ul><li>Added new conferences including <em>Frontiers in Chemistry Armenia</em>, Scientific Update <em>Organometallic Chemistry</em>, and <em>UkQSAR</em> to <a href="http://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li>
-		<li>Added SCRE (System for Characterizing and Reporting Easily organic compounds) to the <em>Writing and Presentation Tools</em> section of <a href="http://supersciencegrl.co.uk/links" target="_blank">Links</a></li>
-		<li>Slight aesthetic changes to the sidebar</li></ul>]]></description>
 </item>
 
 </channel>

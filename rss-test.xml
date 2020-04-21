@@ -7,9 +7,23 @@
 <language>en-gb</language>
 <category>Science</category>
 <description>Nessa Carson is a professional synthetic organic chemist working in HTE automation for pharma, and a freelance science writer and editor.</description>
-<copyright>2019 Nessa Carson</copyright>
+<copyright>2020 Nessa Carson</copyright>
 
 <!-- Number of items: 20 -->
+
+<item>
+<title>Online calendar for events during the Covid19 pandemic</title>
+<link>https://supersciencegrl.co.uk/online?rss=41</link>
+<guid>https://supersciencegrl.co.uk/online?rss=41</guid>
+<pubDate>Tue, 21 Apr 2020 13:58 GMT</pubDate>
+<description><![CDATA[
+		<ul><li>I'm currently updating the online calendar for chemistry events roughly daily - keep checking back for more events. This week is particularly packed!
+			<br><a href="www.twitter.com/anywherechem" target="_blank" rel="noopener">@AnywhereChem</a> on Twitter is doing a great job of aggregating these in social feed form. 
+			<br><img src="https://supersciencegrl.co.uk/img/anywherechem.png></li>
+		<li>I've added a Privacy Policy to the website footer, so you can see what I'm doing with your data. The main thing is that I'm using Google Analytics to keep track of anonymized data, to see how people interact with the website. This bullet point isn't a legal statement, so please read the full policy <a href="https://supersciencegrl.co.uk/privacy" target="_blank" rel="noopener">here</a>.</li>
+		</ul>
+	]]></description>
+</item>
 
 <item>
 <title>Online calendar for events during the Covid19 pandemic</title>
@@ -228,17 +242,6 @@
 		<li>Added AstaTech, Apollo Scientific, Cambridge Isotope Labs, Digital Specialty Chemicals, Matrix Scientific, SynQuest, Tocris, and Umicore to <a href="https://supersciencegrl.co.uk/cvs" target="_blank">Chemical Vendor Search</a></li>
 		<li>Check out the AI-powered reaction prediction tool IBM RXN. Type in your reactants (and reagents if you fancy it), and see what IBM's artificial intelligence thinks your product will be. Linked on the <em>Interesting</em> tab of <a href="https://supersciencegrl.co.uk/links">Links</a></li>
 		<li>Also a minor update to the <a href="https://supersciencegrl.co.uk/character-map" target="_blank">character map</a></li></ul>]]></description>
-</item>
-
-<item>
-<title>August update</title>
-<link>https://supersciencegrl.co.uk/changelog?rss=18#log16</link>
-<guid>https://supersciencegrl.co.uk/changelog?rss=18#log16</guid>
-<pubDate>Mon, 27 Aug 2018 12:16:00 GMT</pubDate>
-<description><![CDATA[<ul><li>Updated <a href="http://supersciencegrl.co.uk/about" target="_blank">About</a> page to describe my current professional activities, and include my position on the SCI Younger Chemists' Panel</li>
-		<li>Added <em>Enamine</em> and <em>Johnson Matthey</em> (UK only) to <a href="http://supersciencegrl.co.uk/cvs" target="_blank">Chemical Vendor Search</a> (<a href="http://supersciencegrl.co.uk/cvs-usa" target="_blank">US link</a>)</li>
-		<li>Added asterism and the new science emoji from Emoji 11.0 to <a href="http://supersciencegrl.co.uk/character-map" target="_blank">character map</a></li>
-		<li>Added <em>SUPR&#64;Lyon</em> to <a href="http://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li></ul>]]></description>
 </item>
 
 </channel>
