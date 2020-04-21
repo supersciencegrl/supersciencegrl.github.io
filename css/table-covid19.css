@@ -45,23 +45,35 @@ th.columnb4 {
 @media only screen and (max-device-width: 480px), 
 only screen and (-webkit-min-device-pixel-ratio: 2), 
 only screen and (min-resolution: 300dpi) {
-	.columnb2 {
-		display: none !important;
-	}
 	
 	th.columnb1 {
 		padding-left: 1em;
 	}
 	
+	th.columnb2,
 	th.columnb3 {
-		padding-left: 3em;
+		padding-left: 2.5em;
 	}
 	
 	.columnb1 {
 		padding-left: 0.7em;
 	}
 	
-	.columnb4 {
-		width: 15%;
+	.columnb2 {
+		width: 20%;
+		padding-left: 0;
 	}
+	
+	.column3 {
+		padding-left: 0;
+	}
+	
+	.columnb4 {
+		display: none;
+	}
+	
+	.fa-ics,
+	.fa-gcal {
+		display: none;
+	
 }

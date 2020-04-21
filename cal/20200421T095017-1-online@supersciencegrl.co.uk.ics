@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200421T095000
+DTSTART:20200421T190000Z
+DTEND:20200421T200000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Recovery & contingency planning for post-Covid19 activities
+UID:20200421T095017-1-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Recovery & contingency planning for post-Covid19 activities (w
+ ebinar)\n\nPlease visit https://www.acs.org/content/acs/en/acs-webinars/pr
+ ofessional-development/post-covid.html for more information. Note: you may
+  need to register separately for this event. \n\nThis webinar is run by AC
+ S. \n\nThis is an auto-generated placeholder event created by Nessa Carson
+  at https://supersciencegrl.co.uk. Please check with ACS for any registrat
+ ion links\, passwords\, or possible changes to the event. I do not hold an
+ y responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
