@@ -775,6 +775,10 @@ text-decoration: none;}
 	word-break: break-all;
 }
 
+.contactsocialrow {
+	padding: 30px 0 30px 0;
+}
+
 #footer {
     position: absolute;
     bottom: 0;
@@ -944,8 +948,7 @@ only screen and (min-resolution: 300dpi) {
 		margin-right: 0;
     }
     #footer-text-div {
-		max-width: 75%;
-		padding-right: 30px;
+		font-size: small;
     }
 }
 /* End of mobile devices */
