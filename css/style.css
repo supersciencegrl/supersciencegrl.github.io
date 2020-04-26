@@ -384,6 +384,10 @@ text-decoration: none;}
 	font-size: medium;
 }
 
+.p-indent {
+	padding-left: 10px;
+}
+
 .tagline {
 	text-align: right;
 	font-style: italic;
@@ -776,7 +780,7 @@ text-decoration: none;}
 }
 
 .contactsocialrow {
-	padding: 30px 0 30px 0;
+	padding: 30px 0 30px 10px;
 }
 
 #footer {
