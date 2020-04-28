@@ -327,10 +327,10 @@ text-decoration: none;}
 }
 
 .tooltipconf {
-	width: 240px;
+	width: 60%;
 	font-weight: normal;
 	bottom: 30%;
-	left: 60%;
+	left: 35%;
 	transition: opacity 0.8s;
 }
 
