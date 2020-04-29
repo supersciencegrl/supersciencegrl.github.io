@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200428T164400
+DTSTART;TZID=Europe/London:20200504T180000
+DTEND;TZID=Europe/London:20200504T190000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Global Inorganic Discussion Weekend
+UID:20200428T164413-1-online@supersciencegrl.co.uk
+TZID:Europe/London
+DESCRIPTION:Global Inorganic Discussion Weekend
+Cathleen Crudden – When Au
+  and C meet: organic ligands for Au surfaces\, nanoparticles\, & nanoclust
+ ers
+Clément Camp – Metal-metal & metal-support synergy in well-defined\, s
+ ilica-supported early/late heterobimetallic catalysts
+Molly Sung – Catalys
+ t design by additive ligand acidity constants: predicting the pKa of trans
+ ition metal hydrides (webinar)\n\nPlease visit https://www.cheminst.ca/con
+ ferences/gidw/ for more information. Note: you may need to register separa
+ tely for this event. \n\nThis webinar is run by Marcus Drover & Saurabh Ch
+ itnis. \n\nThis is an auto-generated placeholder event created by Nessa Ca
+ rson at https://supersciencegrl.co.uk. Please check with Marcus Drover & S
+ aurabh Chitnis for any registration links\, passwords\, or possible change
+ s to the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
