@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200430T093800
+DTSTART;TZID=Europe/London:20200513T140000
+DTEND;TZID=Europe/London:20200513T150000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:MDC Connects: Optimizing the compound
+UID:20200430T093804-1443-online@supersciencegrl.co.uk
+TZID:Europe/London
+DESCRIPTION:MDC Connects: Optimizing the compound
+Al Dossetter – in silico
+  drug design: what to do\, what not to do: project driven examples
+Richard
+  Weaver – Optimizing ADME and PK properties: common mistakes made & how to
+  identify and resolve the key issues
+Juliana Maynard - Imaging technologie
+ s to understand PK and biodistribution of a candidate (webinar)\n\nPlease 
+ visit https://go.md.catapult.org.uk/mdc-connects/ for more information. No
+ te: you may need to register separately for this event. \n\nThis webinar i
+ s run by Medicines Discovery Catapult. \n\nThis is an auto-generated place
+ holder event created by Nessa Carson at https://supersciencegrl.co.uk. Ple
+ ase check with Medicines Discovery Catapult for any registration links\, p
+ asswords\, or possible changes to the event. I do not hold any responsibil
+ ity for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
