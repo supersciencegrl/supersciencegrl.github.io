@@ -159,7 +159,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	.container-table100 {
 	font-size: x-small;
-	padding: 0;
+	padding: 0 0 1em 0;
 	}
 	.wrap-table100 {
 	width: 100%;

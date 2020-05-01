@@ -1,3 +1,11 @@
+.fa-ics {
+	color: #2C70D1;
+}
+
+.fa-gcal {
+	color: #D21E5B;
+}
+
 /* Table */
 .covidrow td {
 	padding-bottom: 0.4em;
@@ -62,6 +70,7 @@ only screen and (min-resolution: 300dpi) {
 	.columnb2 {
 		width: 20%;
 		padding-left: 0;
+		text-align: center;
 	}
 	
 	.column3 {
@@ -72,8 +81,7 @@ only screen and (min-resolution: 300dpi) {
 		display: none;
 	}
 	
-	.fa-ics,
 	.fa-gcal {
-		display: none;
-	
+		padding-left: 60%;
+	}
 }
