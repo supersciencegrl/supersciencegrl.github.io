@@ -81,7 +81,7 @@ only screen and (min-resolution: 300dpi) {
 		display: none;
 	}
 	
-	.fa-gcal {
+	a.fa-gcal {
 		padding-left: 60%;
 	}
 }
