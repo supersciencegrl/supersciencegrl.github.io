@@ -145,7 +145,7 @@
 @media only screen and (max-device-width: 480px) {
 	.container-table100 {
 	font-size: x-small;
-	padding: 0;
+	padding: 0 0 1em 0;
 	}
 	.wrap-table100 {
 	width: 100%;
@@ -173,7 +173,7 @@
 @media only screen and (min-resolution: 300dpi) {
 	.container-table100 {
 	font-size: x-small;
-	padding: 0;
+	padding: 0 0 1em 0;
 	}
 	.wrap-table100 {
 	width: 100%;
