@@ -876,6 +876,7 @@ only screen and (min-resolution: 300dpi) {
     }
     h3 {
 		font-size: 1.5em;
+		margin-bottom: 0;
     }
     h4 {
 		font-size: 1.3em;
@@ -897,9 +898,15 @@ only screen and (min-resolution: 300dpi) {
     #content ul {
 		margin-left: 0;
     }
+	.div-main {
+		padding: 10px 0 0 10px;
+	}
     .p-main {
 		padding: 0;
     }
+	.p-first {
+		padding-top: 0;
+	}	
     .m-hidden {
 		visibility: hidden;
 		clear : both;
@@ -926,6 +933,9 @@ only screen and (min-resolution: 300dpi) {
 		padding: 5px 5% 35px 5%;
 		min-width: 50px;
     }
+	.media-title {
+		font-size: medium;
+	}
     .tabButton {
 		max-width: 25%;
 		padding: 3px;

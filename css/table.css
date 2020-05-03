@@ -107,11 +107,6 @@
   overflow: auto;
 }
 
-.table100-body tr:nth-child(even), 
-.table100-body-a tr:nth-child(even) {
-  background-color: #f8f6ff;
-}
-
 #conf-database-table tr:nth-child(even) {
 	background-color: #f8f6ff;
 }

@@ -1,16 +1,16 @@
 /* Table */
-th.column1, 
-th.columna2 {
-  padding-left: 0.4em;
+th.column1 {
+	padding-left: 1em;
 }
 
-th.column2 {
-  padding-left: 0.4em;
+th.column2, 
+th.columna2 {
+	padding-left: 0.4em;
 }
 
 th.column3, 
 th.columna3 {
-  padding-left: 0.1em;
+	padding-left: 0.1em;
 }
 
 th.columna1 {
@@ -18,19 +18,19 @@ th.columna1 {
 }
 
 .column1 {
-  width: 43%;
-  padding-left: 2em;
+	width: 43%;
+	padding-left: 2em;
 }
 
 .column2 {
-  width: 14%;
-  padding-left: 1em;
+	width: 14%;
+	padding-left: 1em;
 }
 
 .column3, 
 .columna3 {
-  width: 22%;
-  padding-left: 1em;
+	width: 22%;
+	padding-left: 1em;
 }
 
 .columna1, 
@@ -64,4 +64,18 @@ th.columna1 {
 	padding-top: 0.5em;
 	padding-bottom: 0.7em;
 	padding-left: 2.3em;
+}
+
+/* Mobile devices */
+@media only screen and (max-device-width: 480px), 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 300dpi) {
+	th.columna1, 
+	th.columna2, 
+	.columna1 {
+		padding-left: 1em;
+	}
+	.columnafull {
+		padding-left: 1.3em;
+	}
 }
