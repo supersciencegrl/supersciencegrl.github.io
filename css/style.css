@@ -12,17 +12,45 @@ div {
     font-family: "Open Sans", sans-serif;
 }
 
-figure {
-	display: inline-block;
-	margin: 0 0 0 3em;
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
+	font-size: 2rem;
+    clear: left;
+    padding-top: 30px;
+}
+
+h4 {
+	font-size: 1.75rem;
+}
+
+h5 {
+	font-size: 1.25 rem;
+    padding: 30px 0 10px 0;
+}
+
+h6 {
+	font-size: 1.25rem;
+}
+
+p {
+	font-size: 1rem;
+    text-align: justify;
 }
 
 input {
     border-radius: 3px;
 }
 
-p {
-    text-align: justify;
+figure {
+	display: inline-block;
+	margin: 0 0 0 3em;
 }
 
 pre {
@@ -30,15 +58,6 @@ pre {
 	border-radius: 5px;
 	box-sizing: border-box;
 	padding: 0.3em 0.5em 0.3em 0.5em;
-}
-
-h3 {
-    clear: left;
-    padding-top: 30px;
-}
-
-h5 {
-    padding: 30px 0 10px 0;
 }
 
 .title {
@@ -231,7 +250,7 @@ text-decoration: none;}
 }
 
 .caption {
-    font-size: x-small;
+    font-size: small;
     text-align: left;
 }
 
@@ -847,7 +866,7 @@ text-decoration: none;}
     .grid-six {
 		visibility: hidden;
 		display: none;
-}
+	}
 }
 /* End of medium and smaller screens */
 
@@ -860,7 +879,7 @@ text-decoration: none;}
 		max-width: 60vw;
 		margin: auto;
 		padding: 10px 5% 50px 5%;
-}
+	}
 }
 /* End of x-large screens */
 
@@ -871,19 +890,6 @@ only screen and (min-resolution: 300dpi) {
     body {
 		max-width: 100%;
     }
-    h2 {
-		font-size: 1.8em;
-    }
-    h3 {
-		font-size: 1.5em;
-		margin-bottom: 0;
-    }
-    h4 {
-		font-size: 1.3em;
-    }
-    h5 {
-		font-size: 4.5vw;
-    }
 	figure {
 		font-size: small;
 	}
@@ -892,7 +898,7 @@ only screen and (min-resolution: 300dpi) {
 	}
     #content p, 
     #content ul {
-		font-size: small;
+		font-size: calc(6px + 1.5vw);
 		text-align: left;
     }
     #content ul {
