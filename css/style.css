@@ -40,7 +40,6 @@ h6 {
 }
 
 p {
-	font-size: 1rem;
     text-align: justify;
 }
 
@@ -898,7 +897,6 @@ only screen and (min-resolution: 300dpi) {
 	}
     #content p, 
     #content ul {
-		font-size: calc(6px + 1.5vw);
 		text-align: left;
     }
     #content ul {
@@ -948,7 +946,7 @@ only screen and (min-resolution: 300dpi) {
 		font-size: 0.8em;
     }
     .caption {
-		font-size: 1.7em;
+		font-size: calc(6px + 1.5vw);
     }
     .image-left {
 		margin: 0;
