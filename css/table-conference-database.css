@@ -160,7 +160,7 @@ td.column2, td.column3, td.column5, td.column6 {
 .big-checkbox {
 	position: absolute;
 	top: 5px;
-	left: 0;
+	left: -35px;
 	height: 25px;
 	width: 25px;
 	border-radius: 5%;
@@ -231,5 +231,9 @@ only screen and (min-resolution: 300dpi) {
 	#div_remove_cancelled {
 		min-width: 85vw;
 		float: left;
+	}
+	#remove_cancelled {
+		margin-right: 20%;
+	}
 }
 /* End of mobile devices */
