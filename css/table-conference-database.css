@@ -134,7 +134,8 @@ td.column2, td.column3, td.column5, td.column6 {
 #remove_cancelled {
 	display: block;
 	position: relative;
-	padding-left: 35px;
+	float: right;
+	margin-right: 35%;
 	cursor: pointer;
 	font-size: 22px;
 	-webkit-user-select: none;
@@ -227,5 +228,8 @@ only screen and (min-resolution: 300dpi) {
 	#checkboxes {
 		display: none;
 	}
+	#div_remove_cancelled {
+		min-width: 85vw;
+		float: left;
 }
 /* End of mobile devices */
