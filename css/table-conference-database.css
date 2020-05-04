@@ -48,10 +48,8 @@ td.column2, td.column3, td.column5, td.column6 {
 /* Checkboxes */
 
 .grid-checkbox {
-	width: 49%;
+	width: 100%;
 	min-width: 300px;
-	max-width: 500px;
-	max-width: 60vw;
 	background-color: rgba(0,0,0,0);
 	margin: auto;
 	position: relative;
@@ -115,6 +113,88 @@ td.column2, td.column3, td.column5, td.column6 {
 .student,
 .academic {
 	display: none;
+}
+
+.cancelled {
+	text-decoration: line-through;
+	text-decoration-color: navy;
+}
+
+.postponed {
+	text-decoration: line-through;
+	text-decoration-color: green;
+}
+
+#checkboxes {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+
+#remove_cancelled {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.big-checkbox-label {
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+#remove_cancelled input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.big-checkbox {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	border-radius: 5%;
+	background-color: #DDDDDD;
+	vertical-align: bottom;
+}
+
+#remove_cancelled:hover input ~ .big-checkbox {
+	background-color: #888899;
+}
+
+#remove_cancelled input:checked ~ .big-checkbox {
+	background-color: #0279B4;
+}
+
+.big-checkbox:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+#remove_cancelled input:checked ~ .big-checkbox:after {
+	display: block;
+}
+
+#remove_cancelled .big-checkbox:after {
+	left: 9px;
+	top: 5px;
+	width: 7px;
+	height: 12px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 /* Small computer screens */

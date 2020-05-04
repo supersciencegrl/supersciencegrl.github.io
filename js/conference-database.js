@@ -47,3 +47,24 @@ function pricelist() {
     academicOutput[i].style.display = "none";
   }}
 }
+
+function removecancelled() {
+  var box = document.getElementById("cancelled-checkbox");
+  var cancelledOutput = document.getElementsByClassName("cancelled");
+  var postponedOutput = document.getElementsByClassName("postponed");
+  var i;
+  if (box.checked) {
+	for (i = 0; i < cancelledOutput.length; i++) {
+	cancelledOutput[i].style.display = "none";
+	}
+	for (i = 0; i < postponedOutput.length; i++) {
+	postponedOutput[i].style.display = "none";
+  }}
+  else {
+	for (i = 0; i < cancelledOutput.length; i++) {
+	cancelledOutput[i].style.display = "table-row";
+	}
+	for (i = 0; i < postponedOutput.length; i++) {
+	postponedOutput[i].style.display = "table-row";
+  }}
+}

@@ -108,15 +108,30 @@
  <div class="column" id="mainpage"><div id="content">
    <h3 class="page-title">Conference Database</h3>
    
-   <div class="grid-checkbox" id="conf-database-introduction"><div class="div-inline p-first"><p class="p-mixed">Upcoming UK and international organic chemistry conferences. Early bird prices shown.
-		<br>Postdoc&nbsp;=&nbsp;academic. <span class="new-fa"><i class="fa fa-certificate" aria-hidden="true"></i></span>&nbsp;=&nbsp;new additions.</p>
-		<p class="p-mixed">Covid-19 is causing widespread delays and cancellations. <span style="text-decoration: line-through; text-decoration-color: navy;">Blue strikethrough</span> = cancelled; <span style="text-decoration: line-through; text-decoration-color: green;">green strikethrough</span> = postponed. Mouseover conference name for details.</p>
-		<p class="p-mixed">See a list of (mostly-free) online webinars and other events during the pandemic <a href="/online" target="_blank" rel="noopener">here</a>.</p>
-		<p class="p-mixed">Using this free resource often? <a href="https://ko-fi.com/supersciencegrl" target="_blank" rel="noopener">Buy me a coffee!</a></p>
-   </div></div>
+   <div class="grid-checkbox" id="conf-database-introduction" style="text-align: left;"><div class="div-inline p-first"><p class="p-mixed">Upcoming UK and international organic chemistry conferences. Early bird prices shown.
+		<span style="display: inline-block;">Postdoc&nbsp;=&nbsp;academic.</span> <span style="display: inline-block;"><span class="new-fa"><i class="fa fa-certificate" aria-hidden="true"></i></span>&nbsp;=&nbsp;new&nbsp;additions.</span></p>
+		<p class="p-mixed">Covid-19 is causing widespread delays and cancellations. 
+		<span style="display: inline-block;"><span style="text-decoration: line-through; text-decoration-color: navy;">Blue&nbsp;strikethrough</span>&nbsp;=&nbsp;cancelled;</span> 
+			<span style="display: inline-block;"><span style="text-decoration: line-through; text-decoration-color: green;">green&nbsp;strikethrough</span>&nbsp;=&nbsp;postponed.</span> 
+			Mouseover conference name for details.</p>
+		<p class="p-mixed">See a list of (mostly&#8209;free) online webinars and other events during the pandemic <a href="/online" target="_blank" rel="noopener">here</a>.</p></div>
+		
+		<div class="row">
+			<div class="col-8">
+				<p class="p-mixed">Using this free resource often? <a href="https://ko-fi.com/supersciencegrl" target="_blank" rel="noopener">Buy me a coffee!</a></p>
+			</div>
+		
+			<!-- Remove cancelled events checkbox -->
+			<div class="col-4">
+				<label id="remove_cancelled"><span class="big-checkbox-label">Hide cancelled</span>
+					<input type="checkbox" id="cancelled-checkbox" onclick="removecancelled()">
+					<span class="big-checkbox"></span></label>
+			</div>
+		</div><!-- row -->
+   </div>
      
-   <!-- Price checkboxes -->
-   <div class="grid-checkbox" id="checkboxes"><div class="row p-first">
+	<!-- Price checkboxes -->
+	<div class="grid-checkbox" id="checkboxes"><div class="row">
 		<div class="col-4 checkbox-conf"><label class="container-checkbox"><p>Standard prices</p>
 			<input type="radio" checked="checked" id="standard-price" name="pricelist" onclick="pricelist()">
 			<span class="checkbox-custom"></span>
@@ -171,7 +186,7 @@
 							csynthesis - synthetic organic (+ process + med chem)
 							-->
 								
-								<tr class="body cmedchem lNEng" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem lNEng postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.rsc.org/events/detail/41326/5th-rsc-dmdg-dmg-new-perspectives-in-dmpk" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  New Perspectives in DMPK</td>
@@ -182,7 +197,7 @@
                   <td class="column6 standard">&#163;300</td><td class="column6 student">&#163;150</td><td class="column6 academic">&#163;300</td>
 								</tr>
 								
-								<tr class="body cmedchem lLondon" style="text-decoration: line-through; text-decoration-color: navy;">
+								<tr class="body cmedchem lLondon cancelled">
                   <td class="column1 div-tooltip"><a class="table-link" href="http://www.rsc.org/events/detail/36239/chemical-biology-symposium-2020" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Cancelled</span>
 				  Chemical Biology Symposium</td>
@@ -203,7 +218,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cmedchem lLondon" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem lLondon postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="http://www.rsc.org/events/detail/41454" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed 09/2020</span>
 				  Chemical Biology &amp; Bioorganic Postgrad Symposium</td>
@@ -214,7 +229,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body lScotland" style="text-decoration: line-through; text-decoration-color: navy;">
+								<tr class="body lScotland cancelled">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://micerportal.wordpress.com/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Cancelled</span>
 				  Methods in Chemistry Education Research</td>
@@ -225,7 +240,7 @@
                   <td class="column6 standard">&#163;10-45</td><td class="column6 student">&#163;10</td><td class="column6 academic">&#163;45</td>
 								</tr>
 								
-								<tr class="body cmedchem csynthesis lWales" style="text-decoration: line-through; text-decoration-color: navy;">
+								<tr class="body cmedchem csynthesis lWales cancelled">
                   <td class="column1 div-tooltip"><a class="table-link" href="http://www.esboc.org.uk" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Cancelled</span>
 				  European Symposium on Biological &amp; Organic Chemistry</td>
@@ -257,7 +272,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cmedchem ccomp lNEng" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem ccomp lNEng postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.soci.org/events/scirsc-workshop-on-computational-tools-for-drug-discovery" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Moved online</span>
 				  Computational Tools for Drug Discovery Workshop</td>
@@ -278,7 +293,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cpolicy lWales" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cpolicy lWales postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.rsc.org/events/detail/43109/science-and-the-senedd-gwyddoniaeth-a-r-senedd" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  Science and the Senedd</td>
@@ -289,7 +304,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cinorg lAsia" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cinorg lAsia postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.rsc.org/events/detail/36172/cooperative-phenomena-in-framework-materials-faraday-discussion" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  Cooperative Phenomena in Framework Materials</td>
@@ -300,7 +315,7 @@
                   <td class="column6 standard">JPY63000</td><td class="column6 student">JPY27000</td><td class="column6 academic">JPY63000</td>
 								</tr>
 								
-								<tr class="body csynthesis lNEng" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body csynthesis lNEng postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.soci.org/events/sci-electrochemistry-postgraduate-conference-2020" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  SCI Electrochemistry Postgrad Conference 2020</td>
@@ -311,7 +326,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cautomation cprocess lLondon" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cautomation cprocess lLondon postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.chemspeceurope.com/2020/english/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed 11/2020</span>
 				  Chemspec, Chemsource, &amp; Industrial Continuous Flow Processes</td>
@@ -322,7 +337,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cmedchem lLondon" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem lLondon postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.maggichurchouseevents.co.uk/bmcs/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  Kinase 2020</td>
@@ -333,7 +348,7 @@
                   <td class="column6 standard">&#163;335</td><td class="column6 student">&#163;155</td><td class="column6 academic">&#163;335</td>
 								</tr>
 								
-								<tr class="body cmedchem lSEng" style="text-decoration: line-through; text-decoration-color: navy;">
+								<tr class="body cmedchem lSEng cancelled">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://sites.google.com/view/gskspgsynthesissymposium/home" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Cancelled</span>
 				  GSK Synthetic Organic Postgraduate Symposium</td>
@@ -344,7 +359,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cautomation lWEur" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cautomation lWEur postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://slaseurope2020.org/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed 06/2021</span>
 				  SLAS Europe 2020</td>
@@ -355,7 +370,7 @@
                   <td class="column6 standard">&euro;975</td><td class="column6 student">&euro;150</td><td class="column6 academic">&euro;650</td>
 								</tr>
 								
-								<tr class="body cdiversity lScotland" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cdiversity lScotland postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://thestemvillage.co.uk/register/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  STEM Village LGBTQ+ Symposium</td>
@@ -366,7 +381,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cinorg lNA" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cinorg lNA postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://tannconference.com/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed 11/2020</span>
 				  Theoretical &amp; Applied Nanosci/Nanotech (TANN2020)</td>
@@ -377,7 +392,7 @@
                   <td class="column6 standard">CAD750</td><td class="column6 student">CAD520</td><td class="column6 academic">CAD750</td>
 								</tr>
 								
-								<tr class="body cinorg csynthesis lNA" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cinorg csynthesis lNA postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="http://catalysisdivision.ca/symposium/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  26th Canadian Symposium on Catalysis</td>
@@ -388,7 +403,7 @@
                   <td class="column6 standard">CAD840</td><td class="column6 student">CAD395</td><td class="column6 academic">CAD450-840</td>
 								</tr>
 								
-								<tr class="body cmedchem cdiversity lNEng" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem cdiversity lNEng postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.scientificupdate.com/conference_events/empowering-women-in-organic-chemistry-europe/20200611/" target="_blank" rel="noopener">
 				  <!--<span class="tooltipconf">#EWOCEU20</span>-->
 				  <span class="tooltipconf">Postponed</span>
@@ -400,7 +415,7 @@
                   <td class="column6 standard">&#163;75</td><td class="column6 student"><em>Free</em></td><td class="column6 academic"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cmedchem lNEng" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem lNEng postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.cathyhillevents.co.uk/BMCS/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  <!--<span class="tooltipconf">#MasterMedChem20</span>-->
@@ -412,7 +427,7 @@
                   <td class="column6 standard">&#163;105</td><td class="column6 student">&#163;75</td><td class="column6 academic">&#163;105</td>
 								</tr>
 								
-								<tr class="body cprocess lNA" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cprocess lNA postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="http://www.imccre2020.com/" target="_blank" rel="noopener">International-Mexican Congress on Chemical Reaction Engineering</td>
 				  <span class="tooltipconf">Postponed 09/2020</span>
 									<td class="column2">14/06/2020</td>
@@ -422,7 +437,7 @@
                   <td class="column6 standard">&dollar;550</td><td class="column6 student">&dollar;350</td><td class="column6 academic">&dollar;550</td>
 								</tr>
 								
-								<tr class="body csynthesis lWEur" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body csynthesis lWEur postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://corbellasummerschool.unimi.it/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  A Corbella Summer School on Organic Synthesis</td>
@@ -442,7 +457,7 @@
                   <td class="column6 standard">&dollar;750-950</td><td class="column6 student">&dollar;500</td><td class="column6 academic">&dollar;950</td>
 								</tr>
 								
-								<tr class="body cmedchem ccareers ccomp cinorg lWEur" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem ccareers ccomp cinorg lWEur postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="http://scs2020.se/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed 06/2021</span>
 				  Swedish Chemical Society national meeting</td>
@@ -464,7 +479,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cinorg csynthesis lScotland"  style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cinorg csynthesis lScotland postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="http://www.erc-grantees.chem.ed.ac.uk/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed 01/2021</span>
 				  ERC Grantees: Dynamic &amp; Active Materials to Supramolecular Catalysis</td>
@@ -475,7 +490,7 @@
                   <td class="column6">&#163;200</td>
 								</tr>
 								
-								<tr class="body cmedchem lWEur" style="text-decoration: line-through; text-decoration-color: navy;">
+								<tr class="body cmedchem lWEur cancelled">
                   <td class="column1 div-tooltip"><a class="table-link" href="http://www.rsc.org/events/detail/40867/3rd-rsc-sci-seqt-symposium-on-medicinal-chemistry-for-global-health" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Cancelled</span>
 				  RSC/SCI/SEQT Med Chem for Global Health</td>
@@ -486,7 +501,7 @@
                   <td class="column6 standard">&#163;286</td><td class="column6 student">&#163;143</td><td class="column6 academic">&#163;286</td>
 								</tr>
 								
-								<tr class="body csynthesis lEEur" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body csynthesis lEEur postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://boschem.eu/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed 06/2021</span>
 				  Balticum Organicum Syntheticum 2020</td>
@@ -497,7 +512,7 @@
                   <td class="column6 standard">&euro;400</td><td class="column6 student">&euro;100-200</td><td class="column6 academic">&euro;400</td>
 								</tr>
 								
-								<tr class="body cmedchem lScotland" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem lScotland postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="http://www.rsc.org/events/detail/39023/directing-biosynthesis-vi" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed</span>
 				  Directing Biosynthesis VI</td>
@@ -518,7 +533,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cmedchem lScotland" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem lScotland postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://warwick.ac.uk/fac/sci/wcibb/meetings/chemistryandbiologysymposium" target="_blank" rel="noopener">
 				  <span class="tooltip">Postponed</span>
 				  Chem &amp; Bio of Natural Products Symposium</td>
@@ -529,7 +544,7 @@
                   <td class="column6">&#163;10</td>
 								</tr>
 								
-								<tr class="body csynthesis ccomp lSEng lMidlands" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body csynthesis ccomp lSEng lMidlands postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://ukcatalysishub.co.uk/catalysis-hub-conferences/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed 12/2020</span>
 				  UK Catalysis Hub Summer Conference</td>
@@ -540,7 +555,7 @@
                   <td class="column6"><em>Free</em></td>
 								</tr>
 								
-								<tr class="body cinorg lLondon" style="text-decoration: line-through; text-decoration-color: navy;">
+								<tr class="body cinorg lLondon cancelled">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.rsc.org/events/detail/42347/rsc-chemical-nanoscience-and-nanotechnology-symposium-2020" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Cancelled</span>
 				  Chemical Nanoscience &amp; Nanotech Symposium</td>
@@ -572,7 +587,7 @@
                   <td class="column6 standard">&#163;420</td><td class="column6 student">&#163;420</td><td class="column6 academic">&#163;420</td>
 								</tr>
 								
-								<tr class="body cinorg lNEng" style="text-decoration: line-through; text-decoration-color: navy;">
+								<tr class="body cinorg lNEng cancelled">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.rsc.org/events/detail/42767/envchem2020-chemistry-of-the-whole-environment-research" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Cancelled</span>
 				  #EnvChem2020: Chemistry of the Whole Environment Research</td>
@@ -700,7 +715,7 @@
                   <td class="column6 standard">&#163;180</td><td class="column6 student">&#163;180</td><td class="column6 academic">&#163;180</td>
 								</tr>
 								
-								<tr class="body cprocess lWEur" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cprocess lWEur postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.scientificupdate.com/conference_events/organic-process-research-and-development-basel/20200921/" target="_blank" rel="noopener">
 				  <span class="tooltipconf">Postponed 12/2020</span>
 				  OPRD 2020</td>
@@ -711,7 +726,7 @@
                   <td class="column6 standard">&euro;1399</td><td class="column6 student">&euro;600</td><td class="column6 academic">&euro;600</td>
 								</tr>
 								
-								<tr class="body cmedchem lWEur" style="text-decoration: line-through; text-decoration-color: green;">
+								<tr class="body cmedchem lWEur postponed">
                   <td class="column1 div-tooltip"><a class="table-link" href="https://www.maggichurchouseevents.co.uk/bmcs/index.htm" target="_blank" rel="noopener">
 				  <!--<span class="tooltipconf">#GPCRs20</span>-->
 				  <span class="tooltipconf">Postponed</span>
@@ -721,6 +736,17 @@
                   <td class="column4">Verona, Italy</td>
                   <td class="column5 standard">&#163;500</td><td class="column5 student">&#163;200</td><td class="column5 academic">&#163;500</td>
                   <td class="column6 standard">&#163;600</td><td class="column6 student">&#163;260</td><td class="column6 academic">&#163;600</td>
+								</tr>
+								
+								<tr class="body cinorg lWEur">
+                  <td class="column1 div-tooltip"><a class="table-link" href="https://graphene-flagship.eu/grapheneweek/GrapheneWeek2020/Pages/default.aspx" target="_blank" rel="noopener">
+				  <span class="tooltipconf">#GrapheneWeek2020</span>
+				  Graphene Week 2020</td>
+									<td class="column2">21/09/2020</td>
+									<td class="column3">25/09/2020</td>
+                  <td class="column4">Strasbourg, France</td>
+                  <td class="column5 standard">&euro;800</td><td class="column5 student">&euro;450</td><td class="column5 academic">&euro;700</td>
+                  <td class="column6 standard">&euro;800</td><td class="column6 student">&euro;450</td><td class="column6 academic">&euro;700</td>
 								</tr>
 								
 								<tr class="body cmedchem cprocess cautomation ccomp lLondon">
