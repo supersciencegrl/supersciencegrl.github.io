@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200507T133500
+DTSTART;TZID=Europe/London:20200518T170000
+DTEND;TZID=Europe/London:20200518T200000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Inventing for life with Merck's Chemists: Symposium & Career Panel
+UID:20200507T133526-1719-online@supersciencegrl.co.uk
+DESCRIPTION:Inventing for life with Merck's Chemists: Symposium & Career P
+ anel (webinar)\n\nPlease visit https://docs.google.com/forms/d/e/1FAIpQLSf
+ CFX0nkllvPeuA_uFcN66kbWLf_ye7kw8VZ9RuV2wCDQrj6g/viewform for more informat
+ ion. Note: you may need to register separately for this event. \n\nThis we
+ binar is run by Merck. \n\nThis is an auto-generated placeholder event cre
+ ated by Nessa Carson at https://supersciencegrl.co.uk. Please check with M
+ erck for any registration links\, passwords\, or possible changes to the e
+ vent. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
