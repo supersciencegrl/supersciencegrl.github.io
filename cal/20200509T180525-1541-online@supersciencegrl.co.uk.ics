@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200509T180500
+DTSTART;TZID=Europe/London:20200512T150000
+DTEND;TZID=Europe/London:20200512T160000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Modelling pharmaceutical manufacturing processes using particle simulation
+UID:20200509T180525-1541-online@supersciencegrl.co.uk
+DESCRIPTION:Modelling pharmaceutical manufacturing processes using particl
+ e simulation (webinar)\n\nPlease visit https://web.altair.com/en/edem-phar
+ ma-webinar for more information. Note: you may need to register separately
+  for this event. \n\nThis webinar is run by Altair. \n\nThis is an auto-ge
+ nerated placeholder event created by Nessa Carson at https://superscienceg
+ rl.co.uk. Please check with Altair for any registration links\, passwords\
+ , or possible changes to the event. I do not hold any responsibility for t
+ his webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
