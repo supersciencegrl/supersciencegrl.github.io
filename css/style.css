@@ -959,7 +959,7 @@ only screen and (min-resolution: 300dpi) {
 		padding: 0;
     }
 	.p-first {
-		padding-top: 0;
+		padding: 0 0.4em 0 0.4em;
 	}	
     .m-hidden {
 		visibility: hidden;
