@@ -751,6 +751,11 @@ text-decoration: none;}
     margin: 3px auto auto auto;
 }
 
+.listicon img {
+	position: relative;
+	left: -2px;
+}
+
 .listwrapper .purple {
     border-bottom: 8px #B637E8 solid;
 }
