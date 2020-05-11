@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200511T164600
+DTSTART;TZID=Europe/London:20200514T130000
+DTEND;TZID=Europe/London:20200514T140000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Curing your finances
+UID:20200511T164651-1-online@supersciencegrl.co.uk
+DESCRIPTION:Curing your finances (RSC members; webinar)\n\nPlease visit ht
+ tps://register.gotowebinar.com/register/4489199729710001933 for more infor
+ mation. Note: you may need to register separately for this event. \n\nThis
+  RSC members; webinar is run by RSC Chemists' Community Fund. \n\nThis is 
+ an auto-generated placeholder event created by Nessa Carson at https://sup
+ ersciencegrl.co.uk. Please check with RSC Chemists' Community Fund for any
+  registration links\, passwords\, or possible changes to the event. I do n
+ ot hold any responsibility for this RSC members; webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
