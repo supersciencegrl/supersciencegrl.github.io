@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200511T195300
+DTSTART;TZID=Europe/London:20200514T030000
+DTEND;TZID=Europe/London:20200514T040000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Gross calorific value determination with IKA bomb calorimeters
+UID:20200511T195310-1719-online@supersciencegrl.co.uk
+DESCRIPTION:Gross calorific value determination with IKA bomb calorimeters
+  (webinar)\n\nPlease visit https://twitter.com/IKAworldwide/status/1259887
+ 002767577090/ for more information. Note: you may need to register separat
+ ely for this event. \n\nThis webinar is run by IKA Works Asia. \n\nThis is
+  an auto-generated placeholder event created by Nessa Carson at https://su
+ persciencegrl.co.uk. Please check with IKA Works Asia for any registration
+  links\, passwords\, or possible changes to the event. I do not hold any r
+ esponsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
