@@ -740,22 +740,15 @@ text-decoration: none;}
     border-radius: 100%;
     background-color: #2299D4;
     margin: auto;
-    max-height: 10vw;
+    height: 10vw;
     max-width: 10vw !important;
     padding: 0 !important;
 }
 
-.listicon img {
+.listicon img, 
+.listicon-m img {
     max-height: 10vw;
     margin: 3px auto auto auto;
-}
-
-.listicon-m img {
-    max-width: 6vw;
-    max-height: 6vw;
-    min-width: 60%;
-    min-height: 20%;
-    margin: auto;
 }
 
 .listwrapper .purple {
