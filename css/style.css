@@ -715,16 +715,6 @@ text-decoration: none;}
     box-shadow: 3px -3px 6px #888899;
 }
 
-.listblock-m {
-    width: 100%;
-    margin-top: 2%;
-    background-color: rgba(22, 99, 212, 0.15);
-    max-height: 8vw;
-    border-radius: 8px;
-    border-right: 8px #2299D4 solid;
-    box-shadow: 0 3px 6px #888899;
-}
-
 .listicon {
     border-radius: 50%;
     background-color: #2299D4;
@@ -735,21 +725,29 @@ text-decoration: none;}
     margin: 6% auto 0 auto;
 }
 
+.listblock-m {
+    width: 100%;
+	display: inline-flex;
+    margin: 4% -15px 0 0;
+    background-color: rgba(22, 99, 212, 0.15);
+    min-height: 12vw;
+    border-radius: 8px;
+    border-right: 8px #2299D4 solid;
+    box-shadow: 0 3px 6px #888899;
+}
+
 .listicon-m {
     border-radius: 100%;
     background-color: #2299D4;
     margin: auto;
-    max-height: 6vw;
-    max-width: 6vw !important;
+    max-height: 10vw;
+    max-width: 10vw !important;
     padding: 0 !important;
-    margin-left: 4vw;
-    margin-right: 4vw;
 }
 
 .listicon img {
-    max-width: 90%;
-    max-height: 90%;
-    margin: auto;
+    max-height: 10vw;
+    margin: 3px auto auto auto;
 }
 
 .listicon-m img {
@@ -838,6 +836,10 @@ text-decoration: none;}
 
 .contactsocialrow {
 	padding: 30px 0 30px 10px;
+}
+
+#about-page-ul {
+	display: none;
 }
 
 #footer {
@@ -999,7 +1001,7 @@ only screen and (min-resolution: 300dpi) {
 		font-size: calc(6px + 1.5vw);
     }
     .image-left {
-		margin: 0;
+		margin: 0 0.3em 0 0;
     }
     .back {
 		padding-left: 3em;
@@ -1007,6 +1009,9 @@ only screen and (min-resolution: 300dpi) {
     #wrapper {
 		margin-right: 0;
     }
+	#about-page-ul {
+		display: inherit;
+	}
     #footer-text-div {
 		font-size: small;
     }
