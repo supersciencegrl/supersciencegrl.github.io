@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200514T151800
+DTSTART;TZID=Europe/London:20200528T160000
+DTEND;TZID=Europe/London:20200528T170000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:The future of Batteries
+UID:20200514T151801-2396-online@supersciencegrl.co.uk
+DESCRIPTION:The future of Batteries
+Kelsey Hatzell\, Yifei Mo\, & Nella Va
+ rgas-Barbosa (webinar)\n\nPlease visit https://www.brighttalk.com/webcast/
+ 16651/409459 for more information. Note: you may need to register separate
+ ly for this event. \n\nThis webinar is run by Chem & Trends in Chemistry. 
+ \n\nThis is an auto-generated placeholder event created by Nessa Carson at
+  https://supersciencegrl.co.uk. Please check with Chem & Trends in Chemist
+ ry for any registration links\, passwords\, or possible changes to the eve
+ nt. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
