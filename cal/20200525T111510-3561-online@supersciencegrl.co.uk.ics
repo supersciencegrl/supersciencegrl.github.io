@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200525T111500
+DTSTART;TZID=Europe/London:20200627T154500
+DTEND;TZID=Europe/London:20200627T235900
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+RRULE:FREQ=DAILY;UNTIL=20200701T000000
+SUMMARY:LC-MS/MS 101: Getting started with quantitative LC-MS/MS in the diagnostic laboratory
+UID:20200525T111510-3561-online@supersciencegrl.co.uk
+DESCRIPTION:LC-MS/MS 101: Getting started with quantitative LC-MS/MS in th
+ e diagnostic laboratory (£\, training course)\n\nPlease visit https://www.
+ msacl.org for more information. Note: you may need to register separately 
+ for this event. \n\nThis <strong>£</strong>\, training course is run by Ma
+ ss Spectrometry & advances in the clinical lab. \n\nThis is an auto-genera
+ ted placeholder event created by Nessa Carson at https://supersciencegrl.c
+ o.uk. Please check with Mass Spectrometry & advances in the clinical lab f
+ or any registration links\, passwords\, or possible changes to the event. 
+ I do not hold any responsibility for this <strong>£</strong>\, training co
+ urse. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

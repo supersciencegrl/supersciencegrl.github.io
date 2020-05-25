@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200525T111500
+DTSTART;VALUE=DATE:20200802
+DTEND;VALUE=DATE:20200808
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:American Crystallographic Association Annual Meeting
+UID:20200525T111510-3832-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:American Crystallographic Association Annual Meeting (conferen
+ ce)\n\nPlease visit https://www.brighttalk.com/webcast/13819/399329 for mo
+ re information. Note: you may need to register separately for this event. 
+ \n\nThis conference is run by ACA. \n\nThis is an auto-generated placehold
+ er event created by Nessa Carson at https://supersciencegrl.co.uk. Please 
+ check with ACA for any registration links\, passwords\, or possible change
+ s to the event. I do not hold any responsibility for this conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
