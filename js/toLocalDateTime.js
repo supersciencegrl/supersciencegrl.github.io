@@ -1,3 +1,5 @@
+// Modified from a script by Khoi Van
+
 // ! REQUIRE MOMENT.JS AND MOMENT-TIMEZONE-WITH-DATA.JS to get TimeZone abbreviations
 // Load momentjs in the html head before this js:
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
@@ -60,6 +62,18 @@ function getShortTime (timeString, includedTimezone = true) {
 }
 
 /**
+ * Modify date to prettier format
+ */
+function modifyDate(d) {
+	var dateMod = d.slice(0,4)
+				+ d.slice(8,10)
+				+ "&nsbp;"
+				+ d.slice(4,7)
+				+ "&nbsp;"
+				+ d.slice(11,16)
+	return dateMod
+
+/**
  * Check if a Date is valid
  * @param {Date} d
  */
@@ -93,16 +107,18 @@ document.addEventListener('DOMContentLoaded', function () {
     if (endDate && endTime) {
       var jsEndDateTimeObj = new Date(`${endDate} ${endTime} UTC+1`);
       var localEndDate = jsEndDateTimeObj.toDateString();
+	  var localEndDateMod = modifyDate(localEndDate)
       var localEndTime = jsEndDateTimeObj.toTimeString();
     }
     var jsStartDateTimeObj = new Date(`${startDate} ${startTime} UTC+1`);
     var localStartDate = jsStartDateTimeObj.toDateString();
+	var localStartDateMod = modifyDate(localStartDate)
     var localStartTime = jsStartDateTimeObj.toTimeString();
 
     // Make sure that at least one of the jsDateTime objects is valid
     if (isValidDate(jsEndDateTimeObj) || isValidDate(jsStartDateTimeObj)) {
       // Replace the original date and time with local date and time
-      dateElement.innerHTML = [localStartDate, localEndDate].filter(Boolean).join('–');
+      dateElement.innerHTML = [localStartDateMod, localEndDateMod].filter(Boolean).join('–');
 
       let timeRange;
       if (timeZoneAbbr) {
