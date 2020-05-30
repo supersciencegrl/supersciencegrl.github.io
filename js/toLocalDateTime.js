@@ -67,11 +67,12 @@ function getShortTime (timeString, includedTimezone = true) {
 function modifyDate(d) {
 	var dateMod = d.slice(0,4)
 				+ d.slice(8,10)
-				+ "&nsbp;"
+				+ "&nbsp;"
 				+ d.slice(4,7)
 				+ "&nbsp;"
 				+ d.slice(11,16)
 	return dateMod
+}
 
 /**
  * Check if a Date is valid
