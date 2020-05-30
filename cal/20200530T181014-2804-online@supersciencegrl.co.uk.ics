@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200530T181000
+DTSTART:20200701T160000Z
+DTEND:20200701T170000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:RSC Main Group SeminarTBC
+UID:20200530T181014-2804-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:RSC Main Group SeminarTBC (webinar)\n\nPlease visit https://zo
+ om.us/webinar/register/5815863537172/WN_1R4aBGfXQ-KuEtUzMdfwBg for more in
+ formation. Note: you may need to register separately for this event. \n\nT
+ his webinar is run by RSC Main Group. \n\nThis is an auto-generated placeh
+ older event created by Nessa Carson at https://supersciencegrl.co.uk. Plea
+ se check with RSC Main Group for any registration links\, passwords\, or p
+ ossible changes to the event. I do not hold any responsibility for this we
+ binar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

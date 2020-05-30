@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200530T181000
+DTSTART:20200822T123000Z
+DTEND:20200822T133000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+RRULE:FREQ=DAILY;UNTIL=20200824T000000
+SUMMARY:ComSciCon-MI: Communicating Science Conference for Grad Students & Postdocs
+UID:20200530T181014-3245-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:ComSciCon-MI: Communicating Science Conference for Grad Studen
+ ts & Postdocs (£\, US Midwest only\, conference)\n\nPlease visit https://c
+ omscicon.com/comscicon-michigan-2020-application for more information. Not
+ e: you may need to register separately for this event. \n\nThis <strong>£<
+ /strong>\, US Midwest only\, conference is run by ComSciCon. \n\nThis is a
+ n auto-generated placeholder event created by Nessa Carson at https://supe
+ rsciencegrl.co.uk. Please check with ComSciCon for any registration links\
+ , passwords\, or possible changes to the event. I do not hold any responsi
+ bility for this <strong>£</strong>\, US Midwest only\, conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
