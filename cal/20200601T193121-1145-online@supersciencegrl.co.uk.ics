@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200601T193100
+DTSTART;TZID=Europe/London:20200619T160000
+DTEND;TZID=Europe/London:20200619T170000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Fail faster: How biopharma companies can capitalize on early drug development failures
+UID:20200601T193121-1145-online@supersciencegrl.co.uk
+DESCRIPTION:Fail faster: How biopharma companies can capitalize on early d
+ rug development failures (webinar)\n\nPlease visit https://pages.questexne
+ twork.com/ReprintsDesk-Registration-06192020.html for more information. No
+ te: you may need to register separately for this event. \n\nThis webinar i
+ s run by FiercePharma. \n\nThis is an auto-generated placeholder event cre
+ ated by Nessa Carson at https://supersciencegrl.co.uk. Please check with F
+ iercePharma for any registration links\, passwords\, or possible changes t
+ o the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
