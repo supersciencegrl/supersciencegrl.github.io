@@ -106,12 +106,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Construct new Date object
     if (endDate && endTime) {
-      var jsEndDateTimeObj = new Date(`${endDate} ${endTime} UTC+1`);
+      var jsEndDateTimeObj = new Date(`${endDate} ${endTime}+0100`);
       var localEndDate = jsEndDateTimeObj.toDateString();
 	  var localEndDateMod = modifyDate(localEndDate)
       var localEndTime = jsEndDateTimeObj.toTimeString();
     }
-    var jsStartDateTimeObj = new Date(`${startDate} ${startTime} UTC+1`);
+    var jsStartDateTimeObj = new Date(`${startDate} ${startTime}+0100`);
     var localStartDate = jsStartDateTimeObj.toDateString();
 	var localStartDateMod = modifyDate(localStartDate)
     var localStartTime = jsStartDateTimeObj.toTimeString();
