@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200606T105200
+DTSTART;TZID=Europe/London:20200610T190000
+DTEND;TZID=Europe/London:20200610T200000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Best practice: Optimizing the design of a liquid dispensing system
+UID:20200606T105256-857-online@supersciencegrl.co.uk
+DESCRIPTION:Best practice: Optimizing the design of a liquid dispensing sy
+ stem (webinar)\n\nPlease visit https://www.workcast.com/register?cpak=8283
+ 134783729976 for more information. Note: you may need to register separate
+ ly for this event. \n\nThis webinar is run by Festo. \n\nThis is an auto-g
+ enerated placeholder event created by Nessa Carson at https://superscience
+ grl.co.uk. Please check with Festo for any registration links\, passwords\
+ , or possible changes to the event. I do not hold any responsibility for t
+ his webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200606T105200
+DTSTART;TZID=Europe/London:20200702T140000
+DTEND;TZID=Europe/London:20200702T150000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Open science & the reward system: How can they be aligned?
+UID:20200606T105237-1767-online@supersciencegrl.co.uk
+DESCRIPTION:Open science & the reward system: How can they be aligned? (we
+ binar)\n\nPlease visit https://www.elsevier.com/solutions/ssrn/webinars?co
+ mmid=414950 for more information. Note: you may need to register separatel
+ y for this event. \n\nThis webinar is run by Elsevier. \n\nThis is an auto
+ -generated placeholder event created by Nessa Carson at https://superscien
+ cegrl.co.uk. Please check with Elsevier for any registration links\, passw
+ ords\, or possible changes to the event. I do not hold any responsibility 
+ for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

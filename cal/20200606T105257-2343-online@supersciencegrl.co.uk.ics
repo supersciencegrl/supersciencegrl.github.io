@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200606T105200
+DTSTART;VALUE=DATE:20200902
+DTEND;VALUE=DATE:20200905
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Faraday division: New horizons in DFT
+UID:20200606T105257-2343-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Faraday division: New horizons in DFT (£\, conference)\n\nPlea
+ se visit https://www.rsc.org/events/detail/37136/new-horizons-in-density-f
+ unctional-theory-faraday-discussion for more information. Note: you may ne
+ ed to register separately for this event. \n\nThis <strong>£</strong>\, co
+ nference is run by RSC Faraday Division. \n\nThis is an auto-generated pla
+ ceholder event created by Nessa Carson at https://supersciencegrl.co.uk. P
+ lease check with RSC Faraday Division for any registration links\, passwor
+ ds\, or possible changes to the event. I do not hold any responsibility fo
+ r this <strong>£</strong>\, conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
