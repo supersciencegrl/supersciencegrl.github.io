@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200610T203900
+DTSTART:20200617T150000Z
+DTEND:20200617T163000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:QMUL Materials Research Institute Seminar
+UID:20200610T203930-1330-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:QMUL Materials Research Institute Seminar
+Francesco Stellacci 
+ – Supramolecular Approaches to Design Novel Antivirals\n\nPlease visit htt
+ ps://www.materials.qmul.ac.uk/events/?eid=3718 for more information. Note:
+  you may need to register separately for this event. \n\nThis QMUL Materia
+ ls Research Institute Seminar\nFrancesco Stellacci – Supramolecular Approa
+ ches to Design Novel Antivirals is run by QMUL. \n\nThis is an auto-genera
+ ted placeholder event created by Nessa Carson at https://supersciencegrl.c
+ o.uk. Please check with QMUL for any registration links\, passwords\, or p
+ ossible changes to the event. I do not hold any responsibility for this QM
+ UL Materials Research Institute Seminar\nFrancesco Stellacci – Supramolecu
+ lar Approaches to Design Novel Antivirals. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

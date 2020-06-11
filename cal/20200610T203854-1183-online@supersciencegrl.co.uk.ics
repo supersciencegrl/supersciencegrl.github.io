@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200610T203800
+DTSTART;TZID=Europe/London:20200616T140000
+DTEND;TZID=Europe/London:20200616T150000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Online ICMAB LectureQuasiparticle band structures & excitons in novel materials using the YAMBO code
+UID:20200610T203854-1183-online@supersciencegrl.co.uk
+DESCRIPTION:Online ICMAB LectureQuasiparticle band structures & excitons i
+ n novel materials using the YAMBO code (webinar)\n\nPlease visit https://i
+ cn2.cat/en/events/eventdetail/1349/quasiparticle-band-structures-and-excit
+ ons-in-novel-materials-using-the-yambo-code for more information. Note: yo
+ u may need to register separately for this event. \n\nThis webinar is run 
+ by ICN2. \n\nThis is an auto-generated placeholder event created by Nessa 
+ Carson at https://supersciencegrl.co.uk. Please check with ICN2 for any re
+ gistration links\, passwords\, or possible changes to the event. I do not 
+ hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
