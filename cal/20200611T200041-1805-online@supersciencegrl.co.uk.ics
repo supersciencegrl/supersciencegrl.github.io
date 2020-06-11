@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200611T200000
+DTSTART:20200624T150000Z
+DTEND:20200624T163000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:QMUL Materials Research Institute Seminar
+UID:20200611T200041-1805-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:QMUL Materials Research Institute Seminar
+Joseph Moran – On th
+ e Origins of Biological Metabolism\n\nPlease visit https://www.materials.q
+ mul.ac.uk/events/?eid=3719 for more information. Note: you may need to reg
+ ister separately for this event. \n\nThis QMUL Materials Research Institut
+ e Seminar\nJoseph Moran – On the Origins of Biological Metabolism is run b
+ y QMUL. \n\nThis is an auto-generated placeholder event created by Nessa C
+ arson at https://supersciencegrl.co.uk. Please check with QMUL for any reg
+ istration links\, passwords\, or possible changes to the event. I do not h
+ old any responsibility for this QMUL Materials Research Institute Seminar\
+ nJoseph Moran – On the Origins of Biological Metabolism. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
