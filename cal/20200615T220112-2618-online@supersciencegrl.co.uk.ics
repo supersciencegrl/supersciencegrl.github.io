@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200615T220100
+DTSTART:20200714T094500Z
+DTEND:20200714T173000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+RRULE:FREQ=DAILY;UNTIL=20200718T000000
+SUMMARY:Internet conference for quantum dots
+UID:20200615T220112-2618-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Internet conference for quantum dots (£\, conference)\n\nPleas
+ e visit nanoge.org/iCQD/home for more information. Note: you may need to r
+ egister separately for this event. \n\nThis <strong>£</strong>\, conferenc
+ e is run by nanoGe. \n\nThis is an auto-generated placeholder event create
+ d by Nessa Carson at https://supersciencegrl.co.uk. Please check with nano
+ Ge for any registration links\, passwords\, or possible changes to the eve
+ nt. I do not hold any responsibility for this <strong>£</strong>\, confere
+ nce. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

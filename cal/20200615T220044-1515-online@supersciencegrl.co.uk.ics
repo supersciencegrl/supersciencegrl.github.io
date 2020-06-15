@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200615T220000
+DTSTART;TZID=Europe/London:20200618T140000
+DTEND;TZID=Europe/London:20200618T150000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Matteo Palma – Tuning the coupling of proteins to C nanotube nanoscale systems & devices
+UID:20200615T220044-1515-online@supersciencegrl.co.uk
+DESCRIPTION:Matteo Palma – Tuning the coupling of proteins to C nanotube n
+ anoscale systems & devices (webinar)\n\nPlease visit https://sites.google.
+ com/view/bmec2020/schedule?authuser=0 for more information. Note: you may 
+ need to register separately for this event. \n\nThis webinar is run by (Bi
+ o)Molecular Electronics Colloquia. \n\nThis is an auto-generated placehold
+ er event created by Nessa Carson at https://supersciencegrl.co.uk. Please 
+ check with (Bio)Molecular Electronics Colloquia for any registration links
+ \, passwords\, or possible changes to the event. I do not hold any respons
+ ibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
