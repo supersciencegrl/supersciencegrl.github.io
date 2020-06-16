@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200616T203800
+DTSTART;TZID=Europe/London:20200617T170000
+DTEND;TZID=Europe/London:20200617T180000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Chem ed: Alison Flynn – Learning in the online classroom
+UID:20200616T203815-1492-online@supersciencegrl.co.uk
+DESCRIPTION:Chem ed: Alison Flynn – Learning in the online classroom (webi
+ nar)\n\nPlease visit https://us02web.zoom.us/webinar/register/WN_wpW7mk0VQ
+ TCWOsA3jBh0zw for more information. Note: you may need to register separat
+ ely for this event. \n\nThis webinar is run by Chemical Institute of Canad
+ a. \n\nThis is an auto-generated placeholder event created by Nessa Carson
+  at https://supersciencegrl.co.uk. Please check with Chemical Institute of
+  Canada for any registration links\, passwords\, or possible changes to th
+ e event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
