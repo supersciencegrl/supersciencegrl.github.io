@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200620T121900
+DTSTART;VALUE=DATE:20200727
+DTEND;VALUE=DATE:20200729
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Oxford Summer Synthesis Conference
+UID:20200620T121956-3362-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Oxford Summer Synthesis Conference (conference)\n\nPlease visi
+ t http://www.oxfordsynthesiscdt.ox.ac.uk/conference/ for more information.
+  Note: you may need to register separately for this event. \n\nThis confer
+ ence is run by Oxford SBM CDT. \n\nThis is an auto-generated placeholder e
+ vent created by Nessa Carson at https://supersciencegrl.co.uk. Please chec
+ k with Oxford SBM CDT for any registration links\, passwords\, or possible
+  changes to the event. I do not hold any responsibility for this conferenc
+ e. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

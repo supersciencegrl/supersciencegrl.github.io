@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200618T224400
+DTSTART;VALUE=DATE:20200911
+DTEND;VALUE=DATE:20200913
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:27th CSCST SCI Annual Conference: Sustainable energy & manufacturing the future
+UID:20200618T224447-3687-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:27th CSCST SCI Annual Conference: Sustainable energy & manufac
+ turing the future (conference)\n\nPlease visit https://www.soci.org/events
+ /chinese-uk-group/2020/27th-cscst-sci-annual-conference-sustainable-energy
+ -and-manufacturing-the-future for more information. Note: you may need to 
+ register separately for this event. \n\nThis conference is run by CSCST & 
+ SCI. \n\nThis is an auto-generated placeholder event created by Nessa Cars
+ on at https://supersciencegrl.co.uk. Please check with CSCST & SCI for any
+  registration links\, passwords\, or possible changes to the event. I do n
+ ot hold any responsibility for this conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200620T121900
+DTSTART;TZID=Europe/London:20200626T190000
+DTEND;TZID=Europe/London:20200626T200000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:How this coronavirus is, and isn't, different from other viruses
+UID:20200620T121956-2465-online@supersciencegrl.co.uk
+DESCRIPTION:How this coronavirus is\, and isn't\, different from other vir
+ uses (rebroadcast\, webinar)\n\nPlease visit https://www.acs.org/content/a
+ cs/en/acs-webinars.html for more information. Note: you may need to regist
+ er separately for this event. \n\nThis rebroadcast\, webinar is run by ACS
+ \, ACS External Affairs & Communications. \n\nThis is an auto-generated pl
+ aceholder event created by Nessa Carson at https://supersciencegrl.co.uk. 
+ Please check with ACS\, ACS External Affairs & Communications for any regi
+ stration links\, passwords\, or possible changes to the event. I do not ho
+ ld any responsibility for this rebroadcast\, webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
