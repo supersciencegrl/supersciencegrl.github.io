@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200704T132300
+DTSTART;VALUE=DATE:20200929
+DTEND;VALUE=DATE:20201001
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Conference on inorganic chemistry
+UID:20200704T132351-2423-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Conference on inorganic chemistry (webinar)\n\nPlease visit ht
+ tps://veranstaltungen.gdch.de/tms/frontend/index.cfm?l=10734&sp_id=1 for m
+ ore information. Note: you may need to register separately for this event.
+  \n\nThis webinar is run by GDCh Divisions of Woehler-Vereinigung & Festko
+ erperchemie & Materialforschung. \n\nThis is an auto-generated placeholder
+  event created by Nessa Carson at https://supersciencegrl.co.uk. Please ch
+ eck with GDCh Divisions of Woehler-Vereinigung & Festkoerperchemie & Mater
+ ialforschung for any registration links\, passwords\, or possible changes 
+ to the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
