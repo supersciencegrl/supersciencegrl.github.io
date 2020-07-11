@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200711T103600
+DTSTART;TZID=Europe/London:20200715T170000
+DTEND;TZID=Europe/London:20200715T180000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Irene de Lazaro – Antigen-capturing nanoparticles improve the abscopal effect & cancer immunotherapy
+UID:20200711T103621-1264-online@supersciencegrl.co.uk
+DESCRIPTION:Irene de Lazaro – Antigen-capturing nanoparticles improve the 
+ abscopal effect & cancer immunotherapy (webinar)\n\nPlease visit https://t
+ witter.com/wilsonpoon/status/1281705947358994433 for more information. Not
+ e: you may need to register separately for this event. \n\nThis webinar is
+  run by Zoom NanoBio Journal Club. \n\nThis is an auto-generated placehold
+ er event created by Nessa Carson at https://supersciencegrl.co.uk. Please 
+ check with Zoom NanoBio Journal Club for any registration links\, password
+ s\, or possible changes to the event. I do not hold any responsibility for
+  this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
