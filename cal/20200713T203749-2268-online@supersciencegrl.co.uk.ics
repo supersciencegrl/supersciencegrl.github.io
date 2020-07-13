@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200713T203700
+DTSTART;TZID=Europe/London:20200811T183000
+DTEND;TZID=Europe/London:20200811T193000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Science writing: James Pennebaker – How to understand what is really being said
+UID:20200713T203749-2268-online@supersciencegrl.co.uk
+DESCRIPTION:Science writing: James Pennebaker – How to understand what is 
+ really being said (members-only\, webinar)\n\nPlease visit https://www.abs
+ w.org.uk/news-and-events/events/don-t-be-fooled-new-online-event-series fo
+ r more information. Note: you may need to register separately for this eve
+ nt. \n\nThis members-only\, webinar is run by Association of British Scien
+ ce Writers. \n\nThis is an auto-generated placeholder event created by Nes
+ sa Carson at https://supersciencegrl.co.uk. Please check with Association 
+ of British Science Writers for any registration links\, passwords\, or pos
+ sible changes to the event. I do not hold any responsibility for this memb
+ ers-only\, webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
