@@ -65,7 +65,7 @@ function getShortTime (timeString, includedTimezone = true) {
  * Modify date to prettier format
  */
 function modifyDate(d) {
-	var dateMod = d.slice(0,4)
+	var dateMod = d.slice(0,3)
 				+ "&nbsp;"
 				+ d.slice(8,10)
 				+ "&nbsp;"
