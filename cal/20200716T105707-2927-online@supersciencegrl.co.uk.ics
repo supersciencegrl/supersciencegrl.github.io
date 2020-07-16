@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200716T105700
+DTSTART;VALUE=DATE:20200910
+DTEND;VALUE=DATE:20200912
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:EFMC Young Medicinal Chemists' Symposium Virtual Event
+UID:20200716T105707-2927-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:EFMC Young Medicinal Chemists' Symposium Virtual Event (confer
+ ence)\n\nPlease visit https://www.efmc-ymcs-virtual.org/ for more informat
+ ion. Note: you may need to register separately for this event. \n\nThis co
+ nference is run by LD Organisation. \n\nThis is an auto-generated placehol
+ der event created by Nessa Carson at https://supersciencegrl.co.uk. Please
+  check with LD Organisation for any registration links\, passwords\, or po
+ ssible changes to the event. I do not hold any responsibility for this con
+ ference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
