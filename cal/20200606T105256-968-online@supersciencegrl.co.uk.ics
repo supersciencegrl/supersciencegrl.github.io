@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200606T105200
+DTSTART;TZID=Europe/London:20200611T190000
+DTEND;TZID=Europe/London:20200611T200000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:John Wasylyk & Joseph Fortunak â€“ A perfect match: Vibrational spectroscopy & sustainable chemistry
+UID:20200606T105256-968-online@supersciencegrl.co.uk
+DESCRIPTION:John Wasylyk & Joseph Fortunak â€“ A perfect match: Vibrationa
+ l spectroscopy & sustainable chemistry (webinar)\n\nPlease visit https://w
+ ww.acs.org/content/acs/en/acs-webinars.html for more information. Note: yo
+ u may need to register separately for this event. \n\nThis webinar is run 
+ by ACS. \n\nThis is an auto-generated placeholder event created by Nessa C
+ arson at https://supersciencegrl.co.uk. Please check with ACS for any regi
+ stration links\, passwords\, or possible changes to the event. I do not ho
+ ld any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

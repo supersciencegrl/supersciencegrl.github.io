@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200426T162900
+DTSTART:20200608T150000Z
+DTEND:20200608T160000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+RRULE:FREQ=DAILY;UNTIL=20200613T000000
+SUMMARY:Rigaku School for Practical Crystallography webinars
+UID:20200426T162918-1-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Rigaku School for Practical Crystallography webinars (webinar)
+ \n\nPlease visit https://www.rigaku.com/webinars/crystallography-school/si
+ ngle-crystal?fbclid=IwAR3_pYTyQQg4SHs_G6QZFmLLVeVIhBX2CFaSKb0-NsQnuY5H1dav
+ Yz-oTwo for more information. Note: you may need to register separately fo
+ r this event. \n\nThis webinar is run by Rigaku. \n\nThis is an auto-gener
+ ated placeholder event created by Nessa Carson at https://supersciencegrl.
+ co.uk. Please check with Rigaku for any registration links\, passwords\, o
+ r possible changes to the event. I do not hold any responsibility for this
+  webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

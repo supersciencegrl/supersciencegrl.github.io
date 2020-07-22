@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200606T105200
+DTSTART;VALUE=DATE:20200609
+DTEND;VALUE=DATE:20200612
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Applied Deconvolution – NIST AMDIS software
+UID:20200606T105256-639-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Applied Deconvolution – NIST AMDIS software (£\, training cour
+ se)\n\nPlease visit https://www.rsc.org/events/detail/44742/virtual-classr
+ oom-training-applied-deconvolution-nist-amdis for more information. Note: 
+ you may need to register separately for this event. \n\nThis <strong>£</st
+ rong>\, training course is run by RSC. \n\nThis is an auto-generated place
+ holder event created by Nessa Carson at https://supersciencegrl.co.uk. Ple
+ ase check with RSC for any registration links\, passwords\, or possible ch
+ anges to the event. I do not hold any responsibility for this <strong>£</s
+ trong>\, training course. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

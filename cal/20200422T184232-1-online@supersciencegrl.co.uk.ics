@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200422T184200
+DTSTART:20200603T150000Z
+DTEND:20200603T160000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:SCI-RSC Workshop on Computational Tools for Drug Discovery
+UID:20200422T184232-1-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:SCI-RSC Workshop on Computational Tools for Drug Discovery
+Opt
+ ibrium workshop: Guided multi-parameter optimization of 2D and 3D SAR (web
+ inar)\n\nPlease visit https://www.soci.org/events/scirsc-workshop-on-compu
+ tational-tools-for-drug-discovery for more information. Note: you may need
+  to register separately for this event. \n\nThis webinar is run by SCI FCG
+  & RSC CICAG. \n\nThis is an auto-generated placeholder event created by N
+ essa Carson at https://supersciencegrl.co.uk. Please check with SCI FCG & 
+ RSC CICAG for any registration links\, passwords\, or possible changes to 
+ the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

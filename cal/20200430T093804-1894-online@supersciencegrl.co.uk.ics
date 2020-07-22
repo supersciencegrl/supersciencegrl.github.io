@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200430T093800
+DTSTART;TZID=Europe/London:20200617T100000
+DTEND;TZID=Europe/London:20200617T160000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+RRULE:FREQ=DAILY;UNTIL=20200620T000000
+SUMMARY:Training for all: employability skills for Industry 4.0
+UID:20200430T093804-1894-online@supersciencegrl.co.uk
+TZID:Europe/London
+DESCRIPTION:Training for all: employability skills for Industry 4.0 (webin
+ ar)\n\nPlease visit https://www.eventbrite.co.uk/e/training-for-all-employ
+ ability-skills-for-industry-40-tickets-90928622959 for more information. N
+ ote: you may need to register separately for this event. \n\nThis webinar 
+ is run by Brunel University London. \n\nThis is an auto-generated placehol
+ der event created by Nessa Carson at https://supersciencegrl.co.uk. Please
+  check with Brunel University London for any registration links\, password
+ s\, or possible changes to the event. I do not hold any responsibility for
+  this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
