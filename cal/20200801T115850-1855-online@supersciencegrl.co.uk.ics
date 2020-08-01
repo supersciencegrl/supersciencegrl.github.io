@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200801T115800
+DTSTART;TZID=Europe/London:20200915T113000
+DTEND;TZID=Europe/London:20200915T130000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Career Development Program: Success with LinkedIn
+UID:20200801T115850-1855-online@supersciencegrl.co.uk
+DESCRIPTION:Career Development Program: Success with LinkedIn (webinar)\n\
+ nPlease visit https://raci.org.au/RACI/Web/Event_Display.aspx?EventKey=MNT
+ 1048 for more information. Note: you may need to register separately for t
+ his event. \n\nThis webinar is run by RACI. \n\nThis is an auto-generated 
+ placeholder event created by Nessa Carson at https://supersciencegrl.co.uk
+ . Please check with RACI for any registration links\, passwords\, or possi
+ ble changes to the event. I do not hold any responsibility for this webina
+ r. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
