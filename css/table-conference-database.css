@@ -6,6 +6,10 @@ th.column1 {
 	padding-left: 1em;
 }
 
+.body {
+	font-size: 0.8em;
+}
+
 .column1 {
 	width: 25%;
 	overflow: hidden;
