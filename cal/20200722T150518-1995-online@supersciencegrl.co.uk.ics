@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200722T150500
+DTSTART;TZID=Europe/London:20200725T120000
+DTEND;TZID=Europe/London:20200725T130000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Mental health in higher education: How Covid19 and structural inequality can make a PhD even harder to navigate
+UID:20200722T150518-1995-online@supersciencegrl.co.uk
+DESCRIPTION:Mental health in higher education: How Covid19 and structural 
+ inequality can make a PhD even harder to navigate (webinar)\n\nPlease visi
+ t https://www.facebook.com/events/schadowplatz-40212-d%C3%BCsseldorf-deuts
+ chland/soapbox-science-d%C3%BCsseldorf-2020/577840333004420/ for more info
+ rmation. Note: you may need to register separately for this event. \n\nThi
+ s webinar is run by University of Strathclyde Women in Engineering. \n\nTh
+ is is an auto-generated placeholder event created by Nessa Carson at https
+ ://supersciencegrl.co.uk. Please check with University of Strathclyde Wome
+ n in Engineering for any registration links\, passwords\, or possible chan
+ ges to the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

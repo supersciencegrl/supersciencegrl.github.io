@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200702T072000
+DTSTART;TZID=Europe/London:20200724T000000
+DTEND;TZID=Europe/London:20200724T010000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Natural Product Sciences webinar
+UID:20200702T072031-3992-online@supersciencegrl.co.uk
+DESCRIPTION:Natural Product Sciences webinar
+Eun Kyoung Seo – Isolation & 
+ structure determination of active constituents from traditional medicines
+
+ Clara Bik-San Lau – Modern approach of herbal medicine research: Explorati
+ on of beneficial herb-drug combined efficaciesMari Yotsu-Yamashita – Predi
+ ction of biosynthetic pathways of tetrodotoxin & saxitoxin on the basis of
+  the structures of their intermediates (£ free for members\, webinar)\n\nP
+ lease visit https://www.pharmacognosy.us/natural-product-sciences-webinar/
+  for more information. Note: you may need to register separately for this 
+ event. \n\nThis <strong>£</strong> free for members\, webinar is run by Am
+ erican Society of Pharmacognosy. \n\nThis is an auto-generated placeholder
+  event created by Nessa Carson at https://supersciencegrl.co.uk. Please ch
+ eck with American Society of Pharmacognosy for any registration links\, pa
+ sswords\, or possible changes to the event. I do not hold any responsibili
+ ty for this <strong>£</strong> free for members\, webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

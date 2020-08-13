@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200530T181000
+DTSTART;VALUE=DATE:20200814
+DTEND;VALUE=DATE:20200815
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Empowering Women in Organic Chemistry: EWOC2020
+UID:20200530T181014-3227-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Empowering Women in Organic Chemistry: EWOC2020 (conference)\n
+ \nPlease visit https://ewochem.org/ewoc-2020/ for more information. Note: 
+ you may need to register separately for this event. \n\nThis conference is
+  run by EWOC. \n\nThis is an auto-generated placeholder event created by N
+ essa Carson at https://supersciencegrl.co.uk. Please check with EWOC for a
+ ny registration links\, passwords\, or possible changes to the event. I do
+  not hold any responsibility for this conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

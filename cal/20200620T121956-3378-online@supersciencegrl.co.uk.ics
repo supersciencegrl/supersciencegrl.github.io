@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200620T121900
+DTSTART;VALUE=DATE:20200727
+DTEND;VALUE=DATE:20200730
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Online nucleic acids forum poster session #NAF2020
+UID:20200620T121956-3378-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Online nucleic acids forum poster session #NAF2020 (poster con
+ ference)\n\nPlease visit https://www.rsc.org/events/detail/42775/the-16th-
+ nucleic-acids-forum for more information. Note: you may need to register s
+ eparately for this event. \n\nThis poster conference is run by RSC. \n\nTh
+ is is an auto-generated placeholder event created by Nessa Carson at https
+ ://supersciencegrl.co.uk. Please check with RSC for any registration links
+ \, passwords\, or possible changes to the event. I do not hold any respons
+ ibility for this poster conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
