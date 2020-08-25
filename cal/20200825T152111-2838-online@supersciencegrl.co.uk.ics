@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200825T152100
+DTSTART;VALUE=DATE:20200923
+DTEND;VALUE=DATE:20200925
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Electrochemistry 2020
+UID:20200825T152111-2838-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Electrochemistry 2020 (students & postdocs\, conference)\n\nPl
+ ease visit https://veranstaltungen.gdch.de/tms/frontend/index.cfm?l=9169&s
+ p_id=2 for more information. Note: you may need to register separately for
+  this event. \n\nThis students & postdocs\, conference is run by GDCh. \n\
+ nThis is an auto-generated placeholder event created by Nessa Carson at ht
+ tps://supersciencegrl.co.uk. Please check with GDCh for any registration l
+ inks\, passwords\, or possible changes to the event. I do not hold any res
+ ponsibility for this students & postdocs\, conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
