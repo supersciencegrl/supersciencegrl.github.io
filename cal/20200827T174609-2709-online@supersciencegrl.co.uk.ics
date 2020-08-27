@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200827T174600
+DTSTART;TZID=Europe/London:20200917T090000
+DTEND;TZID=Europe/London:20200917T160000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+RRULE:FREQ=DAILY;UNTIL=20200919T000000
+SUMMARY:European Chemistry Partnering business meeting
+UID:20200827T174609-2709-online@supersciencegrl.co.uk
+DESCRIPTION:European Chemistry Partnering business meeting (£\, conference
+ )\n\nPlease visit https://3rd-ecp-summer-summit.ascrion.com/ for more info
+ rmation. Note: you may need to register separately for this event. \n\nThi
+ s <strong>£</strong>\, conference is run by orange-tie.biz. \n\nThis is an
+  auto-generated placeholder event created by Nessa Carson at https://super
+ sciencegrl.co.uk. Please check with orange-tie.biz for any registration li
+ nks\, passwords\, or possible changes to the event. I do not hold any resp
+ onsibility for this <strong>£</strong>\, conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

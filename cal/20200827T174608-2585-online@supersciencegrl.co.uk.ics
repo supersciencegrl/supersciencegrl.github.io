@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200827T174600
+DTSTART;TZID=Europe/London:20200916T140000
+DTEND;TZID=Europe/London:20200916T153000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Jennifer Hiscock – From molecular self-association to novel weapons in the fight against antimicrobial resistance: The next target for AI & machine learning
+UID:20200827T174608-2585-online@supersciencegrl.co.uk
+DESCRIPTION:Jennifer Hiscock – From molecular self-association to novel we
+ apons in the fight against antimicrobial resistance: The next target for A
+ I & machine learning (webinar)\n\nPlease visit http://www.ai3sd.org/summer
+ -seminar-series-2020 for more information. Note: you may need to register 
+ separately for this event. \n\nThis webinar is run by AI3SD. \n\nThis is a
+ n auto-generated placeholder event created by Nessa Carson at https://supe
+ rsciencegrl.co.uk. Please check with AI3SD for any registration links\, pa
+ sswords\, or possible changes to the event. I do not hold any responsibili
+ ty for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
