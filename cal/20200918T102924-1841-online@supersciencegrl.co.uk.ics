@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200918T102900
+DTSTART;VALUE=DATE:20200930
+DTEND;VALUE=DATE:20201003
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Reaxys PhD prize symposium 2020
+UID:20200918T102924-1841-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Reaxys PhD prize symposium 2020 (symposium)\n\nPlease visit ht
+ tps://registration.livegroup.co.uk/reaxysphdprizesymposium2020/ for more i
+ nformation. Note: you may need to register separately for this event. \n\n
+ This symposium is run by Reaxys. \n\nThis is an auto-generated placeholder
+  event created by Nessa Carson at https://supersciencegrl.co.uk. Please ch
+ eck with Reaxys for any registration links\, passwords\, or possible chang
+ es to the event. I do not hold any responsibility for this symposium. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
