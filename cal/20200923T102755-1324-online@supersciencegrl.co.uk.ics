@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200923T102700
+DTSTART;VALUE=DATE:20200922
+DTEND;VALUE=DATE:20200925
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Graphene for research, innovation, collaboration
+UID:20200923T102755-1324-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Graphene for research\, innovation\, collaboration (conference
+ )\n\nPlease visit http://graphene-flagship.eu/digital-events/Pages/Graphen
+ e-for-Research\,-Innovation\,-Collaboration.aspx for more information. Not
+ e: you may need to register separately for this event. \n\nThis conference
+  is run by EU Graphene Flagship. \n\nThis is an auto-generated placeholder
+  event created by Nessa Carson at https://supersciencegrl.co.uk. Please ch
+ eck with EU Graphene Flagship for any registration links\, passwords\, or 
+ possible changes to the event. I do not hold any responsibility for this c
+ onference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
