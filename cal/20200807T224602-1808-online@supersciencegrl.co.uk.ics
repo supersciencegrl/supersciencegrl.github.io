@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200807T224600
+DTSTART;TZID=Europe/London:20200901T150000
+DTEND;TZID=Europe/London:20200901T160000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Microbial identification trending for environmental monitoring of classified areas & its uses in risk management, growth promotion, & disinfectant qualifications
+UID:20200807T224602-1808-online@supersciencegrl.co.uk
+DESCRIPTION:Microbial identification trending for environmental monitoring
+  of classified areas & its uses in risk management\, growth promotion\, & 
+ disinfectant qualifications (webinar)\n\nPlease visit https://www.scientif
+ icupdate.com/webinar_events/microbial-identification-trending-for-environm
+ ental-monitoring-of-classified-areas-and-its-uses-in-risk-management-growt
+ h-promotion-and-disinfectant-qualifications/20200901/ for more information
+ . Note: you may need to register separately for this event. \n\nThis webin
+ ar is run by Scientific Update. \n\nThis is an auto-generated placeholder 
+ event created by Nessa Carson at https://supersciencegrl.co.uk. Please che
+ ck with Scientific Update for any registration links\, passwords\, or poss
+ ible changes to the event. I do not hold any responsibility for this webin
+ ar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

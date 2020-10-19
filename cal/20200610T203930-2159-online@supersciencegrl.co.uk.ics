@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200610T203900
+DTSTART;TZID=Europe/London:20200710T090000
+DTEND;TZID=Europe/London:20200710T183000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Online ICMAB lectureDavid Amabilino – From soft materials to complex material systems
+UID:20200610T203930-2159-online@supersciencegrl.co.uk
+DESCRIPTION:Online ICMAB lectureDavid Amabilino – From soft materials to c
+ omplex material systems (webinar)\n\nPlease visit https://icn2.cat/en/even
+ ts/eventdetail/1354/from-soft-materials-to-complex-material-systems for mo
+ re information. Note: you may need to register separately for this event. 
+ \n\nThis webinar is run by ICN2. \n\nThis is an auto-generated placeholder
+  event created by Nessa Carson at https://supersciencegrl.co.uk. Please ch
+ eck with ICN2 for any registration links\, passwords\, or possible changes
+  to the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

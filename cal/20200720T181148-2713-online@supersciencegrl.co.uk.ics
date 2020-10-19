@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200720T181100
+DTSTART;TZID=Europe/London:20200814T090000
+DTEND;TZID=Europe/London:20200814T210000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Sci comm: The Global Science Show
+UID:20200720T181148-2713-online@supersciencegrl.co.uk
+DESCRIPTION:Sci comm: The Global Science Show (festival)\n\nPlease visit h
+ ttps://www.eventbrite.co.uk/e/the-global-science-show-tickets-113904419184
+  for more information. Note: you may need to register separately for this 
+ event. \n\nThis festival is run by Sam Langford. \n\nThis is an auto-gener
+ ated placeholder event created by Nessa Carson at https://supersciencegrl.
+ co.uk. Please check with Sam Langford for any registration links\, passwor
+ ds\, or possible changes to the event. I do not hold any responsibility fo
+ r this festival. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

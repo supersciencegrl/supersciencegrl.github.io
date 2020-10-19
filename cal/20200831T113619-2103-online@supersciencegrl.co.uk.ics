@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200831T113600
+DTSTART:20200909T110000Z
+DTEND:20200909T120000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Using cobots to increase productivity in laboratory testing
+UID:20200831T113619-2103-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Using cobots to increase productivity in laboratory testing (w
+ ebinar)\n\nPlease visit https://video.universal-robots.com/using-cobots-to
+ -increase/join for more information. Note: you may need to register separa
+ tely for this event. \n\nThis webinar is run by Universal Robots. \n\nThis
+  is an auto-generated placeholder event created by Nessa Carson at https:/
+ /supersciencegrl.co.uk. Please check with Universal Robots for any registr
+ ation links\, passwords\, or possible changes to the event. I do not hold 
+ any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

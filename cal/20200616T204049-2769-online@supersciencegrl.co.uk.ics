@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200616T204000
+DTSTART;VALUE=DATE:20200709
+DTEND;VALUE=DATE:20200712
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Global Inorganic Discussion Weekend Virtual Poster Event
+UID:20200616T204049-2769-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Global Inorganic Discussion Weekend Virtual Poster Event (post
+ er conference)\n\nPlease visit https://twitter.com/marcuswdrover/status/12
+ 70019874664910848/ for more information. Note: you may need to register se
+ parately for this event. \n\nThis poster conference is run by Global Inorg
+ anic Discussion Weekend. \n\nThis is an auto-generated placeholder event c
+ reated by Nessa Carson at https://supersciencegrl.co.uk. Please check with
+  Global Inorganic Discussion Weekend for any registration links\, password
+ s\, or possible changes to the event. I do not hold any responsibility for
+  this poster conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

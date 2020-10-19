@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200810T182600
+DTSTART;TZID=Europe/London:20200901T093000
+DTEND;TZID=Europe/London:20200901T161500
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Butler Meeting 2020 for Scotland & Northern England PhDs & postdocs
+UID:20200810T182622-1910-online@supersciencegrl.co.uk
+DESCRIPTION:Butler Meeting 2020 for Scotland & Northern England PhDs & pos
+ tdocs (symposium)\n\nPlease visit https://www.rsc.org/events/detail/41659/
+ butler-meeting-2020-virtual-meeting for more information. Note: you may ne
+ ed to register separately for this event. \n\nThis symposium is run by RSC
+ . \n\nThis is an auto-generated placeholder event created by Nessa Carson 
+ at https://supersciencegrl.co.uk. Please check with RSC for any registrati
+ on links\, passwords\, or possible changes to the event. I do not hold any
+  responsibility for this symposium. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

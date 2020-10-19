@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200902T133600
+DTSTART;TZID=Europe/London:20200925T003000
+DTEND;TZID=Europe/London:20200925T013000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Jessica Hoover – Mapping decarboxylative coupling reactions: Uncovering new principles that govern catalysis
+UID:20200902T133656-3608-online@supersciencegrl.co.uk
+DESCRIPTION:Jessica Hoover – Mapping decarboxylative coupling reactions: U
+ ncovering new principles that govern catalysis (webinar)\n\nPlease visit h
+ ttps://www.pocclub.org/files/2021/2020_Hoover_Seminar.pdf for more informa
+ tion. Note: you may need to register separately for this event. \n\nThis w
+ ebinar is run by Philadelphia Organic Chemistry Club. \n\nThis is an auto-
+ generated placeholder event created by Nessa Carson at https://superscienc
+ egrl.co.uk. Please check with Philadelphia Organic Chemistry Club for any 
+ registration links\, passwords\, or possible changes to the event. I do no
+ t hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

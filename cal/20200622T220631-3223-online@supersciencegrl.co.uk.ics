@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200622T220600
+DTSTART;TZID=Europe/London:20200715T140000
+DTEND;TZID=Europe/London:20200715T153000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Jonathan Goodman – InChI: Measuring the molecules
+UID:20200622T220631-3223-online@supersciencegrl.co.uk
+DESCRIPTION:Jonathan Goodman – InChI: Measuring the molecules (webinar)\n\
+ nPlease visit https://www.eventbrite.co.uk/e/ai3sd-online-seminar-series-i
+ nchi-measuring-the-molecules-tickets-110637307164 for more information. No
+ te: you may need to register separately for this event. \n\nThis webinar i
+ s run by AI3SD. \n\nThis is an auto-generated placeholder event created by
+  Nessa Carson at https://supersciencegrl.co.uk. Please check with AI3SD fo
+ r any registration links\, passwords\, or possible changes to the event. I
+  do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200920T122100
+DTSTART;TZID=Europe/London:20200923T071500
+DTEND;TZID=Europe/London:20200923T081500
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Nick Green – Prebiotic photochemical link between RNA & DNA
+UID:20200920T122139-1348-online@supersciencegrl.co.uk
+DESCRIPTION:Nick Green – Prebiotic photochemical link between RNA & DNA (w
+ ebinar)\n\nPlease visit https://twitter.com/OzSynthSeminar/status/13075774
+ 29091741701 for more information. Note: you may need to register separatel
+ y for this event. \n\nThis webinar is run by University of Melbourne. \n\n
+ This is an auto-generated placeholder event created by Nessa Carson at htt
+ ps://supersciencegrl.co.uk. Please check with University of Melbourne for 
+ any registration links\, passwords\, or possible changes to the event. I d
+ o not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

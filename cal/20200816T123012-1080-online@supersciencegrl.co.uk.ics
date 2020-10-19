@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200816T123000
+DTSTART;TZID=Europe/London:20200827T233000
+DTEND;TZID=Europe/London:20200828T003000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Public talk: Lab basics: Fermentation
+UID:20200816T123012-1080-online@supersciencegrl.co.uk
+DESCRIPTION:Public talk: Lab basics: Fermentation (webinar)\n\nPlease visi
+ t https://www.eventbrite.com/e/tools-of-the-trade-lab-basics-monthly-serie
+ s-tickets-116537483751 for more information. Note: you may need to registe
+ r separately for this event. \n\nThis webinar is run by Genspace. \n\nThis
+  is an auto-generated placeholder event created by Nessa Carson at https:/
+ /supersciencegrl.co.uk. Please check with Genspace for any registration li
+ nks\, passwords\, or possible changes to the event. I do not hold any resp
+ onsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

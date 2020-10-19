@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200601T193100
+DTSTART;TZID=Europe/London:20200623T200000
+DTEND;TZID=Europe/London:20200623T210000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Clinical trials virtual series: Using AI to break the trial enrolment bottleneck
+UID:20200601T193121-1258-online@supersciencegrl.co.uk
+DESCRIPTION:Clinical trials virtual series: Using AI to break the trial en
+ rolment bottleneck (webinar)\n\nPlease visit https://pages.questexnetwork.
+ com/Clinical-Trial-Event-Cast-Registration-June2020.html for more informat
+ ion. Note: you may need to register separately for this event. \n\nThis we
+ binar is run by FiercePharma. \n\nThis is an auto-generated placeholder ev
+ ent created by Nessa Carson at https://supersciencegrl.co.uk. Please check
+  with FiercePharma for any registration links\, passwords\, or possible ch
+ anges to the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

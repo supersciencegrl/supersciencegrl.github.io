@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200814T104200
+DTSTART;TZID=Europe/London:20200822T170000
+DTEND;TZID=Europe/London:20200822T190000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Her STEM story podcast club
+UID:20200814T104237-1641-online@supersciencegrl.co.uk
+DESCRIPTION:Her STEM story podcast club (podcast & discussion)\n\nPlease v
+ isit https://www.eventbrite.com/e/podcast-club-tickets-113046089898 for mo
+ re information. Note: you may need to register separately for this event. 
+ \n\nThis podcast & discussion is run by The Ohio State University Women in
+  STEMM Alumni Society. \n\nThis is an auto-generated placeholder event cre
+ ated by Nessa Carson at https://supersciencegrl.co.uk. Please check with T
+ he Ohio State University Women in STEMM Alumni Society for any registratio
+ n links\, passwords\, or possible changes to the event. I do not hold any 
+ responsibility for this podcast & discussion. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

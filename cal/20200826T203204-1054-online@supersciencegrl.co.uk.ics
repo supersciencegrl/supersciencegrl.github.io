@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200826T203200
+DTSTART;VALUE=DATE:20200824
+DTEND;VALUE=DATE:20200828
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Global orphan drug conference
+UID:20200826T203204-1054-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Global orphan drug conference (£\, conference)\n\nPlease visit
+  https://www.terrapinn.com/conference/world-orphan-drug-congress-usa/index
+ .stm for more information. Note: you may need to register separately for t
+ his event. \n\nThis <strong>£</strong>\, conference is run by European Soc
+ iety for Molecular Imaging. \n\nThis is an auto-generated placeholder even
+ t created by Nessa Carson at https://supersciencegrl.co.uk. Please check w
+ ith European Society for Molecular Imaging for any registration links\, pa
+ sswords\, or possible changes to the event. I do not hold any responsibili
+ ty for this <strong>£</strong>\, conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

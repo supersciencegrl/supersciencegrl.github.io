@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200702T072000
+DTSTART;TZID=Europe/London:20200818T150000
+DTEND;TZID=Europe/London:20200818T160000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:SCI Food Group AGM & talk 2020
+UID:20200702T072031-4502-online@supersciencegrl.co.uk
+DESCRIPTION:SCI Food Group AGM & talk 2020
+Chris Kelly – AbScent (webinar)
+ \n\nPlease visit https://www.soci.org/events/food-group/2020/sci-food-grou
+ p-agm-and-talk-2020 for more information. Note: you may need to register s
+ eparately for this event. \n\nThis webinar is run by SCI Food Grup. \n\nTh
+ is is an auto-generated placeholder event created by Nessa Carson at https
+ ://supersciencegrl.co.uk. Please check with SCI Food Grup for any registra
+ tion links\, passwords\, or possible changes to the event. I do not hold a
+ ny responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200716T105700
+DTSTART;VALUE=DATE:20200929
+DTEND;VALUE=DATE:20200930
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Cryo-EM in drug discovery symposium
+UID:20200716T105707-3145-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Cryo-EM in drug discovery symposium (symposium)\n\nPlease visi
+ t https://www.thermofisher-symposiumvirtual.org/ for more information. Not
+ e: you may need to register separately for this event. \n\nThis symposium 
+ is run by LD Organisation. \n\nThis is an auto-generated placeholder event
+  created by Nessa Carson at https://supersciencegrl.co.uk. Please check wi
+ th LD Organisation for any registration links\, passwords\, or possible ch
+ anges to the event. I do not hold any responsibility for this symposium. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

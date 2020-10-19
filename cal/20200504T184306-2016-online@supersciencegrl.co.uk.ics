@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200504T184300
+DTSTART;TZID=Europe/London:20200602T150000
+DTEND;TZID=Europe/London:20200602T163000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+RRULE:FREQ=DAILY;UNTIL=20200604T000000
+SUMMARY:Drug metabolism and pharmacokinetics
+UID:20200504T184306-2016-online@supersciencegrl.co.uk
+DESCRIPTION:Drug metabolism and pharmacokinetics (DMPK) in drug discovery 
+ (training course)\n\nPlease visit https://www.scientificupdate.com/trainin
+ g_courses/virtual-training-event-drug-metabolism-and-pharmacokinetics-dmpk
+ -in-drug-discovery/20200602/ for more information. Note: you may need to r
+ egister separately for this event. \n\nThis training course is run by Scie
+ ntific Update. \n\nThis is an auto-generated placeholder event created by 
+ Nessa Carson at https://supersciencegrl.co.uk. Please check with Scientifi
+ c Update for any registration links\, passwords\, or possible changes to t
+ he event. I do not hold any responsibility for this training course. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

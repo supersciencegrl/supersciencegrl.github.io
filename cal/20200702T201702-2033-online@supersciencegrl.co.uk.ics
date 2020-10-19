@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200702T201700
+DTSTART;TZID=Europe/London:20200827T070000
+DTEND;TZID=Europe/London:20200827T080000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Rapid DSC: The exciting new world of flash DSC
+UID:20200702T201702-2033-online@supersciencegrl.co.uk
+DESCRIPTION:Rapid DSC: The exciting new world of flash DSC (webinar)\n\nPl
+ ease visit https://www.mt.com/gb/en/home/events/live-webinars/lab-analytic
+ al-instruments/FlashDSC_TA.html.html for more information. Note: you may n
+ eed to register separately for this event. \n\nThis webinar is run by Mett
+ ler Toledo. \n\nThis is an auto-generated placeholder event created by Nes
+ sa Carson at https://supersciencegrl.co.uk. Please check with Mettler Tole
+ do for any registration links\, passwords\, or possible changes to the eve
+ nt. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
