@@ -35,8 +35,10 @@
 	width: 100%;
 }
 
-.limiter th, td 
-.limitera th, td{
+.limiter th,
+.limiter td,
+.limitera th,
+.limitera td {
 	font-weight: unset;
 	padding-right: 1em;
 	font-family: 'Open Sans', sans-serif;
@@ -120,21 +122,29 @@
 	font-weight: bold;
 	text-decoration: none;
 }
-
 .table-link:visited {
 	text-decoration: none;
 	color: inherit;
 }
-
 .table-link:hover {
 	text-decoration: none;
 	color: #2299D4;
 }
-
 .table-link:active {
 	text-decoration: none;
 	color: #2299D4;
 }
+
+/* x-large screens */
+@media only screen and (min-width: 1500px) {
+	.limiter th,
+	.limiter td,
+	.limitera th,
+	.limitera td {
+		font-family: Helvetica, sans-serif;
+	}
+}
+/* End of x-large screens */
 
 /* Mobile devices */
 @media only screen and (max-device-width: 480px),
