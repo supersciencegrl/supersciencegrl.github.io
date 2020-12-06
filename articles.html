@@ -220,6 +220,21 @@
 			<div class="column m-hidden" id="sidebar">
 				<div style="height: 25px"></div>
 				
+				<!-- Articles section -->
+				<div class="sidebar-row">
+					<p class="sidebar-title">Filter articles</p>
+					<div id="btnContainer">
+						<div id="insideBtnContainer">
+							<button class="btn btnFilter btn-block activeFilter" onclick="filterSelection('all')"><span class="pull-left">All</span></button>
+							<button class="btn btnFilter btn-block" onclick="filterSelection('expert')"><span class="pull-left">Expert audience</span></button>
+							<button class="btn btnFilter btn-block" onclick="filterSelection('general')"><span class="pull-left">General audience</span></button>
+							<button class="btn btnFilter btn-block" onclick="filterSelection('youth')"><span class="pull-left">Youth audience</span></button>
+						</div>
+					</div>
+					
+					<hr class="sidebar-hr">
+				  </div>
+				
 				<!--Sidebar rows--> 
 				<div class="sidebar-row">
 					<p class="sidebar-title">Search this site</p>
