@@ -237,6 +237,12 @@ pre {
 	text-align: center;
 }
 
+#main-linkedin {
+	max-width: 2.5rem;
+	margin-top: -0.5rem;
+	margin-left: 1.56rem;
+}
+
 #grid#grid2 {
     width: 100%;
     background-color: rgba(0,0,0,0);
@@ -278,6 +284,7 @@ pre {
 
 .nav_snap {
 	scroll-snap-align: start;
+	max-width: 98%;
 }
 
 #section1, 
@@ -372,6 +379,7 @@ pre {
 	border-radius: 50%;
 	display: block;
 	margin: auto;
+	margin-top: 2rem;
 	max-width: 100%;
 }
 
@@ -480,7 +488,7 @@ pre {
 	padding-left: 10px;
 }
 
-leftalign {
+.leftalign {
     text-align: left;
 }
 
@@ -737,6 +745,7 @@ text-decoration: none;}
 	outline: none;
 	clear: both;
 	cursor: pointer;
+	padding: 8px 16px;
 	text-align: center;
 }
 .btnBold:hover {
