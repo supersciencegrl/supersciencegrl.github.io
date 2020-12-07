@@ -741,6 +741,8 @@ text-decoration: none;}
 
 .btnBold {
 	border: none;
+	border-radius: 3px;
+	box-shadow: 0 0 1px 1px #808080;
 	background: linear-gradient(#C7A93E, rgba(221, 221, 221, 0), #C7A93E);
 	outline: none;
 	clear: both;
