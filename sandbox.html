@@ -135,7 +135,7 @@
       
 			<!-- Main page -->
 			<div class="column" id="mainpage">
-				<div id="content">
+				<div id="content" style="padding-right: 2px;"> <!-- Less padding to make room for scrollbar -->
 	
 					<div id="index_nav_wrapper">	
 						<div id="index_nav_bullets">
@@ -148,13 +148,14 @@
 
 						<div id="index_nav_gallery">
 						
-							<div class="nav_snap" id="carousel-about">
+							<div class="nav_snap" id="section1">
 								<h3 id="main-title">Nessa Carson</h3>
 								<h5 id="main-subheading">I'm a synthetic organic and automation chemist</h5>
 								<hr />
 								
 								<div class="row">
-									<div class="col-md-4">
+									<!-- medium/large screens and mobiles -->
+									<div class="col-md-4 smallscreensnone">
 										<h3 class="page-subtitle">About me</h3>
 										<p class="leftalign">I'm a synthetic organic chemist, working with laboratory automation for reaction optimization. 
 										Although my main focus is chemistry, I like coding in Python and R to automate everything that makes our work easier. 
@@ -162,26 +163,38 @@
 										I'm always happy to consult on automation and HTE matters for small molecule chemistry. 
 										What I bring are stats, bullet points, and teamwork.</p>
 									</div>
-									<div class="col-md-4">
+									<div class="col-md-4 smallscreensnone">
 										<img id="homepage-avatar" src="/img/NC2.jpg" alt="Nessa Carson">
 									</div>
+									
+									<!-- small screens -->
+									<div class="col-md-8 smallscreensshow">
+										<h3 class="page-subtitle">About me</h3>
+										<img id="homepage-avatar-smallscreens" src="/img/NC2.jpg" alt="Nessa Carson">
+										<p class="leftalign">I'm a synthetic organic chemist, working with laboratory automation for reaction optimization. 
+										Although my main focus is chemistry, I like coding in Python and R to automate everything that makes our work easier. 
+										I'm also a Scientific Editor at <em>Synthetic Reaction Updates</em> by the RSC, and a regular columnist for <em>Chemistry World</em>. 
+										I'm always happy to consult on automation and HTE matters for small molecule chemistry. 
+										What I bring are stats, bullet points, and teamwork.</p>
+									</div>
+									<!-- end of small screens -->
+									
 									<div class="col-md-4">
 										<h3 class="page-subtitle">My elements</h3>
-										<p class="leftalign">
-											<ul>
-												<li>Reaction and process optimization</li>
-												<li>Cross-coupling chemistry</li>
-												<li>HTE experimental design</li>
-												<li>R and Python for data analysis &amp; visualization</li>
-												<li>IRL and virtual conferences</li>
-											</ul>
-											<a href="https://www.linkedin.com/in/nessacarson/" target="_blank" rel="noopener">
-												<img src="/img/linkedin.png" alt="Nessa's LinkedIn profile" id="main-linkedin">
-											</a>
-										</p>
+										<ul class="leftalign">
+											<li>Reaction and process optimization</li>
+											<li>Cross-coupling chemistry</li>
+											<li>HTE experimental design</li>
+											<li>R and Python for data analysis &amp; visualization</li>
+											<li>IRL and virtual conferences</li>
+										</ul>
+										<a href="https://www.linkedin.com/in/nessacarson/" target="_blank" rel="noopener">
+											<img src="/img/linkedin.png" alt="Nessa's LinkedIn profile" id="main-linkedin">
+										</a>
 									</div>
 								</div>
 								
+								<hr class="m-visible-none" />
 								<div>
 									<p style="text-align: center;">Finding these free resources useful? No problem: buy me a coffee if you enjoy them! 
 										<br />
@@ -191,61 +204,49 @@
 									</p>
 								</div>
 							
-							</div><!-- carousel-about -->
+							</div><!-- section1 -->
 							
 							<hr />
-							<div class="nav_snap" id="section1">
-								<h3 class="page-title">Nessa Carson: Latest Articles</h3>
-							   
-								<div id="grid">
-							   
-									<div class="grid-square">
-										<a href="/pages/A-day-in-the-lab"><img class="display-image" src="/img/SEDlab.jpg" alt="A day in the lab"></a>
-										<a href="/pages/A-day-in-the-lab"><h5 class="square-title">A day in the lab</h5></a>
-										<p class="caption"><strong>Chemistry World</strong>. <em>17/01/2020</em></p>
-									</div>
-								   
-									<div class="grid-square">
-										<a href="/pages/Who-is-a-scientist"><img class="display-image" src="/img/Mad_scientist.png" alt="Who is really a scientist?"></a>
-										<a href="/pages/Who-is-a-scientist"><h5 class="square-title">Who is really a Scientist?</h5></a>
-										<p class="caption"><strong>Chemistry World</strong>. <em>15/08/2019</em></p>
-									</div>
-								   
-									<div class="grid-square">
-										<a href="/pages/Making-A-Meme-Of-It"><img class="display-image" src="/img/memes.jpg" alt="Making a Meme of It"></a>
-										<a href="/pages/Making-A-Meme-Of-It"><h5 class="square-title">Making a Meme of It</h5></a>
-										<p class="caption"><strong>Chemistry World</strong>. <em>16/04/2019</em></p>
-									</div>
-								   
-									<div class="grid-square grid-six">
-										<a href="/pages/Are-You-Reading-Me"><img class="display-image" src="/img/book.jpg" alt="Are You Reading Me?"></a>
-										<a href="/pages/Are-You-Reading-Me"><h5 class="square-title">Are You Reading Me?</h5></a>
-										<p class="caption"><strong>Chemistry World</strong>. <em>03/01/2019</em></p>
-									</div>
-								   
-									<div class="grid-square">
-										<a href="/pages/Brute-Force-and-Ignorance"><img class="display-image" src="/img/hourglass.jpg" alt="Brute Force and Ignorance"></a>
-										<a href="/pages/Brute-Force-and-Ignorance"><h5 class="square-title">Brute Force and Ignorance</h5></a>
-										<p class="caption"><strong>Chemistry World</strong>. <em>30/08/2018</em></p>
-									</div>
-									 
-									<div class="grid-square grid-six">
-										<a href="/pages/Sideways-Look-At-Synthesis"><img class="display-image" src="/img/sideproduct.jpg" alt="A Sideways Look at Synthesis"></a>
-										<a href="/pages/Sideways-Look-At-Synthesis"><h5 class="square-title">A Sideways Look at Synthesis</h5></a>
-										<p class="caption"><strong>Chemistry World</strong>. <em>30/04/2018</em></p>
-									</div>
-								 
-								</div><!-- Grid -->
-							</div><!-- section1 -->
-		
 							<div class="nav_snap" id="section2">
+								<h3 class="page-title">Latest Articles</h3>
+								
+								<div class="row"><!-- Change div class from grid-square to grid-square-homepage when copypasting -->
+									<div class="col-md-4">
+										<div class="grid-square-homepage">
+											<a href="/pages/A-day-in-the-lab"><img class="display-image" src="/img/SEDlab.jpg" alt="A day in the lab"></a>
+											<a href="/pages/A-day-in-the-lab"><h5 class="square-title">A day in the lab</h5></a>
+											<p class="caption"><strong>Chemistry World</strong>. <em>17/01/2020</em></p>
+										</div>
+									</div>
+										
+									<div class ="col-md-4">
+										<div class="grid-square-homepage">
+											<a href="/pages/Who-is-a-scientist"><img class="display-image" src="/img/Mad_scientist.png" alt="Who is really a scientist?"></a>
+											<a href="/pages/Who-is-a-scientist"><h5 class="square-title">Who is really a Scientist?</h5></a>
+											<p class="caption"><strong>Chemistry World</strong>. <em>15/08/2019</em></p>
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+										<div class="grid-square-homepage">
+											<a href="/pages/Making-A-Meme-Of-It"><img class="display-image" src="/img/memes.jpg" alt="Making a Meme of It"></a>
+											<a href="/pages/Making-A-Meme-Of-It"><h5 class="square-title">Making a Meme of It</h5></a>
+											<p class="caption"><strong>Chemistry World</strong>. <em>16/04/2019</em></p>
+										</div>
+									</div>
+								</div><!-- row -->
+									
+							</div><!-- section2 -->
+		
+							<hr />
+							<div class="nav_snap" id="section3">
 							
 								<h3 class="page-title">Nessa Carson: Section 2</h3>
 								
 								<p class="p-first">And then there is going to be some text, right here!</p>
 								<p class="p-main">If it were a little bigger, as it would be in irl, that might fix the scroll-snap behaviour.</p>
 							
-							</div><!-- section2 -->
+							</div><!-- section3 -->
 		
 							<div class="nav_snap" id="section3">
 							
