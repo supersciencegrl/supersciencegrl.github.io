@@ -293,11 +293,16 @@ pre {
 	display: block;
 }
 
+.grid-square-homepage-container {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
 .grid-square,
 .grid-square-homepage {
     background-color: rgba(0,0,0,0);
     margin: auto;
-    padding: 10px 5% 50px 5%;
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -307,6 +312,30 @@ pre {
     min-width: 300px;
     max-width: 500px;
     max-width: 60vw;
+	padding: 10px 5% 50px 5%;
+}
+.grid-square-homepage {
+	padding: 10px 5% 0 5%;
+}
+
+.experience-institution {
+	color: #000000;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: #2299D4;
+	margin-bottom: 0;
+}
+.squishedheading {
+	letter-spacing: 1px;
+}
+.experience-title {
+	margin-bottom: 0;
+	text-align: left;
+}
+.experience-location {
+	color: #2299D4;
 }
 
 .grid-character {
