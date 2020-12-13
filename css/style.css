@@ -330,9 +330,15 @@ pre {
 .squishedheading {
 	letter-spacing: 1px;
 }
+.experience-title,
+.experience-title-short {
+	text-align: left;
+}
 .experience-title {
 	margin-bottom: 0;
-	text-align: left;
+}
+.experience-title-short {
+	margin-bottom: 1rem;
 }
 .experience-location {
 	color: #2299D4;
