@@ -317,18 +317,21 @@ pre {
 .grid-square-homepage {
 	padding: 10px 5% 0 5%;
 }
+#latestArticlesSeeMore {
+	margin: 0 0 1.25rem 1rem;
+}
 
+.experience-indent {
+	padding-left: 1.5rem;
+}
 .experience-institution {
 	color: #000000;
 	font-weight: bold;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-decoration: underline;
 	text-decoration-color: #2299D4;
 	margin-bottom: 0;
-}
-.squishedheading {
-	letter-spacing: 1px;
 }
 .experience-title,
 .experience-title-short {
@@ -339,9 +342,22 @@ pre {
 }
 .experience-title-short {
 	margin-bottom: 1rem;
+	padding-left: 0.5rem;
 }
 .experience-location {
 	color: #2299D4;
+	padding-left: 0.5rem;
+}
+#extracurricular-heading {
+	text-align: center;
+	font-size: 1.25rem;
+	color: #022964;
+	padding: 0 0 5px 0; 
+	color: #000000;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: #2299D4;
 }
 
 .grid-character {
