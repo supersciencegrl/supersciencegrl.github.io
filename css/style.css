@@ -274,6 +274,9 @@ pre {
 	color: #014C8C;
 	text-decoration: none;
 }
+.tinyindent {
+	margin-left: 5px;
+}
 
 #index_nav_gallery {
 	overflow-y: scroll;
