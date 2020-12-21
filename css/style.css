@@ -274,8 +274,11 @@ pre {
 	color: #014C8C;
 	text-decoration: none;
 }
+.nav_bullets_arrow {
+	color: #808080;
+}
 .tinyindent {
-	margin-left: 5px;
+	margin-left: 8px;
 }
 
 #index_nav_gallery {
@@ -331,6 +334,7 @@ pre {
 	color: #000000;
 	font-weight: bold;
 	letter-spacing: 1px;
+	text-align: left;
 	text-transform: uppercase;
 	text-decoration: underline;
 	text-decoration-color: #2299D4;
@@ -1152,6 +1156,12 @@ only screen and (min-resolution: 300dpi) {
 	}
 	#index_nav_bullets {
 		display: none;
+	}
+	.experience-indent {
+		padding-left: 1rem;
+	}
+	#main-linkedin {
+		margin-left: 40%;
 	}
 }
 /* End of mobile devices */
