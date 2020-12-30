@@ -1098,8 +1098,12 @@ only screen and (min-resolution: 300dpi) {
 	figure {
 		font-size: small;
 	}
+	#mainpage {
+		min-height: 300px;
+	}
 	#content {
 		padding: 10px;
+		min-height: 300px;
 	}
     #content p, 
     #content ul {
