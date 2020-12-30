@@ -945,7 +945,7 @@ pre {
 
 #btnBold-contact-email {
   background: linear-gradient(#2299D4, rgba(221, 221, 221, 0), #2299D4);
-  margin-left: 10px;
+  margin: 0 0 30px 10px;
 }
 
 .listwrapper {
