@@ -943,6 +943,11 @@ pre {
   margin-left: 10px;
 }
 
+#btnBold-contact-email {
+  background: linear-gradient(#2299D4, rgba(221, 221, 221, 0), #2299D4);
+  margin-left: 10px;
+}
+
 .listwrapper {
   width: 75%;
 }
@@ -1072,8 +1077,17 @@ pre {
   word-break: break-all;
 }
 
+.contact-header {
+  padding-top: 0;
+}
+
+.p-contact {
+  font-size: small;
+  padding-left: 10px;
+}
+
 .contactsocialrow {
-  padding: 30px 0 30px 10px;
+  padding: 10px 0 30px 10px;
 }
 
 #about-page-ul {
