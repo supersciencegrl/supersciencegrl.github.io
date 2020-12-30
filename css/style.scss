@@ -543,7 +543,7 @@ pre {
 	font-size: medium;
 }
 .p-indent {
-	padding-left: 10px;
+	padding-left: $default-indent;
 }
 
 .leftalign {
@@ -744,6 +744,18 @@ pre {
 .sidebar-rss:hover {color: #EF8500;}
 .sidebar-rss:active {color: $highlight;}
 
+.contact-icon {
+	font-size: xx-large;
+	padding-right: 10px;
+	margin-left: 10px;
+}
+.contact-icon.fa-github:active {
+	color: #7C007C;
+}
+.sidebar-td.fa-linkedin:active {
+	color: #0A66C2;
+}
+
 #copyright {
 	margin-bottom: 0;
 }
@@ -816,6 +828,9 @@ pre {
 }
 .btnBold:hover {
 	box-shadow: 0 0 1px 1px $title-lighter;
+}
+#btnBold-contact {
+	margin-left: $default-indent;
 }
 
 .listwrapper {
