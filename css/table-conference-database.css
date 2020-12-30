@@ -1,244 +1,250 @@
+/* Sass theme */
 th {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 th.column1 {
-	padding-left: 1em;
+  padding-left: 1em;
 }
 
 .body {
-	font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .column1 {
-	width: 25%;
-	overflow: hidden;
-	padding-left: 1em;
+  width: 25%;
+  overflow: hidden;
+  padding-left: 1em;
 }
 
 .column2 {
-	width: 12%;
-	padding-left: 0;
-	padding-right: 0;
-	overflow: hidden;
+  width: 12%;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
 }
 
 .column3 {
-	width: 12%;
-	padding-left: 0;
-	padding-right: 0;
-	overflow: hidden;
+  width: 12%;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
 }
 
 td.column2, td.column3, td.column5, td.column6 {
-	font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .column4 {
-	width: 20%;
-	overflow: hidden;
+  width: 20%;
+  overflow: hidden;
 }
 
 .column5 {
-	width: 13%;
-	overflow: hidden;
+  width: 13%;
+  overflow: hidden;
 }
 
 .column6 {
-	width: 13%;
-	overflow: hidden;
+  width: 13%;
+  overflow: hidden;
 }
 
 /* Checkboxes */
-
 .grid-checkbox {
-	width: 100%;
-	min-width: 300px;
-	background-color: rgba(0,0,0,0);
-	margin: auto;
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
+  width: 100%;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: auto;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .checkbox-conf {
-	padding: 0;
-	text-align: right;
+  padding: 0;
+  text-align: right;
 }
 
 .container-checkbox p {
-	padding-right: 27px;
+  padding-right: 27px;
 }
 
 .container-checkbox input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .checkbox-custom {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin-left: 15px;
-	height: 24px;
-	width: 24px;
-	background-color: #DDDDDD;
-	border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 15px;
+  height: 24px;
+  width: 24px;
+  background-color: #DDDDDD;
+  border-radius: 50%;
 }
 
 .container-checkbox:hover input ~ .checkbox-custom {
-	background-color: #888899;
+  background-color: #888899;
 }
 
 .container-checkbox input:checked ~ .checkbox-custom {
-	background-color: #0279B4;
+  background-color: #0279B4;
 }
 
 .checkbox-custom:after {
-	content: "";
-	position: absolute;
-	display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 .container-checkbox input:checked ~ .checkbox-custom:after {
-	display: block;
+  display: block;
 }
 
 .container-checkbox .checkbox-custom:after {
- 	top: 8px;
-	left: 8px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background-color: #FFFFFF;
+  top: 8px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
 }
 
 .student,
 .academic {
-	display: none;
+  display: none;
 }
 
 .cancelled {
-	text-decoration: line-through;
-	text-decoration-color: navy;
+  text-decoration: line-through;
+  text-decoration-color: navy;
 }
 
 .postponed {
-	text-decoration: line-through;
-	text-decoration-color: green;
+  text-decoration: line-through;
+  text-decoration-color: green;
 }
 
 #checkboxes {
-	display: block;
-	margin: auto;
-	padding-top: 1em;
-	width: 50%;
+  display: block;
+  margin: auto;
+  padding-top: 1em;
+  width: 50%;
 }
 
 #remove_cancelled {
-	display: block;
-	position: relative;
-	float: right;
-	margin-right: 35%;
-	cursor: pointer;
-	font-size: 22px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: 35%;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .big-checkbox-label {
-	font-weight: bold;
-	font-size: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 #remove_cancelled input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
 .big-checkbox {
-	position: absolute;
-	top: 5px;
-	left: -35px;
-	height: 25px;
-	width: 25px;
-	border-radius: 5%;
-	background-color: #DDDDDD;
-	vertical-align: bottom;
+  position: absolute;
+  top: 5px;
+  left: -35px;
+  height: 25px;
+  width: 25px;
+  border-radius: 5%;
+  background-color: #DDDDDD;
+  vertical-align: bottom;
 }
 
 #remove_cancelled:hover input ~ .big-checkbox {
-	background-color: #888899;
+  background-color: #888899;
 }
 
 #remove_cancelled input:checked ~ .big-checkbox {
-	background-color: #0279B4;
+  background-color: #0279B4;
 }
 
 .big-checkbox:after {
-	content: "";
-	position: absolute;
-	display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 #remove_cancelled input:checked ~ .big-checkbox:after {
-	display: block;
+  display: block;
 }
 
 #remove_cancelled .big-checkbox:after {
-	left: 9px;
-	top: 5px;
-	width: 7px;
-	height: 12px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* Small computer screens */
 @media only screen and (max-width: 1200px) {
-	.container-checkbox p {
-		font-size: small;
-	}
+  .container-checkbox p {
+    font-size: small;
+  }
 }
 /* End of small screens */
-
 /* Mobile devices */
-@media only screen and (max-device-width: 480px), 
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 300dpi) {
-	.column1 {
-		max-width: 25vw;
-	}
-	.column4 {
-		max-width: 15vw;
-	}
-	td.column2 {
-		font-size: 1em !important;
-	}
-	.column3, .column5, .column6 {
-		display: none !important;
-	}
-	#conf-database-introduction {
-		width: 100%;
-	}
-	#checkboxes {
-		display: none;
-	}
-	#div_remove_cancelled {
-		min-width: 85vw;
-		float: left;
-	}
-	#remove_cancelled {
-		margin-right: 20%;
-	}
+@media only screen and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 300dpi) {
+  .column1 {
+    max-width: 25vw;
+  }
+
+  .column4 {
+    max-width: 15vw;
+  }
+
+  td.column2 {
+    font-size: 1em !important;
+  }
+
+  .column3, .column5, .column6 {
+    display: none !important;
+  }
+
+  #conf-database-introduction {
+    width: 100%;
+  }
+
+  #checkboxes {
+    display: none;
+  }
+
+  #div_remove_cancelled {
+    min-width: 85vw;
+    float: left;
+  }
+
+  #remove_cancelled {
+    margin-right: 20%;
+  }
 }
 /* End of mobile devices */
+
+/*# sourceMappingURL=table-conference-database.css.map */

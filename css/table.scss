@@ -1,0 +1,168 @@
+@import "theme";
+
+/* Table containers */
+.limiter, 
+.limitera {
+	width: 100%;
+	margin: 0;
+	margin-left: 0;
+	display: inline-block;
+}
+
+.container-table100 {
+	width: 100%;
+	min-height: 50vh;
+	background: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1em;
+}
+
+.wrap-table100 {
+	width: 75%;
+}
+
+.wrap-table100-wide {
+	width: 100%;
+}
+
+/* Table */
+.limiter table, 
+.limitera table {
+	width: 100%;
+}
+
+.limiter th,
+.limiter td,
+.limitera th,
+.limitera td {
+	padding-right: 1em;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.4;
+}
+
+.limiter th, 
+.limitera th {
+	font-weight: unset;
+	padding-top: 19px;
+	padding-bottom: 18px;
+	padding-left: inherit;
+	margin-left: 0;
+	border-left: 0;
+	font-size: 1.1em;
+	color: $table-header-text;
+	background-color: $highlight;
+}
+
+.limiter td {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 0.95em;
+	color: $table-text;
+}
+
+.limitera td {
+	font-size: 0.95em;
+	color: $table-text;
+}
+
+/* Fixed header */
+.table100 {
+	position: relative;
+	padding-top: 65px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+	-o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+	-ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.table100-head {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	max-height: 80px;
+	overflow: hidden;
+}
+
+.table100-body {
+	width: 100%;
+	max-height: 40vh;
+	overflow: auto;
+}
+
+.table100-body-a {
+	width: 100%;
+	max-height: 50vh;
+	overflow: auto;
+}
+
+.table100-body-tall {
+	width: 100%;
+	max-height: 80vh;
+	overflow: auto;
+}
+
+#conf-database-table tr:nth-child(even) {
+	background-color: $table-shading;
+}
+
+#events-org-table tr:nth-child(4n), 
+#events-org-table tr:nth-child(4n+1) {
+	background-color: $table-shading;
+}
+
+.table-link {
+	font-weight: bold;
+	text-decoration: none;
+}
+.table-link:visited {
+	text-decoration: none;
+	color: inherit;
+}
+.table-link:hover,
+.table-link:active {
+	text-decoration: none;
+	color: $title-lighter;
+}
+
+/* x-large screens */
+@media only screen and (min-width: 1500px) {
+	.limiter th,
+	.limiter td,
+	.limitera th,
+	.limitera td {
+		font-family: Helvetica, sans-serif;
+	}
+}
+/* End of x-large screens */
+
+/* Mobile devices */
+@media only screen and (max-device-width: 480px),
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 300dpi) {
+	.container-table100 {
+		font-size: x-small;
+		padding: 0 0 1em 0;
+	}
+	.wrap-table100 {
+		width: 100%;
+	}
+	.limitera td {
+		font-size: x-small;
+		color: $table-text;
+	}
+	p-inline {
+		padding-top: 0;
+		padding-right: 0;
+	}
+}
+/* End of mobile devices */
