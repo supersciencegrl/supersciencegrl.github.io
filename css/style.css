@@ -226,6 +226,9 @@ pre {
 .page-subtitle {
 	color: #022964;
 }
+.tab-heading {
+	color: #022964;
+}
 #main-title {
 	color: #022964;
 	padding: 0;
@@ -650,8 +653,13 @@ pre {
     margin-bottom: 0;
 }
 
-.media-title {
+
+.presentation-title {
+	color: #0279B4;
 	font-weight: bold;
+	font-size: large;
+}
+.media-title {
 	font-size: large;
 }
 

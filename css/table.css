@@ -39,7 +39,6 @@
 .limiter td,
 .limitera th,
 .limitera td {
-	font-weight: unset;
 	padding-right: 1em;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.4;
@@ -47,6 +46,7 @@
 
 .limiter th, 
 .limitera th {
+	font-weight: unset;
 	padding-top: 19px;
 	padding-bottom: 18px;
 	padding-left: inherit;
