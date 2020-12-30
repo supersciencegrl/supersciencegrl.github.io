@@ -12,11 +12,11 @@
 	<!-- Number of items: 20 -->
 
 	<item>
-	<title>SuperScienceGrl is 3!</title>
-	<link>https://supersciencegrl.co.uk/online?rss=42</link>
-	<guid>https://supersciencegrl.co.uk/online?rss=42</guid>
-	<pubDate>Tue, 21 Apr 2020 13:58 GMT</pubDate>
-	<description><![CDATA[
+		<title>SuperScienceGrl is 3!</title>
+		<link>https://supersciencegrl.co.uk/online?rss=42</link>
+		<guid>https://supersciencegrl.co.uk/online?rss=42</guid>
+		<pubDate>Tue, 21 Apr 2020 13:58 GMT</pubDate>
+		<description><![CDATA[
 				<h6>SuperScienceGrl is 3 years old (tomorrow)! I can't honestly remember how it looked when it was launched.</h6>
 				<p>But it's been fun, it taught me CSS and JavaScript right from the start, and since then I've started using Python to update some parts programmatically. 
 					Looks like I'm still learning from it, as today I took some time to learn about Sass, and switch my CSS over to Sass to make it more readable and updatable.
@@ -24,10 +24,13 @@
 				<ul><li>I've pushed a homepage update. I was never quite sure what to do with the homepage, until now when I've tied it in more with the popular style of personal website at the moment. 
 						I plan on adding more sections. I've not advertised it widely because it has my face on it. But there it is</li>
 					<li>The online chemistry calendar is now over, having featured 1244 webinars, conferences, and training courses (Apr&ndash;Sep 2020). 
-					It led out its full intended run up to Sep 2020, and its functionality and remaining content has now been ported over to 
-					<a href="https://researchseminars.org/" target="_blank" rel="noopener">https://researchseminars.org/</a>, 
-					which is a global, crowdsourced site, run by MIT academics</li>
+						It led out its full intended run up to Sep 2020, and its functionality and remaining content has now been ported over to 
+						<a href="https://researchseminars.org/" target="_blank" rel="noopener">https://researchseminars.org/</a>, 
+						which is a global, crowdsourced site, run by MIT academics</li>
 					<li>As mentioned, I switched all my CSS over to .scss files with Sass. If I did it right, you won't see a change from this (apart from one very slight colour change to make things harmonious)</li>
+					<li>Added a couple more of my magazine articles for <em>Chemistry World</em>: 
+						<a href="https://supersciencegrl.co.uk/pages/Online-conferences" target="_blank" rel="noopener"><em>Meeting in the middle</em></a>, and 
+						<a href="https://supersciencegrl.co.uk/pages/Test-of-a-great-workplace" target="_blank" rel="noopener"><em>The test of a great workplace</em></a></li>
 				</ul>
 			]]>
 		</description>
