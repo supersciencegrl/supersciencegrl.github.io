@@ -42,7 +42,7 @@
   }
 }
 .carousel-container {
-  max-width: 40rem;
+  max-width: 36rem;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -77,7 +77,7 @@
   padding: 0;
 }
 
-.homepage-carousel {
+.carousel {
   position: relative;
   padding-top: 75%;
   filter: drop-shadow(0 0 10px #585863);
@@ -99,10 +99,12 @@
 
 .carousel-image {
   display: block;
-  width: 100%;
   margin: auto;
   border-radius: 3px;
   padding: 0;
+  width: 100%;
+  max-height: 21rem;
+  object-fit: cover;
 }
 
 .carousel-slide {
@@ -128,7 +130,7 @@
     animation-iteration-count: infinite;
   }
 
-  .carousel__slide:last-child .carousel-snap {
+  .carousel-slide-last .carousel-snap {
     animation-name: tostart, snap;
   }
 }
@@ -183,12 +185,12 @@
 }
 
 .carousel::before,
-.carousel__prev {
+.carousel-prev {
   left: -1.5rem;
 }
 
 .carousel::after,
-.carousel__next {
+.carousel-next {
   right: -1.5rem;
 }
 
