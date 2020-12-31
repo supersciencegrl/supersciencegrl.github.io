@@ -111,6 +111,7 @@
 	overflow: auto;
 }
 
+#confs-attended-table tr:nth-child(even),
 #conf-database-table tr:nth-child(even),
 #covid-table tr:nth-child(even) {
 	background: $table-shading;
