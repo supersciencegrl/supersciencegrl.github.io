@@ -271,6 +271,7 @@ pre {
 
 .tab-heading {
   color: #022964;
+  padding-left: 15px;
 }
 
 #main-title {
@@ -610,7 +611,6 @@ pre {
   padding: 5px;
 }
 
-.p-first,
 .p-mixed {
   padding: 0;
   font-size: medium;
@@ -618,6 +618,15 @@ pre {
 
 .p-indent {
   padding-left: 10px;
+}
+
+.p-inline {
+  padding: 20px 20px 20px 0;
+  font-size: medium;
+}
+
+.p-tab {
+  padding-left: 15px;
 }
 
 .leftalign {
@@ -641,11 +650,6 @@ pre {
 
 .new-fa {
   color: orange;
-}
-
-.p-inline {
-  padding: 20px 20px 20px 0;
-  font-size: medium;
 }
 
 .back {
@@ -741,6 +745,10 @@ pre {
   border-bottom: 100px;
   height: 100%;
   min-height: 100%;
+}
+
+#sidebar-top-spacer {
+  height: 25px;
 }
 
 .sidebar-row {

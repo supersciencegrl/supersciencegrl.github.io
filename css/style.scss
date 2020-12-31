@@ -232,6 +232,7 @@ pre {
 }
 .tab-heading {
 	color: $title;
+	padding-left: $pre-tab-indent;
 }
 #main-title {
 	color: $title;
@@ -550,13 +551,19 @@ pre {
     padding: 5px;
 }
 
-.p-first,
 .p-mixed {
 	padding: 0;
 	font-size: medium;
 }
 .p-indent {
 	padding-left: $default-indent;
+}
+.p-inline {
+    padding: 20px 20px 20px 0;
+    font-size: medium;
+}
+.p-tab {
+	padding-left: $pre-tab-indent;
 }
 
 .leftalign {
@@ -580,11 +587,6 @@ pre {
 
 .new-fa {
 	color: orange;
-}
-
-.p-inline {
-    padding: 20px 20px 20px 0;
-    font-size: medium;
 }
 
 .back {
@@ -675,6 +677,9 @@ pre {
     border-bottom: 100px;
     height: 100%;
     min-height: 100%;
+}
+#sidebar-top-spacer {
+	height: 25px;
 }
 
 .sidebar-row {
