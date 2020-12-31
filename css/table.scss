@@ -111,13 +111,14 @@
 	overflow: auto;
 }
 
-#conf-database-table tr:nth-child(even) {
-	background-color: $table-shading;
+#conf-database-table tr:nth-child(even),
+#covid-table tr:nth-child(even) {
+	background: $table-shading;
 }
 
 #events-org-table tr:nth-child(4n), 
 #events-org-table tr:nth-child(4n+1) {
-	background-color: $table-shading;
+	background: $table-shading;
 }
 
 .table-link {
