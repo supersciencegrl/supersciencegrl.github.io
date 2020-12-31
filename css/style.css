@@ -95,7 +95,7 @@ pre {
 .top {
   padding: 10px;
   border-radius: 3px;
-  width: 15%;
+  max-width: 16rem;
   transition: 0.6s;
 }
 
@@ -119,6 +119,17 @@ pre {
   padding: 10px;
   width: 25%;
   min-width: 20px;
+}
+
+#top-icon-container-container {
+  min-width: 15%;
+  position: absolute;
+  right: 25px;
+}
+
+#top-icon-container {
+  float: right;
+  padding: 0;
 }
 
 .a-top-icon:link {
@@ -247,6 +258,11 @@ pre {
 .page-title {
   color: #022964;
   padding: 0px 0px 20px 0px;
+}
+
+#supersciencegrl {
+  color: #D0B070;
+  padding: 0 0 5px 0;
 }
 
 .page-subtitle {
@@ -1222,13 +1238,18 @@ pre {
     font-size: small;
   }
 
-  #mainpage {
+  #title {
+    font-size: x-large;
+  }
+
+  #wrapper,
+#mainpage,
+#content {
     min-height: 300px;
   }
 
   #content {
     padding: 10px;
-    min-height: 300px;
   }
 
   #content p,
