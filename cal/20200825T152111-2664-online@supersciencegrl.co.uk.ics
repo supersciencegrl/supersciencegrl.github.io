@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200825T152100
+DTSTART;VALUE=DATE:20200921
+DTEND;VALUE=DATE:20200925
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:ProcessNet annual conference
+UID:20200825T152111-2664-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:ProcessNet annual conference (£\, German language\, conference
+ )\n\nPlease visit https://processnet.org/JT2020.html for more information.
+  Note: you may need to register separately for this event. \n\nThis <stron
+ g>£</strong>\, German language\, conference is run by DECHEMA\, VDI. \n\nT
+ his is an auto-generated placeholder event created by Nessa Carson at http
+ s://supersciencegrl.co.uk. Please check with DECHEMA\, VDI for any registr
+ ation links\, passwords\, or possible changes to the event. I do not hold 
+ any responsibility for this <strong>£</strong>\, German language\, confere
+ nce. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

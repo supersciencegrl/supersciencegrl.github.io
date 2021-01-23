@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200610T203900
+DTSTART;TZID=Europe/London:20200612T140000
+DTEND;TZID=Europe/London:20200612T150000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:SARS-CoV-2: What role can proteomics play?
+UID:20200610T203930-1018-online@supersciencegrl.co.uk
+DESCRIPTION:SARS-CoV-2: What role can proteomics play?
+Markus Ralser – Cli
+ nical classifiers of Covid19 infection from novel ultra-high-throughput pr
+ oteomics (webinar)\n\nPlease visit https://www.eventbrite.co.uk/e/webinar-
+ 6-sars-cov-2-what-role-can-proteomics-play-by-lpdg-tickets-107199310022 fo
+ r more information. Note: you may need to register separately for this eve
+ nt. \n\nThis webinar is run by London Proteomics Discussion Group. \n\nThi
+ s is an auto-generated placeholder event created by Nessa Carson at https:
+ //supersciencegrl.co.uk. Please check with London Proteomics Discussion Gr
+ oup for any registration links\, passwords\, or possible changes to the ev
+ ent. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

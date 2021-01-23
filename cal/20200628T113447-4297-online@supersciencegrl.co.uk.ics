@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200628T113400
+DTSTART;VALUE=DATE:20200907
+DTEND;VALUE=DATE:20200909
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:LatinXChem conference
+UID:20200628T113447-4297-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:LatinXChem conference (poster competition)\n\nPlease visit htt
+ ps://latinxchem.wixsite.com/home/copia-de-spanish for more information. No
+ te: you may need to register separately for this event. \n\nThis poster co
+ mpetition is run by LatinXChem. \n\nThis is an auto-generated placeholder 
+ event created by Nessa Carson at https://supersciencegrl.co.uk. Please che
+ ck with LatinXChem for any registration links\, passwords\, or possible ch
+ anges to the event. I do not hold any responsibility for this poster compe
+ tition. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

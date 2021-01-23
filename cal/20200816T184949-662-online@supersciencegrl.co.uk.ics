@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200816T184900
+DTSTART;TZID=Europe/London:20200820T153000
+DTEND;TZID=Europe/London:20200820T173000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Collaborations that transform: Advances in rare diseases: Spinal muscular atrophy, SMA
+UID:20200816T184949-662-online@supersciencegrl.co.uk
+DESCRIPTION:Collaborations that transform: Advances in rare diseases: Spin
+ al muscular atrophy\, SMA (webinar)\n\nPlease visit https://www.eventbrite
+ .com/e/collaborations-that-transform-advances-in-rare-diseases-sma-tickets
+ -115797159421 for more information. Note: you may need to register separat
+ ely for this event. \n\nThis webinar is run by WuXi AppTec. \n\nThis is an
+  auto-generated placeholder event created by Nessa Carson at https://super
+ sciencegrl.co.uk. Please check with WuXi AppTec for any registration links
+ \, passwords\, or possible changes to the event. I do not hold any respons
+ ibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

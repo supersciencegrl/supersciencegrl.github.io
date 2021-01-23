@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200801T115800
+DTSTART;TZID=Europe/London:20200806T150000
+DTEND;TZID=Europe/London:20200806T160000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Beatriz Camara – A genomics & metabolomics-guided bioprospection of marine actinomycetes from the South Pacific
+UID:20200801T115850-412-online@supersciencegrl.co.uk
+DESCRIPTION:Beatriz Camara – A genomics & metabolomics-guided bioprospecti
+ on of marine actinomycetes from the South Pacific (webinar)\n\nPlease visi
+ t https://www.youtube.com/watch?v=ltGlVsCrH9g&feature=youtu.be for more in
+ formation. Note: you may need to register separately for this event. \n\nT
+ his webinar is run by ActinoBase. \n\nThis is an auto-generated placeholde
+ r event created by Nessa Carson at https://supersciencegrl.co.uk. Please c
+ heck with ActinoBase for any registration links\, passwords\, or possible 
+ changes to the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

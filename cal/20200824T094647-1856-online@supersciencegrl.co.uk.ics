@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200824T094600
+DTSTART;TZID=Europe/London:20200909T143000
+DTEND;TZID=Europe/London:20200909T160000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:The microbiome & healthcare
+UID:20200824T094647-1856-online@supersciencegrl.co.uk
+DESCRIPTION:The microbiome & healthcare (symposium)\n\nPlease visit https:
+ //www.pistoiaalliance.org/eventdetails/the-microbiome-healthcare/ for more
+  information. Note: you may need to register separately for this event. \n
+ \nThis symposium is run by Pistoia Alliance. \n\nThis is an auto-generated
+  placeholder event created by Nessa Carson at https://supersciencegrl.co.u
+ k. Please check with Pistoia Alliance for any registration links\, passwor
+ ds\, or possible changes to the event. I do not hold any responsibility fo
+ r this symposium. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

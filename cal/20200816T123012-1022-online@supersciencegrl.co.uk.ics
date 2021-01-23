@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200816T123000
+DTSTART:20200827T160000Z
+DTEND:20200827T170000Z
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Light element analysis solutions for additive manufacturing of metals
+UID:20200816T123012-1022-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:Light element analysis solutions for additive manufacturing of
+  metals (webinar)\n\nPlease visit https://www.bruker.com/events/webinars/l
+ ight-element-analysis-solutions-for-additive-manufacturing-of-metals.html 
+ for more information. Note: you may need to register separately for this e
+ vent. \n\nThis webinar is run by Bruker. \n\nThis is an auto-generated pla
+ ceholder event created by Nessa Carson at https://supersciencegrl.co.uk. P
+ lease check with Bruker for any registration links\, passwords\, or possib
+ le changes to the event. I do not hold any responsibility for this webinar
+ . 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

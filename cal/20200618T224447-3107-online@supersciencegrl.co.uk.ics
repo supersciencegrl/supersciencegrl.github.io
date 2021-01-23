@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200618T224400
+DTSTART;VALUE=DATE:20200717
+DTEND;VALUE=DATE:20200718
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:SCI Materials Annual ECR Conference
+UID:20200618T224447-3107-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:SCI Materials Annual ECR Conference (conference)\n\nPlease vis
+ it https://www.soci.org/events/sci-materials-annual-ecr-conference-2020 fo
+ r more information. Note: you may need to register separately for this eve
+ nt. \n\nThis conference is run by SCI Materials Group. \n\nThis is an auto
+ -generated placeholder event created by Nessa Carson at https://superscien
+ cegrl.co.uk. Please check with SCI Materials Group for any registration li
+ nks\, passwords\, or possible changes to the event. I do not hold any resp
+ onsibility for this conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200823T090200
+DTSTART;TZID=Europe/London:20200915T020000
+DTEND;TZID=Europe/London:20200915T030000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:The best scientific decision support software platforms
+UID:20200823T090247-2107-online@supersciencegrl.co.uk
+DESCRIPTION:The best scientific decision support software platforms (webin
+ ar)\n\nPlease visit https://us02web.zoom.us/webinar/register/WN_YkGChBY9Q1
+ yw3HA4U_OSnA for more information. Note: you may need to register separate
+ ly for this event. \n\nThis webinar is run by 20-15 Visioneers. \n\nThis i
+ s an auto-generated placeholder event created by Nessa Carson at https://s
+ upersciencegrl.co.uk. Please check with 20-15 Visioneers for any registrat
+ ion links\, passwords\, or possible changes to the event. I do not hold an
+ y responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

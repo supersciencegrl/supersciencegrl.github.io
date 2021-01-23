@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200717T095900
+DTSTART;TZID=Europe/London:20200724T093000
+DTEND;TZID=Europe/London:20200724T103000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:James McCaw – Physics of epidemics: Helping to keep us safe
+UID:20200717T095924-1913-online@supersciencegrl.co.uk
+DESCRIPTION:James McCaw – Physics of epidemics: Helping to keep us safe (w
+ ebinar)\n\nPlease visit https://events.unimelb.edu.au/physics/event/6791-t
+ he-july-lectures-in-physics-physics-of-epidemics for more information. Not
+ e: you may need to register separately for this event. \n\nThis webinar is
+  run by University of Melbourne. \n\nThis is an auto-generated placeholder
+  event created by Nessa Carson at https://supersciencegrl.co.uk. Please ch
+ eck with University of Melbourne for any registration links\, passwords\, 
+ or possible changes to the event. I do not hold any responsibility for thi
+ s webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

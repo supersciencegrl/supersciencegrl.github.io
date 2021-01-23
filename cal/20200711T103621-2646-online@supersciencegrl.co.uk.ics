@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20200711T103600
+DTSTART;VALUE=DATE:20200916
+DTEND;VALUE=DATE:20200917
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:#SETACkissUK student Twitter toxicology poster conference
+UID:20200711T103621-2646-online@supersciencegrl.co.uk
+TZID:UTC
+DESCRIPTION:#SETACkissUK student Twitter toxicology poster conference (mem
+ bers-only\, poster conference)\n\nPlease visit https://www.setacuk.com/set
+ ackissuk for more information. Note: you may need to register separately f
+ or this event. \n\nThis members-only\, poster conference is run by Society
+  of Environmental Toxicology & Chemistry. \n\nThis is an auto-generated pl
+ aceholder event created by Nessa Carson at https://supersciencegrl.co.uk. 
+ Please check with Society of Environmental Toxicology & Chemistry for any 
+ registration links\, passwords\, or possible changes to the event. I do no
+ t hold any responsibility for this members-only\, poster conference. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

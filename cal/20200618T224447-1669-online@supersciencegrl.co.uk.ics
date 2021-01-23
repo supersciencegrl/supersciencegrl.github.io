@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//supersciencegrl.co.uk/
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200618T224400
+DTSTART;TZID=Europe/London:20200619T020000
+DTEND;TZID=Europe/London:20200619T033000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+SUMMARY:Cell therapy: Changing paradigms in cancer treatment
+UID:20200618T224447-1669-online@supersciencegrl.co.uk
+DESCRIPTION:Cell therapy: Changing paradigms in cancer treatment (webinar)
+ \n\nPlease visit https://myemail.constantcontact.com/Reminder-to-Register-
+ for-Cell-Therapy--Changing-Paradigms-in-Cancer-Treatment.html?soid=1114136
+ 187728&aid=UFfNS9BuZC8 for more information. Note: you may need to registe
+ r separately for this event. \n\nThis webinar is run by Johnson & Johnson 
+ Innovation. \n\nThis is an auto-generated placeholder event created by Nes
+ sa Carson at https://supersciencegrl.co.uk. Please check with Johnson & Jo
+ hnson Innovation for any registration links\, passwords\, or possible chan
+ ges to the event. I do not hold any responsibility for this webinar. 
+LOCATION:Online
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
