@@ -619,6 +619,7 @@ pre {
 #cvs-search {
   width: 60%;
   margin: auto;
+  margin-bottom: 2vh;
 }
 
 .p-mixed {
