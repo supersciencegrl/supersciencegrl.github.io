@@ -265,6 +265,11 @@ pre {
   padding: 0 0 5px 0;
 }
 
+#cvs-title {
+	text-align: center;
+	font-weight: bold;
+}
+
 .page-subtitle {
   color: #022964;
 }
