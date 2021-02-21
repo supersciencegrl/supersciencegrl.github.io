@@ -265,11 +265,6 @@ pre {
   padding: 0 0 5px 0;
 }
 
-#cvs-title {
-	text-align: center;
-	font-weight: bold;
-}
-
 .page-subtitle {
   color: #022964;
 }
@@ -614,6 +609,16 @@ pre {
   max-width: 80%;
   margin: auto;
   padding: 5px;
+}
+
+#cvs-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+#cvs-search {
+  width: 60%;
+  margin: auto;
 }
 
 .p-mixed {
