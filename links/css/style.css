@@ -73,11 +73,21 @@ div.tab button.currentTab {
 }
 
 .hte-button-caret .fa-chevron-circle-down {
+	color: #022964;
 	margin-top: 65%;
 }
 
 .collapsibleActive, .collapsible:hover {
 	background-color: #C0C0C0;
+	outline: none;
+}
+
+.collapsible:focus {
+	outline:none;
+}
+
+.collapsibleDefault {
+	display: block;
 }
 
 .collapsibleContent {
