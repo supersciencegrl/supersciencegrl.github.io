@@ -18,9 +18,9 @@ if (window.location.href.indexOf("Reference-Tools") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Reference-Tools").click();
 	},300);
-} else if (window.location.href.indexOf("Writing-and-Presentation-Tools") > -1) {
+} else if (window.location.href.indexOf("Writing-and-Presentations") > -1) {
 	setTimeout(function() {
-		document.getElementById("tab-Writing-and-Presentation-Tools").click();
+		document.getElementById("tab-Writing-Tools").click();
 	},300);
 } else if (window.location.href.indexOf("Coding") > -1) {
 	setTimeout(function() {
@@ -36,7 +36,30 @@ if (window.location.href.indexOf("Reference-Tools") > -1) {
 	},300);
 } else {
 	document.getElementById("defaultTab").click();
+}
+
+// Collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("collapsibleActive");
+		var collapsibleContent = this.nextElementSibling;
+		if (collapsibleContent.style.display === "block") {
+			collapsibleContent.style.display = "none";
+		} else {
+			collapsibleContent.style.display = "block";
+		}
+	});
+}
+
+// Load desired tab from anchor links
+$(document).ready(function() {
+	var hash = location.hash;
+	if (hash == 'HTE') {
+		stuff
 	}
+});
 
   // Not gonna lie, this was copy-pasted from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 $(document).ready(function(){
@@ -57,18 +80,3 @@ $(document).ready(function(){
     } // End if
   });
 });
-
-// Collapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
-for (i = 0; i < coll.length; i++) {
-	coll[i].addEventListener("click", function() {
-		this.classList.toggle("collapsibleActive");
-		var collapsibleContent = this.nextElementSibling;
-		if (collapsibleContent.style.display === "block") {
-			collapsibleContent.style.display = "none";
-		} else {
-			collapsibleContent.style.display = "block";
-		}
-	});
-}

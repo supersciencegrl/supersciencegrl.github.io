@@ -14,13 +14,22 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " currentTab";
 }
 
-if (window.location.href.indexOf("Media-Appearances") > -1) {
+if (window.location.href.indexOf("Events-Organized") > -1) {
+	setTimeout(function() {
+		document.getElementbyId("tab-Events-Organized").click();
+	},300);
+} else if (window.location.href.indexOf("Conferences-Attended") > -1 {
+	setTimeout(function() {
+		document.getElementById("tab-Conferences-Attended").click();
+	},300);
+} else if (window.location.href.indexOf("Media-Appearances") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Media-Appearances").click();
 	},300);
 } else {
 	document.getElementById("defaultTab").click();
-	}
+}
+
 
   // Not gonna lie, this was copy-pasted from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 $(document).ready(function(){
