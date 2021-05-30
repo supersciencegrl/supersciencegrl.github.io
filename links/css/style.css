@@ -55,6 +55,19 @@ div.tab button.currentTab {
   padding: 15px;
 }
 
+.collapsible {
+	cursor: pointer;
+}
+
+.collapsible-active, .collapsible:hover {
+	background-color: #C0C0C0;
+}
+
+.collapsible-content {
+	display: none;
+	overflow: hidden;
+}
+
 /* Mobile devices */
 @media only screen and (max-device-width: 480px), 
 only screen and (-webkit-min-device-pixel-ratio: 2), 
