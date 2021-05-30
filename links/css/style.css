@@ -86,10 +86,6 @@ div.tab button.currentTab {
 	outline:none;
 }
 
-.collapsibleDefault {
-	display: block;
-}
-
 .collapsibleContent {
 	display: none;
 	overflow: hidden;
