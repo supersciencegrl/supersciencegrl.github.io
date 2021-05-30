@@ -57,6 +57,7 @@ div.tab button.currentTab {
 
 .collapsible {
 	cursor: pointer;
+	width: 98%;
 }
 
 .collapsible-active, .collapsible:hover {
