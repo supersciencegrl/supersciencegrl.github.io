@@ -676,6 +676,15 @@ pre {
   clear: left;
 }
 
+.div-literature {
+  padding: 0 20px 0 20px;
+  display: block;
+  margin: 0;
+  width: 97%;
+  position: relative;
+  clear: left;
+}
+
 .p-main {
   padding: 0 0 0 20px;
   width: 95%;

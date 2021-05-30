@@ -26,6 +26,10 @@ if (window.location.href.indexOf("Reference-Tools") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Coding").click();
 	},300);
+} else if (window.location.href.indexOf("HTE") > -1) {
+	setTimeout(function() {
+		document.getElementById("tab-HTE").click();
+	},300);
 } else if (window.location.href.indexOf("Interesting") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Interesting").click();
