@@ -60,6 +60,18 @@ div.tab button.currentTab {
 	width: 98%;
 }
 
+.collapsible span h4 {
+	text-align: left;
+}
+
+.hte-button-title {
+	float: left;
+}
+
+.hte-button-caret {
+	float: right;
+}
+
 .collapsible-active, .collapsible:hover {
 	background-color: #C0C0C0;
 }
