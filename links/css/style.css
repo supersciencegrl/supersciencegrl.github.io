@@ -138,6 +138,10 @@ div.tab button.currentTab {
     -webkit-flex: initial;
     max-width: 100%;
   }
+
+  .collapsibleInline span {
+    padding-left: initial;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
