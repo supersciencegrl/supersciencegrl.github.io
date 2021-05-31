@@ -98,4 +98,11 @@ only screen and (min-resolution: 300dpi) {
 	div.tab button {
 		padding: 2px;
 	}
+	.div-tooltip {
+		display: none;
+	}
+	.link-description {
+		flex: initial;
+		-webkit-flex: initial;
+		max-width: 100%;
 }

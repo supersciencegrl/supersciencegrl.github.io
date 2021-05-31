@@ -583,6 +583,7 @@ pre {
 
 .div-tooltip {
   position: relative;
+  padding: 0;
 }
 
 .div-tooltip:hover .tooltip,
@@ -673,6 +674,10 @@ pre {
   width: 97%;
   position: relative;
   clear: left;
+}
+
+.link-description {
+  padding: 0;
 }
 
 .div-literature {
