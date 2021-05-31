@@ -93,6 +93,7 @@ div.tab button.currentTab {
 
 .collapsibleInline.collapsibleActive {
 	color: $title;
+	margin-bottom: initial;
 }
 
 .collapsible:focus, collapsibleInline:focus {
