@@ -75,9 +75,9 @@ div.tab button.currentTab {
   text-align: left;
 }
 
-.collapsible span {
+.collapsibleInline span {
   padding-left: 17%;
-  text-color: #0279B4;
+  color: #0279B4;
 }
 
 .hte-button-title {
@@ -96,6 +96,10 @@ div.tab button.currentTab {
 .collapsibleActive, .collapsible:hover, .collapsibleInline:hover {
   background-color: #C0C0C0;
   outline: none;
+}
+
+.collapsibleInline.collapsibleActive {
+  color: #022964;
 }
 
 .collapsible:focus, collapsibleInline:focus {
