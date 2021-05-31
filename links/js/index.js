@@ -18,7 +18,7 @@ if (window.location.href.indexOf("Reference-Tools") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Reference-Tools").click();
 	},300);
-} else if (window.location.href.indexOf("Writing-and-Presentations") > -1) {
+} else if (window.location.href.indexOf("Writing-Tools") > -1) {
 	setTimeout(function() {
 		document.getElementById("tab-Writing-Tools").click();
 	},300);
