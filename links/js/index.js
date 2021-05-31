@@ -53,13 +53,20 @@ for (i = 0; i < coll.length; i++) {
 	});
 }
 
-// Load desired tab from anchor links
-$(document).ready(function() {
-	var hash = location.hash;
-	if (hash == 'HTE') {
-		stuff
-	}
-});
+// Collapsible inlines
+var collinline = document.getElementsByClassName("collapsibleInline");
+var i;
+for (i = 0; i < collinline.length; i++) {
+	collinline[i].addEventListener("click", function() {
+		this.classList.toggle("collapsibleActive");
+		var collapsibleDropdown = this.nextElementSibling;
+		if (collapsibleDropdown.style.display === "block") {
+			collapsibleDropdown.style.display = "none";
+		} else {
+			collapsibleDropdown.style.display = "block";
+		}
+	});
+}
 
   // Not gonna lie, this was copy-pasted from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 $(document).ready(function(){

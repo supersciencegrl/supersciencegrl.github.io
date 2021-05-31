@@ -1,8 +1,9 @@
-/* Sass theme */
+@import "../../css/theme";
+
 .tab {
   border: 1px solid #C0C0C0;
   overflow: hidden;
-  background-color: rgba(221, 221, 221, 0);
+  background-color: $mainpage-background;
   border-radius: 5px 5px 0 0;
 }
 
@@ -13,7 +14,7 @@ div.tab button {
   -moz-box-sizing: content-box;
   vertical-align: middle;
   background-color: inherit;
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0,0,0,0);
   outline: none;
   cursor: pointer;
   padding: 10px;
@@ -27,15 +28,15 @@ div.tab button:hover {
 }
 
 div.tab button.currentTab {
-  background-color: #C0C0C0;
-  color: #101030;
-  border-bottom: 2px solid #101030;
+  background-color: $title-hover;
+  color: $titlebar;
+  border-bottom: 2px solid $titlebar;
 }
 
 .tabContent {
   display: none;
   padding: 10px;
-  border: 1px solid #C0C0C0;
+  border: 1px solid $title-hover;
   border-top: none;
   border-radius: 0 0 5px 5px;
   animation: fadeEffect 1s;
@@ -43,93 +44,83 @@ div.tab button.currentTab {
 }
 
 @-webkit-keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
+
 @keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
+
 .tab-heading {
   padding: 15px;
 }
 
 .collapsible, .collapsibleInline {
-  cursor: pointer;
-  width: 98%;
+	cursor: pointer;
+	width: $collapsible-width;
 }
-
 .collapsibleInline {
-  margin-bottom: 35px;
+	margin-bottom: 35px;
 }
 
 .collapsible span h4 {
-  text-align: left;
+	text-align: left;
 }
-
 .collapsible span {
-  padding-left: 17%;
-  text-color: #0279B4;
+	padding-left: 17%;
+	text-color: $highlight;
 }
 
 .hte-button-title {
-  float: left;
+	float: left;
 }
 
 .hte-button-caret {
-  float: right;
+	float: right;
 }
 
 .hte-button-caret .fa-chevron-circle-down {
-  color: #022964;
-  margin-top: 65%;
+	color: $title;
+	margin-top: 65%;
 }
 
 .collapsibleActive, .collapsible:hover, .collapsibleInline:hover {
-  background-color: #C0C0C0;
-  outline: none;
+	background-color: $title-hover;
+	outline: none;
 }
 
 .collapsible:focus, collapsibleInline:focus {
-  outline: none;
+	outline:none;
 }
 
 .collapsibleContent, .collapsibleDropdown {
-  display: none;
-  overflow: hidden;
+	display: none;
+	overflow: hidden;
 }
 
 .collapsibleDropdown {
-  background-color: #DDDDDD;
-  border: solid 1px #0279B4;
-  width: 98%;
-  border-radius: 3px;
-  padding-left: 2vw;
+	background-color: #DDDDDD;
+	border: solid 1px $highlight;
+	width: $collapsible-width;
+	border-radius: 3px;
+	padding-left: 2vw;
 }
 
 /* Mobile devices */
-@media only screen and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 300dpi) {
-  div.tab button {
-    padding: 2px;
-  }
-
-  .div-tooltip {
-    display: none;
-  }
-
-  .link-description {
-    flex: initial;
-    -webkit-flex: initial;
-    max-width: 100%;
-  }
+@media only screen and (max-device-width: 480px), 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 300dpi) {
+	div.tab button {
+		padding: 2px;
+	}
+	.div-tooltip {
+		display: none;
+	}
+	.link-description {
+		flex: initial;
+		-webkit-flex: initial;
+		max-width: 100%;
+	}
 }
-
-/*# sourceMappingURL=style.css.map */
