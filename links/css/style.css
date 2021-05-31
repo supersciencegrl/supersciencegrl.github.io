@@ -2,7 +2,7 @@
 .tab {
   border: 1px solid #C0C0C0;
   overflow: hidden;
-  background-color: rgba(221, 221, 221, 0);
+  background-color: #dddddd;
   border-radius: 5px 5px 0 0;
 }
 
@@ -99,8 +99,11 @@ div.tab button.currentTab {
 }
 
 .collapsibleInline.collapsibleActive {
-  color: #022964;
   margin-bottom: initial;
+}
+
+.collapsibleInline.collapsibleActive span {
+  color: #022964;
 }
 
 .collapsible:focus, collapsibleInline:focus {

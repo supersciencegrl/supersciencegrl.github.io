@@ -1,9 +1,9 @@
 @import "../../css/theme";
 
 .tab {
-  border: 1px solid #C0C0C0;
+  border: 1px solid $title-hover;
   overflow: hidden;
-  background-color: $mainpage-background;
+  background-color: rgba(221,221,221,1);
   border-radius: 5px 5px 0 0;
 }
 
@@ -92,8 +92,10 @@ div.tab button.currentTab {
 }
 
 .collapsibleInline.collapsibleActive {
-	color: $title;
 	margin-bottom: initial;
+}
+.collapsibleInline.collapsibleActive span {
+	color: $title;
 }
 
 .collapsible:focus, collapsibleInline:focus {
