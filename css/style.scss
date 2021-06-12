@@ -168,6 +168,7 @@ pre {
 }
 
 .bar,
+.bar-category,
 .bar-indent {
     color: $titlebar-text;
     padding: 5px 0px 5px 10px;
@@ -1208,9 +1209,11 @@ only screen and (min-resolution: 300dpi) {
 		display: initial; 
     }
     .bar,
+	.bar-category,
 	.bar-indent {
 		min-width: 20px;
 		padding: 5px;
+		border-radius: 5px;
     }
     .bar-space-initial {
 		min-width: 0;

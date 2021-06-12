@@ -203,6 +203,7 @@ pre {
 }
 
 .bar,
+.bar-category,
 .bar-indent {
   color: white;
   padding: 5px 0px 5px 10px;
@@ -1361,9 +1362,11 @@ pre {
   }
 
   .bar,
+.bar-category,
 .bar-indent {
     min-width: 20px;
     padding: 5px;
+    border-radius: 5px;
   }
 
   .bar-space-initial {
