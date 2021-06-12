@@ -209,6 +209,11 @@ pre {
     padding: 5%;
 }
 
+#supersciencegrl {
+	color: $supersciencegrl-text;
+	padding: 0 0 5px 0;
+}
+
 #content {
     margin: 0px;
     border-radius: 10px;
@@ -219,14 +224,15 @@ pre {
     box-shadow: 0px 0px 30px 10px $default-box-shadow;
 }
 
-.page-title {
+.page-title,
+.page-title-inline {
 	color: $title;
     padding: 0px 0px 20px 0px;
 }
-#supersciencegrl {
-	color: $supersciencegrl-text;
-	padding: 0 0 5px 0;
+.page-title-inline {
+	margin-top: 3vw;
 }
+
 .page-subtitle {
 	color: $title;
 }
@@ -417,6 +423,9 @@ pre {
     position: relative;
 }
 
+.image-left-wrapper {
+	margin: auto;
+}
 .image-left {
     float: left;
     width: 100%;
@@ -584,6 +593,7 @@ pre {
 .tagline {
 	text-align: right;
 	font-style: italic;
+	width: 100%;
 }
 
 .update {
@@ -886,6 +896,20 @@ pre {
 	padding-bottom: 8em;
 }
 
+.listwrapper .purple {
+    border-bottom: $listblock-border $theme-purple;
+}
+.listwrapper-m .purple {
+    border-right: $listblock-border $theme-purple;
+}
+
+.listwrapper .red {
+    border-bottom: $listblock-border $theme-red;
+}
+.listwrapper-m .red {
+    border-right: $listblock-border $theme-red;
+}
+
 .listblock {
     margin: 0 2% 0 2%;
     background-color: $popout-background;
@@ -895,15 +919,20 @@ pre {
     border-bottom: $listblock-border $title-lighter;
     box-shadow: 3px -3px 6px $default-box-shadow;
 }
-
-.listicon {
-    border-radius: 50%;
-    background-color: $title-lighter;
-    box-shadow: 0 0 6px 2px $default-box-shadow;
-    width: 39%;
-    height: 39%;
-    max-height: 8vw;
-    margin: 6% auto 0 auto;
+.listblock a {
+	margin: 0;
+	padding: 0;
+}
+.listblock .title {
+    font-size: x-large;
+    color: $footer-box-shadow;
+    text-align: center;
+    padding-top: 10px;
+	write-space: nowrap;
+}
+.listblock .description {
+    padding: 0 10px 0 10px;
+    text-align: left
 }
 
 .listblock-m {
@@ -916,31 +945,16 @@ pre {
     border-right: $listblock-border $title-lighter;
     box-shadow: 0 3px 6px $default-box-shadow;
 }
-
-.listicon-m {
-    border-radius: 100%;
-    background-color: $title-lighter;
-    margin: auto;
-    height: 10vw;
-    max-width: 10vw !important;
-    padding: 0 !important;
+.listblock-m-title-wrapper {
+	margin: auto 0 auto 0;
 }
-
-.listicon img, 
-.listicon-m img {
-    max-height: 10vw;
-    margin: 3px auto auto auto;
-}
-.listicon img {
-	position: relative;
-	left: -2px;
-}
-
-.listwrapper .purple {
-    border-bottom: $listblock-border $theme-purple;
-}
-.listwrapper-m .purple {
-    border-right: $listblock-border $theme-purple;
+.listblock-m .title {
+    font-size: medium !important;
+    color: $footer-box-shadow;
+    text-align: left;
+    margin: auto 0 auto 0;
+    vertical-align: top;
+	white-space: nowrap;
 }
 
 .listblock .purple,
@@ -948,51 +962,33 @@ pre {
     background-color: $theme-purple;
 }
 
-.listwrapper .red {
-    border-bottom: $listblock-border $theme-red;
-}
-.listwrapper-m .red {
-    border-right: $listblock-border $theme-red;
-}
-
 .listblock .red,
 .listblock-m .red {
     background-color: $theme-red;
 }
 
-.listblock .title {
-    font-size: xx-large;
-    color: $footer-box-shadow;
-    text-align: center;
-    padding-top: 10px;
-}
-.listblock-m .title {
-    font-size: medium !important;
-    color: $footer-box-shadow;
-    text-align: left;
-    padding-top: 2px;
-    vertical-align: top;
+.listicon-m-wrapper {
+	margin: auto;
 }
 
-.listblock-m .smalltitle {
-	font-size: 0.95em !important;
+.listicon {
+    border-radius: 50%;
+    background-color: $title-lighter;
+    box-shadow: 3px -3px 6px 0 $default-box-shadow;
+    height: 1.6rem;
+	min-height: 1.6rem;
+	width: 1.6rem;
+	min-width: 1.6rem;
+    margin: 6% auto 0 auto;
 }
-
-.listblock .description {
-    padding: 0 10px 0 10px;
-    text-align: left
-}
-
-#listimg-projects {
-    position: relative;
-    padding-bottom: 4px;
-    padding-left: 3px;
-}
-
-#listimg-activity {
-    position: relative;
-    padding-bottom: 3px;
-    padding-left: 4px;
+.listicon-m {
+    border-radius: 100%;
+    background-color: $title-lighter;
+    margin: auto;
+    height: 1rem;
+	min-height: 1rem;
+	width: 1rem;
+	min-width: 1rem;
 }
 
 .journalcode {
@@ -1163,6 +1159,9 @@ only screen and (min-resolution: 300dpi) {
 	.div-main {
 		padding: 10px 0 0 10px;
 	}
+	.page-title-inline {
+		margin-top: 2rem;
+	}
     .p-main {
 		padding: 0;
     }
@@ -1199,6 +1198,14 @@ only screen and (min-resolution: 300dpi) {
 		padding: 5px 5% 35px 5%;
 		min-width: 50px;
     }
+	.image-left-wrapper {
+		display: none !important;
+	}
+	.link-description {
+		flex: initial;
+		-webkit-flex: initial;
+		max-width: 100%;
+	}
 	.media-title {
 		font-size: medium;
 	}

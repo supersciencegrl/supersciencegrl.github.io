@@ -245,6 +245,11 @@ pre {
   padding: 5%;
 }
 
+#supersciencegrl {
+  color: #D0B070;
+  padding: 0 0 5px 0;
+}
+
 #content {
   margin: 0px;
   border-radius: 10px;
@@ -255,14 +260,14 @@ pre {
   box-shadow: 0px 0px 30px 10px #888899;
 }
 
-.page-title {
+.page-title,
+.page-title-inline {
   color: #022964;
   padding: 0px 0px 20px 0px;
 }
 
-#supersciencegrl {
-  color: #D0B070;
-  padding: 0 0 5px 0;
+.page-title-inline {
+  margin-top: 3vw;
 }
 
 .page-subtitle {
@@ -473,6 +478,10 @@ pre {
   position: relative;
 }
 
+.image-left-wrapper {
+  margin: auto;
+}
+
 .image-left {
   float: left;
   width: 100%;
@@ -648,6 +657,7 @@ pre {
 .tagline {
   text-align: right;
   font-style: italic;
+  width: 100%;
 }
 
 .update {
@@ -1004,6 +1014,22 @@ pre {
   padding-bottom: 8em;
 }
 
+.listwrapper .purple {
+  border-bottom: 8px solid #B637E8;
+}
+
+.listwrapper-m .purple {
+  border-right: 8px solid #B637E8;
+}
+
+.listwrapper .red {
+  border-bottom: 8px solid #FC4141;
+}
+
+.listwrapper-m .red {
+  border-right: 8px solid #FC4141;
+}
+
 .listblock {
   margin: 0 2% 0 2%;
   background-color: rgba(22, 99, 212, 0.15);
@@ -1014,14 +1040,22 @@ pre {
   box-shadow: 3px -3px 6px #888899;
 }
 
-.listicon {
-  border-radius: 50%;
-  background-color: #2299D4;
-  box-shadow: 0 0 6px 2px #888899;
-  width: 39%;
-  height: 39%;
-  max-height: 8vw;
-  margin: 6% auto 0 auto;
+.listblock a {
+  margin: 0;
+  padding: 0;
+}
+
+.listblock .title {
+  font-size: x-large;
+  color: #000022;
+  text-align: center;
+  padding-top: 10px;
+  write-space: nowrap;
+}
+
+.listblock .description {
+  padding: 0 10px 0 10px;
+  text-align: left;
 }
 
 .listblock-m {
@@ -1035,32 +1069,17 @@ pre {
   box-shadow: 0 3px 6px #888899;
 }
 
-.listicon-m {
-  border-radius: 100%;
-  background-color: #2299D4;
-  margin: auto;
-  height: 10vw;
-  max-width: 10vw !important;
-  padding: 0 !important;
+.listblock-m-title-wrapper {
+  margin: auto 0 auto 0;
 }
 
-.listicon img,
-.listicon-m img {
-  max-height: 10vw;
-  margin: 3px auto auto auto;
-}
-
-.listicon img {
-  position: relative;
-  left: -2px;
-}
-
-.listwrapper .purple {
-  border-bottom: 8px solid #B637E8;
-}
-
-.listwrapper-m .purple {
-  border-right: 8px solid #B637E8;
+.listblock-m .title {
+  font-size: medium !important;
+  color: #000022;
+  text-align: left;
+  margin: auto 0 auto 0;
+  vertical-align: top;
+  white-space: nowrap;
 }
 
 .listblock .purple,
@@ -1068,53 +1087,34 @@ pre {
   background-color: #B637E8;
 }
 
-.listwrapper .red {
-  border-bottom: 8px solid #FC4141;
-}
-
-.listwrapper-m .red {
-  border-right: 8px solid #FC4141;
-}
-
 .listblock .red,
 .listblock-m .red {
   background-color: #FC4141;
 }
 
-.listblock .title {
-  font-size: xx-large;
-  color: #000022;
-  text-align: center;
-  padding-top: 10px;
+.listicon-m-wrapper {
+  margin: auto;
 }
 
-.listblock-m .title {
-  font-size: medium !important;
-  color: #000022;
-  text-align: left;
-  padding-top: 2px;
-  vertical-align: top;
+.listicon {
+  border-radius: 50%;
+  background-color: #2299D4;
+  box-shadow: 3px -3px 6px 0 #888899;
+  height: 1.6rem;
+  min-height: 1.6rem;
+  width: 1.6rem;
+  min-width: 1.6rem;
+  margin: 6% auto 0 auto;
 }
 
-.listblock-m .smalltitle {
-  font-size: 0.95em !important;
-}
-
-.listblock .description {
-  padding: 0 10px 0 10px;
-  text-align: left;
-}
-
-#listimg-projects {
-  position: relative;
-  padding-bottom: 4px;
-  padding-left: 3px;
-}
-
-#listimg-activity {
-  position: relative;
-  padding-bottom: 3px;
-  padding-left: 4px;
+.listicon-m {
+  border-radius: 100%;
+  background-color: #2299D4;
+  margin: auto;
+  height: 1rem;
+  min-height: 1rem;
+  width: 1rem;
+  min-width: 1rem;
 }
 
 .journalcode {
@@ -1301,6 +1301,10 @@ pre {
     padding: 10px 0 0 10px;
   }
 
+  .page-title-inline {
+    margin-top: 2rem;
+  }
+
   .p-main {
     padding: 0;
   }
@@ -1345,6 +1349,16 @@ pre {
   .grid-square {
     padding: 5px 5% 35px 5%;
     min-width: 50px;
+  }
+
+  .image-left-wrapper {
+    display: none !important;
+  }
+
+  .link-description {
+    flex: initial;
+    -webkit-flex: initial;
+    max-width: 100%;
   }
 
   .media-title {

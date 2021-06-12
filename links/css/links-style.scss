@@ -116,19 +116,9 @@ div.tab button.currentTab {
 }
 
 /* Mobile devices */
-@media only screen and (max-device-width: 480px), 
-only screen and (-webkit-min-device-pixel-ratio: 2), 
-only screen and (min-resolution: 300dpi) {
+@media only screen and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 300dpi) {
 	div.tab button {
 		padding: 2px;
-	}
-	.div-tooltip {
-		display: none;
-	}
-	.link-description {
-		flex: initial;
-		-webkit-flex: initial;
-		max-width: 100%;
 	}
 	.collapsibleInline span {
 		padding-left: initial;

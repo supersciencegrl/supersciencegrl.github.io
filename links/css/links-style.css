@@ -129,19 +129,9 @@ div.tab button.currentTab {
     padding: 2px;
   }
 
-  .div-tooltip {
-    display: none;
-  }
-
-  .link-description {
-    flex: initial;
-    -webkit-flex: initial;
-    max-width: 100%;
-  }
-
   .collapsibleInline span {
     padding-left: initial;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=links-style.css.map */
