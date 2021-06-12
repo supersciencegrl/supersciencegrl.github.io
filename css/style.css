@@ -1040,7 +1040,10 @@ pre {
   box-shadow: 3px -3px 6px #888899;
 }
 
-.listblock a {
+.listblock a,
+.listblock a:visited,
+.listblock a:hover,
+.listblock a:active {
   margin: 0;
   padding: 0;
 }

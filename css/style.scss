@@ -919,7 +919,10 @@ pre {
     border-bottom: $listblock-border $title-lighter;
     box-shadow: 3px -3px 6px $default-box-shadow;
 }
-.listblock a {
+.listblock a,
+.listblock a:visited,
+.listblock a:hover,
+.listblock a:active {
 	margin: 0;
 	padding: 0;
 }

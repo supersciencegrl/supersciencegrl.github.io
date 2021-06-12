@@ -29,7 +29,6 @@ function openTab(evt, tabName) {
 	// Set new URL
 	replaceUrlHash(tabName);
 
-	//evt.currentTarget.className += " currentTab";
 }
 
 function directLinkToTab() {
