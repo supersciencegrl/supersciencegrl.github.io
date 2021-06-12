@@ -35,6 +35,7 @@ function directLinkToTab() {
 	if (window.location.hash) {
 		const hash = window.location.href.split("#")[1];
 		openTab(this, hash);
+		document.getElementById(hash).classList.add("currentTab");
 	} else {
 		const firstTab = document.querySelector('.tabButton')
 		firstTab.click();
