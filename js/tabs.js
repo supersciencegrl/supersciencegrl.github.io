@@ -24,18 +24,18 @@ function openTab(evt, tabName) {
 		tabButton[i].className = tabButton[i].className.replace(" currentTab", "");
 	}
 	document.getElementById(tabName).style.display = "block";
+	document.getElementById("tab-".concat(tabName)).className += " currentTab";
 
 	// Set new URL
 	replaceUrlHash(tabName);
 
-	evt.currentTarget.className += " currentTab";
+	//evt.currentTarget.className += " currentTab";
 }
 
 function directLinkToTab() {
 	if (window.location.hash) {
 		const hash = window.location.href.split("#")[1];
 		openTab(this, hash);
-		document.getElementById(hash).classList.add("currentTab");
 	} else {
 		const firstTab = document.querySelector('.tabButton')
 		firstTab.click();
