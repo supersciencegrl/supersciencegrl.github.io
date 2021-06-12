@@ -58,6 +58,7 @@ pre {
   border-radius: 5px;
   box-sizing: border-box;
   padding: 0.3em 0.5em 0.3em 0.5em;
+  white-space: pre-wrap;
 }
 
 .title {
@@ -201,7 +202,8 @@ pre {
   padding: 40px 40px 0 40px;
 }
 
-.bar {
+.bar,
+.bar-indent {
   color: white;
   padding: 5px 0px 5px 10px;
   border-radius: 5px 5px 0px 0px;
@@ -209,7 +211,12 @@ pre {
   min-width: 150px;
 }
 
-.bar:hover {
+.bar-indent {
+  padding-left: 25px !important;
+}
+
+.bar:hover,
+.bar-indent:hover {
   background: -webkit-linear-gradient(white, #DDDDDD);
   background: linear-gradient(white, #DDDDDD);
   color: #101030;
@@ -1128,6 +1135,11 @@ pre {
   word-break: break-all;
 }
 
+.cvsCode {
+  outline: none;
+  overflow-wrap: anywhere;
+}
+
 .contact-header {
   padding-top: 0;
 }
@@ -1281,6 +1293,19 @@ pre {
     font-size: large;
   }
 
+  #top-bar {
+    display: none;
+  }
+
+  #hamburger {
+    background-color: white;
+    float: right;
+    text-align: right;
+    bottom: 20%;
+    right: 0;
+    position: absolute;
+  }
+
   #wrapper,
 #mainpage,
 #content {
@@ -1335,7 +1360,8 @@ pre {
     display: initial;
   }
 
-  .bar {
+  .bar,
+.bar-indent {
     min-width: 20px;
     padding: 5px;
   }

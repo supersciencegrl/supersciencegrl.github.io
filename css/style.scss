@@ -54,6 +54,7 @@ pre {
 	border-radius: 5px;
 	box-sizing: border-box;
 	padding: 0.3em 0.5em 0.3em 0.5em;
+	white-space: pre-wrap;
 }
 
 .title {
@@ -166,14 +167,19 @@ pre {
     padding: 40px 40px 0 40px;
 }
 
-.bar {
+.bar,
+.bar-indent {
     color: $titlebar-text;
     padding: 5px 0px 5px 10px;
     border-radius: 5px 5px 0px 0px;
     border-width: 5px;
     min-width: 150px;
 }
-.bar:hover {
+.bar-indent {
+	padding-left: 25px !important;
+}
+.bar:hover,
+.bar-indent:hover {
     background: -webkit-linear-gradient($titlebar-text, #DDDDDD);
     background: linear-gradient($titlebar-text, #DDDDDD);
     color: $titlebar;
@@ -1001,6 +1007,10 @@ pre {
 	overflow-wrap: anywhere;
 	word-break: break-all;
 }
+.cvsCode {
+	outline: none;
+	overflow-wrap: anywhere;
+}
 
 .contact-header {
 	padding-top: 0;
@@ -1144,6 +1154,17 @@ only screen and (min-resolution: 300dpi) {
 	#supersciencegrl {
 		font-size: large;
 	}
+	#top-bar {
+		display: none;
+	}
+	#hamburger {
+		background-color: white;
+		float: right;
+		text-align: right;
+		bottom: 20%;
+		right: 0;
+		position: absolute;
+	}
 	#wrapper,
 	#mainpage,
 	#content {
@@ -1186,7 +1207,8 @@ only screen and (min-resolution: 300dpi) {
     .m-visible-none {
 		display: initial; 
     }
-    .bar {
+    .bar,
+	.bar-indent {
 		min-width: 20px;
 		padding: 5px;
     }

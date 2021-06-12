@@ -92,16 +92,28 @@
 			</div>
 		</div><!--Top row-->
   
+			<script>
+				function eatHamburger() {
+					var ham = document.getElementById("top-bar");
+					if (ham.style.display == "block") {
+						ham.style.display = "none";
+					} else {
+						ham.style.display = "block";
+					}
+				}
+			</script>
+  
 		<div id="title-bar">
 			<div class="row">
 				<div class="col-1"></div> 
 				<div class="col-11">
 					<h2><a class="title" href="/index.html">Nessa the Chemist</a></h2>
+					<a href="javascript:void(0);" onclick="eatHamburger()"><button class="m-visible" id="hamburger"><i class="fa fa-bars"></i></button></a>
 					<h5 id="supersciencegrl"><em>@SuperScienceGrl</em></h5>
 				</div>
 			</div><!--Title row -->
 	  
-			<div class="row">
+			<div class="row" id="top-bar">
 				<div class="bar-space-initial"></div>
 				<a class="link-bar" href="/index.html">
 					<div class="col-md-1 col-xs-3 bar link-container">HOME</div>
@@ -115,6 +127,21 @@
 				<a class="link-bar" href="/links">
 					<div class="col-md-1 col-xs-3 bar link-container">LINKS</div>
 				</a>
+				
+				<div class="col-md-1 col-xs-3 bar link-container m-visible">TOOLS:</div>
+				
+				<div>
+					<a class="link-bar" href="/conferences">
+						<div class="col-md-1 col-xs-3 bar-indent link-container m-visible">Conference database</div>
+					</a>
+					<a class="link-bar" href="/links">
+						<div class="col-md-1 col-xs-3 bar-indent link-container m-visible">Chemical Vendor Search</div>
+					</a>
+					<a class="link-bar" href="/wiley">
+						<div class="col-md-1 col-xs-3 bar-indent link-container m-visible">Wiley RSS feeds</div>
+					</a>
+				</div>
+				
 				<a class="link-bar" href="/contact">
 					<div class="col-md-1 col-xs-3 bar link-container m-visible">CONTACT</div>
 				</a>
@@ -240,7 +267,6 @@
  
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="/js/index.js"></script>
-	<script src="/js/activity.js"></script>
 
 </body>
 </html>
