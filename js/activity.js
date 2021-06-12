@@ -1,5 +1,15 @@
 $(".sidebar").height(Math.max($(".content").height(),$(".sidebar").height()));
 
+function displayTabOnClick() {
+	const tabs = document.querySelectorAll('.tabButton')
+	tabs.forEach(function (tabButton) {
+		tabButton.addEventListener('click', function (e) {
+			let tabContentId = tabButton.id.split(/\-(.+)/)[1]
+			openTab(e, tabContentId);
+		})
+	})
+}
+
 function openTab(evt, tabName) {
   var i, tabContent, tabButton;
   tabContent = document.getElementsByClassName("tabContent");
@@ -15,7 +25,7 @@ function openTab(evt, tabName) {
   // Set new URL
   replaceUrlHash(tabName);
   
-  evt.currentTarget.className =+ " currentTab";
+  evt.currentTarget.className += " currentTab";
 }
 
 function directLinkToTab() {
