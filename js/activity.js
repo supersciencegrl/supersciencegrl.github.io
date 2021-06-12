@@ -11,25 +11,22 @@ function openTab(evt, tabName) {
   tabButton[i].className = tabButton[i].className.replace(" currentTab", "");
   }
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " currentTab";
+  
+  // Set new URL
+  replaceUrlHash(tabName);
+  
+  evt.currentTarget.className =+ " currentTab";
 }
 
-if (window.location.href.indexOf("Events-Organized") > -1) {
-	setTimeout(function() {
-		document.getElementbyId("tab-Events-Organized").click();
-	},300);
-} else if (window.location.href.indexOf("Conferences-Attended") > -1 {
-	setTimeout(function() {
-		document.getElementById("tab-Conferences-Attended").click();
-	},300);
-} else if (window.location.href.indexOf("Media-Appearances") > -1) {
-	setTimeout(function() {
-		document.getElementById("tab-Media-Appearances").click();
-	},300);
-} else {
-	document.getElementById("defaultTab").click();
+function directLinkToTab() {
+	if (window.location.hash) {
+		const hash = window.location.href.split("#")[1];
+		openTab(this, hash);
+	} else {
+		const firstTab = document.querySelector('.tabButton')
+		firstTab.click();
+	}
 }
-
 
   // Not gonna lie, this was copy-pasted from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 $(document).ready(function(){
@@ -49,4 +46,15 @@ $(document).ready(function(){
       });
     } // End if
   });
+});
+
+$(document).ready(function(){
+	// Add 'onclick' listening event for each Tab button
+	displayTabOnClick();
+
+	// Add listening event for collapsible content
+	toggleCollapsibleContent();
+
+	// Check URL to display correct tab content
+	directLinkToTab();
 });
