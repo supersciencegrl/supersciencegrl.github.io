@@ -20,7 +20,7 @@ function eatHamburger() {
 	hamburger.addEventListener('click', function() {
 		var ham = document.getElementById("top-bar");
 		ham.classList.toggle("menuActive");
-	}
+	})
 }
 
 //function eatHamburger() {
