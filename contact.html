@@ -92,23 +92,12 @@
 			</div>
 		</div><!--Top row-->
   
-			<script>
-				function eatHamburger() {
-					var ham = document.getElementById("top-bar");
-					if (ham.style.display == "block") {
-						ham.style.display = "none";
-					} else {
-						ham.style.display = "block";
-					}
-				}
-			</script>
-  
 		<div id="title-bar">
 			<div class="row">
 				<div class="col-1"></div> 
 				<div class="col-11">
 					<h2><a class="title" href="/index.html">Nessa the Chemist</a></h2>
-					<a href="javascript:void(0);" onclick="eatHamburger()"><button class="m-visible" id="hamburger"><i class="fa fa-bars"></i></button></a>
+					<button class="m-visible" id="hamburger"><i class="fa fa-bars"></i></button>
 					<h5 id="supersciencegrl"><em>@SuperScienceGrl</em></h5>
 				</div>
 			</div><!--Title row -->
@@ -158,8 +147,7 @@
 
 				<h3 class="page-title">Contact Me</h3>
    
-				<div class="p-mixed">
-					
+				<div class="btnDiv">
 					<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#116;&#104;&#105;&#111;&#110;&#105;&#110;&#101;&#53;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" target="_blank" rel="noopener">
 						<button type="button" class="btnBold" id="btnBold-contact-email">Email me</button>
 					</a>
@@ -167,8 +155,8 @@
 
 				<div class="p-mixed">
 					<h5 class="contact-header">Social</h5>
-					<div class="row contactsocialrow">
-					
+
+					<div class="row" id="contactsocialrow">
 						<a href="https://www.linkedin.com/in/nessacarson/" target="_blank" rel="noopener">
 							<div class="col-xs-4 m-contact"><i class="fa fa-linkedin contact-icon" aria-hidden="true"></i></div>
 						</a>
@@ -184,9 +172,11 @@
 					</div>
 
 					<h5 class="contact-header">Buy me a coffee!</h5>
-					<a href="https://ko-fi.com/supersciencegrl" target="_blank" rel="noopener">
-						<button type="button" class="btnBold" id="btnBold-contact">Buy me a coffee</button>
-					</a>
+					<div class="btnDiv">
+						<a href="https://ko-fi.com/supersciencegrl" target="_blank" rel="noopener">
+							<button type="button" class="btnBold" id="btnBold-contact">Buy me a coffee</button>
+						</a>
+					</div>
 					<p class="p-contact">Most of what I do is volunteer work.</p>
 					<!-- Row -->
    

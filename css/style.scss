@@ -892,7 +892,13 @@ pre {
 }
 #btnBold-contact-email {
 	background: linear-gradient($title-lighter, $mainpage-background, $title-lighter);
-	margin: 0 0 30px $default-indent;
+	margin: 0 0 10px $default-indent;
+}
+
+.btnDiv {
+	padding: 0;
+	font-size: medium;
+	text-align: center;
 }
 
 .listwrapper {
@@ -1020,8 +1026,9 @@ pre {
 	font-size: small;
 	padding-left: $default-indent;
 }
-.contactsocialrow {
+#contactsocialrow {
 	padding: 10px 0 30px 10px;
+	margin: auto;
 }
 
 #about-page-ul {
@@ -1159,9 +1166,38 @@ only screen and (min-resolution: 300dpi) {
 	#supersciencegrl {
 		font-size: large;
 	}
+	
 	#top-bar {
-		display: none;
+	  display: none;
+	  transform: rotateX(-90deg);
+	  transform-origin: top center;
+	  opacity: 0;
 	}
+	.menuActive {
+	  display: block !important;
+	  transform: rotateX(0deg) !important;
+	  opacity: 1 !important;
+	  animation: anim 0.4s ease-in-out !important;
+	}
+	@keyframes anim {
+	  0% {
+		display: none;
+		opacity: 0;
+	  };
+	  1% {
+		display: block;
+		opacity: 0;
+		transform: rotateX(-90deg);
+	  };
+	  70% {
+		transform: rotateX(15deg);
+	  };
+	  100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+	  }
+	}
+  
 	#hamburger {
 		background-color: white;
 		float: right;

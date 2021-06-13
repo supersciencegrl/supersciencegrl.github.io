@@ -14,8 +14,23 @@ function smoothScroll() {
 		})
 	})
 }
-			
+
+function eatHamburger() {
+	var hamburger = document.getElementById("hamburger");
+	hamburger.addEventListener('click', function() {
+		var ham = document.getElementById("top-bar");
+		ham.classList.toggle("menuActive");
+	}
+}
+
+//function eatHamburger() {
+//	var ham = document.getElementById("top-bar");
+//	ham.classList.toggle("menuActive");
+//}
+	
 $(document).ready(function(){
 	// Add 'onclick' listening event for each linkjump button
 	smoothScroll();
+	// Add 'onclick' listening event for mobile hamburger menu
+	eatHamburger();
 });
