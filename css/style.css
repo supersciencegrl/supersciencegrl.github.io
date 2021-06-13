@@ -1299,8 +1299,8 @@ pre {
     padding-top: 10px;
   }
 
-  #title {
-    font-size: 1.25rem;
+  .title {
+    font-size: 1.75rem;
   }
 
   #supersciencegrl {
@@ -1374,6 +1374,10 @@ pre {
 
   .div-main {
     padding: 10px 0 0 10px;
+  }
+
+  .page-title {
+    font-size: 1.75rem;
   }
 
   .page-title-inline {

@@ -1161,8 +1161,8 @@ only screen and (min-resolution: 300dpi) {
 		background-color: $titlebar;
 		padding-top: 10px;
 	}
-	#title {
-		font-size: 1.25rem;
+	.title {
+		font-size: 1.75rem;
 	}
 	#supersciencegrl {
 		font-size: large;
@@ -1228,6 +1228,9 @@ only screen and (min-resolution: 300dpi) {
 	}
 	.div-main {
 		padding: 10px 0 0 10px;
+	}
+	.page-title {
+		font-size: 1.75rem;
 	}
 	.page-title-inline {
 		margin-top: 2rem;
