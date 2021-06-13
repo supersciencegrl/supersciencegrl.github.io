@@ -1149,8 +1149,12 @@ only screen and (min-resolution: 300dpi) {
 	figure {
 		font-size: small;
 	}
+	#title-bar {
+		background-color: $titlebar;
+		padding-top: 10px;
+	}
 	#title {
-		font-size: x-large;
+		font-size: 1.25rem;
 	}
 	#supersciencegrl {
 		font-size: large;
@@ -1181,6 +1185,10 @@ only screen and (min-resolution: 300dpi) {
     #content ul {
 		margin-left: 0;
     }
+	#footer {
+		height: initial;
+		padding: 10px 40px 10px 40px;
+	}
 	.div-main {
 		padding: 10px 0 0 10px;
 	}

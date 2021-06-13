@@ -1286,8 +1286,13 @@ pre {
     font-size: small;
   }
 
+  #title-bar {
+    background-color: #101030;
+    padding-top: 10px;
+  }
+
   #title {
-    font-size: x-large;
+    font-size: 1.25rem;
   }
 
   #supersciencegrl {
@@ -1324,6 +1329,11 @@ pre {
 
   #content ul {
     margin-left: 0;
+  }
+
+  #footer {
+    height: initial;
+    padding: 10px 40px 10px 40px;
   }
 
   .div-main {
