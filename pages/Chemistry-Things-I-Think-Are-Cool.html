@@ -101,11 +101,12 @@
 				<div class="col-1"></div> 
 				<div class="col-11">
 					<h2><a class="title" href="/index.html">Nessa the Chemist</a></h2>
+					<button class="m-visible-none" id="hamburger"><i class="fa fa-bars"></i></button>
 					<h5 id="supersciencegrl"><em>@SuperScienceGrl</em></h5>
 				</div>
 			</div><!--Title row -->
 	  
-			<div class="row">
+			<div class="row" id="top-bar">
 				<div class="bar-space-initial"></div>
 				<a class="link-bar" href="/index.html">
 					<div class="col-md-1 col-xs-3 bar link-container">HOME</div>
@@ -119,6 +120,21 @@
 				<a class="link-bar" href="/links">
 					<div class="col-md-1 col-xs-3 bar link-container">LINKS</div>
 				</a>
+				
+				<div class="col-md-1 col-xs-3 bar-category link-container m-visible-none">TOOLS:</div>
+				
+				<div>
+					<a class="link-bar" href="/conferences">
+						<div class="col-md-1 col-xs-3 bar-indent link-container">Conference database</div>
+					</a>
+					<a class="link-bar" href="/links">
+						<div class="col-md-1 col-xs-3 bar-indent link-container">Chemical Vendor Search</div>
+					</a>
+					<a class="link-bar" href="/wiley">
+						<div class="col-md-1 col-xs-3 bar-indent link-container">Wiley RSS feeds</div>
+					</a>
+				</div>
+				
 				<a class="link-bar" href="/contact">
 					<div class="col-md-1 col-xs-3 bar link-container m-visible">CONTACT</div>
 				</a>
@@ -418,7 +434,7 @@
 					<hr class="sidebar-hr">
 				  
 					<p>RSS: <a href="/rss.xml" target="_blank" rel="noopener" class="sidebar-rss"><i class="fa fa-rss" aria-hidden="true"></i></a></p>
-					<p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2017, 2020 Nessa Carson</p>
+					<p id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2017, 2021 Nessa Carson</p>
 					<a href="/changelog.html"><p id="changelog-link">Website change log</p></a>
 				</div>
 			</div><!-- Sidebar -->
@@ -427,7 +443,7 @@
 				<div class="row">
 					<div id="footer-text-div">
 						<p id="footer-text">
-							<i class="fa fa-copyright" aria-hidden="true"></i> 2017, 2020 Coded by Nessa Carson<br><a href="/privacy">Privacy policy</a>
+							<i class="fa fa-copyright" aria-hidden="true"></i> 2017, 2021 Coded by Nessa Carson<br><a href="/privacy">Privacy policy</a>
 						</p>
 					</div>
 					<div>
@@ -446,7 +462,6 @@
  
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="/js/index.js"></script>
-	<script src="/js/activity.js"></script>
 
 </body>
 </html>
