@@ -213,6 +213,7 @@ pre {
 }
 
 .bar-indent {
+  display: none;
   padding-left: 25px !important;
 }
 
@@ -1409,6 +1410,7 @@ pre {
   .bar,
 .bar-category,
 .bar-indent {
+    display: block;
     min-width: 20px;
     padding: 5px;
     border-radius: 5px;

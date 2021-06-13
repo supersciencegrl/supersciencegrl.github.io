@@ -177,6 +177,7 @@ pre {
     min-width: 150px;
 }
 .bar-indent {
+	display: none;
 	padding-left: 25px !important;
 }
 .bar:hover,
@@ -1255,6 +1256,7 @@ only screen and (min-resolution: 300dpi) {
     .bar,
 	.bar-category,
 	.bar-indent {
+		display: block;
 		min-width: 20px;
 		padding: 5px;
 		border-radius: 5px;
