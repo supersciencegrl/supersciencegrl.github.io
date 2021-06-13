@@ -1462,6 +1462,10 @@ pre {
     padding-left: 3em;
   }
 
+  #cvs-search {
+    width: 100%;
+  }
+
   #wrapper {
     margin-right: 0;
   }
