@@ -211,7 +211,7 @@ td.column2, td.column3, td.column5, td.column6 {
 }
 /* End of small screens */
 /* Mobile devices */
-@media only screen and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 300dpi) {
+@media only screen and (max-device-width: 480px), only screen and (min-resolution: 300dpi) {
   .column1 {
     max-width: 25vw;
   }
