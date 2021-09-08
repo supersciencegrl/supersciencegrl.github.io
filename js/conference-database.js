@@ -72,33 +72,34 @@ function removecancelled() {
 function directLinkToSubset() {
 	if (window.location.hash) {
 		const hash = window.location.href.split("#")[1];
-		const conferenceClass = hash.startsWith("c");
-		if (conferenceClass === true) {
-			allContent = document.getElementsByClassName("body");
-			for (i = 0; i < allContent.length; i++) {
-				allContent[i].style.display = "none";
+		const contentClass = "c".concat(hash)
+		// Hide all rows by default
+		allContent = document.getElementsByClassName("body");
+		for (i = 0; i < allContent.length; i++) {
+			allContent[i].style.display = "none";
+		}
+		// Show all "call" class
+		call = document.getElementsByClassName("call");
+		for (i = 0; i < call.length; i++) {
+			call[i].style.display = "table-row";
+		}
+		// Show all relevant rows
+		subset = document.getElementsByClassName(contentClass);
+		for (i = 0; i < subset.length; i++) {
+			subset[i].style.display = "table-row";
+		}
+		// Hard code rows with particular parent classes
+		parentsOfMedChem = ["cchembio", "csynthesis"]
+		if (parentsOfMedChem.includes(contentClass)) {
+			others = document.getElementsByClassName("cmedchem");
+			for (i = 0; i < others.length; i++) {
+				others[i].style.display = "table-row";
 			}
-			// Show all "call" class
-			call = document.getElementsByClassName("call");
-			for (i = 0; i < call.length; i++) {
-				call[i].style.display = "table-row";
-			}
-			subset = document.getElementsByClassName(hash);
-			for (i = 0; i < subset.length; i++) {
-				subset[i].style.display = "table-row";
-			}
-			parentsOfMedChem = ["cchembio", "synthesis"]
-			if (parentsOfMedChem.includes(hash)) {
-				others = document.getElementsByClassName("medchem");
-				for (i = 0; i < others.length; i++) {
-					others[i].style.display = "table-row";
-				}
-			}
-			if (hash === "csynthesis") {
-				others = document.getElementsByClassName("cprocess");
-				for (i = 0, i < others.length; i++) {
-					others[i].style.display = "table-row";
-				}
+		}
+		if (contentClass === "csynthesis") {
+			others = document.getElementsByClassName("cprocess");
+			for (i = 0; i < others.length; i++) {
+				others[i].style.display = "table-row";
 			}
 		}
 	}
