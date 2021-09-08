@@ -72,7 +72,7 @@ function removecancelled() {
 function directLinkToSubset() {
 	if (window.location.hash) {
 		const hash = window.location.href.split("#")[1];
-		const conferenceClass = hash.startswith("c");
+		const conferenceClass = hash.startsWith("c");
 		if (conferenceClass === true) {
 			allContent = document.getElementsByClassName("body");
 			for (i = 0; i < allContent.length; i++) {
