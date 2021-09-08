@@ -75,11 +75,11 @@ function directLinkToSubset() {
 		const conferenceClass = hash.startswith("c");
 		if (conferenceClass === true) {
 			allContent = document.getElementsByClassName("body");
-			for (i = 0, i < allContent.length; i++) {
+			for (i = 0; i < allContent.length; i++) {
 				allContent[i].style.display = "none";
 			}
 			subset = document.getElementsByClassName(hash);
-			for (i = 0, i < subset.length; i++) {
+			for (i = 0; i < subset.length; i++) {
 				subset[i].style.display = "table-row";
 			}
 		}
