@@ -68,3 +68,25 @@ function removecancelled() {
 	postponedOutput[i].style.display = "table-row";
   }}
 }
+
+function directLinkToSubset() {
+	if (window.location.hash) {
+		const hash = window.location.href.split("#")[1];
+		const conferenceClass = hash.startswith("c");
+		if (conferenceClass === true) {
+			allContent = document.getElementsByClassName("body");
+			for (i = 0, i < allContent.length; i++) {
+				allContent[i].style.display = "none";
+			}
+			subset = document.getElementsByClassName(hash);
+			for (i = 0, i < subset.length; i++) {
+				subset[i].style.display = "table-row";
+			}
+		}
+	}
+}
+
+$(document).ready(function(){
+	// Check URL to display automation events only as necessary
+	directLinkToSubset();
+});
