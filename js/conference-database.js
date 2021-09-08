@@ -78,9 +78,27 @@ function directLinkToSubset() {
 			for (i = 0; i < allContent.length; i++) {
 				allContent[i].style.display = "none";
 			}
+			// Show all "call" class
+			call = document.getElementsByClassName("call");
+			for (i = 0; i < call.length; i++) {
+				call[i].style.display = "table-row";
+			}
 			subset = document.getElementsByClassName(hash);
 			for (i = 0; i < subset.length; i++) {
 				subset[i].style.display = "table-row";
+			}
+			parentsOfMedChem = ["cchembio", "synthesis"]
+			if (parentsOfMedChem.includes(hash)) {
+				others = document.getElementsByClassName("medchem");
+				for (i = 0; i < others.length; i++) {
+					others[i].style.display = "table-row";
+				}
+			}
+			if (hash === "csynthesis") {
+				others = document.getElementsByClassName("cprocess");
+				for (i = 0, i < others.length; i++) {
+					others[i].style.display = "table-row";
+				}
 			}
 		}
 	}
