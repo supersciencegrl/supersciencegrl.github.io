@@ -7,12 +7,18 @@ th.column1 {
   padding-left: 1em;
 }
 
+#conferencesOldTable {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .body {
   font-size: 0.8em;
+  display: flex;
 }
 
 .column1 {
-  width: 25%;
+  width: 30%;
   overflow: hidden;
   padding-left: 1em;
 }
