@@ -1,0 +1,8 @@
+.body {
+	display: flex;
+}
+
+#conferencesOldTable {
+	display: flex;
+	flex-direction: column-reverse;
+}

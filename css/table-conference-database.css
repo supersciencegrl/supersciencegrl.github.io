@@ -7,14 +7,8 @@ th.column1 {
   padding-left: 1em;
 }
 
-#conferencesOldTable {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 .body {
   font-size: 0.8em;
-  display: flex;
 }
 
 .column1 {
@@ -125,12 +119,14 @@ td.column2, td.column3, td.column5, td.column6 {
   display: none;
 }
 
-.cancelled {
+.cancelled,
+.cancelled-span {
   text-decoration: line-through;
   text-decoration-color: navy;
 }
 
-.postponed {
+.postponed,
+.cancelled-span {
   text-decoration: line-through;
   text-decoration-color: green;
 }
