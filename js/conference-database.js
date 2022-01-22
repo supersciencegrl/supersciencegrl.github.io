@@ -77,8 +77,6 @@ function removecancelled() {
 		}
 	}
 	else {
-		box.disabled = true;
-		box.checked = true;
 		for (i = 0; i < cancelledOutput.length; i++) {
 			cancelledOutput[i].style.display = "none";
 		}
@@ -90,6 +88,9 @@ function removecancelled() {
 
 function directLinkToSubset() {
 	if (window.location.hash) {
+		var box = document.getElementById("cancelled-checkbox");
+		box.disabled = true;
+		box.checked = true;
 		const hash = window.location.href.split("#")[1];
 		const contentClass = "c".concat(hash)
 		// Hide all rows by default
