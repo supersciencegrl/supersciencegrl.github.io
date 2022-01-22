@@ -122,11 +122,42 @@ function directLinkToSubset() {
 				others[i].style.display = "table-row";
 			}
 		}
+		// Synonyms
+		if (contentClass === "cagrochemistry") {
+			synonyms = document.getElementsByClassName("cagro");
+			for (i = 0; i < synonyms.length; i++) {
+				synonyms[i].style.display = "table-row";
+			}
+		}
+		if (contentClass === "canalytical") {
+			synonyms = document.getElementsByClassName("canal");
+			for (i = 0; i < synonyms.length; i++) {
+				synonyms[i].style.display = "table-row";
+			}
+		}
+		if (contentClass === "ceducation") {
+			synonyms = document.getElementsByClassName("cedu");
+			for (i = 0; i < synonyms.length; i++) {
+				synonyms[i].style.display = "table-row";
+			}
+		}
+		if (contentClass === "cinorganic") {
+			synonyms = document.getElementsByClassName("cinorg");
+			for (i = 0; i < synonyms.length; i++) {
+				synonyms[i].style.display = "table-row";
+			}
+		}
+		if (contentClass === "cphysical") {
+			synonyms = document.getElementsByClassName("cphys");
+			for (i = 0; i < synonyms.length; i++) {
+				synonyms[i].style.display = "table-row";
+			}
+		}
 	}
 }
 
 function removeFilter() {
-	allContent = document.getEleemtnsByClassName("body");
+	allContent = document.getElementsByClassName("body");
 	for (i = 0; i < allContent.length; i++) {
 		allContent[i].style.display = "table-row";
 	};

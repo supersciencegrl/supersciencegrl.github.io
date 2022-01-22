@@ -170,10 +170,10 @@ td.column2, td.column3, td.column5, td.column6 {
 	height: 0;
 	width: 0;
 }
-#remove_cancelled input:disabled {
+#remove_cancelled input:disabled ~ .big-checkbox {
 	background-color: $link-active;
 }
-#remove_cancelled input:disabled + .big-checkbox.label {
+#remove_cancelled input:disabled ~ .big-checkbox-label {
 	color: $link-active;
 }
 
