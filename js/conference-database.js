@@ -167,7 +167,7 @@ function removeFilter() {
 }
 function removeFilterMobile() {
 	removeFilter();
-	filterHam.classList.toggle("menuSlide");me
+	filterHam.classList.remove("menuSlide");
 }
 
 function replaceUrlHash(tabName) {
@@ -181,7 +181,8 @@ function filterButton(tabName) {
 }
 function filterButtonMobile(tabName) {
 	replaceUrlHash(tabName);
-	filterHam.classList.toggle("menuSlide");
+	directLinkToSubset();
+	filterHam.classList.remove("menuSlide");
 }
 
 function eatFilterHamburger() {
@@ -194,7 +195,7 @@ function eatFilterHamburger() {
 function noActiveTopics() {
 	var current = document.getElementsByClassName("activeFilter");
 	if (current.length) {
-		current[0].className = current[0].className.replace(" activeFilter", "");
+		current[0].classList.remove("activeFilter");
 	}
 }
 if (window.location.hash) {

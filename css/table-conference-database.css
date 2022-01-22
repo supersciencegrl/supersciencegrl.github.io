@@ -299,6 +299,10 @@ td.column2, td.column3, td.column5, td.column6 {
     font-weight: bold;
   }
 
+  #filter-menu-hamburger {
+    margin-bottom: 1em;
+  }
+
   #filter-menu {
     display: none;
     transform: rotateX(-90deg);

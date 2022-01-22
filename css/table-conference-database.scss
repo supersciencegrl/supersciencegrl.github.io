@@ -290,6 +290,9 @@ only screen and (min-resolution: 300dpi) {
 		width: 100%;
 		font-weight: bold;
 	}
+	#filter-menu-hamburger {
+		margin-bottom: 1em;
+	}
 	#filter-menu {
 	  display: none;
 	  transform: rotateX(-90deg);
