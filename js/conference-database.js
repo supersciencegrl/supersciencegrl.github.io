@@ -81,7 +81,7 @@ function removecancelled() {
 			cancelledOutput[i].style.display = "none";
 		}
 		for (i = 0; i < postponedOutput.length; i++) {
-			postponedOutput.[i].style.display = "none";
+			postponedOutput[i].style.display = "none";
 		}
 	}
 }
