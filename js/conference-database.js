@@ -193,7 +193,6 @@ function eatFilterHamburger() {
 }
 
 function noActiveTopics() {
-	var current = document.getElementsByClassName("activeFilter");
 	if (current.length) {
 		current[0].classList.remove("activeFilter");
 	}
@@ -206,15 +205,15 @@ var btnContainer = document.getElementById("btnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function(){
-		var current = document.getElementsByClassName("activeFilter");
 		if (current.length) {
-			current[0].className = current[0].className.replace(" activeFilter", "");
+			current[0].classList.remove("activeFilter");
 		};
 		this.className += " activeFilter";
 	});
 }
 
 var box = document.getElementById("cancelled-checkbox");
+var current = document.getElementsByClassName("activeFilter");
 var filterHam = document.getElementById("filter-menu");
 
 $(document).ready(function(){
