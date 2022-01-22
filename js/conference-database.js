@@ -58,6 +58,7 @@ function removecancelled() {
 	var postponedOutput = document.getElementsByClassName("postponed");
 	var i;
 	if (!(window.location.hash)) {
+		box.disabled = false;
 		if (box.checked) {
 			for (i = 0; i < cancelledOutput.length; i++) {
 				cancelledOutput[i].style.display = "none";
@@ -77,6 +78,13 @@ function removecancelled() {
 	}
 	else {
 		box.disabled = true;
+		box.checked = true;
+		for (i = 0; i < cancelledOutput.length; i++) {
+			cancelledOutput[i].style.display = "none";
+		}
+		for (i = 0; i < postponedOutput.length; i++) {
+			postponedOutput.[i].style.display = "none";
+		}
 	}
 }
 
