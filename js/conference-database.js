@@ -167,7 +167,7 @@ function removeFilter() {
 }
 function removeFilterMobile() {
 	removeFilter();
-	eatFilterHamburger();
+	filterHam.classList.toggle("menuSlide");
 }
 
 function replaceUrlHash(tabName) {
@@ -181,13 +181,12 @@ function filterButton(tabName) {
 }
 function filterButtonMobile(tabName) {
 	replaceUrlHash(tabName);
-	eatFilterHamburger();
+	filterHam.classList.toggle("menuSlide");
 }
 
 function eatFilterHamburger() {
 	var filterHamburger = document.getElementById("filter-menu-hamburger");
 	filterHamburger.addEventListener('click', function() {
-		var filterHam = document.getElementById("filter-menu");
 		filterHam.classList.toggle("menuSlide");
 	})
 }
@@ -215,6 +214,7 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 var box = document.getElementById("cancelled-checkbox");
+var filterHam = document.getElementById("filter-menu");
 
 $(document).ready(function(){
 	// Check URL to display automation events only as necessary
