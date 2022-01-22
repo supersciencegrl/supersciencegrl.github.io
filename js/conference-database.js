@@ -188,7 +188,7 @@ function eatFilterHamburger() {
 	var filterHamburger = document.getElementById("filter-menu-hamburger");
 	filterHamburger.addEventListener('click', function() {
 		var filterHam = document.getElementById("filter-menu");
-		filterHam.classList.toggle("menuActive");
+		filterHam.classList.toggle("menuSlide");
 	})
 }
 
@@ -219,4 +219,6 @@ var box = document.getElementById("cancelled-checkbox");
 $(document).ready(function(){
 	// Check URL to display automation events only as necessary
 	directLinkToSubset();
+	// Add 'onclick' listening event for filters on mobile devices
+	eatFilterHamburger();
 });

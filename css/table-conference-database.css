@@ -233,6 +233,28 @@ td.column2, td.column3, td.column5, td.column6 {
   font-weight: bold;
 }
 
+.menuSlide {
+  display: block !important;
+  transform: rotateX(0deg) !important;
+  opacity: 1 !important;
+  animation: anim 0.3s ease-in-out !important;
+}
+
+@keyframes anim {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
 /* Small computer screens */
 @media only screen and (max-width: 1200px) {
   .container-checkbox p {
