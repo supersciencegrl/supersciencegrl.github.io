@@ -110,6 +110,11 @@ function replaceUrlHash(tabName) {
 	history.replaceState(null, null, newUrl);
 }
 
+function filterButton(tabName) {
+	replaceUrlHash(tabName);
+	directLinkToSubset();
+}
+
 var btnContainer = document.getElementById("btnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
