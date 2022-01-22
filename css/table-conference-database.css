@@ -169,12 +169,22 @@ td.column2, td.column3, td.column5, td.column6 {
   width: 0;
 }
 
+#remove_cancelled:hover input ~ .big-checkbox {
+  background-color: #888899;
+}
+
+#remove_cancelled input:checked ~ .big-checkbox {
+  background-color: #0279B4;
+}
+
 #remove_cancelled input:disabled ~ .big-checkbox {
   background-color: #D2E9FF;
+  pointer: not-allowed;
 }
 
 #remove_cancelled input:disabled ~ .big-checkbox-label {
   color: #D2E9FF;
+  pointer: not-allowed;
 }
 
 .big-checkbox {
@@ -186,14 +196,6 @@ td.column2, td.column3, td.column5, td.column6 {
   border-radius: 5%;
   background-color: #DDDDDD;
   vertical-align: bottom;
-}
-
-#remove_cancelled:hover input ~ .big-checkbox {
-  background-color: #888899;
-}
-
-#remove_cancelled input:checked ~ .big-checkbox {
-  background-color: #0279B4;
 }
 
 .big-checkbox:after {

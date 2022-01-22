@@ -53,7 +53,6 @@ function pricelist() {
 }
 
 function removecancelled() {
-	var box = document.getElementById("cancelled-checkbox");
 	var cancelledOutput = document.getElementsByClassName("cancelled");
 	var postponedOutput = document.getElementsByClassName("postponed");
 	var i;
@@ -86,11 +85,16 @@ function removecancelled() {
 	}
 }
 
+function noActiveTopics() {
+	var current = document.getElementsByClassName("activeFilter");
+	current[0].className = current[0].className.replace(" activeFilter", "");
+}
+
 function directLinkToSubset() {
 	if (window.location.hash) {
-		var box = document.getElementById("cancelled-checkbox");
 		box.disabled = true;
 		box.checked = true;
+		noActiveTopics();
 		const hash = window.location.href.split("#")[1];
 		const contentClass = "c".concat(hash)
 		// Hide all rows by default
@@ -162,6 +166,7 @@ function removeFilter() {
 		allContent[i].style.display = "table-row";
 	};
 	history.pushState("", document.title, window.location.pathname + window.location.search);
+	box.disabled = false;
 }
 
 function replaceUrlHash(tabName) {
@@ -183,6 +188,8 @@ for (var i = 0; i < btns.length; i++) {
 		this.className += " activeFilter";
 	});
 }
+
+var box = document.getElementById("cancelled-checkbox");
 
 $(document).ready(function(){
 	// Check URL to display automation events only as necessary
