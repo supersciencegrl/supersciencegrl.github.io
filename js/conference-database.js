@@ -91,6 +91,8 @@ function directLinkToSubset() {
 		box.checked = true;
 		const hash = window.location.href.split("#")[1];
 		const contentClass = "c".concat(hash)
+		// Show filter label
+		document.getElementById("filterLabel").innerHTML = "Filter: " + hash;
 		// Hide all rows by default
 		allContent = document.getElementsByClassName("body");
 		for (i = 0; i < allContent.length; i++) {
@@ -161,6 +163,7 @@ function removeFilter() {
 	};
 	history.pushState("", document.title, window.location.pathname + window.location.search);
 	box.disabled = false;
+	document.getElementById("filterLabel").innerHTML = "";
 }
 
 function replaceUrlHash(tabName) {

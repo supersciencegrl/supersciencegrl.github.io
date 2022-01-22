@@ -220,6 +220,15 @@ td.column2, td.column3, td.column5, td.column6 {
   transform: rotate(45deg);
 }
 
+#filterLabel {
+  position: absolute;
+  left: 8%;
+  padding: 1em 0 0 0;
+  margin: 0;
+  width: 15%;
+  font-weight: bold;
+}
+
 /* Small computer screens */
 @media only screen and (max-width: 1200px) {
   .container-checkbox p {
