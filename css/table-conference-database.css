@@ -169,6 +169,14 @@ td.column2, td.column3, td.column5, td.column6 {
   width: 0;
 }
 
+#remove_cancelled input:disabled {
+  background-color: #D2E9FF;
+}
+
+#remove_cancelled input:disabled + .big-checkbox.label {
+  color: #D2E9FF;
+}
+
 .big-checkbox {
   position: absolute;
   top: 5px;
