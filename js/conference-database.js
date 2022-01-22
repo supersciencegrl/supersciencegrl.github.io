@@ -167,7 +167,7 @@ function removeFilter() {
 }
 function removeFilterMobile() {
 	removeFilter();
-	filterHam.classList.toggle("menuSlide");
+	filterHam.classList.toggle("menuSlide");me
 }
 
 function replaceUrlHash(tabName) {
