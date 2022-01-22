@@ -85,16 +85,10 @@ function removecancelled() {
 	}
 }
 
-function noActiveTopics() {
-	var current = document.getElementsByClassName("activeFilter");
-	current[0].className = current[0].className.replace(" activeFilter", "");
-}
-
 function directLinkToSubset() {
 	if (window.location.hash) {
 		box.disabled = true;
 		box.checked = true;
-		noActiveTopics();
 		const hash = window.location.href.split("#")[1];
 		const contentClass = "c".concat(hash)
 		// Hide all rows by default
@@ -113,7 +107,7 @@ function directLinkToSubset() {
 			subset[i].style.display = "table-row";
 		}
 		// Hard code rows with particular parent classes
-		parentsOfMedChem = ["cchembio", "csynthesis"]
+		parentsOfMedChem = ["cchembio", "csynthesis"];
 		if (parentsOfMedChem.includes(contentClass)) {
 			others = document.getElementsByClassName("cmedchem");
 			for (i = 0; i < others.length; i++) {
@@ -179,12 +173,24 @@ function filterButton(tabName) {
 	directLinkToSubset();
 }
 
+function noActiveTopics() {
+	var current = document.getElementsByClassName("activeFilter");
+	if (current.length) {
+		current[0].className = current[0].className.replace(" activeFilter", "");
+	}
+}
+if (window.location.hash) {
+	noActiveTopics()
+}
+
 var btnContainer = document.getElementById("btnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function(){
 		var current = document.getElementsByClassName("activeFilter");
-		current[0].className = current[0].className.replace(" activeFilter", "");
+		if (current.length) {
+			current[0].className = current[0].className.replace(" activeFilter", "");
+		};
 		this.className += " activeFilter";
 	});
 }
