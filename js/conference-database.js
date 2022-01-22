@@ -165,6 +165,10 @@ function removeFilter() {
 	box.disabled = false;
 	document.getElementById("filterLabel").innerHTML = "";
 }
+function removeFilterMobile() {
+	removeFilter();
+	eatFilterHamburger();
+}
 
 function replaceUrlHash(tabName) {
 	let newUrl = `${window.location.href.split("#")[0]}#${tabName}`;
@@ -174,6 +178,18 @@ function replaceUrlHash(tabName) {
 function filterButton(tabName) {
 	replaceUrlHash(tabName);
 	directLinkToSubset();
+}
+function filterButtonMobile(tabName) {
+	replaceUrlHash(tabName);
+	eatFilterHamburger();
+}
+
+function eatFilterHamburger() {
+	var filterHamburger = document.getElementById("filter-menu-hamburger");
+	filterHamburger.addEventListener('click', function() {
+		var filterHam = document.getElementById("filter-menu");
+		filterHam.classList.toggle("menuActive");
+	})
 }
 
 function noActiveTopics() {

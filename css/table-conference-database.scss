@@ -202,6 +202,10 @@ td.column2, td.column3, td.column5, td.column6 {
 	display: none;
 }
 
+.fa-chevron-circle-right {
+	color: $top-row;
+}
+
 #remove_cancelled input:checked ~ .big-checkbox:after {
 	display: block;
 }
@@ -257,11 +261,19 @@ only screen and (min-resolution: 300dpi) {
 		display: none;
 	}
 	#div_remove_cancelled {
-		min-width: 85vw;
-		float: left;
+		display: none
 	}
-	#remove_cancelled {
-		margin-right: 20%;
+	#filterLabel {
+		position: relative;
+		padding: 0 0 0.2em 1em;
+		width: 100%;
+		font-weight: bold;
+	}
+	#filter-menu {
+	  display: none;
+	  transform: rotateX(-90deg);
+	  transform-origin: top center;
+	  opacity: 0;
 	}
 }
 /* End of mobile devices */

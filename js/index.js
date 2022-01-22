@@ -22,11 +22,6 @@ function eatHamburger() {
 		ham.classList.toggle("menuActive");
 	})
 }
-
-//function eatHamburger() {
-//	var ham = document.getElementById("top-bar");
-//	ham.classList.toggle("menuActive");
-//}
 	
 $(document).ready(function(){
 	// Add 'onclick' listening event for each linkjump button
