@@ -105,6 +105,21 @@ function directLinkToSubset() {
 	}
 }
 
+function replaceUrlHash(tabName) {
+	let newUrl = `${window.location.href.split("#")[0]}#${tabName}`;
+	history.replaceState(null, null, newUrl);
+}
+
+var btnContainer = document.getElementById("btnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("activeFilter");
+		current[0].className = current[0].className.replace(" activeFilter", "");
+		this.className += " activeFilter";
+	});
+}
+
 $(document).ready(function(){
 	// Check URL to display automation events only as necessary
 	directLinkToSubset();
