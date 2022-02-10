@@ -212,6 +212,10 @@ for (var i = 0; i < btns.length; i++) {
 	});
 }
 
+var box = document.getElementById("cancelled-checkbox");
+var current = document.getElementsByClassName("activeFilter");
+var filterHam = document.getElementById("filter-menu");
+
 $(document).ready(function(){
 	var box = document.getElementById("cancelled-checkbox");
 	var current = document.getElementsByClassName("activeFilter");
