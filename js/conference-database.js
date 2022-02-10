@@ -1,3 +1,7 @@
+var box = document.getElementById("cancelled-checkbox");
+var current = document.getElementsByClassName("activeFilter");
+var filterHam = document.getElementById("filter-menu");
+
 function pricelist() {
 	var standard = document.getElementById("standard-price");
 	var student = document.getElementById("student-price");
@@ -211,10 +215,6 @@ for (var i = 0; i < btns.length; i++) {
 		this.className += " activeFilter";
 	});
 }
-
-var box = document.getElementById("cancelled-checkbox");
-var current = document.getElementsByClassName("activeFilter");
-var filterHam = document.getElementById("filter-menu");
 
 $(document).ready(function(){
 	var box = document.getElementById("cancelled-checkbox");
