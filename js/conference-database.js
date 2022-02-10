@@ -90,7 +90,7 @@ function directLinkToSubset() {
 		box.disabled = true;
 		box.checked = true;
 		const hash = window.location.href.split("#")[1];
-		const contentClass = "c".concat(hash)
+		const contentClass = "c".concat(hash);
 		// Show filter label
 		document.getElementById("filterLabel").innerHTML = "Filter: " + hash;
 		// Hide all rows by default
@@ -212,11 +212,10 @@ for (var i = 0; i < btns.length; i++) {
 	});
 }
 
-var box = document.getElementById("cancelled-checkbox");
-var current = document.getElementsByClassName("activeFilter");
-var filterHam = document.getElementById("filter-menu");
-
 $(document).ready(function(){
+	var box = document.getElementById("cancelled-checkbox");
+	var current = document.getElementsByClassName("activeFilter");
+	var filterHam = document.getElementById("filter-menu");
 	// Check URL to display automation events only as necessary
 	directLinkToSubset();
 	// Add 'onclick' listening event for filters on mobile devices
