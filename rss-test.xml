@@ -12,6 +12,35 @@
 	<!-- Number of items: 20 -->
 
 	<item>
+		<title>Building systems to break down silos</title>
+		<link>https://supersciencegrl.co.uk/pages/Building-systems-to-break-down-silos?rss=43</link>
+		<guid>https://supersciencegrl.co.uk/pages/Building-systems-to-break-down-silos?rss=43</guid>
+		<pubDate>Fri, 15 Apr 2022 19:10 GMT</pubDate>
+		<description><![CDATA[
+				<h6>SuperScienceGrl is 3 years old (tomorrow)! I can't honestly remember how it looked when it was launched.</h6>
+				<p>My new <em>Chemistry World</em> article, is up: "<a href="https://supersciencegrl.co.uk/pages/Building-systems-to-break-down-silos" target="_blank">Building systems to break down silos</a>."</p>
+				<p>A FAIR data ecosystem could make it a lot easier for researchers to cross discipline boundaries.</p>
+			]]>
+		</description>
+	</item>
+	
+	<item>
+		<title>Who is really a scientist, anyway?</title>
+		<link>https://supersciencegrl.co.uk/pages/Who-is-a-scientist.html?rss=37</link>
+		<guid>https://supersciencegrl.co.uk/pages/Who-is-a-scientist.html?rss=37</link>
+		<pubDate>Sat, 24 Aug 2019 10:00:00 GMT</pubDate>
+		<image>
+			<url>http://supersciencegrl.co.uk/img/Mad_scientist.png</url>
+			<title>Who is really a scientist?</title>
+			<link>https://supersciencegrl.co.uk/pages/Who-is-a-scientist.html?rss=37</link>
+		</image>
+		<description><![CDATA[
+					<p>My new <em>Chemistry World</em> article, is up, asking: "<a href="/pages/Who-is-a-scientist.html" target="_blank">who is a scientist, anyway?</a>"</p>
+					<p>Whether in a lab, an office or on a stage, we are no strangers to wrestling with self-identity. Citizen scientists can build their confidence by engaging with real, scientific research, starting to feel that science is ‘for them’. However, this is still one of the factors that new researchers struggle with most. </p>]]>
+		</description>
+	</item>
+
+	<item>
 		<title>SuperScienceGrl is 3!</title>
 		<link>https://supersciencegrl.co.uk/online?rss=42</link>
 		<guid>https://supersciencegrl.co.uk/online?rss=42</guid>
@@ -264,14 +293,6 @@
 			<link>https://supersciencegrl.co.uk/pages/Brute-Force-and-Ignorance?rss=21</link>
 		</image>
 		<description><![CDATA[Added <em>Sheffield Stereochemistry meeting</i>, <em>Faculty & Staff Sexual Harassment conference</em>, and <em>Dial-a-Molecule: Enabling Technologies and Low-Cost Automation</em> (so excited!) to the <a href="http://www.supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a>.]]></description>
-	</item>
-
-	<item>
-		<title>New conferences added</title>
-		<link>https://supersciencegrl.co.uk/changelog?rss=20#log18</link>
-		<guid>https://supersciencegrl.co.uk/changelog?rss=20#log18</guid>
-		<pubDate>Sat, 22 Sep 2018 10:55:00 GMT</pubDate>
-		<description><![CDATA[<ul><li>Added <em>RSC-BMCS Mastering Med Chem Symposium</em> and <em>ACS Shanghai Med Chem Conference</em> to the <a href="http://supersciencegrl.co.uk/conferences" target="_blank">Conference Database</a></li></ul>]]></description>
 	</item>
 
 </channel>
