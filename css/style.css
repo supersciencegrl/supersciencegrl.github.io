@@ -162,6 +162,10 @@ pre {
 ::-webkit-scrollbar-track {
   background: #FFFFFF;
   border-radius: 10px;
+  box-shadow: inset 0 0 5px #303030;
+}
+
+.div::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px #101030;
 }
 
