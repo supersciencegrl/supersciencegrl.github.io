@@ -132,6 +132,23 @@ pre {
     position: relative;
 }
 
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: $scrollbar-width;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-radius: $scrollbar-width;
+  box-shadow: inset 0 0 5px $titlebar;
+}
+::-webkit-scrollbar-thumb {
+  background: $title;
+  border-radius: $scrollbar-width;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #224984; 
+}
+
 #top-search-box {
     background-color: rgba(0,0,0,0);
     border: none;
