@@ -166,12 +166,12 @@ pre {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #022964;
+  background: #101030;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #224984;
+  background: #022964;
 }
 
 #top-search-box {
