@@ -142,14 +142,18 @@ pre {
   box-shadow: inset 0 0 5px $titlebar;
 }
 ::-webkit-scrollbar-thumb {
-  background: $top-row;
-  border-radius: $scrollbar-width;
-}
-.div::-webkit-scrollbar-thumb {
   background: $titlebar;
- }
+  border-radius: $scrollbar-width;
+  box-shadow: inset 0 0 7px $top-row;
+}
 ::-webkit-scrollbar-thumb:hover {
-  background: $title; 
+  box-shadow: inset 0 0 7px #505050;
+}
+div::-webkit-scrollbar-thumb {
+  background: $title;
+}
+div::-webkit-scrollbar-thumb:hover {
+  background: #224984;
 }
 
 #top-search-box {
