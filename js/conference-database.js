@@ -145,6 +145,12 @@ function directLinkToSubset() {
 				synonyms[i].style.display = "table-row";
 			}
 		}
+		if (contentClass === "cenvironment") {
+			synonyms = document.getElementsByClassName("cenv");
+			for (i = 0; i < synonyms.length; i++) {
+				synonyms[i].style.display = "table-row";
+			}
+		}
 		if (contentClass === "cinorganic") {
 			synonyms = document.getElementsByClassName("cinorg");
 			for (i = 0; i < synonyms.length; i++) {
