@@ -231,4 +231,8 @@ $(document).ready(function(){
 	directLinkToSubset();
 	// Add 'onclick' listening event for filters on mobile devices
 	eatFilterHamburger();
+	// Display filter information without hash on mobile only
+	if (getComputedStyle(document.getElementById("filter-menu-hamburger-div"), null).display == 'block') {
+		document.getElementById("filterLabel").innerHTML = "Filter: all";
+	}
 });
