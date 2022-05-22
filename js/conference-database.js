@@ -177,6 +177,7 @@ function removeFilter() {
 }
 function removeFilterMobile() {
 	removeFilter();
+	document.getElementById("filterLabel").innerHTML = "Filter: all";
 	filterHam.classList.remove("menuSlide");
 }
 
