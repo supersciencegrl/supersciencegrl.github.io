@@ -1,4 +1,4 @@
-@import "../../css/theme";
+@import "../css/theme";
 
 .tab {
   border: 1px solid $title-hover;
@@ -73,17 +73,24 @@ div.tab button.currentTab {
 	color: $highlight;
 }
 
-.hte-button-title {
+.hte-button-title,
+.learn-button-title {
 	float: left;
 }
 
-.hte-button-caret {
+.hte-button-caret,
+.learn-button-caret {
 	float: right;
 }
 
-.hte-button-caret .fa-chevron-circle-down {
+.hte-button-caret .fa-chevron-circle-down,
+.learn-button-caret .fa-chevron-circle-down {
 	color: $title;
 	margin-top: 65%;
+}
+
+.learn-title {
+	margin-top: 2vh;
 }
 
 .collapsibleActive, .collapsible:hover, .collapsibleInline:hover {
