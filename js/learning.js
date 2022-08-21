@@ -13,6 +13,7 @@ function removeLevelFilter() {
 	learningIntroCheckbox.checked = false;
 	learningAdvCheckbox.checked = false;
 	learningSpecialistCheckbox.checked = false;
+	learningAllCheckbox.checked = true;
 	for (i = 0; i < allResources.length; i++) {
 		allResources[i].style.display = "block";
 	}
