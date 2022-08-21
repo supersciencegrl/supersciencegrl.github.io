@@ -22,34 +22,39 @@ function removeLevelFilter() {
 function filterLearning() {
 	var i;
 	learningAllCheckbox.checked = false;
-	if (learningIntroCheckbox.checked) {
-		for (i = 0; i < introResources.length; i++) {
-			introResources[i].style.display = "block";
-		}
+	if (!learningAllCheckbox.checked && !learningIntroCheckbox.checked && !learningAdvCheckbox.checked && !learningSpecialistCheckbox.checked) {
+		removeLevelFilter()
 	}
 	else {
-		for (i = 0; i < introResources.length; i++) {
-			introResources[i].style.display = "none";
+		if (learningIntroCheckbox.checked) {
+			for (i = 0; i < introResources.length; i++) {
+				introResources[i].style.display = "block";
+			}
 		}
-	}
-	if (learningAdvCheckbox.checked) {
-		for (i = 0; i < advResources.length; i++) {
-			advResources[i].style.display = "block";
+		else {
+			for (i = 0; i < introResources.length; i++) {
+				introResources[i].style.display = "none";
+			}
 		}
-	}
-	else {
-		for (i = 0; i < advResources.length; i++) {
-			advResources[i].style.display = "none";
+		if (learningAdvCheckbox.checked) {
+			for (i = 0; i < advResources.length; i++) {
+				advResources[i].style.display = "block";
+			}
 		}
-	}
-	if (learningSpecialistCheckbox.checked) {
-		for (i = 0; i < specialistResources.length; i++) {
-			specialistResources[i].style.display = "block";
+		else {
+			for (i = 0; i < advResources.length; i++) {
+				advResources[i].style.display = "none";
+			}
 		}
-	}
-	else {
-		for (i = 0; i < specialistResources.length; i++) {
-			specialistResources[i].style.display = "none";
+		if (learningSpecialistCheckbox.checked) {
+			for (i = 0; i < specialistResources.length; i++) {
+				specialistResources[i].style.display = "block";
+			}
+		}
+		else {
+			for (i = 0; i < specialistResources.length; i++) {
+				specialistResources[i].style.display = "none";
+			}
 		}
 	}
 }
