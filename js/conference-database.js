@@ -151,6 +151,12 @@ function directLinkToSubset() {
 				synonyms[i].style.display = "table-row";
 			}
 		}
+		if (contentClass === "cformulation") {
+			synonyms = document.getElementsByClassName("cform");
+			for (i = 0; i < synonyms.length; i++) {
+				synonyms[i].style.display = "table-row";
+			}
+		}
 		if (contentClass === "cinorganic") {
 			synonyms = document.getElementsByClassName("cinorg");
 			for (i = 0; i < synonyms.length; i++) {
