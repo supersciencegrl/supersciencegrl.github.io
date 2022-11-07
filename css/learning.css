@@ -56,8 +56,8 @@
 }
 
 #checkboxContainer .big-checkbox:after {
-  left: 8px;
-  top: 2px;
+  left: 7px;
+  top: 3px;
   width: 6px;
   height: 12px;
   border: solid white;
