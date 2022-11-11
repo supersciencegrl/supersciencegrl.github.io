@@ -2,5 +2,6 @@ User-agent: *
 Disallow: /conferences-old.html
 Disallow: /404.html
 Disallow: *.py
+Disallow: *.ics
 
 Sitemap: http://supersciencegrl.co.uk/sitemap.xml
