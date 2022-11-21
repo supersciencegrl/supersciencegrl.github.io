@@ -73,6 +73,10 @@ div.tab button.currentTab {
 	color: $highlight;
 }
 
+.hte-book-title {
+	padding-top: 1em;
+}
+
 .hte-button-title,
 .learn-button-title {
 	float: left;
@@ -130,5 +134,8 @@ only screen and (min-resolution: 300dpi) {
 	}
 	.collapsibleInline span {
 		padding-left: initial;
+	}
+	.hte-book-title {
+		padding-top: 0;
 	}
 }

@@ -80,6 +80,10 @@ div.tab button.currentTab {
   color: #0279B4;
 }
 
+.hte-book-title {
+  padding-top: 1em;
+}
+
 .hte-button-title,
 .learn-button-title {
   float: left;
@@ -138,6 +142,10 @@ div.tab button.currentTab {
 
   .collapsibleInline span {
     padding-left: initial;
+  }
+
+  .hte-book-title {
+    padding-top: 0;
   }
 }
 
