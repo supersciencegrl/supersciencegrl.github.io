@@ -127,7 +127,7 @@ td.column2, td.column3, td.column5, td.column6 {
 
 .postponed,
 .postponed-span {
-  text-decoration: line-through;
+  text-decoration: line-through dashed;
   text-decoration-color: green;
 }
 
