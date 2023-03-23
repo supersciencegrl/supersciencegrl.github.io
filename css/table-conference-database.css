@@ -121,13 +121,13 @@ td.column2, td.column3, td.column5, td.column6 {
 
 .cancelled,
 .cancelled-span {
-  text-decoration: line-through;
+  text-decoration: line-through double;
   text-decoration-color: navy;
 }
 
 .postponed,
 .postponed-span {
-  text-decoration: line-through dashed;
+  text-decoration: line-through;
   text-decoration-color: green;
 }
 
