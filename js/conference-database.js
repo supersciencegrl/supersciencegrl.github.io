@@ -1,4 +1,4 @@
-const box = document.getElementById("cancelled-checkbox");
+const cancelledCheckbox = document.getElementById("cancelled-checkbox");
 const filterHam = document.getElementById("filter-menu");
 const btnContainer = document.getElementById("btnContainer");
 const btns = btnContainer.getElementsByClassName("btn");
@@ -67,8 +67,8 @@ function toggleCancelledEventVisibility() {
 	let i;
 	// If no filter is applied, show/hide events based on checkbox state
 	if (!(window.location.hash)) {
-		box.disabled = false;
-		if (box.checked) {
+		cancelledCheckbox.disabled = false;
+		if (cancelledCheckbox.checked) {
 			for (i = 0; i < cancelledOutput.length; i++) {
 				cancelledOutput[i].style.display = "none";
 			}
@@ -102,13 +102,12 @@ function directLinkToSubset() {
 	*/
 	if (window.location.hash) {
 		// Check and disable filter checkbox
-		const filterCheckbox = document.getElementById("filterCheckbox");
-		filterCheckbox.disabled = true;
-		filterCheckbox.checked = true;
+		cancelledCheckbox.disabled = true;
+		cancelledCheckbox.checked = true;
 		// Determine relevant class and show filter label
 		const hash = window.location.href.split("#")[1];
 		const contentClass = `c${hash}`;
-		const allContent = document.getElementsByClassName("body");
+		const allContent = document.querySelectorAll(".body");
 		const filterLabel = document.getElementById("filterLabel");
 		let callContent, subsetContent, othersContent, synonymsContent;
 		// Show filter label
@@ -196,8 +195,7 @@ function removeFilter() {
 	history.pushState("", document.title, `${window.location.pathname}${window.location.search}`);
 	const filterLabel = document.getElementById("filterLabel");
 	filterLabel.innerHTML = "";
-	const box = document.getElementById("filterCheckbox");
-	box.disabled = false;
+	cancelledCheckbox.disabled = false;
 }
 function removeFilterMobile() {
 	/**
@@ -252,10 +250,11 @@ function eatFilterHamburger() {
  */
 function addFilterButtonListeners() {
 	// Add event listener to each filter button
-	btns.forEach((button) => {
+	const btnsArray = Array.from(btns);
+	btnsArray.forEach((button) => {
 		button.addEventListener("click", () => {
 			removeActiveFilter();
-		button.classList.add("activeFilter");
+			button.classList.add("activeFilter");
 		});
 	});
 }
