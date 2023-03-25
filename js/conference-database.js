@@ -1,8 +1,10 @@
-var box = document.getElementById("cancelled-checkbox");
-var current = document.getElementsByClassName("activeFilter");
-var filterHam = document.getElementById("filter-menu");
+const box = document.getElementById("cancelled-checkbox");
+const filterHam = document.getElementById("filter-menu");
+const btnContainer = document.getElementById("btnContainer");
+const btns = btnContainer.getElementsByClassName("btn");
 
-function pricelist() {
+// I know this is verbose af. I'm not gonna change it
+function priceList() {
 	var standard = document.getElementById("standard-price");
 	var student = document.getElementById("student-price");
 	var academic = document.getElementById("academic-price");
@@ -56,10 +58,14 @@ function pricelist() {
 	}
 }
 
-function removecancelled() {
-	var cancelledOutput = document.getElementsByClassName("cancelled");
-	var postponedOutput = document.getElementsByClassName("postponed");
-	var i;
+function toggleCancelledEventVisibility() {
+	/**
+	* Removes cancelled and postponed events from a table based on user input
+	*/
+	const cancelledOutput = document.getElementsByClassName("cancelled");
+	const postponedOutput = document.getElementsByClassName("postponed");
+	let i;
+	// If no filter is applied, show/hide events based on checkbox state
 	if (!(window.location.hash)) {
 		box.disabled = false;
 		if (box.checked) {
@@ -79,6 +85,7 @@ function removecancelled() {
 			}
 		}
 	}
+	// Always hide cancelled/postponed events when filters are applied
 	else {
 		for (i = 0; i < cancelledOutput.length; i++) {
 			cancelledOutput[i].style.display = "none";
@@ -90,155 +97,197 @@ function removecancelled() {
 }
 
 function directLinkToSubset() {
+	/**
+	* Filters table rows based on the hash fragment in the URL to display the relevant rows
+	*/
 	if (window.location.hash) {
-		box.disabled = true;
-		box.checked = true;
+		// Check and disable filter checkbox
+		const filterCheckbox = document.getElementById("filterCheckbox");
+		filterCheckbox.disabled = true;
+		filterCheckbox.checked = true;
+		// Determine relevant class and show filter label
 		const hash = window.location.href.split("#")[1];
-		const contentClass = "c".concat(hash);
+		const contentClass = `c${hash}`;
+		const allContent = document.getElementsByClassName("body");
+		const filterLabel = document.getElementById("filterLabel");
+		let callContent, subsetContent, othersContent, synonymsContent;
 		// Show filter label
-		document.getElementById("filterLabel").innerHTML = "Filter: " + hash;
-		// Hide all rows by default
-		allContent = document.getElementsByClassName("body");
-		for (i = 0; i < allContent.length; i++) {
-			allContent[i].style.display = "none";
-		}
+		filterLabel.innerHTML = `Filter: ${hash}`;
+		// Hide all rows at first
+		Array.from(allContent).forEach((content) => {
+			content.style.display = "none";
+		});
 		// Show all "call" class
-		call = document.getElementsByClassName("call");
-		for (i = 0; i < call.length; i++) {
-			call[i].style.display = "table-row";
-		}
+		callContent = document.getElementsByClassName("call");
+		Array.from(callContent).forEach((content) => {
+			content.style.display = "table-row";
+		});
 		// Show all relevant rows
-		subset = document.getElementsByClassName(contentClass);
-		for (i = 0; i < subset.length; i++) {
-			subset[i].style.display = "table-row";
-		}
+		subsetContent = document.getElementsByClassName(contentClass);
+		Array.from(subsetContent).forEach((content) => {
+			content.style.display = "table-row";
+		});
 		// Hard code rows with particular parent classes
-		parentsOfMedChem = ["cchembio", "csynthesis"];
+		// Med chem is included under both chembio and synthesis
+		const parentsOfMedChem = ["cchembio", "csynthesis"];
 		if (parentsOfMedChem.includes(contentClass)) {
-			others = document.getElementsByClassName("cmedchem");
-			for (i = 0; i < others.length; i++) {
-				others[i].style.display = "table-row";
-			}
+			othersContent = document.getElementsByClassName("cmedchem");
+			Array.from(othersContent).forEach((content) => {
+				content.style.display = "table-row";
+			});
 		}
+		// Process is included under synthesis
 		if (contentClass === "csynthesis") {
-			others = document.getElementsByClassName("cprocess");
-			for (i = 0; i < others.length; i++) {
-				others[i].style.display = "table-row";
-			}
+			othersContent = document.getElementsByClassName("cprocess");
+			Array.from(othersContent).forEach((content) => {
+				content.style.display = "table-row";
+			});
 		}
-		// Synonyms
-		if (contentClass === "cagrochemistry") {
-			synonyms = document.getElementsByClassName("cagro");
-			for (i = 0; i < synonyms.length; i++) {
-				synonyms[i].style.display = "table-row";
-			}
+		// Hardcode class name synonyms
+		switch (contentClass) {
+			case "cagrochemistry":
+				synonymsContent = document.getElementsByClassName("cagro");
+				break;
+			case "canalytical":
+				synonymsContent = document.getElementsByClassName("canal");
+				break;
+			case "ceducation":
+				synonymsContent = document.getElementsByClassName("cedu");
+				break;
+			case "cenvironment":
+				synonymsContent = document.getElementsByClassName("cenv");
+				break;
+			case "cformulation":
+				synonymsContent = document.getElementsByClassName("cform");
+				break;
+			case "cinorganic":
+				synonymsContent = document.getElementsByClassName("cinorg");
+				break;
+			case "cphysical":
+				synonymsContent = document.getElementsByClassName("cphys");
+				break;
+			default:
+				synonymsContent = [];
 		}
-		if (contentClass === "canalytical") {
-			synonyms = document.getElementsByClassName("canal");
-			for (i = 0; i < synonyms.length; i++) {
-				synonyms[i].style.display = "table-row";
-			}
-		}
-		if (contentClass === "ceducation") {
-			synonyms = document.getElementsByClassName("cedu");
-			for (i = 0; i < synonyms.length; i++) {
-				synonyms[i].style.display = "table-row";
-			}
-		}
-		if (contentClass === "cenvironment") {
-			synonyms = document.getElementsByClassName("cenv");
-			for (i = 0; i < synonyms.length; i++) {
-				synonyms[i].style.display = "table-row";
-			}
-		}
-		if (contentClass === "cformulation") {
-			synonyms = document.getElementsByClassName("cform");
-			for (i = 0; i < synonyms.length; i++) {
-				synonyms[i].style.display = "table-row";
-			}
-		}
-		if (contentClass === "cinorganic") {
-			synonyms = document.getElementsByClassName("cinorg");
-			for (i = 0; i < synonyms.length; i++) {
-				synonyms[i].style.display = "table-row";
-			}
-		}
-		if (contentClass === "cphysical") {
-			synonyms = document.getElementsByClassName("cphys");
-			for (i = 0; i < synonyms.length; i++) {
-				synonyms[i].style.display = "table-row";
-			}
-		}
+		Array.from(synonymsContent).forEach((content) => {
+			content.style.display = "table-row";
+		});
+	}
+}
+
+function removeActiveFilter() {
+	/**
+	* Removes the "activeFilter" class from the first element with that class.
+	*/
+	const activeFilter = document.getElementsByClassName("activeFilter");
+	if (activeFilter.length) {
+		activeFilter[0].classList.remove("activeFilter");
 	}
 }
 
 function removeFilter() {
-	allContent = document.getElementsByClassName("body");
-	for (i = 0; i < allContent.length; i++) {
-		allContent[i].style.display = "table-row";
-	};
-	history.pushState("", document.title, window.location.pathname + window.location.search);
+	/**
+	* Removes the filter from the table rows
+	*/
+	const allContent = document.getElementsByClassName("body");
+	Array.from(allContent).forEach(content => {
+		content.style.display = "table-row";
+	});
+	history.pushState("", document.title, `${window.location.pathname}${window.location.search}`);
+	const filterLabel = document.getElementById("filterLabel");
+	filterLabel.innerHTML = "";
+	const box = document.getElementById("filterCheckbox");
 	box.disabled = false;
-	document.getElementById("filterLabel").innerHTML = "";
 }
 function removeFilterMobile() {
+	/**
+	* Removes the filter from the table rows
+	*/
 	removeFilter();
-	document.getElementById("filterLabel").innerHTML = "Filter: all";
+	const filterLabel = document.getElementById("filterLabel");
+	filterLabel.innerHTML = "Filter: all";
+	filterHam.classList.remove("menuSlide");
+}
+
+function applyFilter(tabName) {
+	/**
+	* Sets the URL hash to a specific tab name and filters table rows based on the hash fragment in the URL to display the relevant rows.
+	* @param {string} tabName - The name of the tab to set the URL hash to.
+	*/
+	replaceUrlHash(tabName);
+	directLinkToSubset();
+}
+function applyFilterMobile(tabName) {
+	/**
+	* Sets the URL hash to a specific tab name and filters table rows based on the hash fragment in the URL to display the relevant rows. Closes the filter menu.
+	* @param {string} tabName - The name of the tab to set the URL hash to.
+	*/
+	applyFilter(tabName);
+	// Close the filter menu
 	filterHam.classList.remove("menuSlide");
 }
 
 function replaceUrlHash(tabName) {
-	let newUrl = `${window.location.href.split("#")[0]}#${tabName}`;
+	/**
+	* Replaces the hash in the URL with the specified tab name.
+	* @param {string} tabName - The name of the tab to display in the URL hash.
+	*/
+	const baseUrl = window.location.href.split("#")[0];
+	const newUrl = `${baseUrl}#${tabName}`;
 	history.replaceState(null, null, newUrl);
 }
 
-function filterButton(tabName) {
-	replaceUrlHash(tabName);
-	directLinkToSubset();
-}
-function filterButtonMobile(tabName) {
-	replaceUrlHash(tabName);
-	directLinkToSubset();
-	filterHam.classList.remove("menuSlide");
-}
-
 function eatFilterHamburger() {
-	var filterHamburger = document.getElementById("filter-menu-hamburger");
+	/**
+	* Attaches a click event listener to the filter hamburger menu to toggle its visibility
+	*/
+	const filterHamburger = document.getElementById("filter-menu-hamburger");
 	filterHamburger.addEventListener('click', function() {
 		filterHam.classList.toggle("menuSlide");
-	})
-}
-
-function noActiveTopics() {
-	if (current.length) {
-		current[0].classList.remove("activeFilter");
-	}
-}
-if (window.location.hash) {
-	noActiveTopics()
-}
-
-var btnContainer = document.getElementById("btnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-	btns[i].addEventListener("click", function(){
-		if (current.length) {
-			current[0].classList.remove("activeFilter");
-		};
-		this.className += " activeFilter";
 	});
 }
 
+/**
+ * Add event listeners to filter buttons and toggle their active state
+ */
+function addFilterButtonListeners() {
+	// Add event listener to each filter button
+	btns.forEach((button) => {
+		button.addEventListener("click", () => {
+			removeActiveFilter();
+		button.classList.add("activeFilter");
+		});
+	});
+}
+
+function isMobileDevice() {
+	/**
+	* Check if the user is using a mobile device, based on screen width and height (in case landscape mode). 
+	* @returns {boolean} Whether or not the user is on a mobile device.
+	*/
+	if (window.matchMedia("(max-width: 480px)").matches) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// Call the removeActiveFilter function if the page has a hash on load
+if (window.location.hash) {
+	removeActiveFilter();
+}
+
 $(document).ready(function(){
-	var box = document.getElementById("cancelled-checkbox");
-	var current = document.getElementsByClassName("activeFilter");
-	var filterHam = document.getElementById("filter-menu");
+	// Add event listeners to the filter buttons and toggle their active state
+	addFilterButtonListeners();
 	// Check URL to display automation events only as necessary
 	directLinkToSubset();
-	// Add 'onclick' listening event for filters on mobile devices
-	eatFilterHamburger();
-	// Display filter information without hash on mobile only
-	if (getComputedStyle(document.getElementById("filter-menu-hamburger-div"), null).display == 'block') {
-		document.getElementById("filterLabel").innerHTML = "Filter: all";
+	if (isMobileDevice()) {
+		// Add 'onclick' listening event for filters on mobile devices
+		eatFilterHamburger();
+		// Display "Filter: all" if no hash exists in the url on mobile devices
+		if (!(window.location.hash)) {
+			document.getElementById("filterLabel").innerHTML = "Filter: all";
+		}
 	}
 });

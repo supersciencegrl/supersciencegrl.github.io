@@ -175,7 +175,7 @@
 							<!-- Remove cancelled events checkbox -->
 							<div class="col-4" id="div_remove_cancelled">
 								<label id="remove_cancelled">
-									<input type="checkbox" id="cancelled-checkbox" onclick="removecancelled()">
+									<input type="checkbox" id="cancelled-checkbox" onclick="toggleCancelledEventVisibility()">
 									<span class="big-checkbox-label">Hide cancelled</span>
 									<span class="big-checkbox"></span>
 								</label>
@@ -192,26 +192,26 @@
 							<div>
 								<div class="bar-space-initial"></div>
 								<div class="col-md-1 col-xs-3" onclick="removeFilterMobile()"><i class="fa fa-chevron-circle-right"></i> All</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('agrochemistry')"><i class="fa fa-chevron-circle-right"></i> Agrochemistry</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('analytical')"><i class="fa fa-chevron-circle-right"></i> Analytical</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('automation')"><i class="fa fa-chevron-circle-right"></i> Automation</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('careers')"><i class="fa fa-chevron-circle-right"></i> Careers</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('catalysis')"><i class="fa fa-chevron-circle-right"></i> Catalysis</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('chembio')"><i class="fa fa-chevron-circle-right"></i> Chemical biology</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('comp')"><i class="fa fa-chevron-circle-right"></i> Computational/data</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('diversity')"><i class="fa fa-chevron-circle-right"></i> Diversity</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('education')"><i class="fa fa-chevron-circle-right"></i> Education/outreach</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('environment')"><i class="fa fa-chevron-circle-right"></i> Environment/fuels</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('formulation')"><i class="fa fa-chevron-circle-right"></i> Formulation/particle science</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('inorganic')"><i class="fa fa-chevron-circle-right"></i> Inorganic/nano</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('policy')"><i class="fa fa-chevron-circle-right"></i> Law/policy</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('mat')"><i class="fa fa-chevron-circle-right"></i> Materials/polymers</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('medchem')"><i class="fa fa-chevron-circle-right"></i> Medicinal chemistry</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('pharm')"><i class="fa fa-chevron-circle-right"></i> Pharma industry</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('physical')"><i class="fa fa-chevron-circle-right"></i> Physical/phys org</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('process')"><i class="fa fa-chevron-circle-right"></i> Process/eng</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('safety')"><i class="fa fa-chevron-circle-right"></i> Safety</div>
-								<div class="col-md-1 col-xs-3" onclick="filterButtonMobile('synthesis')"><i class="fa fa-chevron-circle-right"></i> Synthesis</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('agrochemistry')"><i class="fa fa-chevron-circle-right"></i> Agrochemistry</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('analytical')"><i class="fa fa-chevron-circle-right"></i> Analytical</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('automation')"><i class="fa fa-chevron-circle-right"></i> Automation</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('careers')"><i class="fa fa-chevron-circle-right"></i> Careers</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('catalysis')"><i class="fa fa-chevron-circle-right"></i> Catalysis</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('chembio')"><i class="fa fa-chevron-circle-right"></i> Chemical biology</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('comp')"><i class="fa fa-chevron-circle-right"></i> Computational/data</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('diversity')"><i class="fa fa-chevron-circle-right"></i> Diversity</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('education')"><i class="fa fa-chevron-circle-right"></i> Education/outreach</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('environment')"><i class="fa fa-chevron-circle-right"></i> Environment/fuels</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('formulation')"><i class="fa fa-chevron-circle-right"></i> Formulation/particle science</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('inorganic')"><i class="fa fa-chevron-circle-right"></i> Inorganic/nano</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('policy')"><i class="fa fa-chevron-circle-right"></i> Law/policy</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('mat')"><i class="fa fa-chevron-circle-right"></i> Materials/polymers</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('medchem')"><i class="fa fa-chevron-circle-right"></i> Medicinal chemistry</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('pharm')"><i class="fa fa-chevron-circle-right"></i> Pharma industry</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('physical')"><i class="fa fa-chevron-circle-right"></i> Physical/phys org</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('process')"><i class="fa fa-chevron-circle-right"></i> Process/eng</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('safety')"><i class="fa fa-chevron-circle-right"></i> Safety</div>
+								<div class="col-md-1 col-xs-3" onclick="applyFilterMobile('synthesis')"><i class="fa fa-chevron-circle-right"></i> Synthesis</div>
 								
 								<!-- Also update buttons at the bottom of the page -->
 								
@@ -226,7 +226,7 @@
 							<div class="col-4 checkbox-conf">
 								<label class="container-checkbox">
 									<p>Standard prices</p>
-									<input type="radio" checked="checked" id="standard-price" name="pricelist" onclick="pricelist()">
+									<input type="radio" checked="checked" id="standard-price" name="pricelist" onclick="priceList()">
 									<span class="checkbox-custom"></span>
 								</label>
 							</div>
@@ -234,7 +234,7 @@
 							<div class="col-4 checkbox-conf">
 								<label class="container-checkbox">
 									<p>Student</p>
-									<input type="radio" id="student-price" name="pricelist" onclick="pricelist()">
+									<input type="radio" id="student-price" name="pricelist" onclick="priceList()">
 									<span class="checkbox-custom"></span>
 								</label>
 							</div>
@@ -242,7 +242,7 @@
 							<div class="col-4 checkbox-conf">
 								<label class="container-checkbox">
 									<p>Academic</p>
-									<input type="radio" id="academic-price" name="pricelist" onclick="pricelist()">
+									<input type="radio" id="academic-price" name="pricelist" onclick="priceList()">
 									<span class="checkbox-custom"></span>
 								</label>
 							</div>
@@ -4529,26 +4529,26 @@
 					<div id="btnContainer">
 						<div id="insideBtnContainer">
 							<button class="btn btnFilter btn-block skinnyButton activeFilter" onclick="removeFilter()"><span class="pull-left">All</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('agrochemistry')"><span class="pull-left">Agrochemistry</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('analytical')"><span class="pull-left">Analytical</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('automation')"><span class="pull-left">Automation</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('careers')"><span class="pull-left">Careers</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('catalysis')"><span class="pull-left">Catalysis</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('chembio')"><span class="pull-left">Chemical biology</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('comp')"><span class="pull-left">Computational/data</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('diversity')"><span class="pull-left">Diversity</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('education')"><span class="pull-left">Education/outreach</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('environment')"><span class="pull-left">Environment/fuels</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('formulation')"><span class="pull-left">Formulation/particle science</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('inorganic')"><span class="pull-left">Inorganic/nano</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('policy')"><span class="pull-left">Law/policy</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('mat')"><span class="pull-left">Materials/polymers</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('medchem')"><span class="pull-left">Medicinal chemistry</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('pharm')"><span class="pull-left">Pharma industry</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('physical')"><span class="pull-left">Physical chemistry</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('process')"><span class="pull-left">Process</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('safety')"><span class="pull-left">Safety</span></button>
-							<button class="btn btnFilter btn-block skinnyButton" onclick="filterButton('synthesis')"><span class="pull-left">Synthesis</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('agrochemistry')"><span class="pull-left">Agrochemistry</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('analytical')"><span class="pull-left">Analytical</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('automation')"><span class="pull-left">Automation</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('careers')"><span class="pull-left">Careers</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('catalysis')"><span class="pull-left">Catalysis</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('chembio')"><span class="pull-left">Chemical biology</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('comp')"><span class="pull-left">Computational/data</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('diversity')"><span class="pull-left">Diversity</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('education')"><span class="pull-left">Education/outreach</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('environment')"><span class="pull-left">Environment/fuels</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('formulation')"><span class="pull-left">Formulation/particle science</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('inorganic')"><span class="pull-left">Inorganic/nano</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('policy')"><span class="pull-left">Law/policy</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('mat')"><span class="pull-left">Materials/polymers</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('medchem')"><span class="pull-left">Medicinal chemistry</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('pharm')"><span class="pull-left">Pharma industry</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('physical')"><span class="pull-left">Physical chemistry</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('process')"><span class="pull-left">Process</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('safety')"><span class="pull-left">Safety</span></button>
+							<button class="btn btnFilter btn-block skinnyButton" onclick="applyFilter('synthesis')"><span class="pull-left">Synthesis</span></button>
 							
 							<!-- Also update buttons at the top of the page -->
 							
