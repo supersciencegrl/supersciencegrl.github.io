@@ -1,0 +1,22 @@
+.cvsCode {
+    outline: none;
+    overflow-wrap: anywhere;
+}
+
+#cvs-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+#cvs-search {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+/* Mobile devices */
+@media only screen and (max-device-width: 480px), only screen and (min-resolution: 300dpi) {
+    #cvs-search {
+        width: 100%;
+    }
+}

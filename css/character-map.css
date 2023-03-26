@@ -1,0 +1,30 @@
+.grid-character {
+    width: 6%;
+    min-width: 100px;
+    max-width: 200px;
+    background-color: rgba(0,0,0,0);
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.char {
+    font-size: medium;
+    text-align: center;
+}
+
+.char-caption {
+    font-size: small;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Mobile devices */
+@media only screen and (max-device-width: 480px), only screen and (min-resolution: 300dpi) {
+    .char,
+    .char-caption {
+        text-align: center;
+    }
+}

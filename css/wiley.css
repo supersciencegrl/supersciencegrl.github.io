@@ -1,0 +1,7 @@
+.journalcode {
+    display: inline;
+    white-space: pre-wrap;
+    outline: none;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+}

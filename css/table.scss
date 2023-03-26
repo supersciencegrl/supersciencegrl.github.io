@@ -43,18 +43,18 @@
 .limitera td {
 	padding-right: 1em;
 	font-family: 'Open Sans', sans-serif;
-	line-height: 1.4;
+	line-height: 1.4em;
 }
 
 .limiter th, 
 .limitera th {
 	font-weight: unset;
-	padding-top: 19px;
-	padding-bottom: 18px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	padding-left: inherit;
 	margin-left: 0;
 	border-left: 0;
-	font-size: 1.1em;
+	font-size: 0.9rem;
 	color: $table-header-text;
 	background-color: $highlight;
 }
@@ -74,8 +74,9 @@
 /* Fixed header */
 .table100 {
 	position: relative;
-	padding-top: 65px;
+	padding-top: 3.1rem;
 	border-radius: 10px;
+	border-bottom-right-radius: 0;
 	overflow: hidden;
 	box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -111,18 +112,6 @@
 	overflow: auto;
 }
 
-#confs-attended-table tr:nth-child(even),
-#conf-database-table tr:nth-child(even),
-#covid-table tr:nth-child(even),
-#conferencesOldTable tr:nth-child(even) {
-	background: $table-shading;
-}
-
-#events-org-table tr:nth-child(4n), 
-#events-org-table tr:nth-child(4n+1) {
-	background: $table-shading;
-}
-
 .table-link {
 	font-weight: bold;
 	text-decoration: none;
@@ -135,6 +124,18 @@
 .table-link:active {
 	text-decoration: none;
 	color: $title-lighter;
+}
+
+#confs-attended-table tr:nth-child(even),
+#conf-database-table tr:nth-child(even),
+#covid-table tr:nth-child(even),
+#conferencesOldTable tr:nth-child(even) {
+	background: $table-shading;
+}
+
+#events-org-table tr:nth-child(4n), 
+#events-org-table tr:nth-child(4n+1) {
+	background: $table-shading;
 }
 
 /* x-large screens */

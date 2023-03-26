@@ -1,0 +1,19 @@
+/* Sass theme */
+.presentation-title {
+  color: #0279B4;
+  font-weight: bold;
+  font-size: large;
+}
+
+.media-title {
+  font-size: large;
+}
+
+/* Mobile devices */
+@media only screen and (max-device-width: 480px), only screen and (min-resolution: 300dpi) {
+  .media-title {
+    font-size: medium;
+  }
+}
+
+/*# sourceMappingURL=activity.css.map */

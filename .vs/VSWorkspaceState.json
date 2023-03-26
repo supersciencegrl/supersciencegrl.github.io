@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\links"
   ],
-  "SelectedNode": "\\update-batch.py",
+  "SelectedNode": "\\css\\learning.css",
   "PreviewInSolutionExplorer": false
 }

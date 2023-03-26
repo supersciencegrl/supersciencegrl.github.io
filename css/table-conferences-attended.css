@@ -66,6 +66,13 @@ th.columna1 {
 	padding-left: 2.3em;
 }
 
+.speaker {
+	color: orange;
+}
+.organizer {
+	color: #0279B4;
+}
+
 /* Mobile devices */
 @media only screen and (max-device-width: 480px), 
 only screen and (min-resolution: 300dpi) {

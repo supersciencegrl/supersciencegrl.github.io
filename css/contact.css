@@ -1,0 +1,42 @@
+.contact-header {
+    padding-top: 0;
+}
+
+.p-contact {
+    font-size: small;
+    padding-left: $default-indent;
+}
+
+.btnDiv {
+    padding: 0;
+    font-size: medium;
+    text-align: center;
+}
+
+.m-contact {
+    padding: 0 10px 0 10px;
+    font-size: x-large;
+}
+
+.contact-icon {
+    font-size: xx-large;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+.contact-icon.fa-github:active {
+    color: #7C007C;
+}
+
+#contactsocialrow {
+    padding: 10px 0 30px 10px;
+    margin: auto;
+}
+
+#btnBold-contact {
+    margin-left: $default-indent;
+}
+
+#btnBold-contact-email {
+    background: linear-gradient($title-lighter, $mainpage-background, $title-lighter);
+    margin: 0 0 10px $default-indent;
+}

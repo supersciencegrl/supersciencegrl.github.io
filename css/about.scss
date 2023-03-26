@@ -1,0 +1,163 @@
+@import "theme";
+
+.tagline {
+    text-align: right;
+    font-style: italic;
+    width: 100%;
+}
+
+.listwrapper {
+    width: 75%;
+}
+
+.listwrapper-m {
+    padding-bottom: 8em;
+}
+
+.listwrapper .purple {
+    border-bottom: $listblock-border $theme-purple;
+}
+.listwrapper-m .purple {
+    border-right: $listblock-border $theme-purple;
+}
+.listwrapper .red {
+    border-bottom: $listblock-border $theme-red;
+}
+.listwrapper-m .red {
+    border-right: $listblock-border $theme-red;
+}
+
+.listblock {
+    margin: 0 2% 0 2%;
+    background-color: $popout-background;
+    min-height: 17vw;
+    max-width: 15vw;
+    border-radius: 8px;
+    border-bottom: $listblock-border $title-lighter;
+    box-shadow: 3px -3px 6px $default-box-shadow;
+}
+
+.listblock a,
+.listblock a:visited,
+.listblock a:hover,
+.listblock a:active {
+    margin: 0;
+    padding: 0;
+}
+
+.listblock .title {
+    font-size: x-large;
+    color: $footer-box-shadow;
+    text-align: center;
+    padding-top: 10px;
+    write-space: nowrap;
+}
+
+.listblock .description {
+    padding: 0 10px 0 10px;
+    text-align: left
+}
+
+.listblock-m {
+    width: 100%;
+    display: inline-flex;
+    margin: 4% -15px 0 0;
+    background-color: $popout-background;
+    min-height: 12vw;
+    border-radius: 8px;
+    border-right: $listblock-border $title-lighter;
+    box-shadow: 0 3px 6px $default-box-shadow;
+}
+
+.listblock-m-title-wrapper {
+    margin: auto 0 auto 0;
+}
+
+.listblock-m .title {
+    font-size: medium !important;
+    color: $footer-box-shadow;
+    text-align: left;
+    margin: auto 0 auto 0;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.listblock .purple,
+.listblock-m .purple {
+    background-color: $theme-purple;
+}
+.listblock .red,
+.listblock-m .red {
+    background-color: $theme-red;
+}
+
+.listicon-m-wrapper {
+    margin: auto;
+}
+
+.listicon {
+    border-radius: 50%;
+    background-color: $title-lighter;
+    box-shadow: 3px -3px 6px 0 $default-box-shadow;
+    height: 1.6rem;
+    min-height: 1.6rem;
+    width: 1.6rem;
+    min-width: 1.6rem;
+    margin: 6% auto 0 auto;
+}
+
+.listicon-m {
+    border-radius: 100%;
+    background-color: $title-lighter;
+    margin: auto;
+    height: 1rem;
+    min-height: 1rem;
+    width: 1rem;
+    min-width: 1rem;
+}
+
+#about-page-ul {
+    display: none;
+}
+
+#inline-text-left {
+    width: 60%;
+    padding: 0 0 2% 0;
+}
+#avatar-div {
+    width: 40%;
+    padding: 0 5% 0 5%;
+    float: right;
+}
+
+@media only screen and (max-width: 1200px) {
+    #avatar {
+        visibility: hidden;
+        display: flex;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .p-inline {
+        margin: 0 0 -10px 0;
+    }
+
+    .listwrapper {
+        width: 100%;
+    }
+
+    .listblock .title {
+        font-size: large;
+    }
+    .listblock .description {
+        display: none;
+    }
+
+    #inline-text-left {
+        width: 95%;
+    }
+    #about-page-ul {
+        display: inherit;
+    }
+}

@@ -42,18 +42,18 @@
 .limitera td {
   padding-right: 1em;
   font-family: "Open Sans", sans-serif;
-  line-height: 1.4;
+  line-height: 1.4em;
 }
 
 .limiter th,
 .limitera th {
   font-weight: unset;
-  padding-top: 19px;
-  padding-bottom: 18px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: inherit;
   margin-left: 0;
   border-left: 0;
-  font-size: 1.1em;
+  font-size: 0.9rem;
   color: white;
   background-color: #0279B4;
 }
@@ -73,8 +73,9 @@
 /* Fixed header */
 .table100 {
   position: relative;
-  padding-top: 65px;
+  padding-top: 3.1rem;
   border-radius: 10px;
+  border-bottom-right-radius: 0;
   overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -110,18 +111,6 @@
   overflow: auto;
 }
 
-#confs-attended-table tr:nth-child(even),
-#conf-database-table tr:nth-child(even),
-#covid-table tr:nth-child(even),
-#conferencesOldTable tr:nth-child(even) {
-  background: #F8F6FF;
-}
-
-#events-org-table tr:nth-child(4n),
-#events-org-table tr:nth-child(4n+1) {
-  background: #F8F6FF;
-}
-
 .table-link {
   font-weight: bold;
   text-decoration: none;
@@ -136,6 +125,18 @@
 .table-link:active {
   text-decoration: none;
   color: #2299D4;
+}
+
+#confs-attended-table tr:nth-child(even),
+#conf-database-table tr:nth-child(even),
+#covid-table tr:nth-child(even),
+#conferencesOldTable tr:nth-child(even) {
+  background: #F8F6FF;
+}
+
+#events-org-table tr:nth-child(4n),
+#events-org-table tr:nth-child(4n+1) {
+  background: #F8F6FF;
 }
 
 /* x-large screens */

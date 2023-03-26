@@ -178,11 +178,11 @@ td.column2, td.column3, td.column5, td.column6 {
 }
 #remove_cancelled input:disabled ~ .big-checkbox {
 	background-color: $link-active;
-	pointer: not-allowed;
+	cursor: not-allowed;
 }
 #remove_cancelled input:disabled ~ .big-checkbox-label {
 	color: $link-active;
-	pointer: not-allowed;
+	cursor: not-allowed;
 }
 
 .big-checkbox {
@@ -234,18 +234,18 @@ td.column2, td.column3, td.column5, td.column6 {
 	  display: block !important;
 	  transform: rotateX(0deg) !important;
 	  opacity: 1 !important;
-	  animation: anim 0.3s ease-in-out !important;
+	  animation: slideMenu 0.3s ease-in-out !important;
 	}
-	@keyframes anim {
+	@keyframes slideMenu {
 	  0% {
 		display: none;
 		opacity: 0;
-	  };
+	  }
 	  1% {
 		display: block;
 		opacity: 0;
 		transform: rotateX(-90deg);
-	  };
+	  }
 	  100% {
 		opacity: 1;
 		transform: rotateX(0deg);
