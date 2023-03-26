@@ -1,0 +1,164 @@
+/* Sass theme */
+#main-title {
+  color: #022964;
+  padding: 0;
+  text-align: center;
+}
+
+#main-subheading {
+  color: #606060;
+  padding: 0;
+  text-align: center;
+}
+
+#main-linkedin {
+  max-width: 2.5rem;
+  margin-top: -0.5rem;
+  margin-left: 1.56rem;
+}
+
+#index_nav_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 14fr;
+  grid-gap: 0;
+}
+
+#index_nav_bullets {
+  text-align: center;
+}
+
+#index_nav_bullets h2 {
+  padding: 20vh 0 20vh 0;
+}
+
+#index_nav_bullets p {
+  padding: 0.1em 0 0.1em 0;
+  vertical-align: middle;
+}
+
+#index_nav_bullets a:link,
+#index_nav_bullets a:visited {
+  color: #2299D4;
+  text-decoration: none;
+}
+
+#index_nav_bullets a:hover,
+#index_nav_bullets a:active {
+  color: #014C8C;
+  text-decoration: none;
+}
+
+.nav_bullets_arrow {
+  color: #808080;
+}
+
+.tiny-indent {
+  margin-left: 8px;
+}
+
+#index_nav_gallery {
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+  height: 75vh;
+}
+
+.nav_snap {
+  scroll-snap-align: start;
+  max-width: 98%;
+}
+
+#section1,
+#section2,
+#section3 {
+  display: block;
+}
+
+#latestArticlesSeeMore {
+  margin: 0 0 1.25rem 1rem;
+}
+
+.experience-indent {
+  padding-left: 1.5rem;
+}
+
+.experience-institution {
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #2299D4;
+  margin-bottom: 0;
+}
+
+.experience-title,
+.experience-title-short {
+  text-align: left;
+}
+
+.experience-title {
+  margin-bottom: 0;
+}
+
+.experience-title-short {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.experience-location {
+  color: #2299D4;
+  padding-left: 0.5rem;
+}
+
+#extracurricular-heading {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #022964;
+  padding: 0 0 5px 0;
+  color: #000000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #2299D4;
+}
+
+#homepage-avatar,
+#homepage-avatar-smallscreens {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 320px;
+}
+
+#homepage-avatar {
+  width: 100%;
+}
+
+#homepage-avatar-smallscreens {
+  float: right;
+  width: 50%;
+}
+
+/* Mobile devices */
+@media only screen and (max-device-width: 480px), only screen and (min-resolution: 300dpi) {
+  #index_nav_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  #index_nav_bullets {
+    display: none;
+  }
+
+  .experience-indent {
+    padding-left: 1rem;
+  }
+
+  #main-linkedin {
+    margin-left: 40%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
