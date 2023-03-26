@@ -1,3 +1,7 @@
 .filterDiv {
     display: none;
 }
+
+.filter-show {
+  display: inline-block;
+}
