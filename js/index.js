@@ -23,21 +23,37 @@ function eatHamburger() {
 	})
 }
 
+const copyButton = "<i class=\"fa-regular fa-copy\" aria-label=\"Copy code\"></i>";
 function addCopyCodeButtons() {
 	let blocks = document.querySelectorAll("pre");
+	
 	blocks.forEach((block) => {
 		// Only add button if browser supports Clipboard API
 		if (navigator.clipboard) {
 			let button = document.createElement("button");
-			button.innerHTML = "<i class="fa-regular fa-copy" aria-label="Copy code"></i>";
+			button.innerHTML = copyButton;
 			block.appendChild(button);
 			button.addEventListener("click", async () => {
-				await copyCode(block);
+				await copyCode(block, button);
 			});
 		}
 	});
 }
+
+async function copyCode(block, button) {
+	const codeCopied = "<i class=\"fa-solid fa-check\" aria-hidden=\"true\"></i>";
+	let code = block.querySelector("code");
+	let text = code.innerText;
 	
+	await navigator.clipboard.writeText(text);
+	// Visual feedback that the task is completed
+	button.innerHTML = codeCopied;
+	
+	setTimeout(() => {
+		button.innerHTML = copyButton;
+	}, 800);
+}
+
 $(document).ready(function(){
 	// Add 'onclick' listening event for each linkjump button
 	smoothScroll();
