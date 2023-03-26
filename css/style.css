@@ -53,18 +53,17 @@ figure {
   margin: 0 0 0 3em;
 }
 
-pre:has(+ code) {
+pre {
   border: 2px solid #101030;
   border-radius: 5px;
   box-sizing: border-box;
-  padding: 0.3em 2em 0.3em 0.5em;
+  padding: 0.3em 0.5em 0.3em 0.5em;
   white-space: pre-wrap;
   position: relative;
-  float: left;
 }
 
 pre code {
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 
 pre button {
