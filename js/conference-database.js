@@ -3,65 +3,34 @@ const filterHam = document.getElementById("filter-menu");
 const btnContainer = document.getElementById("btnContainer");
 const btns = btnContainer.getElementsByClassName("btn");
 
-// I know this is verbose af. I'm not gonna change it
+/**
+* Updates the display of prices based on which checkboxes are checked
+*/
 function priceList() {
-	var standard = document.getElementById("standard-price");
-	var student = document.getElementById("student-price");
-	var academic = document.getElementById("academic-price");
-	var standardOutput = document.getElementsByClassName("standard");
-	var studentOutput = document.getElementsByClassName("student");
-	var academicOutput = document.getElementsByClassName("academic");
-	var i;
-	if (standard.checked) {
-		for (i = 0; i < standardOutput.length; i++) {
-			standardOutput[i].style.display = "table-cell";
-		}
-		for (i = 0; i < studentOutput.length; i++) {
-			studentOutput[i].style.display = "none";
-		}
-		for (i = 0; i < academicOutput.length; i++) {
-			academicOutput[i].style.display = "none";
-		}
-	}
-	else if (student.checked) {
-		for (i = 0; i < standardOutput.length; i++) {
-			standardOutput[i].style.display = "none";
-		}
-		for (i = 0; i < studentOutput.length; i++) {
-			studentOutput[i].style.display = "table-cell";
-		}
-		for (i = 0; i < academicOutput.length; i++) {
-			academicOutput[i].style.display = "none";
-		}
-	}
-	else if (academic.checked) {
-		for (i = 0; i < standardOutput.length; i++) {
-			standardOutput[i].style.display = "none";
-		}
-		for (i = 0; i < studentOutput.length; i++) {
-			studentOutput[i].style.display = "none";
-		}
-		for (i = 0; i < academicOutput.length; i++) {
-			academicOutput[i].style.display = "table-cell";
-		}
-	}
-	else {
-		for (i = 0; i < standardOutput.length; i++) {
-			standardOutput[i].style.display = "table-cell";
-		}
-		for (i = 0; i < studentOutput.length; i++) {
-			studentOutput[i].style.display = "none";
-		}
-		for (i = 0; i < academicOutput.length; i++) {
-			academicOutput[i].style.display = "none";
-		}
-	}
+	const standard = document.getElementById("standard-price");
+	const student = document.getElementById("student-price");
+	const academic = document.getElementById("academic-price");
+	
+	const standardOutput = Array.from(document.getElementsByClassName("standard"));
+	const studentOutput = Array.from(document.getElementsByClassName("student"));
+	const academicOutput = Array.from(document.getElementsByClassName("academic"));
+	const outputElements = [...standardOutput, ...studentOutput, ...academicOutput];
+
+	outputElements.forEach(output => {
+		const outputPrice = Number(output.dataset.price);
+		const isVisible = (
+			(standard.checked && output.classList.contains("standard")) ||
+			(student.checked && output.classList.contains("student")) ||
+			(academic.checked && output.classList.contains("academic"))
+		);
+		output.style.display = isVisible ? "table-cell" : "none";
+	});
 }
 
+/**
+* Removes cancelled and postponed events from a table based on user input
+*/
 function toggleCancelledEventVisibility() {
-	/**
-	* Removes cancelled and postponed events from a table based on user input
-	*/
 	const cancelledOutput = document.getElementsByClassName("cancelled");
 	const postponedOutput = document.getElementsByClassName("postponed");
 	let i;
@@ -96,10 +65,10 @@ function toggleCancelledEventVisibility() {
 	}
 }
 
+/**
+* Filters table rows based on the hash fragment in the URL to display the relevant rows
+*/
 function directLinkToSubset() {
-	/**
-	* Filters table rows based on the hash fragment in the URL to display the relevant rows
-	*/
 	if (window.location.hash) {
 		// Check and disable filter checkbox
 		cancelledCheckbox.disabled = true;
@@ -174,20 +143,20 @@ function directLinkToSubset() {
 	}
 }
 
+/**
+* Removes the "activeFilter" class from the first element with that class.
+*/
 function removeActiveFilter() {
-	/**
-	* Removes the "activeFilter" class from the first element with that class.
-	*/
 	const activeFilter = document.getElementsByClassName("activeFilter");
 	if (activeFilter.length) {
 		activeFilter[0].classList.remove("activeFilter");
 	}
 }
 
+/**
+* Removes the filter from the table rows
+*/
 function removeFilter() {
-	/**
-	* Removes the filter from the table rows
-	*/
 	const allContent = document.getElementsByClassName("body");
 	Array.from(allContent).forEach(content => {
 		content.style.display = "table-row";
@@ -197,48 +166,48 @@ function removeFilter() {
 	filterLabel.innerHTML = "";
 	cancelledCheckbox.disabled = false;
 }
+/**
+* Removes the filter from the table rows, on the mobile site
+*/
 function removeFilterMobile() {
-	/**
-	* Removes the filter from the table rows
-	*/
 	removeFilter();
 	const filterLabel = document.getElementById("filterLabel");
 	filterLabel.innerHTML = "Filter: all";
 	filterHam.classList.remove("menuSlide");
 }
 
+/**
+* Sets the URL hash to a specific tab name and filters table rows based on the hash fragment in the URL to display the relevant rows.
+* @param {string} tabName - The name of the tab to set the URL hash to.
+*/
 function applyFilter(tabName) {
-	/**
-	* Sets the URL hash to a specific tab name and filters table rows based on the hash fragment in the URL to display the relevant rows.
-	* @param {string} tabName - The name of the tab to set the URL hash to.
-	*/
 	replaceUrlHash(tabName);
 	directLinkToSubset();
 }
+/**
+* On the mobile site, sets the URL hash to a specific tab name and filters table rows based on the hash fragment in the URL to display the relevant rows. Closes the filter menu.
+* @param {string} tabName - The name of the tab to set the URL hash to.
+*/
 function applyFilterMobile(tabName) {
-	/**
-	* Sets the URL hash to a specific tab name and filters table rows based on the hash fragment in the URL to display the relevant rows. Closes the filter menu.
-	* @param {string} tabName - The name of the tab to set the URL hash to.
-	*/
 	applyFilter(tabName);
 	// Close the filter menu
 	filterHam.classList.remove("menuSlide");
 }
 
+/**
+* Replaces the hash in the URL with the specified tab name.
+* @param {string} tabName - The name of the tab to display in the URL hash.
+*/
 function replaceUrlHash(tabName) {
-	/**
-	* Replaces the hash in the URL with the specified tab name.
-	* @param {string} tabName - The name of the tab to display in the URL hash.
-	*/
 	const baseUrl = window.location.href.split("#")[0];
 	const newUrl = `${baseUrl}#${tabName}`;
 	history.replaceState(null, null, newUrl);
 }
 
+/**
+* Attaches a click event listener to the filter hamburger menu to toggle its visibility
+*/
 function eatFilterHamburger() {
-	/**
-	* Attaches a click event listener to the filter hamburger menu to toggle its visibility
-	*/
 	const filterHamburger = document.getElementById("filter-menu-hamburger");
 	filterHamburger.addEventListener('click', function() {
 		filterHam.classList.toggle("menuSlide");
@@ -259,11 +228,11 @@ function addFilterButtonListeners() {
 	});
 }
 
+/**
+* Check if the user is using a mobile device, based on screen width. 
+* @returns {boolean} Whether or not the user is on a mobile device.
+*/
 function isMobileDevice() {
-	/**
-	* Check if the user is using a mobile device, based on screen width and height (in case landscape mode). 
-	* @returns {boolean} Whether or not the user is on a mobile device.
-	*/
 	if (window.matchMedia("(max-width: 480px)").matches) {
 		return true;
 	} else {
@@ -271,7 +240,7 @@ function isMobileDevice() {
 	}
 }
 
-// Call the removeActiveFilter function if the page has a hash on load
+// Call the removeActiveFilter() function if the page has a hash on load
 if (window.location.hash) {
 	removeActiveFilter();
 }
