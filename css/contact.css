@@ -1,7 +1,5 @@
 #div-contact-header {
   background: linear-gradient(45deg, rgba(131,0,81,1) 0%, rgba(104,210,223,1) 100%);
-  height: 85vw;
-  max-height: 420px;
   border-radius: 5px;
   margin-bottom: 0.7rem;
 }
