@@ -28,10 +28,10 @@
 		gtag('js', new Date());
 		gtag('config', 'G-RLG4S9LELH');
 	</script>
+	<script src="https://kit.fontawesome.com/7b6ba29223.js" crossorigin="anonymous"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet prefetch">
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/contact.css">
@@ -87,7 +87,7 @@
 						<script language="javascript">function get() {document.searchform.submit()}</script>
 					
 						<form name="searchformtop" method="get" action="/results.html">	
-							<input type="search" name="q" id="top-search-box" name="q" placeholder="&#xf002;" onUnfocus="get()"></input>
+							<input type="search" name="q" id="top-search-box" placeholder="&#xf002;" onUnfocus="get()">
 						</form>
 					</div>
 				</div>
@@ -152,48 +152,82 @@
 			<!-- Main page -->
 			<div class="column" id="mainpage">
 				<div id="content">
-
-				<h3 class="page-title">Contact Me</h3>
-   
-				<div class="btnDiv">
-					<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#116;&#104;&#105;&#111;&#110;&#105;&#110;&#101;&#53;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" target="_blank" rel="noopener">
-						<button type="button" class="btnBold" id="btnBold-contact-email">Email me</button>
-					</a>
-				</div>
-
-				<div class="p-mixed">
-					<h5 class="contact-header">Social</h5>
-
-					<div class="row" id="contactsocialrow">
-						<a href="https://www.linkedin.com/in/nessacarson/" target="_blank" rel="noopener">
-							<div class="col-xs-4 m-contact"><i class="fa fa-linkedin contact-icon" aria-hidden="true"></i></div>
-						</a>
-						<a href="https://github.com/supersciencegrl/" target="_blank" rel="noopener">
-							<div class="col-xs-4 m-contact"><i class="fa fa-github contact-icon" aria-hidden="true"></i></div>
-						</a>
-						<a href="https://www.twitter.com/supersciencegrl/" target="_blank" rel="noopener">
-							<div class="col-xs-4 m-contact"><i class="fa fa-twitter contact-icon" aria-hidden="true"></i></div>
-						</a>
-						<a href="/rss.xml" target="_blank" rel="noopener" id="m-rss">
-							<div class="col-xs-4 m-contact"><i class="fa fa-rss contact-icon" aria-hidden="true"></i></div>
-						</a>
+					<div id="div-contact-header">
+						<div style="height: 10vw;"></div>
+						<img id="homepage-avatar" src="/img/NC2.jpg" alt="Nessa Carson" style="width: 100px;">
+						<div>
+							<p class="contact-feature" id="contact-name">Nessa Carson</p>
+							<p class="contact-feature" id="contact-company">AstraZeneca</p>
+							<p class="contact-text">Digital Champion, <br>Early Chemical Development</p>
+						</div>
+						<hr class="contact-hr-header">
+						<div>
+							<i class="fa-solid fa-paper-plane-top" style="color: #ffffff;"></i>
+							<p class="contact-text">EMAIL</p>
+						</div>
 					</div>
 
-					<h5 class="contact-header">Buy me a coffee!</h5>
-					<div class="btnDiv">
-						<a href="https://ko-fi.com/supersciencegrl" target="_blank" rel="noopener">
-							<button type="button" class="btnBold" id="btnBold-contact">Buy me a coffee</button>
-						</a>
+					<div class="row contact-row">
+						<div class="col-3">
+							<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#116;&#104;&#105;&#111;&#110;&#105;&#110;&#101;&#53;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" target="_blank" rel="noopener">
+								<i class="fa-solid fa-envelope contact-icon"></i>
+							</a>
+						</div>
+						<div class="col-9 copiable">&#109;&#101;&#116;&#104;&#105;&#111;&#110;&#105;&#110;&#101;&#53;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;<br>Email
+						</div>
 					</div>
-					<p class="p-contact">Most of what I do is volunteer work.</p>
-					<!-- Row -->
+					<hr class="contact-hr">
+					<div class="row contact-row">
+						<div class="col-3"><i class="fa-solid fa-globe contact-icon"></i></div>
+						<div class="col-9 copiable">https://supersciencegrl.co.uk/<br>Website
+						</div>
+					</div>
+					<!-- <hr class="contact-hr">
+					<div class="row contact-row">
+						<div class="col-3"><i class="fa-brands fa-linkedin-in contact-icon"></i></div>
+						<div class="col-9">https://www.linkedin.com/in/nessacarson<br>LinkedIn
+						</div>
+					</div>
+					<hr class="contact-hr">
+					<div class="row contact-row">
+						<div class="col-3"><i class="fa-brands fa-twitter contact-icon"></i></div>
+						<div class="col-9">https://twitter.com/supersciencegrl<br>Twitter
+						</div>
+					</div> -->
+
+					<div class="p-mixed">
+						<h5 class="contact-header">Social</h5>
+
+						<div class="row" id="contactsocialrow">
+							<a href="https://www.linkedin.com/in/nessacarson/" target="_blank" rel="noopener">
+								<div class="col-xs-4 m-contact"><i class="fa-brands fa-linkedin-in contact-icon" aria-hidden="true"></i></div>
+							</a>
+							<a href="https://github.com/supersciencegrl/" target="_blank" rel="noopener">
+								<div class="col-xs-4 m-contact"><i class="fa-brands fa-github contact-icon" aria-hidden="true"></i></div>
+							</a>
+							<a href="https://www.twitter.com/supersciencegrl/" target="_blank" rel="noopener">
+								<div class="col-xs-4 m-contact"><i class="fa-brands fa-twitter contact-icon" aria-hidden="true"></i></div>
+							</a>
+							<a href="/rss.xml" target="_blank" rel="noopener" id="m-rss">
+								<div class="col-xs-4 m-contact"><i class="fa-solid fa-rss contact-icon" aria-hidden="true"></i></div>
+							</a>
+						</div>
+						
+						<hr class="contact-hr">
+						<h5 class="contact-header">Buy me a coffee!</h5>
+						<div class="row contact-row">
+							<div class="col-3"><i class="fa-brands fa-twitter contact-icon"></i></div>
+							<div class="col-9"><a href="https://ko-fi.com/supersciencegrl" target="_blank" rel="noopener">https://ko-fi.com/supersciencegrl</a><br>Buy me a coffee! 
+							</div>
+						</div>
+						<!-- Row -->
+	   
+					</div><!-- Paragraphing -->
    
-				</div><!-- Paragraphing -->
-   
-			</div><!-- Content -->
-		</div><!-- Main page -->
+				</div><!-- Content -->
+			</div><!-- Main page -->
     
-      <!-- Sidebar -->
+			<!-- Sidebar -->
 			<div class="column m-hidden" id="sidebar">
 				<div id="sidebar-top-spacer"></div>
 				
@@ -265,6 +299,7 @@
  
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="/js/index.js"></script>
+	<script src="/js/contact.js"></script>
 
 </body>
 </html>
