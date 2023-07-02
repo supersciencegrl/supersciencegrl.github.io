@@ -44,9 +44,12 @@ hr.contact-hr {
 .contact-row .col-3 {
   text-align: right;
 }
+
 .contact-header {
   padding-top: 0;
+  padding-left: 0.7rem;
 }
+
 #contactsocialrow {
   padding: 10px 0 30px 10px;
   margin: auto;
@@ -57,17 +60,20 @@ hr.contact-hr {
   color: #003865;
   font-size: xx-large;
 }
-.contact-icon.fa-linkedin {
+.contact-icon.fa-linkedin-in {
 	color: #0A66C2;
 }
 .contact-icon.fa-github {
   color: #7C007C;
 }
+.contact-icon.fa-twitter {
+  color: #00ACEE;
+}
 .contact-icon.fa-rss {
   color: #EF8500;
 }
 .m-contact {
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 30px;
   font-size: x-large;
 }
 
