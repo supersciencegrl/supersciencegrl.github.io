@@ -50,16 +50,29 @@ hr.contact-hr {
 #contactsocialrow {
   padding: 10px 0 30px 10px;
   margin: auto;
+  width: 100%;
 }
 
 .contact-icon {
   color: #003865;
   font-size: xx-large;
 }
-.contact-icon.fa-github:active {
+.contact-icon.fa-linkedin {
+	color: #0A66C2;
+}
+.contact-icon.fa-github {
   color: #7C007C;
+}
+.contact-icon.fa-rss {
+  color: #EF8500;
 }
 .m-contact {
   padding: 0 10px 0 10px;
   font-size: x-large;
+}
+
+.copyCode {
+  position: absolute;
+  right: 2rem;
+  top: 5px;
 }

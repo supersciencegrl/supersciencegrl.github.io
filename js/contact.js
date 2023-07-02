@@ -1,12 +1,13 @@
-const copyButton = "<i class=\"fa-regular fa-copy\" aria-label=\"Copy code\"></i>";
+const contactCopyButton = "<i class=\"fa-regular fa-copy\" aria-label=\"Copy code\"></i>";
 function addCopyCodeButtons() {
 	let blocks = document.getElementsByClassName("copiable");
 	
-	blocks.forEach((block) => {
+	Array.from(blocks).forEach((block) => {
 		// Only add button if browser supports Clipboard API
 		if (navigator.clipboard) {
 			let button = document.createElement("button");
-			button.innerHTML = copyButton;
+			button.className = "copyCode";
+			button.innerHTML = contactCopyButton;
 			block.appendChild(button);
 			button.addEventListener("click", async () => {
 				await copyCode(block, button);
