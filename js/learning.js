@@ -71,8 +71,12 @@ function filterLevel(thisLevelCheckbox, thisLevelResources) {
  * This function first unchecks the "All" level checkbox to ensure specific levels are filtered.
  * It checks if no level-specific checkboxes are checked and calls `removeLevelFilter` to show all 
  * resources. If any level checkboxes are active, it hides all resources initially, then iterates 
- * over the level checkboxes, using `filterLevel` to display resources for checked levels. Finally, 
- * it applies additional topic-based filtering by calling `filterTopics`.
+ * over the level checkboxes, using `filterLevel` to display resources for checked levels. Optionally, 
+ * it can also filter by a specific topic, which also unchecks all topic checkboxes other than the one 
+ * provided. 
+ * 
+ * @param {HTMLElement} [topicCheckbox=undefined] - An optional checkbox element representing the 
+ *     topic to filter by. If provided, all other topic checkboxes will also be unchecked.
  */
 function filterLearning(topicCheckbox=undefined) {
 	let i;
@@ -116,7 +120,6 @@ function filterLearning(topicCheckbox=undefined) {
  * Filters resources based on a selected topic checkbox, hiding unrelated resources.
  * 
  * This function takes a specific topic checkbox and its associated resources.
- * It unchecks all other topic checkboxes, ensuring only the selected topic is active.
  * Then, it iterates over all resources, hiding those that do not belong to the selected topic
  * and are currently visible.
  * 
