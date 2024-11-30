@@ -51,9 +51,10 @@ function removeLevelFilter() {
  * it sets the display style of all associated resources to "block", making them visible.
  * It is used to manage the visibility of resources corresponding to a specific learning level.
  * 
- * @param {HTMLElement} thisLevelCheckbox - The checkbox element representing the specific learning level.
- * @param {HTMLCollection | NodeList} thisLevelResources - A collection of DOM elements corresponding to 
- *     resources for the specific level.
+ * @param {HTMLElement} thisLevelCheckbox - The checkbox element representing the specific learning 
+ *     level.
+ * @param {HTMLCollection | NodeList} thisLevelResources - A collection of DOM elements 
+ *     corresponding to resources for the specific level.
  */
 function filterLevel(thisLevelCheckbox, thisLevelResources) {
 	let i;
@@ -73,7 +74,7 @@ function filterLevel(thisLevelCheckbox, thisLevelResources) {
  * over the level checkboxes, using `filterLevel` to display resources for checked levels. Finally, 
  * it applies additional topic-based filtering by calling `filterTopics`.
  */
-function filterLearning() {
+function filterLearning(topicCheckbox=undefined) {
 	let i;
 	// Uncheck the "All" checkbox when filtering by specific levels
 	learningAllCheckbox.checked = false;
@@ -97,8 +98,18 @@ function filterLearning() {
 			filterLevel(levelCheckboxes[b], levelResources[b])
 		}
 	};
-	// Now filter by topic if needed
-	filterTopics();
+	if (topicCheckbox) {
+		// Uncheck all checkboxes for topics except for topicCheckbox
+		let t;
+		for (t = 0; t < topicCheckboxes.length; t++) {
+			let thisCheckbox = topicCheckboxes[t]
+			if (thisCheckbox !== topicCheckbox) {
+				thisCheckbox.checked = false
+			}
+		}
+		// Now filter by topic
+		filterTopics();
+	}
 }
 
 /**
@@ -109,20 +120,11 @@ function filterLearning() {
  * Then, it iterates over all resources, hiding those that do not belong to the selected topic
  * and are currently visible.
  * 
- * Parameters:
- * - topicCheckbox (HTMLElement): The checkbox element representing the selected topic.
- * - topicResources (HTMLCollection): A collection of resources related to the selected topic.
+ * @param {HTMLElement} topicCheckbox - The checkbox element representing the selected topic. 
+ * @param {HTMLCollection} topicResources - A collection of resources related to the selected topic.
  */
 function filterSpecificTopic(topicCheckbox, topicResources) {
 	const topicResourcesArray = Array.from(topicResources)
-	// Uncheck all checkboxes for topics except for topicCheckbox
-	let t;
-	for (t = 0; t < topicCheckboxes.length; t++) {
-		let thisCheckbox = topicCheckboxes[t]
-		if (thisCheckbox !== topicCheckbox) {
-			thisCheckbox.checked = false
-		}
-	}
 	// Iterate over all resources and check whether they are currently visible
 	let i;
 	for (i = 0; i < allResources.length; i++) {
