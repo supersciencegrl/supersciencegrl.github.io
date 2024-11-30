@@ -2,10 +2,10 @@
 <html >
 <head>
 	<meta charset="UTF-8">
-	<title>Nessa Carson: Study Organic Chemistry Online</title>
+	<title>Nessa Carson: Online organic chemistry resources</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="author" content="Nessa Carson"><meta name="keywords" content="chemistry, organic chemistry, science">
 
-	<meta property="og:title" content="Nessa Carson: Study Organic Chemistry Online">
+	<meta property="og:title" content="Nessa Carson: Online organic chemistry resources">
 	<meta property="og:type" content="website">
 	<meta property="article:author" content="http://www.twitter.com/supersciencegrl">
 	<meta property="og:url" content="http://www.supersciencegrl.co.uk/learning.html">
@@ -153,7 +153,7 @@
 			<!-- Main page -->
 			<div class="column" id="mainpage">
 				<div id="content">
-					<h3 class="page-title">Study organic chemistry online</h3>
+					<h3 class="page-title">Online organic chemistry resources</h3>
 					
 					<p>Here is a list of resources where you can learn and practise organic chemistry online, inspired by some friends who wanted practice for job interviews. 
 						Many thanks to <nobr><a href="https://twitter.com/magicmethylman" rel="noopener">Jacob Hiles</a></nobr> for helping collect links. 
@@ -843,6 +843,16 @@
 								Hundreds of short videos on introductory topics in organic chemistry. 
 							</p>
 						</div>
+						
+						<div class="div-literature adv specialist anal">
+							<a class="link-title" id="vid-globalnmr" href="https://www.globalnmr.org/videos" target="_blank" rel="noopener">
+								<h6 class="learn-title">Global NMR Discussion Meetings</h6>
+							</a>
+							<p class="p-main"><strong>Global NMR Discussion Meetings team</strong>; <em>specialist level</em>
+								<br>
+								Seminar videos on specialist NMR topics. 
+							</p>
+						</div>
 					
 						<div class="div-literature adv specialist">
 							<a class="link-title" id="vid-imperial" href="https://www.ch.ic.ac.uk/video/" target="_blank" rel="noopener">
@@ -1051,7 +1061,7 @@
 				
 				<!-- Article filter buttons -->
 				<div class="sidebar-row">
-					<p class="sidebar-title">Filter level</p>
+					<p class="sidebar-title">Filters</p>
 					<div id="btnContainer">
 						<div id="checkboxContainer">
 							<label id="learningAll">
@@ -1059,7 +1069,8 @@
 								<span class="big-checkbox-label">All</span>
 								<span class="big-checkbox"></span>
 							</label>
-							<br>
+							
+							<p class="sidebar-title" style="margin-top: 1em;">Filter level</p>
 							<label id="learningIntro">
 								<input type="checkbox" id="learningIntroCheckbox" onclick="filterLearning()">
 								<span class="big-checkbox-label">Introductory level</span>
@@ -1075,6 +1086,19 @@
 							<label id="learningSpecialist">
 								<input type="checkbox" id="learningSpecialistCheckbox" onclick="filterLearning()">
 								<span class="big-checkbox-label">Specialist</span>
+								<span class="big-checkbox"></span>
+							</label>
+							
+							<p class="sidebar-title" style="margin-top: 1em;">Filter topics</p>
+							<label id="anal">
+								<input type="checkbox" id="learningAnalCheckbox" onclick="filterLearning()">
+								<span class="big-checkbox-label">Analytical only</span>
+								<span class="big-checkbox"></span>
+							</label>
+							<br>
+							<label id="comp">
+								<input type="checkbox" id="learningCompCheckbox" onclick="filterLearning()">
+								<span class="big-checkbox-label">Computational only</span>
 								<span class="big-checkbox"></span>
 							</label>
 						</div>
