@@ -1,20 +1,20 @@
-var learningAllCheckbox = document.getElementById("learningAllCheckbox");
-var learningIntroCheckbox = document.getElementById("learningIntroCheckbox");
-var learningAdvCheckbox = document.getElementById("learningAdvCheckbox");
-var learningSpecialistCheckbox = document.getElementById("learningSpecialistCheckbox");
+const learningAllCheckbox = document.getElementById("learningAllCheckbox");
+const learningIntroCheckbox = document.getElementById("learningIntroCheckbox");
+const learningAdvCheckbox = document.getElementById("learningAdvCheckbox");
+const learningSpecialistCheckbox = document.getElementById("learningSpecialistCheckbox");
 
-var learningAnalCheckbox = document.getElementById("learningAnalCheckbox");
-var learningCompCheckbox = document.getElementById("learningCompCheckbox");
+const learningAnalCheckbox = document.getElementById("learningAnalCheckbox");
+const learningCompCheckbox = document.getElementById("learningCompCheckbox");
 
-var topicCheckboxes = [learningAnalCheckbox, learningCompCheckbox];
+const topicCheckboxes = [learningAnalCheckbox, learningCompCheckbox];
 
-var allResources = document.getElementsByClassName("div-literature");
-var introResources = document.getElementsByClassName("intro");
-var advResources = document.getElementsByClassName("adv");
-var specialistResources = document.getElementsByClassName("specialist");
+const allResources = document.getElementsByClassName("div-literature");
+const introResources = document.getElementsByClassName("intro");
+const advResources = document.getElementsByClassName("adv");
+const specialistResources = document.getElementsByClassName("specialist");
 
-var analResources = document.getElementsByClassName("anal");
-var compResources = document.getElementsByClassName("comp");
+const analResources = document.getElementsByClassName("anal");
+const compResources = document.getElementsByClassName("comp");
 
 /**
  * Resets the level filter to show all resources.
@@ -24,7 +24,7 @@ var compResources = document.getElementsByClassName("comp");
  * iterates through the `allResources` array, making every resource visible
  */
 function removeLevelFilter() {
-	var i;
+	let i;
 	// Uncheck the intro/advanced/specialist checkboxes
 	learningIntroCheckbox.checked = false;
 	learningAdvCheckbox.checked = false;
@@ -41,18 +41,19 @@ function removeLevelFilter() {
 }
 
 function topicFilters(topicCheckbox, topicResources) {
+	const topicResourcesArray = Array.from(topicResources)
 	// Uncheck all checkboxes for topics except for topicCheckbox
-	var t;
+	let t;
 	for (t = 0; t < topicCheckboxes.length; t++) {
-		thisCheckbox = topicCheckboxes[t]
+		let thisCheckbox = topicCheckboxes[t]
 		if (thisCheckbox !== topicCheckbox) {
 			thisCheckbox.checked = false
 		}
 	}
 	// Iterate over all resources and check whether they are currently visible
-	var i;
+	let i;
 	for (i = 0; i < allResources.length; i++) {
-		var resource = allResources[i];
+		let resource = allResources[i];
 		if (resource.style.display === "block") {
 			// If resource is currently visible but does not contain the desired topic, hide it
 			if (!topicResources.includes(resource)) {
@@ -63,7 +64,7 @@ function topicFilters(topicCheckbox, topicResources) {
 }
 
 function filterLearning() {
-	var i;
+	let i;
 	// Uncheck the "All" checkbox when filtering by specific levels
 	learningAllCheckbox.checked = false;
 	// If no checkboxes are checked, reset the filter to show all resources
