@@ -3,6 +3,8 @@ const learningIntroCheckbox = document.getElementById("learningIntroCheckbox");
 const learningAdvCheckbox = document.getElementById("learningAdvCheckbox");
 const learningSpecialistCheckbox = document.getElementById("learningSpecialistCheckbox");
 
+const levelCheckboxes = [learningIntroCheckbox, learningAdvCheckbox, learningSpecialistCheckbox];
+
 const learningAnalCheckbox = document.getElementById("learningAnalCheckbox");
 const learningCompCheckbox = document.getElementById("learningCompCheckbox");
 
@@ -12,6 +14,9 @@ const allResources = document.getElementsByClassName("div-literature");
 const introResources = document.getElementsByClassName("intro");
 const advResources = document.getElementsByClassName("adv");
 const specialistResources = document.getElementsByClassName("specialist");
+
+// Must be same length and order as levelCheckboxes
+const levelResources = [introResources, advResources, specialistResources]
 
 const analResources = document.getElementsByClassName("anal");
 const compResources = document.getElementsByClassName("comp");
@@ -29,17 +34,45 @@ function removeLevelFilter() {
 	learningIntroCheckbox.checked = false;
 	learningAdvCheckbox.checked = false;
 	learningSpecialistCheckbox.checked = false;
-	// Uncheck the analytical/computational checkboxes
-	// learningAnalCheckbox.checked = false;
-	// learningCompCheckbox.checked = false;
 	// Check the 'all' checkbox
 	learningAllCheckbox.checked = true;
 	// Make all resources visible
 	for (i = 0; i < allResources.length; i++) {
 		allResources[i].style.display = "block";
+	};
+	// Now filter by topic if needed
+	filterTopics();
+}
+
+/**
+ * Filters resources based on the state of a specific level checkbox.
+ * 
+ * This function checks if a given level checkbox is checked, and if so,
+ * it sets the display style of all associated resources to "block", making them visible.
+ * It is used to manage the visibility of resources corresponding to a specific learning level.
+ * 
+ * @param {HTMLElement} thisLevelCheckbox - The checkbox element representing the specific learning level.
+ * @param {HTMLCollection | NodeList} thisLevelResources - A collection of DOM elements corresponding to 
+ *     resources for the specific level.
+ */
+function filterLevel(thisLevelCheckbox, thisLevelResources) {
+	let i;
+	if (thisLevelCheckbox.checked) {
+		for (i = 0; i < thisLevelResources.length; i++) {
+			thisLevelResources[i].style.display = "block";
+		}
 	}
 }
 
+/**
+ * Filters learning resources based on the state of level and topic checkboxes.
+ * 
+ * This function first unchecks the "All" level checkbox to ensure specific levels are filtered.
+ * It checks if no level-specific checkboxes are checked and calls `removeLevelFilter` to show all 
+ * resources. If any level checkboxes are active, it hides all resources initially, then iterates 
+ * over the level checkboxes, using `filterLevel` to display resources for checked levels. Finally, 
+ * it applies additional topic-based filtering by calling `filterTopics`.
+ */
 function filterLearning() {
 	let i;
 	// Uncheck the "All" checkbox when filtering by specific levels
@@ -47,50 +80,40 @@ function filterLearning() {
 	// If no checkboxes are checked, reset the filter to show all resources
 	if (
 		!learningAllCheckbox.checked && 
-		!learningIntroCheckbox.checked && !learningAdvCheckbox.checked && !learningSpecialistCheckbox.checked
+		!learningIntroCheckbox.checked && 
+		!learningAdvCheckbox.checked && 
+		!learningSpecialistCheckbox.checked
 	) {
 		removeLevelFilter()
 	}
 	else {
-		// Show or hide intro resources based on checkbox state
-		if (learningIntroCheckbox.checked) {
-			for (i = 0; i < introResources.length; i++) {
-				introResources[i].style.display = "block";
-			}
+		// Initially, hide all resources
+		for (i = 0; i < allResources.length; i++) {
+			allResources[i].style.display = "none";
 		}
-		else {
-			for (i = 0; i < introResources.length; i++) {
-				introResources[i].style.display = "none";
-			}
+		// Iterate over all levelCheckboxes and re-show levelResources accordingly
+		let b;
+		for (b = 0; b < levelCheckboxes.length; b++) {
+			filterLevel(levelCheckboxes[b], levelResources[b])
 		}
-		// Show or hide advanced resources based on checkbox state
-		if (learningAdvCheckbox.checked) {
-			for (i = 0; i < advResources.length; i++) {
-				advResources[i].style.display = "block";
-			}
-		}
-		else {
-			for (i = 0; i < advResources.length; i++) {
-				advResources[i].style.display = "none";
-			}
-		}
-		// Show or hide specialist resources based on checkbox state
-		if (learningSpecialistCheckbox.checked) {
-			for (i = 0; i < specialistResources.length; i++) {
-				specialistResources[i].style.display = "block";
-			}
-		}
-		else {
-			for (i = 0; i < specialistResources.length; i++) {
-				specialistResources[i].style.display = "none";
-			}
-		}
-	}
-	// Then filter by topics if needed
-	filterTopics()
+	};
+	// Now filter by topic if needed
+	filterTopics();
 }
 
-function topicFilters(topicCheckbox, topicResources) {
+/**
+ * Filters resources based on a selected topic checkbox, hiding unrelated resources.
+ * 
+ * This function takes a specific topic checkbox and its associated resources.
+ * It unchecks all other topic checkboxes, ensuring only the selected topic is active.
+ * Then, it iterates over all resources, hiding those that do not belong to the selected topic
+ * and are currently visible.
+ * 
+ * Parameters:
+ * - topicCheckbox (HTMLElement): The checkbox element representing the selected topic.
+ * - topicResources (HTMLCollection): A collection of resources related to the selected topic.
+ */
+function filterSpecificTopic(topicCheckbox, topicResources) {
 	const topicResourcesArray = Array.from(topicResources)
 	// Uncheck all checkboxes for topics except for topicCheckbox
 	let t;
@@ -113,11 +136,20 @@ function topicFilters(topicCheckbox, topicResources) {
 	}
 }
 
+/**
+ * Filters resources based on the selected topic checkbox.
+ * 
+ * This function checks which topic checkbox is selected and calls the 
+ * `filterSpecificTopic` function with the corresponding resources. If 
+ * `learningAnalCheckbox` is checked, it filters using `analResources`. 
+ * If `learningCompCheckbox` is checked, it filters using `compResources`.
+ * If no topic checkbox is checked, the function does nothing. 
+ */
 function filterTopics() {
 	if (learningAnalCheckbox.checked) {
-		topicFilters(learningAnalCheckbox, analResources)
+		filterSpecificTopic(learningAnalCheckbox, analResources)
 	}
-	if (learningCompCheckbox.checked) {
-		topicFilters(learningCompCheckbox, compResources)
+	else if (learningCompCheckbox.checked) {
+		filterSpecificTopic(learningCompCheckbox, compResources)
 	}
 }
