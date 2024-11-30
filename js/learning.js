@@ -43,7 +43,7 @@ function removeLevelFilter() {
 function topicFilters(topicCheckbox, topicResources) {
 	// Uncheck all checkboxes for topics except for topicCheckbox
 	var t;
-	for (t = 0; t < topicCheckboxes.length, t++) {
+	for (t = 0; t < topicCheckboxes.length; t++) {
 		thisCheckbox = topicCheckboxes[t]
 		if (thisCheckbox !== topicCheckbox) {
 			thisCheckbox.checked = false
