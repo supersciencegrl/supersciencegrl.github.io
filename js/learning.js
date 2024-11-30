@@ -56,7 +56,7 @@ function topicFilters(topicCheckbox, topicResources) {
 		let resource = allResources[i];
 		if (resource.style.display === "block") {
 			// If resource is currently visible but does not contain the desired topic, hide it
-			if (!topicResources.includes(resource)) {
+			if (!topicResourcesArray.includes(resource)) {
 				resource.style.display = "none";
 			}
 		}
