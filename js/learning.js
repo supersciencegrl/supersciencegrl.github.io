@@ -30,36 +30,13 @@ function removeLevelFilter() {
 	learningAdvCheckbox.checked = false;
 	learningSpecialistCheckbox.checked = false;
 	// Uncheck the analytical/computational checkboxes
-	learningAnalCheckbox.checked = false;
-	learningCompCheckbox.checked = false;
+	// learningAnalCheckbox.checked = false;
+	// learningCompCheckbox.checked = false;
 	// Check the 'all' checkbox
 	learningAllCheckbox.checked = true;
 	// Make all resources visible
 	for (i = 0; i < allResources.length; i++) {
 		allResources[i].style.display = "block";
-	}
-}
-
-function topicFilters(topicCheckbox, topicResources) {
-	const topicResourcesArray = Array.from(topicResources)
-	// Uncheck all checkboxes for topics except for topicCheckbox
-	let t;
-	for (t = 0; t < topicCheckboxes.length; t++) {
-		let thisCheckbox = topicCheckboxes[t]
-		if (thisCheckbox !== topicCheckbox) {
-			thisCheckbox.checked = false
-		}
-	}
-	// Iterate over all resources and check whether they are currently visible
-	let i;
-	for (i = 0; i < allResources.length; i++) {
-		let resource = allResources[i];
-		if (resource.style.display !== "none") {
-			// If resource is currently visible but does not contain the desired topic, hide it
-			if (!topicResourcesArray.includes(resource)) {
-				resource.style.display = "none";
-			}
-		}
 	}
 }
 
@@ -70,8 +47,7 @@ function filterLearning() {
 	// If no checkboxes are checked, reset the filter to show all resources
 	if (
 		!learningAllCheckbox.checked && 
-		!learningIntroCheckbox.checked && !learningAdvCheckbox.checked && !learningSpecialistCheckbox.checked &&
-		!learningAnalCheckbox.checked && !learningCompCheckbox.checked
+		!learningIntroCheckbox.checked && !learningAdvCheckbox.checked && !learningSpecialistCheckbox.checked
 	) {
 		removeLevelFilter()
 	}
@@ -109,11 +85,39 @@ function filterLearning() {
 				specialistResources[i].style.display = "none";
 			}
 		}
-		if (learningAnalCheckbox.checked) {
-			topicFilters(learningAnalCheckbox, analResources)
+	}
+	// Then filter by topics if needed
+	filterTopics()
+}
+
+function topicFilters(topicCheckbox, topicResources) {
+	const topicResourcesArray = Array.from(topicResources)
+	// Uncheck all checkboxes for topics except for topicCheckbox
+	let t;
+	for (t = 0; t < topicCheckboxes.length; t++) {
+		let thisCheckbox = topicCheckboxes[t]
+		if (thisCheckbox !== topicCheckbox) {
+			thisCheckbox.checked = false
 		}
-		if (learningCompCheckbox.checked) {
-			topicFilters(learningCompCheckbox, compResources)
+	}
+	// Iterate over all resources and check whether they are currently visible
+	let i;
+	for (i = 0; i < allResources.length; i++) {
+		let resource = allResources[i];
+		if (resource.style.display !== "none") {
+			// If resource is currently visible but does not contain the desired topic, hide it
+			if (!topicResourcesArray.includes(resource)) {
+				resource.style.display = "none";
+			}
 		}
+	}
+}
+
+function filterTopics() {
+	if (learningAnalCheckbox.checked) {
+		topicFilters(learningAnalCheckbox, analResources)
+	}
+	if (learningCompCheckbox.checked) {
+		topicFilters(learningCompCheckbox, compResources)
 	}
 }
