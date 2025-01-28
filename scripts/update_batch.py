@@ -1,5 +1,3 @@
-''' This script was created for the supersciencegrl.github.io repo. A more recent version may exist in supersciencegrl/supersciencegrl.github.io '''
-
 __author__ = "Nessa Carson"
 __copyright__ = "Copyright 2022"
 __version__ = "1.1"
@@ -101,7 +99,7 @@ def run(pages: list[str], oldhtml: list[str], newhtml: list[str]):
 
 # Set list of desired pages to change
 pages = glob.glob('../**/*.html', recursive=True)
-exclusions = ['googlec9a765a08c18ee51.html', 'pinterest-fc74e.html']
+exclusions = ['..\\googlec9a765a08c18ee51.html', '..\\pinterest-fc74e.html']
 for exc in exclusions:
     idx = pages.index(exc)
     _ = pages.pop(idx)
