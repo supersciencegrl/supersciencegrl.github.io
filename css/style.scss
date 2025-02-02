@@ -745,8 +745,8 @@ div::-webkit-scrollbar-thumb:hover {
 	}
 	
     #sidebar {
-        max-width: 25%;
-        margin-right: -25%;
+        max-width: 30%;
+        margin-right: -30%;
         padding: 10px;
     }
     .sidebar-title {
@@ -778,7 +778,7 @@ div::-webkit-scrollbar-thumb:hover {
 /* End of x-large screens */
 
 /* Mobile devices */
-@media only screen and (max-device-width: 480px), 
+@media only screen and (max-device-width: 520px), 
 only screen and (min-resolution: 300dpi) {
     body {
 		max-width: 100%;
