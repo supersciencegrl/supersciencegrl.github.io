@@ -33,7 +33,7 @@ def format_as_html(my_input: str) -> list[str]:
     Returns:
     - edited_list (list[str]): The formatted HTML list.
     """
-    mylist = my_input.split('\\n')
+    mylist = my_input.replace('\r', '').split('\\n')
     edited_list = [f'{i}\n' for i in mylist]
 
     return edited_list
@@ -53,11 +53,15 @@ def obtain_html_from_user() -> tuple[list[str], list[str]]:
     while not oldhtml:
         oldhtml = input('Old html (copy tabs as tabs without changing; replace newlines with \'\\n\'): ')
     oldhtml = format_as_html(oldhtml)
+    if oldhtml[-1] == '\n':
+        oldhtml.pop()
 
     newhtml = ''
     while not newhtml:
         newhtml = input('New html (copy tabs as tabs without changing; replace newlines with \'\\n\'): ')
     newhtml = format_as_html(newhtml)
+    if newhtml[-1] == '\n':
+        newhtml.pop()
 
     return oldhtml, newhtml
 
