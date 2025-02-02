@@ -208,7 +208,7 @@ div::-webkit-scrollbar-thumb:hover {
     padding: 5px 0px 5px 10px;
     border-radius: 5px 5px 0px 0px;
     border-width: 5px;
-    min-width: 150px;
+    min-width: 140px;
 }
 .bar-indent {
 	display: none;
@@ -601,6 +601,9 @@ div::-webkit-scrollbar-thumb:hover {
 }
 .sidebar-td .fa-github:hover {
 	color: #7C007C;
+}
+.sidebar-td .fa-bluesky:hover {
+	color: #4B9DFA;
 }
 
 #m-rss:link {color: #EF8500;}
