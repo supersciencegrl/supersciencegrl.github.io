@@ -7,6 +7,10 @@ th.column1 {
   padding-left: 1em;
 }
 
+a.table-link {
+  color: #0265c8;
+}
+
 .body {
   font-size: 0.8em;
 }
