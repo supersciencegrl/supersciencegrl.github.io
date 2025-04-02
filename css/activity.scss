@@ -1,7 +1,7 @@
-@import "theme";
+@use "theme";
 
 .presentation-title {
-    color: $highlight;
+    color: theme.$highlight;
     font-weight: bold;
     font-size: large;
 }

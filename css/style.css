@@ -166,6 +166,14 @@ pre button {
   position: relative;
 }
 
+a.link-on-grey {
+  color: #0255b8;
+}
+
+a.link-on-navy {
+  color: #2295f8;
+}
+
 /* Custom scrollbars */
 ::-webkit-scrollbar {
   width: 10px;
@@ -215,7 +223,7 @@ div::-webkit-scrollbar-thumb:hover {
   padding: 0 7px 0 0;
   opacity: 1;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
-  color: black;
+  color: rgb(0, 0, 0);
   float: right;
   text-align: right;
   position: relative;
@@ -277,7 +285,7 @@ div::-webkit-scrollbar-thumb:hover {
   min-height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #dddddd;
+  background-color: rgb(221, 221, 221);
   padding: 0 0 100px 0;
 }
 
@@ -624,28 +632,28 @@ div::-webkit-scrollbar-thumb:hover {
 
 #sidebar-search:focus {
   background-color: rgba(42, 119, 232, 0.05);
-  color: black;
+  color: rgb(0, 0, 0);
   box-shadow: inset 0 0 2px #606060;
 }
 
 #sidebar-search::-webkit-input-placeholder {
   font-family: FontAwesome, "Open Sans", sans-serif;
-  color: #505050;
+  color: rgb(80, 80, 80);
 }
 
 #sidebar-search:-moz-placeholder {
   font-family: FontAwesome, "Open Sans", sans-serif;
-  color: #505050;
+  color: rgb(80, 80, 80);
 }
 
 #sidebar-search::-moz-placeholder {
   font-family: FontAwesome, "Open Sans", sans-serif;
-  color: #505050;
+  color: rgb(80, 80, 80);
 }
 
 #sidebar-search:-ms-input-placeholder {
   font-family: FontAwesome, "Open Sans", sans-serif;
-  color: #505050;
+  color: rgb(80, 80, 80);
 }
 
 .sidebar-hr {
@@ -674,7 +682,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 .sidebar-td .fa-bluesky:hover {
-	color: #4B9DFA;
+  color: #4B9DFA;
 }
 
 #m-rss:link {
@@ -843,25 +851,20 @@ div::-webkit-scrollbar-thumb:hover {
   .smallscreensshow {
     display: initial;
   }
-
   .smallscreensnone {
     display: none;
   }
-
   ul {
     padding-left: 20px;
   }
-
   #sidebar {
     max-width: 30%;
     margin-right: -30%;
     padding: 10px;
   }
-
   .sidebar-title {
     letter-spacing: 0;
   }
-
   #wrapper {
     margin-right: 25%;
   }
@@ -877,11 +880,9 @@ div::-webkit-scrollbar-thumb:hover {
     margin: auto;
     padding: 10px 5% 50px 5%;
   }
-
   div {
     font-family: Helvetica, sans-serif;
   }
-
   #title-bar div {
     font-family: "Open Sans", sans-serif;
   }
@@ -892,42 +893,34 @@ div::-webkit-scrollbar-thumb:hover {
   body {
     max-width: 100%;
   }
-
   h3 {
     font-size: 1.75rem;
   }
-
   figure {
     font-size: small;
   }
-
   #title-bar {
     background-color: #101030;
     padding-top: 10px;
   }
-
   .title {
     font-size: 1.75rem;
   }
-
   #supersciencegrl {
     font-size: large;
   }
-
   #top-bar {
     display: none;
     transform: rotateX(-90deg);
     transform-origin: top center;
     opacity: 0;
   }
-
   .menuActive {
     display: block !important;
     transform: rotateX(0deg) !important;
     opacity: 1 !important;
     animation: toggleMenu 0.4s ease-in-out !important;
   }
-
   @keyframes toggleMenu {
     0% {
       display: none;
@@ -954,124 +947,98 @@ div::-webkit-scrollbar-thumb:hover {
     right: 0;
     position: absolute;
   }
-
   #wrapper,
-#mainpage,
-#content {
+  #mainpage,
+  #content {
     min-height: 300px;
   }
-
   #mainpage {
     padding: 2%;
   }
-
   #content {
     padding: 10px;
   }
-
   #content p,
-#content ul {
+  #content ul {
     text-align: left;
   }
-
   #content ul {
     margin-left: 0;
   }
-
   #footer {
     height: initial;
     padding: 10px 40px 10px 40px;
   }
-
   .div-main {
     padding: 10px 0 0 10px;
   }
-
   .page-title {
     font-size: 1.75rem;
   }
-
   .page-title-inline {
     margin-top: 2rem;
   }
-
   .p-main {
     padding: 0;
   }
-
   .m-hidden {
     visibility: hidden;
     clear: both;
     margin: 0;
     display: none;
   }
-
   .m-hidden-none {
     display: none !important;
   }
-
   .m-visible {
     visibility: visible;
   }
-
   .m-visible-none {
     display: initial;
   }
-
   .bar,
-.bar-category,
-.bar-indent {
+  .bar-category,
+  .bar-indent {
     display: block;
     min-width: 20px;
     padding: 5px;
     border-radius: 5px;
   }
-
   .bar-space-initial {
     min-width: 0;
   }
-
   .grid-square {
     padding: 5px 5% 35px 5%;
     min-width: 50px;
   }
-
   .image-left-wrapper {
     display: none !important;
   }
-
   .image-left {
     margin: 0 0.3em 0 0;
   }
-
   .inline-image-right {
     width: 95%;
   }
-
   .link-description {
     flex: initial;
     -webkit-flex: initial;
     max-width: 100%;
   }
-
   .tabButton {
     max-width: 25%;
     padding: 3px;
     font-size: 0.8em;
   }
-
   .caption {
     font-size: calc(6px + 1.5vw);
   }
-
   .back {
     padding-left: 3em;
   }
-
   #wrapper {
     margin-right: 0;
   }
-
   #footer-text-div {
     font-size: small;
   }

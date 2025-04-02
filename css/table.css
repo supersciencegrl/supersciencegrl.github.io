@@ -142,9 +142,9 @@
 /* x-large screens */
 @media only screen and (min-width: 1500px) {
   .limiter th,
-.limiter td,
-.limitera th,
-.limitera td {
+  .limiter td,
+  .limitera th,
+  .limitera td {
     font-family: Helvetica, sans-serif;
   }
 }
@@ -155,16 +155,13 @@
     font-size: small;
     padding: 0 0 1em 0;
   }
-
   .wrap-table100 {
     width: 100%;
   }
-
   .limitera td {
     font-size: x-small;
     color: #404060;
   }
-
   p-inline {
     padding-top: 0;
     padding-right: 0;

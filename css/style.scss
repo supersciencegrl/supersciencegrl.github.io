@@ -1,11 +1,11 @@
-@import "theme";
+@use "theme";
 
 body {
     margin: 0;
     padding: 0;
     min-height: 100%;
     width: auto;
-    background-color: $titlebar;
+    background-color: theme.$titlebar;
     position: relative;
     overflow-y: scroll;
 }
@@ -50,7 +50,7 @@ figure {
 }
 
 pre {
-	border: 2px solid $titlebar;
+	border: 2px solid theme.$titlebar;
 	border-radius: 5px;
 	box-sizing: border-box;
 	padding: 0.3em 0.5em 0.3em 0.5em;
@@ -62,26 +62,26 @@ pre code {
 }
 pre button {
 	position: relative;
-    color: $title;
+    color: theme.$title;
 	float: right;
 }
 
 .title {
-    color: $titlebar-text;
+    color: theme.$titlebar-text;
     font-weight: bold;}
 .title:link {
-	color: $titlebar-text;
+	color: theme.$titlebar-text;
 	text-decoration:none;}
 .title:visited {
-	color: $titlebar-text;}
+	color: theme.$titlebar-text;}
 .title:hover {
-	color: $title-hover;}
+	color: theme.$title-hover;}
 .title:active {
-	color: $top-icon;}
+	color: theme.$top-icon;}
 
 .top-row {
-    background-color: $top-row;
-    color: $top-icon;
+    background-color: theme.$top-row;
+    color: theme.$top-icon;
     padding: 0;
     width: 100%;
     min-width: 100%;
@@ -98,15 +98,15 @@ pre button {
 }
 .top:hover {
     background-color: black;
-    color: $titlebar-text;
+    color: theme.$titlebar-text;
     transition: 0.3s;
 }
 
 .top-link {
-    color: $titlebar-text;
+    color: theme.$titlebar-text;
 }
 .top-link:hover {
-    color: $titlebar-text;
+    color: theme.$titlebar-text;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -127,14 +127,14 @@ pre button {
 }
 
 .a-top-icon:link {
-	color: $top-icon;
+	color: theme.$top-icon;
 	text-decoration: none;}
 .a-top-icon:visited {
-	color: $top-icon;}
+	color: theme.$top-icon;}
 .a-top-icon:hover {
-	color: $titlebar-text;}
+	color: theme.$titlebar-text;}
 .a-top-icon:active {
-	color: $titlebar-text;}
+	color: theme.$titlebar-text;}
 	
 #a-top-icon-search:active {
 }
@@ -142,25 +142,32 @@ pre button {
     position: relative;
 }
 
+a.link-on-grey {
+	color: #0255b8;
+}
+a.link-on-navy {
+	color: #2295f8;
+}
+
 /* Custom scrollbars */
 ::-webkit-scrollbar {
-  width: $scrollbar-width;
+  width: theme.$scrollbar-width;
 }
 ::-webkit-scrollbar-track {
   background: #FFFFFF;
-  border-radius: $scrollbar-width;
-  box-shadow: inset 0 0 5px $titlebar;
+  border-radius: theme.$scrollbar-width;
+  box-shadow: inset 0 0 5px theme.$titlebar;
 }
 ::-webkit-scrollbar-thumb {
-  background: $titlebar;
-  border-radius: $scrollbar-width;
-  box-shadow: inset 0 0 7px $top-row;
+  background: theme.$titlebar;
+  border-radius: theme.$scrollbar-width;
+  box-shadow: inset 0 0 7px theme.$top-row;
 }
 ::-webkit-scrollbar-thumb:hover {
   box-shadow: inset 0 0 7px #505050;
 }
 div::-webkit-scrollbar-thumb {
-  background: $title;
+  background: theme.$title;
 }
 div::-webkit-scrollbar-thumb:hover {
   background: #224984;
@@ -197,14 +204,14 @@ div::-webkit-scrollbar-thumb:hover {
 #top-search-box:-ms-input-placeholder {font-family: FontAwesome, "Open Sans", sans-serif;}
 
 #title-bar {
-    background-color: $titlebar;
+    background-color: theme.$titlebar;
     padding: 20px 40px 0 40px;
 }
 
 .bar,
 .bar-category,
 .bar-indent {
-    color: $titlebar-text;
+    color: theme.$titlebar-text;
     padding: 5px 0px 5px 10px;
     border-radius: 5px 5px 0px 0px;
     border-width: 5px;
@@ -216,9 +223,9 @@ div::-webkit-scrollbar-thumb:hover {
 }
 .bar:hover,
 .bar-indent:hover {
-    background: -webkit-linear-gradient($titlebar-text, #DDDDDD);
-    background: linear-gradient($titlebar-text, #DDDDDD);
-    color: $titlebar;
+    background: -webkit-linear-gradient(theme.$titlebar-text, #DDDDDD);
+    background: linear-gradient(theme.$titlebar-text, #DDDDDD);
+    color: theme.$titlebar;
 }
 
 .link-bar:hover {
@@ -247,12 +254,12 @@ div::-webkit-scrollbar-thumb:hover {
     width: 100%;
     min-height: 550px;
     float: left;
-    background-color: $mainpage-background;
+    background-color: theme.$mainpage-background;
     padding: 5%;
 }
 
 #supersciencegrl {
-	color: $supersciencegrl-text;
+	color: theme.$supersciencegrl-text;
 	padding: 0 0 5px 0;
 }
 
@@ -263,12 +270,12 @@ div::-webkit-scrollbar-thumb:hover {
     background-color: white; 
     min-height: 300px; 
     width: 100%; 
-    box-shadow: 0px 0px 30px 10px $default-box-shadow;
+    box-shadow: 0px 0px 30px 10px theme.$default-box-shadow;
 }
 
 .page-title,
 .page-title-inline {
-	color: $title;
+	color: theme.$title;
     padding: 0px 0px 20px 0px;
 }
 .page-title-inline {
@@ -276,11 +283,11 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 .page-subtitle {
-	color: $title;
+	color: theme.$title;
 }
 .tab-heading {
-	color: $title;
-	padding-left: $pre-tab-indent;
+	color: theme.$title;
+	padding-left: theme.$pre-tab-indent;
 }
 
 .grid-square-homepage-container {
@@ -341,7 +348,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 .image-shadow {
-	box-shadow: 0 0 12px $default-box-shadow;
+	box-shadow: 0 0 12px theme.$default-box-shadow;
 }
 
 .image-right {
@@ -355,7 +362,7 @@ div::-webkit-scrollbar-thumb:hover {
 .tooltip,
 .tooltipconf {
     visibility: hidden;
-    background-color: $tooltip-background;
+    background-color: theme.$tooltip-background;
     color: #FFFFFF;
     text-align: center;
     border-radius: 6px;
@@ -432,7 +439,7 @@ div::-webkit-scrollbar-thumb:hover {
     font-size: medium;
 }
 .p-tab {
-	padding-left: $pre-tab-indent;
+	padding-left: theme.$pre-tab-indent;
 }
 
 .leftalign {
@@ -483,19 +490,19 @@ div::-webkit-scrollbar-thumb:hover {
 .link-title:link,
 .link-text:visited,
 .link-title:visited {
-	color: $highlight;
+	color: theme.$highlight;
     text-decoration: none;}
 .link-text:hover,
 .link-title:hover {
-	color: $title-lighter;
+	color: theme.$title-lighter;
     text-decoration: underline;}
 .link-text:active,
 .link-title:active {
-	color: $link-active;
+	color: theme.$link-active;
     text-decoration: underline;}
 
 .non-link-title {
-    color: $highlight;
+    color: theme.$highlight;
 }
 
 .noformat, 
@@ -552,12 +559,12 @@ div::-webkit-scrollbar-thumb:hover {
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: underline;
-    text-decoration-color: $title-lighter;
+    text-decoration-color: theme.$title-lighter;
 }
 
 #sidebar-search {
     background-color: rgba(0,0,0,0);
-    border: 2px solid $sidebar-link;
+    border: 2px solid theme.$sidebar-link;
     border-radius: 4px;
     outline: none;
     width: 85%;
@@ -568,22 +575,22 @@ div::-webkit-scrollbar-thumb:hover {
 #sidebar-search:focus {
     background-color: rgba(42,119,232,0.05);
     color: rgba(0,0,0,1);
-    box-shadow: inset 0 0 2px $sidebar-link;
+    box-shadow: inset 0 0 2px theme.$sidebar-link;
 }
 
 #sidebar-search::-webkit-input-placeholder {font-family: FontAwesome, "Open Sans", sans-serif;
-	color: $sidebar-sep-rgba;}
+	color: theme.$sidebar-sep-rgba;}
 #sidebar-search:-moz-placeholder {font-family: FontAwesome, "Open Sans", sans-serif;
-	color: $sidebar-sep-rgba;}
+	color: theme.$sidebar-sep-rgba;}
 #sidebar-search::-moz-placeholder {font-family: FontAwesome, "Open Sans", sans-serif;
-	color: $sidebar-sep-rgba;}
+	color: theme.$sidebar-sep-rgba;}
 #sidebar-search:-ms-input-placeholder {font-family: FontAwesome, "Open Sans", sans-serif;
-	color: $sidebar-sep-rgba;}
+	color: theme.$sidebar-sep-rgba;}
 
 .sidebar-hr {
     width: 90%;
     border-width: 1px;
-    border-color: $sidebar-sep;
+    border-color: theme.$sidebar-sep;
     background-color: #ffffff;
     margin: 35px 0px 35px 0px;
 }
@@ -609,17 +616,17 @@ div::-webkit-scrollbar-thumb:hover {
 #m-rss:link {color: #EF8500;}
 #m-rss:hover {color: #BF5500;}
 
-.sidebar-social:link {color: $sidebar-link;
+.sidebar-social:link {color: theme.$sidebar-link;
 	text-decoration: none;}
-.sidebar-social:visited {color: $sidebar-link;}
-.sidebar-social:hover {color: $title-lighter;}
-.sidebar-social:active {color: $highlight;}
+.sidebar-social:visited {color: theme.$sidebar-link;}
+.sidebar-social:hover {color: theme.$title-lighter;}
+.sidebar-social:active {color: theme.$highlight;}
 
-.sidebar-rss:link {color: $sidebar-link;
+.sidebar-rss:link {color: theme.$sidebar-link;
 	text-decoration: none;}
-.sidebar-rss:visited {color: $sidebar-link;}
+.sidebar-rss:visited {color: theme.$sidebar-link;}
 .sidebar-rss:hover {color: #EF8500;}
-.sidebar-rss:active {color: $highlight;}
+.sidebar-rss:active {color: theme.$highlight;}
 
 .sidebar-td.fa-linkedin:active {
 	color: #0A66C2;
@@ -659,7 +666,7 @@ div::-webkit-scrollbar-thumb:hover {
 
 .btnFilter {
 	border: none;
-	background: linear-gradient(#BBBBBB, $mainpage-background, #BBBBBB);
+	background: linear-gradient(#BBBBBB, theme.$mainpage-background, #BBBBBB);
 	outline: none;
 	float: left;
 	clear: left;
@@ -669,18 +676,18 @@ div::-webkit-scrollbar-thumb:hover {
 }
 .btnFilter:hover {
 	background: none;
-	box-shadow: 0 0 1px 1px $title-lighter;
+	box-shadow: 0 0 1px 1px theme.$title-lighter;
 }
 .btnFilter.activeFilter {
-	background: linear-gradient($title-lighter, $mainpage-background, $title-lighter);
+	background: linear-gradient(theme.$title-lighter, theme.$mainpage-background, theme.$title-lighter);
 	color: black;
 }
 
 .btnBold {
 	border: none;
 	border-radius: 3px;
-	box-shadow: 0 0 1px 1px $default-box-shadow;
-	background: linear-gradient($theme-gold, $mainpage-background, $theme-gold);
+	box-shadow: 0 0 1px 1px theme.$default-box-shadow;
+	background: linear-gradient(theme.$theme-gold, theme.$mainpage-background, theme.$theme-gold);
 	outline: none;
 	clear: both;
 	cursor: pointer;
@@ -688,7 +695,7 @@ div::-webkit-scrollbar-thumb:hover {
 	text-align: center;
 }
 .btnBold:hover {
-	box-shadow: 0 0 1px 1px $title-lighter;
+	box-shadow: 0 0 1px 1px theme.$title-lighter;
 }
 
 #footer {
@@ -696,9 +703,9 @@ div::-webkit-scrollbar-thumb:hover {
     bottom: 0;
     height: 100px;
     width: 100%;
-    background-color: $titlebar;
+    background-color: theme.$titlebar;
     padding: 40px;
-    box-shadow: 0 0 10px 5px $footer-box-shadow;
+    box-shadow: 0 0 10px 5px theme.$footer-box-shadow;
 }
 
 #footer-text {
@@ -712,7 +719,7 @@ div::-webkit-scrollbar-thumb:hover {
 
 #button-to-top {
     border-radius: 50%;
-    border: 1px solid $titlebar-text;
+    border: 1px solid theme.$titlebar-text;
     display: block;
     height: 50px;
     width: 50px;
@@ -793,7 +800,7 @@ only screen and (min-resolution: 300dpi) {
 		font-size: small;
 	}
 	#title-bar {
-		background-color: $titlebar;
+		background-color: theme.$titlebar;
 		padding-top: 10px;
 	}
 	.title {

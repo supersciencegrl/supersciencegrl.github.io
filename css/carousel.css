@@ -80,7 +80,7 @@
 .carousel {
   position: relative;
   padding-top: 75%;
-  filter: drop-shadow(0 0 10px #585863);
+  filter: drop-shadow(0 0 10px rgb(88, 88, 99));
   perspective: 100px;
 }
 
@@ -103,6 +103,7 @@
   border-radius: 3px;
   padding: 0;
   width: 100%;
+  height: 21rem;
   max-height: 21rem;
   object-fit: cover;
 }
@@ -129,7 +130,6 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
   }
-
   .carousel-slide-last .carousel-snap {
     animation-name: tostart, snap;
   }

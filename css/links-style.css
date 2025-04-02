@@ -2,7 +2,7 @@
 .tab {
   border: 1px solid #C0C0C0;
   overflow: hidden;
-  background-color: #dddddd;
+  background-color: rgb(221, 221, 221);
   border-radius: 5px 5px 0 0;
 }
 
@@ -139,11 +139,9 @@ div.tab button.currentTab {
   div.tab button {
     padding: 2px;
   }
-
   .collapsibleInline span {
     padding-left: initial;
   }
-
   .hte-book-title {
     padding-top: 0;
   }

@@ -147,15 +147,12 @@
   #index_nav_wrapper {
     grid-template-columns: 1fr;
   }
-
   #index_nav_bullets {
     display: none;
   }
-
   .experience-indent {
     padding-left: 1rem;
   }
-
   #main-linkedin {
     margin-left: 40%;
   }

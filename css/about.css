@@ -142,27 +142,21 @@
     padding: 0;
     margin: 0;
   }
-
   .p-inline {
     margin: 0 0 -10px 0;
   }
-
   .listwrapper {
     width: 100%;
   }
-
   .listblock .title {
     font-size: large;
   }
-
   .listblock .description {
     display: none;
   }
-
   #inline-text-left {
     width: 95%;
   }
-
   #about-page-ul {
     display: inherit;
   }

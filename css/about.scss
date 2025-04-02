@@ -1,4 +1,4 @@
-@import "theme";
+@use "theme";
 
 .tagline {
     text-align: right;
@@ -15,26 +15,26 @@
 }
 
 .listwrapper .purple {
-    border-bottom: $listblock-border $theme-purple;
+    border-bottom: theme.$listblock-border theme.$theme-purple;
 }
 .listwrapper-m .purple {
-    border-right: $listblock-border $theme-purple;
+    border-right: theme.$listblock-border theme.$theme-purple;
 }
 .listwrapper .red {
-    border-bottom: $listblock-border $theme-red;
+    border-bottom: theme.$listblock-border theme.$theme-red;
 }
 .listwrapper-m .red {
-    border-right: $listblock-border $theme-red;
+    border-right: theme.$listblock-border theme.$theme-red;
 }
 
 .listblock {
     margin: 0 2% 0 2%;
-    background-color: $popout-background;
+    background-color: theme.$popout-background;
     min-height: 17vw;
     max-width: 15vw;
     border-radius: 8px;
-    border-bottom: $listblock-border $title-lighter;
-    box-shadow: 3px -3px 6px $default-box-shadow;
+    border-bottom: theme.$listblock-border theme.$title-lighter;
+    box-shadow: 3px -3px 6px theme.$default-box-shadow;
 }
 
 .listblock a,
@@ -47,7 +47,7 @@
 
 .listblock .title {
     font-size: x-large;
-    color: $footer-box-shadow;
+    color: theme.$footer-box-shadow;
     text-align: center;
     padding-top: 10px;
     write-space: nowrap;
@@ -62,11 +62,11 @@
     width: 100%;
     display: inline-flex;
     margin: 4% -15px 0 0;
-    background-color: $popout-background;
+    background-color: theme.$popout-background;
     min-height: 12vw;
     border-radius: 8px;
-    border-right: $listblock-border $title-lighter;
-    box-shadow: 0 3px 6px $default-box-shadow;
+    border-right: theme.$listblock-border theme.$title-lighter;
+    box-shadow: 0 3px 6px theme.$default-box-shadow;
 }
 
 .listblock-m-title-wrapper {
@@ -75,7 +75,7 @@
 
 .listblock-m .title {
     font-size: medium !important;
-    color: $footer-box-shadow;
+    color: theme.$footer-box-shadow;
     text-align: left;
     margin: auto 0 auto 0;
     vertical-align: top;
@@ -84,11 +84,11 @@
 
 .listblock .purple,
 .listblock-m .purple {
-    background-color: $theme-purple;
+    background-color: theme.$theme-purple;
 }
 .listblock .red,
 .listblock-m .red {
-    background-color: $theme-red;
+    background-color: theme.$theme-red;
 }
 
 .listicon-m-wrapper {
@@ -97,8 +97,8 @@
 
 .listicon {
     border-radius: 50%;
-    background-color: $title-lighter;
-    box-shadow: 3px -3px 6px 0 $default-box-shadow;
+    background-color: theme.$title-lighter;
+    box-shadow: 3px -3px 6px 0 theme.$default-box-shadow;
     height: 1.6rem;
     min-height: 1.6rem;
     width: 1.6rem;
@@ -108,7 +108,7 @@
 
 .listicon-m {
     border-radius: 100%;
-    background-color: $title-lighter;
+    background-color: theme.$title-lighter;
     margin: auto;
     height: 1rem;
     min-height: 1rem;

@@ -1,7 +1,7 @@
-@import "../css/theme";
+@use "theme";
 
 .tab {
-  border: 1px solid $title-hover;
+  border: 1px solid theme.$title-hover;
   overflow: hidden;
   background-color: rgba(221,221,221,1);
   border-radius: 5px 5px 0 0;
@@ -28,15 +28,15 @@ div.tab button:hover {
 }
 
 div.tab button.currentTab {
-  background-color: $title-hover;
-  color: $titlebar;
-  border-bottom: 2px solid $titlebar;
+  background-color: theme.$title-hover;
+  color: theme.$titlebar;
+  border-bottom: 2px solid theme.$titlebar;
 }
 
 .tabContent {
   display: none;
   padding: 10px;
-  border: 1px solid $title-hover;
+  border: 1px solid theme.$title-hover;
   border-top: none;
   border-radius: 0 0 5px 5px;
   animation: fadeEffect 1s;
@@ -59,7 +59,7 @@ div.tab button.currentTab {
 
 .collapsible, .collapsibleInline {
 	cursor: pointer;
-	width: $collapsible-width;
+	width: theme.$collapsible-width;
 }
 .collapsibleInline {
 	margin-bottom: 35px;
@@ -70,7 +70,7 @@ div.tab button.currentTab {
 }
 .collapsibleInline span {
 	padding-left: 17%;
-	color: $highlight;
+	color: theme.$highlight;
 }
 
 .hte-book-title {
@@ -89,7 +89,7 @@ div.tab button.currentTab {
 
 .hte-button-caret .fa-chevron-circle-down,
 .learn-button-caret .fa-chevron-circle-down {
-	color: $title;
+	color: theme.$title;
 	margin-top: 65%;
 }
 
@@ -98,7 +98,7 @@ div.tab button.currentTab {
 }
 
 .collapsibleActive, .collapsible:hover, .collapsibleInline:hover {
-	background-color: $title-hover;
+	background-color: theme.$title-hover;
 	outline: none;
 }
 
@@ -106,7 +106,7 @@ div.tab button.currentTab {
 	margin-bottom: initial;
 }
 .collapsibleInline.collapsibleActive span {
-	color: $title;
+	color: theme.$title;
 }
 
 .collapsible:focus, collapsibleInline:focus {
@@ -120,8 +120,8 @@ div.tab button.currentTab {
 
 .collapsibleDropdown {
 	background-color: #DDDDDD;
-	border: solid 1px $highlight;
-	width: $collapsible-width;
+	border: solid 1px theme.$highlight;
+	width: theme.$collapsible-width;
 	border-radius: 3px;
 	padding-left: 2vw;
 }

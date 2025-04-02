@@ -1,4 +1,4 @@
-@import "theme";
+@use "theme";
 
 /* Table containers */
 .limiter, 
@@ -55,20 +55,20 @@
 	margin-left: 0;
 	border-left: 0;
 	font-size: 0.9rem;
-	color: $table-header-text;
-	background-color: $highlight;
+	color: theme.$table-header-text;
+	background-color: theme.$highlight;
 }
 
 .limiter td {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	font-size: 0.95em;
-	color: $table-text;
+	color: theme.$table-text;
 }
 
 .limitera td {
 	font-size: 0.95em;
-	color: $table-text;
+	color: theme.$table-text;
 }
 
 /* Fixed header */
@@ -123,19 +123,19 @@
 .table-link:hover,
 .table-link:active {
 	text-decoration: none;
-	color: $title-lighter;
+	color: theme.$title-lighter;
 }
 
 #confs-attended-table tr:nth-child(even),
 #conf-database-table tr:nth-child(even),
 #covid-table tr:nth-child(even),
 #conferencesOldTable tr:nth-child(even) {
-	background: $table-shading;
+	background: theme.$table-shading;
 }
 
 #events-org-table tr:nth-child(4n), 
 #events-org-table tr:nth-child(4n+1) {
-	background: $table-shading;
+	background: theme.$table-shading;
 }
 
 /* x-large screens */
@@ -161,7 +161,7 @@ only screen and (min-resolution: 300dpi) {
 	}
 	.limitera td {
 		font-size: x-small;
-		color: $table-text;
+		color: theme.$table-text;
 	}
 	p-inline {
 		padding-top: 0;

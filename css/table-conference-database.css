@@ -267,42 +267,33 @@ td.column2, td.column3, td.column5, td.column6 {
   .column1 {
     max-width: 25vw;
   }
-
   .column4 {
     max-width: 15vw;
   }
-
   td.column2 {
     font-size: 1em !important;
   }
-
   .column3, .column5, .column6 {
     display: none !important;
   }
-
   #conf-database-introduction {
     width: 100%;
   }
-
   #checkboxes {
     display: none;
   }
-
   #div_remove_cancelled {
     display: none;
   }
-
   #filterLabel {
     position: relative;
     padding: 0 0 0.2em 1em;
     width: 100%;
     font-weight: bold;
   }
-
   #filter-menu-hamburger {
     margin-bottom: 1em;
   }
-
   #filter-menu {
     display: none;
     transform: rotateX(-90deg);

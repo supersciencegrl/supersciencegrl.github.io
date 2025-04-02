@@ -1,4 +1,4 @@
-@import "theme";
+@use "theme";
 
 @keyframes tonext {
   75% {
@@ -80,7 +80,7 @@
 .carousel {
   position: relative;
   padding-top: 75%;
-  filter: drop-shadow(0 0 10px $default-box-shadow-rgba);
+  filter: drop-shadow(0 0 10px theme.$default-box-shadow-rgba);
   perspective: 100px;
 }
 
@@ -163,7 +163,7 @@
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: $highlight;
+  background-color: theme.$highlight;
   background-clip: content-box;
   border: 0.25rem solid transparent;
   border-radius: 50%;
@@ -199,7 +199,7 @@
 .carousel::after {
   content: "";
   z-index: 1;
-  background-color: $top-row;
+  background-color: theme.$top-row;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center center;

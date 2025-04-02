@@ -1,13 +1,13 @@
-@import "theme";
+@use "theme";
 
 #main-title {
-    color: $title;
+    color: theme.$title;
     padding: 0;
     text-align: center;
 }
 
 #main-subheading {
-    color: $sidebar-link;
+    color: theme.$sidebar-link;
     padding: 0;
     text-align: center;
 }
@@ -39,7 +39,7 @@
 
 #index_nav_bullets a:link,
 #index_nav_bullets a:visited {
-    color: $title-lighter;
+    color: theme.$title-lighter;
     text-decoration: none;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .nav_bullets_arrow {
-    color: $sidebar-sep;
+    color: theme.$sidebar-sep;
 }
 
 .tiny-indent {
@@ -90,7 +90,7 @@
     text-align: left;
     text-transform: uppercase;
     text-decoration: underline;
-    text-decoration-color: $title-lighter;
+    text-decoration-color: theme.$title-lighter;
     margin-bottom: 0;
 }
 
@@ -109,20 +109,20 @@
 }
 
 .experience-location {
-    color: $title-lighter;
+    color: theme.$title-lighter;
     padding-left: 0.5rem;
 }
 
 #extracurricular-heading {
     text-align: center;
     font-size: 1.25rem;
-    color: $title;
+    color: theme.$title;
     padding: 0 0 5px 0;
     color: #000000;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: underline;
-    text-decoration-color: $title-lighter;
+    text-decoration-color: theme.$title-lighter;
 }
 
 #homepage-avatar,

@@ -1,4 +1,4 @@
-@import "theme";
+@use "theme";
 
 th {
 	font-weight: normal;
@@ -90,11 +90,11 @@ td.column2, td.column3, td.column5, td.column6 {
 }
 
 .container-checkbox:hover input ~ .checkbox-custom {
-	background-color: $default-box-shadow;
+	background-color: theme.$default-box-shadow;
 }
 
 .container-checkbox input:checked ~ .checkbox-custom {
-	background-color: $highlight;
+	background-color: theme.$highlight;
 }
 
 .checkbox-custom:after {
@@ -171,17 +171,17 @@ td.column2, td.column3, td.column5, td.column6 {
 	width: 0;
 }
 #remove_cancelled:hover input ~ .big-checkbox {
-	background-color: $default-box-shadow;
+	background-color: theme.$default-box-shadow;
 }
 #remove_cancelled input:checked ~ .big-checkbox {
-	background-color: $highlight;
+	background-color: theme.$highlight;
 }
 #remove_cancelled input:disabled ~ .big-checkbox {
-	background-color: $link-active;
+	background-color: theme.$link-active;
 	cursor: not-allowed;
 }
 #remove_cancelled input:disabled ~ .big-checkbox-label {
-	color: $link-active;
+	color: theme.$link-active;
 	cursor: not-allowed;
 }
 
@@ -203,7 +203,7 @@ td.column2, td.column3, td.column5, td.column6 {
 }
 
 .fa-chevron-circle-right {
-	color: $top-row;
+	color: theme.$top-row;
 }
 
 #remove_cancelled input:checked ~ .big-checkbox:after {
