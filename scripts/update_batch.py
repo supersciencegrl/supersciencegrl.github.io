@@ -1,10 +1,24 @@
 __author__ = "Nessa Carson"
-__copyright__ = "Copyright 2022"
-__version__ = "1.1"
+__copyright__ = "Copyright 2022, 2025"
+__version__ = "1.2"
 __email__ = "methionine57@gmail.com"
 __status__ = "Production"
 
 import glob
+from pathlib import Path
+
+def edit_within_lines(oldtext: str, newtext: str):
+    """
+    Replaces all instances of `oldtext` with `newtext` in all HTML files in the current directory and subdirectories.
+
+    Args:
+    - oldtext (str): The old text to replace.
+    - newtext (str): The new text to replace with.
+    """
+    for file in Path("..").rglob("*.html"):
+        text = file.read_text(encoding="utf-8")
+        text = text.replace(oldtext, newtext)
+        file.write_text(text, encoding="utf-8")
 
 def find_index_in_sublist(snippet: list[str], my_list: list[str]) -> list[int]:
     """
@@ -34,6 +48,8 @@ def format_as_html(my_input: str) -> list[str]:
     - edited_list (list[str]): The formatted HTML list.
     """
     mylist = my_input.replace('\r', '').split('\\n')
+    if len(mylist) == 1:
+        mylist = mylist[0].split('\n')
     edited_list = [f'{i}\n' for i in mylist]
 
     return edited_list
@@ -65,7 +81,7 @@ def obtain_html_from_user() -> tuple[list[str], list[str]]:
 
     return oldhtml, newhtml
 
-def run(pages: list[str], oldhtml: list[str], newhtml: list[str]):
+def replace_html(pages: list[Path], oldhtml: list[str], newhtml: list[str]):
     """
     Replaces all instances of `oldhtml` with `newhtml` in the `pages` list of files.
     Prints a report of the changes made and the files that were not changed.
@@ -98,20 +114,23 @@ def run(pages: list[str], oldhtml: list[str], newhtml: list[str]):
             fin.truncate() # Allows shorter file when overwriting
 
     print(f'\n{pages_changed} pages changed.')
-    pages_not_changed_string = ('\n').join(pages_not_changed)
+    pages_not_changed_string = ('\n').join([str(p) for p in pages_not_changed])
     print(f'Pages not changed ({len(pages_not_changed)}):\n', pages_not_changed_string)
 
+def run():
+    # Obtain user inputs and replace all oldhtml with newhtml
+    oldhtml, newhtml = obtain_html_from_user()
+    result = input('\nProceed? (Y/N) ')
+    if result.lower() in 'yestrue1':
+        replace_html(pages, oldhtml, newhtml)
+    else:
+        print('Operation aborted.')
+
 # Set list of desired pages to change
-pages = glob.glob('../**/*.html', recursive=True)
+pages = list(Path('../').rglob('*.html'))
 exclusions = ['..\\googlec9a765a08c18ee51.html', '..\\pinterest-fc74e.html']
 for exc in exclusions:
-    idx = pages.index(exc)
+    idx = pages.index(Path(exc))
     _ = pages.pop(idx)
 
-# Obtain user inputs and replace all oldhtml with newhtml
-oldhtml, newhtml = obtain_html_from_user()
-result = input('\nProceed? (Y/N) ')
-if result.lower() in 'yestrue1':
-    run(pages, oldhtml, newhtml)
-else:
-    print('Operation aborted.')
+run()

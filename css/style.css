@@ -268,7 +268,6 @@ div::-webkit-scrollbar-thumb:hover {
 
 .bar:hover,
 .bar-indent:hover {
-  background: -webkit-linear-gradient(white, #DDDDDD);
   background: linear-gradient(white, #DDDDDD);
   color: #101030;
 }
@@ -478,6 +477,10 @@ div::-webkit-scrollbar-thumb:hover {
   max-width: 80%;
   margin: auto;
   padding: 5px;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 .p-mixed {
@@ -846,6 +849,19 @@ div::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 
+/* For screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Small computer screens */
 @media only screen and (max-width: 1200px) {
   .smallscreensshow {
@@ -1043,6 +1059,4 @@ div::-webkit-scrollbar-thumb:hover {
     font-size: small;
   }
 }
-/* End of mobile devices */
-
-/*# sourceMappingURL=style.css.map */
+/* End of mobile devices *//*# sourceMappingURL=style.css.map */

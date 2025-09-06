@@ -12,10 +12,6 @@
   width: 100%;
   min-height: 50vh;
   background: #fff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -167,6 +163,4 @@
     padding-right: 0;
   }
 }
-/* End of mobile devices */
-
-/*# sourceMappingURL=table.css.map */
+/* End of mobile devices *//*# sourceMappingURL=table.css.map */
