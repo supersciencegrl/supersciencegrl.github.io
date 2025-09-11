@@ -125,7 +125,8 @@ td.column2, td.column3, td.column5, td.column6 {
 
 .cancelled,
 .cancelled-span {
-  text-decoration: line-through double;
+  -webkit-text-decoration: line-through double;
+          text-decoration: line-through double;
   text-decoration-color: navy;
 }
 
@@ -156,7 +157,6 @@ td.column2, td.column3, td.column5, td.column6 {
   font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -223,8 +223,6 @@ td.column2, td.column3, td.column5, td.column6 {
   height: 12px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -305,6 +303,4 @@ td.column2, td.column3, td.column5, td.column6 {
     opacity: 0;
   }
 }
-/* End of mobile devices */
-
-/*# sourceMappingURL=table-conference-database.css.map */
+/* End of mobile devices *//*# sourceMappingURL=table-conference-database.css.map */

@@ -41,15 +41,6 @@ div.tab button.currentTab {
   animation: fadeEffect 1s;
   -webkit-animation: fadeEffect 1s;
 }
-
-@-webkit-keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadeEffect {
   from {
     opacity: 0;
@@ -145,6 +136,4 @@ div.tab button.currentTab {
   .hte-book-title {
     padding-top: 0;
   }
-}
-
-/*# sourceMappingURL=links-style.css.map */
+}/*# sourceMappingURL=links-style.css.map */
