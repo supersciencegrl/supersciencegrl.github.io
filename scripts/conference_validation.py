@@ -1,5 +1,7 @@
 from datetime import date, datetime
+from pathlib import Path
 import re
+from typing import TypedDict
 
 from bs4 import BeautifulSoup, Tag
 from lxml import etree
@@ -8,8 +10,34 @@ class ValidationError(Exception):
     """ Raised when the Conference Database cannot be validated. """
     pass
 
+class RowRecord(TypedDict, total = False): # Type for records
+    tr: Tag
+    title: str
+    start_date: date
+    end_date: date | None
+    index: int
+
 def parse_date(text: str) -> date | None:
-    """Return datetime.date for valid 'DD MMM YYYY' or None for em dash; raise on invalid."""
+    """
+    Parse a date string in 'DD MMM YYYY' format or an em dash.
+
+    This function trims whitespace from the input, accepts an em dash (—) as a
+    null end date, and validates real dates using the provided format string.
+    On invalid formats or impossible dates (e.g., 31 Feb 2026), it raises a
+    ValidationError.
+
+    Args:
+        text: The date text to parse. Expected format is 'DD MMM YYYY' (e.g.,
+            '25 Mar 2005') or an em dash represented as '—'.
+
+    Returns:
+        date: If the input is a valid date string, or 
+        None: if the input is an em dash.
+
+    Raises:
+        ValidationError: If the input is not in the expected format or does not
+            represent a real calendar date.
+    """
     s = text.strip()
     if s == EM_DASH:
         return None
@@ -26,14 +54,46 @@ def parse_date(text: str) -> date | None:
     return date
 
 def validate_classes(tr: Tag) -> None:
-    """Ensure class includes 'body' and all other classes are from _classes."""
+    """
+    Validate that a table row (<tr>) has only permitted CSS classes.
+
+    The function checks that the element's class list exists and that every
+    class applied to the <tr> is included in the allowed set _classes. If any
+    class is not permitted, a ValidationError is raised. It is assumed that
+    'body' is included in _classes; if 'body' must be present explicitly,
+    add a separate check.
+
+    Args:
+        tr: A BeautifulSoup Tag representing the <tr> element to validate.
+
+    Raises:
+        ValidationError: If the <tr> contains any class not present in the
+            allowed set _classes.
+    """
     these_classes = tr.get("class") or []
     invalid_classes = set(these_classes) - _classes
     if invalid_classes:
         raise ValidationError(f"Unknown classes on <tr>: {sorted(invalid_classes)}")
 
-def validate_html_source(html: str): 
-    """ Checks for HTML validation eg: tags properly closed"""
+def validate_html_source(html: str) -> None: 
+    """
+    Validate raw HTML source for structural correctness and report errors.
+
+    This function parses the provided HTML string using lxml's HTMLParser with
+    recovery disabled, so malformed markup (e.g., unclosed tags, invalid nesting)
+    triggers parser errors. It filters out entity reference errors related
+    to missing semicolons (e.g., unescaped '&' in attribute values), because it's basically 
+    a pain with regards to perfectly valid url parameters, and raises a ValidationError 
+    only if other issues remain.
+
+    Args:
+        html: The raw HTML content as a string.
+
+    Raises:
+        ValidationError: If lxml reports any structural errors other than the
+            suppressed 'ERR_ENTITYREF_SEMICOL_MISSING' cases. The exception
+            message aggregates one error per line from the parser's error log.
+    """
     parser = etree.HTMLParser(recover=False)
     try: 
         etree.fromstring(html.encode("utf-8"), parser=parser)
@@ -46,9 +106,26 @@ def validate_html_source(html: str):
         if errors:
             raise ValidationError(('\n').join(errors))
 
-def validate_tag_structure(tr: Tag):
-    """Basic structural checks: tr contains only td children; td and a properly closed."""
-    # BeautifulSoup ensures tags are closed in the parsed tree. We still check expected structure
+def validate_tag_structure(tr: Tag) -> None:
+    """
+    Validate the structural integrity of a <tr> element representing a row.
+
+    This function enforces expected table structure for conference rows:
+    - The <tr> must contain only <td> elements as direct children (whitespace allowed).
+    - The first cell (td.column1) must include an <a class="table-link" href="..."> with
+      non-empty link text.
+    - Required columns (td.column2, td.column3, td.column4) must be present.
+
+    Args:
+        tr: A BeautifulSoup Tag corresponding to the <tr> element under validation.
+
+    Raises:
+        ValidationError: If the row violates any structural rule, including:
+            - No <td> children under <tr>.
+            - Presence of non-<td> direct child elements.
+            - Missing td.column1 or missing/empty anchor link within it.
+            - Missing any of td.column2, td.column3, or td.column4.
+    """
     tds = tr.find_all("td", recursive=False)
     if not len(tds):
         raise ValidationError("<tr class='body'> must contain <td> cells.")
@@ -75,7 +152,29 @@ def validate_tag_structure(tr: Tag):
             raise ValidationError(f"Missing <td class='{cname}'>.")
 
 def extract_row(tr: Tag) -> dict[str, str | None]:
-    """Return a dict with parsed fields and raise ValidationError on any row-level issue."""
+    """
+    Extract and validate a conference row (<tr>) into a structured record.
+
+    This function validates class membership and structural requirements for the
+    provided <tr> element, then parses start and end dates from the appropriate
+    cells. It returns a dictionary with the original tag, title text, and parsed
+    dates suitable for downstream ordering checks.
+
+    Args:
+        tr: A BeautifulSoup Tag representing the <tr class="body"> table row to
+            extract and validate.
+
+    Returns:
+        dict[str, str | None], containing key-value:
+            - "tr": The original BeautifulSoup Tag for the row.
+            - "title": The conference title text from td.column1.
+            - "start_date": The parsed start date (datetime.date).
+            - "end_date": The parsed end date (datetime.date or None if em dash).
+
+    Raises:
+        ValidationError: If classes are invalid, structure is incorrect, the start
+            date is missing or an em dash, or any date fails format/value validation.
+    """
     validate_classes(tr)
     validate_tag_structure(tr)
 
@@ -100,21 +199,51 @@ def extract_row(tr: Tag) -> dict[str, str | None]:
         "end_date": end_date,
     }
 
-def validate_document(html: str):
+def sort_key(record: dict[str, date | None]) -> tuple[date, int, date | None]:
     """
-    Validate all <tr class='body'> rows and document-wide ordering:
-    - tag structure
-    - classes whitelist
-    - date formats
-    - ordering by start_date, then end_date (None before real dates)
-    Returns list of row dicts if valid. Raises ValidationError with details otherwise.
+    Build a tuple key for ordering conference records by start and end dates.
+
+    The sort key orders rows primarily by start_date, and secondarily by end_date
+    with None (em dash) treated as earlier than any real end date. This ensures
+    rows with unspecified end dates come before rows with specified dates when
+    start dates are equal.
+
+    Args:
+        record (dict[str, date | None]): A record dict produced by extract_row, 
+            containing "start_date" (date) and "end_date" (date or None).
+
+    Returns:
+        A tuple containing: 
+        - date: The start date
+        - int: 0 when the end date is None; 1 otherwise
+        - date: The end date or a dummy date value for when end date is None. 
     """
-    # Check global ordering
-    def sort_key(rec):
-        # None end_date should come first; represent None by (0, None), real date by (1, date)
-        null_flag = 0 if rec["end_date"] is None else 1
-        return (rec["start_date"], null_flag, rec["end_date"] or datetime.max.date())
-    
+    # When sorted, None end_date should come before others with the same start_date
+    null_flag = 0 if record["end_date"] is None else 1
+    return (record["start_date"], null_flag, record["end_date"] or datetime.max.date())
+
+def validate_document(html: str) -> list[RowRecord]:
+    """
+    Validate the entire HTML document for conference rows and ordering consistency.
+
+    This function validates raw HTML structure, extracts all <tr class="body"> rows,
+    performs per-row validations (classes, structure, date formats), and verifies
+    that rows are ordered by start_date, then by end_date with None (em-dash) treated
+    as earlier than any real end date. It aggregates row-level errors and reports
+    ordering violations with contextual details.
+
+    Args:
+        html: The full HTML document as a string.
+
+    Returns:
+        list[RowRecord]]: Validated row records (dicts) containing the parsed data and
+            references to their original Tag elements.
+
+    Raises:
+        ValidationError: If no <tr class="body"> rows are found, if any row fails
+            validation (classes, structure, date parsing), or if the document-wide
+            ordering does not match the expected sort order.
+    """
     validate_html_source(html) # Validates raw HTML eg: for unclosed tags
 
     soup = BeautifulSoup(html, "html.parser")
@@ -188,12 +317,17 @@ if __name__ == "__main__":
     # Load HTML from file or request; here we assume a string variable `html`
     # with the whole document.
     # html = open("conferences.html", "r", encoding="utf-8").read()
-    with open("../conferences.html", 'r') as fin:
+    if Path('conferences.html').exists():
+        conf_file = Path('conferences.html') # Run through GitHub Actions
+    else:
+        conf_file = Path('../conferences.html') # Run locally
+    
+    with open(conf_file, 'r') as fin:
         html = fin.read()
 
     try:
-        recs = validate_document(html)
-        print(f"Validation passed for {len(recs)} rows.")
+        records = validate_document(html)
+        print(f"Validation passed for {len(records)} rows.")
     except ValidationError as error:
         print("Validation failed:")
         print(error)
