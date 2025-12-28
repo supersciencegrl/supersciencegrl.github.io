@@ -183,9 +183,7 @@ def updatehtml(html):
             html_out = html_out + eventhtml
         if row.lstrip().startswith('</tbody>'):
             lasteventfound = True
-        if not firsteventfound or lasteventfound:
-            html_out.append(row)
-        elif not row.lstrip():
+        if not firsteventfound or lasteventfound or not row.lstrip():
             html_out.append(row)
 
     with open(os.path.join(testdir, 'online.html'), 'w') as fout:

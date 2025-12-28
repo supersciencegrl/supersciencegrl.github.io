@@ -4,7 +4,6 @@ __version__ = "1.2"
 __email__ = "methionine57@gmail.com"
 __status__ = "Production"
 
-import glob
 from pathlib import Path
 
 def edit_within_lines(oldtext: str, newtext: str):
