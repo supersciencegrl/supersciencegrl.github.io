@@ -259,7 +259,8 @@ def validate_document(html: str) -> list[RowRecord]:
             rec["index"] = i
             records.append(rec)
         except ValidationError as error:
-            errors.append(f"Row {i}: {error}")
+            indented_html = ('\n').join(f'\t{line} ' for line in str(tr).splitlines())
+            errors.append(f"Record {i}: {error}\n{indented_html}")
 
     if errors:
         # Collate all row-level errors
@@ -331,3 +332,4 @@ if __name__ == "__main__":
     except ValidationError as error:
         print("Validation failed:")
         print(error)
+        raise
