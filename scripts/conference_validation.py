@@ -112,8 +112,8 @@ def validate_tag_structure(tr: Tag) -> None:
 
     This function enforces expected table structure for conference rows:
     - The <tr> must contain only <td> elements as direct children (whitespace allowed).
-    - The first cell (td.column1) must include an <a class="table-link" href="..."> with
-      non-empty link text.
+    - The first cell (td.column1) must include an <a class="table-link" href="...">, though the link
+      may be an empty string.
     - Required columns (td.column2, td.column3, td.column4) must be present.
 
     Args:
@@ -140,11 +140,11 @@ def validate_tag_structure(tr: Tag) -> None:
     if not col1:
         raise ValidationError("Missing <td class='column1'>.")
     link = col1.find("a", class_="table-link")
-    if not link or not link.get("href"):
+    if not link:
         raise ValidationError("column1 must contain <a class='table-link' href='...'>.")
-    # Ensure link is properly closed by verifying it has either text or nested elements
-    if not (link.text and link.text.strip()):
-        raise ValidationError("Anchor in column1 must have non-empty text.")
+    # Ensure link has href attribute (empty string is allowed)
+    if "href" not in link.attrs:
+        raise ValidationError("Link in column1 must include a href attribute.")
 
     # Ensure other expected columns exist
     for cname in ("column2", "column3", "column4"):
