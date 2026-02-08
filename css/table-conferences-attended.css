@@ -72,6 +72,9 @@ th.columna1 {
 .organizer {
 	color: #0279B4;
 }
+.chair {
+	color: #A62376;
+}
 
 /* Mobile devices */
 @media only screen and (max-device-width: 480px), 
