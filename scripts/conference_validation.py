@@ -197,7 +197,7 @@ def extract_row(tr: Tag) -> dict[str, str | None]:
         "title": tr.find("td", class_="column1").get_text(strip=True),
         "start_date": start_date,
         "end_date": end_date,
-    }
+        }
 
 def sort_key(record: dict[str, date | None]) -> tuple[date, int, date | None]:
     """
