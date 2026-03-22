@@ -298,7 +298,8 @@ locations = {"Global", "Online",
              "SA", "Africa", "Asia", "Aus"
              }
 _classes = {'body'}.union({f"c{t}" for t in topics}, 
-                          {f"l{l}" for l in locations}
+                          {f"l{l}" for l in locations},
+                          {'cancelled', 'postponed', 'interesting'}
                           ) # Set of all allowable classes for <tr>
 
 TEST_HTML = """<table>
