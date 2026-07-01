@@ -132,4 +132,5 @@ for exc in exclusions:
     idx = pages.index(Path(exc))
     _ = pages.pop(idx)
 
-run()
+if __name__ == '__main__':
+    run()
