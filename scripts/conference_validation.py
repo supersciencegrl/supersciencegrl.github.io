@@ -151,7 +151,9 @@ def validate_tag_structure(tr: Tag) -> None:
         if not tr.find("td", class_=cname):
             raise ValidationError(f"Missing <td class='{cname}'>.")
 
-def extract_row(tr: Tag) -> dict[str, str | None]:
+def extract_row(tr: Tag,
+                all_cols: bool = False
+                ) -> dict[str, str | int | None]:
     """
     Extract and validate a conference row (<tr>) into a structured record.
 
@@ -163,6 +165,8 @@ def extract_row(tr: Tag) -> dict[str, str | None]:
     Args:
         tr: A BeautifulSoup Tag representing the <tr class="body"> table row to
             extract and validate.
+        all_cols: If True, include all columns in the returned record; 
+            otherwise, only include tr, title, start_date, end_date. Default is False. 
 
     Returns:
         dict[str, str | None], containing key-value:
@@ -170,6 +174,9 @@ def extract_row(tr: Tag) -> dict[str, str | None]:
             - "title": The conference title text from td.column1.
             - "start_date": The parsed start date (datetime.date).
             - "end_date": The parsed end date (datetime.date or None if em dash).
+            And, optionally, if all_cols is True:
+            - "link": The url of the event.
+            - "location": The geographical location of the event
 
     Raises:
         ValidationError: If classes are invalid, structure is incorrect, the start
@@ -179,6 +186,7 @@ def extract_row(tr: Tag) -> dict[str, str | None]:
     validate_tag_structure(tr)
 
     # Extract text content
+    col1 = tr.find('td', class_='column1')
     col2 = tr.find("td", class_="column2")
     col3 = tr.find("td", class_="column3")
 
@@ -191,13 +199,22 @@ def extract_row(tr: Tag) -> dict[str, str | None]:
         raise ValidationError("Start date (column2) cannot be \"&mdash;\".")
     end_date = parse_date(end_text) # None is allowed
 
-    # Return record; use tuple for ordering key
-    return {
-        "tr": tr,
-        "title": tr.find("td", class_="column1").get_text(strip=True),
-        "start_date": start_date,
-        "end_date": end_date,
-        }
+    event_dict = {
+                    "tr": tr,
+                    "title": col1.get_text(strip=True),
+                    "start_date": start_date,
+                    "end_date": end_date,
+                    }
+
+    if all_cols:
+        link = col1.find('a', class_='table-link')['href'] if col1 and col1.find('a', class_='table-link') else None
+        col4 = tr.find('td', class_='column4')
+        location = col4.get_text(strip=True) if col4 else None
+        
+        event_dict['link'] = link
+        event_dict['location'] = location
+
+    return event_dict
 
 def sort_key(record: dict[str, date | None]) -> tuple[date, int, date | None]:
     """
@@ -316,9 +333,6 @@ TEST_HTML = """<table>
 
 # Example usage:
 if __name__ == "__main__":
-    # Load HTML from file or request; here we assume a string variable `html`
-    # with the whole document.
-    # html = open("conferences.html", "r", encoding="utf-8").read()
     if Path('conferences.html').exists():
         conf_file = Path('conferences.html') # Run through GitHub Actions
     else:
