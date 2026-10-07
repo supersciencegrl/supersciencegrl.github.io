@@ -89,5 +89,9 @@ if __name__ == "__main__":
     # Validate the html structure
     conference_validation.validate_html_source(html)
 
+    # Find AZ events
+    df = find_events_with_az_class(html)
+
     results = all_az_locations(df, copy_result = True)
-    (print(r) for r in results)
+    for r in results:
+        print(r)

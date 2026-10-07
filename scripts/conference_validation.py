@@ -101,8 +101,12 @@ def validate_html_source(html: str) -> None:
         # e.error_log contains detailed messages (line/column) return False, [str(err) for err in e.error_log] 
         # If no exception, still check error_log in case of soft warnings 
         errors = [str(err) for err in parser.error_log 
-                  if 'ERR_ENTITYREF_SEMICOL_MISSING' not in str(err)
+                  if ('ERR_ENTITYREF_SEMICOL_MISSING' not in str(err)
+                      and 'htmlParseEntityRef' not in str(err)
+                      and 'Tag wbr invalid' not in str(err)
+                  )
                   ]
+        
         if errors:
             raise ValidationError(('\n').join(errors))
 
@@ -197,7 +201,11 @@ def extract_row(tr: Tag,
     start_date = parse_date(start_text)
     if start_date is None:
         raise ValidationError("Start date (column2) cannot be \"&mdash;\".")
-    end_date = parse_date(end_text) # None is allowed
+
+    if end_text in {EM_DASH, '&mdash;'}:
+        end_date = None
+    else:
+        end_date = parse_date(end_text) # None is allowed
 
     event_dict = {
                     "tr": tr,
@@ -237,6 +245,7 @@ def sort_key(record: dict[str, date | None]) -> tuple[date, int, date | None]:
     """
     # When sorted, None end_date should come before others with the same start_date
     null_flag = 0 if record["end_date"] is None else 1
+
     return (record["start_date"], null_flag, record["end_date"] or datetime.max.date())
 
 def validate_document(html: str) -> list[RowRecord]:
