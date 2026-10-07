@@ -87,7 +87,7 @@ if __name__ == "__main__":
         html = fin.read()
 
     # Validate the html structure
-    # conference_validation.validate_html_source(html)
+    conference_validation.validate_html_source(html)
 
     results = all_az_locations(df, copy_result = True)
     (print(r) for r in results)
